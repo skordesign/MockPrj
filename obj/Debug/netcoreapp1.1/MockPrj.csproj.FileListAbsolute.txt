@@ -1,0 +1,8 @@
+E:\Workspace or Trash\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.deps.json
+E:\Workspace or Trash\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.runtimeconfig.json
+E:\Workspace or Trash\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.runtimeconfig.dev.json
+E:\Workspace or Trash\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.dll
+E:\Workspace or Trash\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.pdb
+E:\Workspace or Trash\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.AssemblyInfo.cs
+E:\Workspace or Trash\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.dll
+E:\Workspace or Trash\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.pdb
