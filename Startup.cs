@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MockPrj.Data;
+using Microsoft.EntityFrameworkCore;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
+using MockPrj.Repositories;
 
 namespace MockPrj
 {
@@ -26,6 +30,13 @@ namespace MockPrj
         {
             // Add framework services.
             services.AddMvc();
+
+            services.AddDbContext<SIMSDbContext>(
+                    opts => opts.UseNpgsql(Configuration["connectionString"]));
+
+            //repositories
+            services.AddTransient<IAccountRepository, AccountRepository>();
+            services.AddTransient<IRoleRepository, RoleRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
