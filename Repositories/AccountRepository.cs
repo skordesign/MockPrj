@@ -18,6 +18,7 @@ namespace MockPrj.Repositories
         {
             try
             {
+                o.PasswordHashed = Protector.HashPassword(o.PasswordHashed);
                 _context.Accounts.Add(o);
                 _context.SaveChanges();
                 return true;
@@ -36,6 +37,13 @@ namespace MockPrj.Repositories
         public Account Get(int Id)
         {
             return _context.Accounts.Find(Id);
+        }
+
+        public Account Get(string email, string password)
+        {
+            return _context.Accounts
+                .FirstOrDefault(o=>o.Email.Equals(email)&&
+                o.PasswordHashed.Equals(Protector.HashPassword(password)));
         }
 
         public bool Remove(int Id)

@@ -1,9 +1,9 @@
-E:\Workspace or Trash\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.deps.json
-E:\Workspace or Trash\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.runtimeconfig.json
-E:\Workspace or Trash\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.runtimeconfig.dev.json
-E:\Workspace or Trash\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.dll
-E:\Workspace or Trash\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.pdb
-E:\Workspace or Trash\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.AssemblyInfo.cs
-E:\Workspace or Trash\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.dll
-E:\Workspace or Trash\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.pdb
-E:\Workspace or Trash\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.csprojResolveAssemblyReference.cache
+E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.deps.json
+E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.runtimeconfig.json
+E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.runtimeconfig.dev.json
+E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.dll
+E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\bin\Debug\netcoreapp1.1\MockPrj.pdb
+E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.csprojResolveAssemblyReference.cache
+E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.AssemblyInfo.cs
+E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.dll
+E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\obj\Debug\netcoreapp1.1\MockPrj.pdb

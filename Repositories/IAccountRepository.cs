@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MockPrj.Repositories
 {
-    interface IAccountRepository:IRepository<Account>
+    public interface IAccountRepository:IRepository<Account>
     {
+        Account Get(string email, string password);
     }
 }

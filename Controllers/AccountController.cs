@@ -3,44 +3,77 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MockPrj.Repositories;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
+using MockPrj.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace MockPrj.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]/[action]")]
     public class AccountController : Controller
     {
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IAccountRepository _account;
+        private readonly IRoleRepository _role;
+        private readonly ILogger _logger;
+        public AccountController(IAccountRepository account, IRoleRepository role,
+            ILogger<AccountController> logger)
         {
-            return new string[] { "value1", "value2" };
+            _account = account;
+            _role = role;
+            _logger = logger;
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpDelete]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer")]
+        public bool Logout()
         {
-            return "value";
+            _logger.LogInformation("User logged out");
+            return true;
         }
-
-        // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        [AllowAnonymous]
+        public IActionResult Register(Account o)
         {
+            if (ModelState.IsValid)
+            {
+                o.RoleId = 1;
+                _logger.LogInformation("BEGIN => Register");
+                if (_account.Add(o))
+                {
+                    _logger.LogInformation("END <= Register");
+                    return Ok();
+                }
+            }
+            _logger.LogError("FAILED <= Register");
+            return BadRequest();
         }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "User")]
+        public IActionResult Edit(Account o)
         {
+            try
+            {
+                _logger.LogInformation("BEGIN => Edit Account");
+                _account.Update(o);
+                _logger.LogInformation("END <= Edit Account");
+                return Ok();
+            }
+            catch
+            {
+                _logger.LogError("FAILED: Edit Account");
+                return BadRequest();
+            }
         }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpPost]
+        [AllowAnonymous]
+        public IActionResult RequestPassword(string email)
         {
+            //send mail
+            return Ok();
         }
+        
     }
 }

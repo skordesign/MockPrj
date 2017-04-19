@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MockPrj.Repositories
 {
-    interface IRoleRepository:IRepository<Role>
+    public interface IRoleRepository:IRepository<Role>
     {
     }
 }

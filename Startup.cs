@@ -8,6 +8,7 @@ using MockPrj.Data;
 using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using MockPrj.Repositories;
+using System;
 
 namespace MockPrj
 {
@@ -30,20 +31,21 @@ namespace MockPrj
         {
             // Add framework services.
             services.AddMvc();
-
-            services.AddDbContext<SIMSDbContext>(
-                    opts => opts.UseNpgsql(Configuration["connectionString"]));
-
+            services.AddDataProtection();
+            services.AddEntityFrameworkSqlServer().AddDbContext<SIMSDbContext>(options =>
+                options.UseSqlServer(Configuration["connectionString"])
+            );
             //repositories
             services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<IRoleRepository, RoleRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, SIMSDbContext db)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
+            // loggerFactory.AddDebug();
+            loggerFactory.AddFile("Logs/SIMS-{Date}.txt");
 
             if (env.IsDevelopment())
             {
@@ -69,6 +71,7 @@ namespace MockPrj
                     name: "spa-fallback",
                     defaults: new { controller = "Home", action = "Index" });
             });
+            InitDb.Init(db);
         }
     }
 }

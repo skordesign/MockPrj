@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MockPrj.Repositories
 {
-    interface IRepository<T>
+    public interface IRepository<T>
     {
         bool Add(T o);
         T Get(int Id);
