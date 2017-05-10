@@ -6,7 +6,6 @@ import { SignInComponent } from './components/signin/signin.component';
 import { ForgetPwdComponent } from './components/forgetpwd/forgetpwd.component';
 import { CategoryComponent } from './components/home/inventory/category/category.component';
 import { ReporttComponent } from './components/home/inventory/report/report.component';
-import { ProfileComponent } from './components/home/profile/profile.component';
 import { UserMngtComponent } from './components/home/usermngt/usermngt.component';
 import { AuthenticateGuard } from './guard/authenticate.guard';
 import { LoginGuard } from './guard/login.guard';
@@ -32,8 +31,7 @@ export const routes: Routes = [
                 ]
             },
             { path: "sale", component: SaleComponent, canActivate: [AuthenticateGuard], children: [] },
-            { path: "usermngt", component: UserMngtComponent, canActivate: [AdminGuard, AuthenticateGuard], children: [] },
-            { path: "profile", component: ProfileComponent, canActivate: [AuthenticateGuard], children: [] }
+            { path: "usermngt", component: UserMngtComponent, canActivate: [AdminGuard, AuthenticateGuard], children: [] }
         ]
     },
 ]

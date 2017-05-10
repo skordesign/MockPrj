@@ -464,3 +464,687 @@ WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
 2017-05-10T01:05:06.8038820+07:00 0HL4N0MMFMEHH [INF] Request finished in 6.4196ms 200 application/json; charset=utf-8 (15c52c40)
 2017-05-10T01:05:47.1113809+07:00  [INF] Received SIGINT. Waiting for .NET process to exit... (39e2bf0e)
 2017-05-10T01:05:47.1143825+07:00 0HL4N0MMFMEHI [INF] Received SIGINT. Waiting for .NET process to exit... (39e2bf0e)
+2017-05-10T20:35:12.4767377+07:00  [INF] Executed DbCommand (118ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 (6438bdd5)
+2017-05-10T20:35:13.1772082+07:00  [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Accounts] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2017-05-10T20:35:24.3190677+07:00  [INF] webpack built 383d0a3abb5f1066e538 in 15015ms (c89b8116)
+2017-05-10T20:35:51.5337717+07:00 0HL4NL5STAF9U [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (e5be5b71)
+2017-05-10T20:35:52.0186303+07:00 0HL4NL5STAF9U [INF] Executing action method "MockPrj.Controllers.HomeController.Index (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:35:54.0266360+07:00 0HL4NL5STAF9U [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-05-10T20:35:54.1263065+07:00 0HL4NL5STAF9U [INF] User profile is available. Using '"C:\Users\skord\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-05-10T20:35:58.9057040+07:00 0HL4NL5STAF9U [INF] Executed action "MockPrj.Controllers.HomeController.Index (MockPrj)" in 6949.6ms (afa2e885)
+2017-05-10T20:35:58.9447311+07:00 0HL4NL5STAF9U [INF] Request finished in 7433.169ms 200 text/html; charset=utf-8 (15c52c40)
+2017-05-10T20:35:58.9557368+07:00 0HL4NL5STAF9V [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/js/compiled.min.js   (e5be5b71)
+2017-05-10T20:35:58.9942689+07:00 0HL4NL5STAFA0 [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/css/compiled.min.css   (e5be5b71)
+2017-05-10T20:35:59.0017733+07:00 0HL4NL5STAFA1 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/mdb-dashboard.css   (e5be5b71)
+2017-05-10T20:35:59.0407988+07:00 0HL4NL5STAFA1 [INF] Sending file. Request path: '"/css/mdb-dashboard.css"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\css\mdb-dashboard.css"' (27b0a520)
+2017-05-10T20:35:59.0698181+07:00 0HL4NL5STAFA2 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/Site.css   (e5be5b71)
+2017-05-10T20:35:59.0878309+07:00 0HL4NL5STAFA2 [INF] Sending file. Request path: '"/css/Site.css"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\css\Site.css"' (27b0a520)
+2017-05-10T20:35:59.0913326+07:00 0HL4NL5STAFA2 [INF] Request finished in 23.7329ms 200 text/css (15c52c40)
+2017-05-10T20:35:59.0923337+07:00 0HL4NL5STAFA3 [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/main-client.js?v=jQqG5JF4Q3D7wpUte-YlNx6hiSjGoJnNBHvJw_gnyow   (e5be5b71)
+2017-05-10T20:35:59.0928342+07:00 0HL4NL5STAFA4 [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/js/jquery-3.1.1.min.js   (e5be5b71)
+2017-05-10T20:35:59.0968412+07:00 0HL4NL5STAF9V [INF] Sending file. Request path: '"/dist/js/compiled.min.js"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\js\compiled.min.js"' (27b0a520)
+2017-05-10T20:35:59.1038459+07:00 0HL4NL5STAFA0 [INF] Sending file. Request path: '"/dist/css/compiled.min.css"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\css\compiled.min.css"' (27b0a520)
+2017-05-10T20:35:59.1328647+07:00 0HL4NL5STAFA4 [INF] Sending file. Request path: '"/dist/js/jquery-3.1.1.min.js"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\js\jquery-3.1.1.min.js"' (27b0a520)
+2017-05-10T20:35:59.1478751+07:00 0HL4NL5STAFA4 [INF] Request finished in 45.7001ms 200 application/javascript (15c52c40)
+2017-05-10T20:35:59.1478751+07:00 0HL4NL5STAFA1 [INF] Request finished in 149.3694ms 200 text/css (15c52c40)
+2017-05-10T20:35:59.1718911+07:00 0HL4NL5STAFA3 [INF] Request finished in 61.1451ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-05-10T20:35:59.1813995+07:00 0HL4NL5STAF9V [INF] Request finished in 199.5996ms 200 application/javascript (15c52c40)
+2017-05-10T20:35:59.1813995+07:00 0HL4NL5STAFA0 [INF] Request finished in 183.3209ms 200 text/css (15c52c40)
+2017-05-10T20:35:59.2759637+07:00 0HL4NL5STAFA5 [INF] Request starting HTTP/1.1 GET http://localhost:5000/font/roboto/Roboto-Regular.woff2   (e5be5b71)
+2017-05-10T20:35:59.2769648+07:00 0HL4NL5STAFA5 [INF] Sending file. Request path: '"/font/roboto/Roboto-Regular.woff2"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\font\roboto\Roboto-Regular.woff2"' (27b0a520)
+2017-05-10T20:35:59.2769648+07:00 0HL4NL5STAFA5 [INF] Request finished in 1.0432ms 200 application/font-woff2 (15c52c40)
+2017-05-10T20:36:00.7445362+07:00 0HL4NL5STAFA6 [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/font/fa/fontawesome-webfont.woff2?v=4.7.0   (e5be5b71)
+2017-05-10T20:36:00.7475326+07:00 0HL4NL5STAFA6 [INF] Sending file. Request path: '"/dist/font/fa/fontawesome-webfont.woff2"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\font\fa\fontawesome-webfont.woff2"' (27b0a520)
+2017-05-10T20:36:00.7485325+07:00 0HL4NL5STAFA6 [INF] Request finished in 4.0456ms 200 application/font-woff2 (15c52c40)
+2017-05-10T20:36:00.8120757+07:00 0HL4NL5STAFA7 [INF] Request starting HTTP/1.1 GET http://localhost:5000/__webpack_hmr   (e5be5b71)
+2017-05-10T20:36:08.4152614+07:00 0HL4NL5STAFA8 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/accounts/token application/x-www-form-urlencoded 50 (e5be5b71)
+2017-05-10T20:36:08.6509391+07:00 0HL4NL5STAFA8 [INF] Executed DbCommand (41ms) [Parameters=[@__email_0='?' (Size = 50), @__HashPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[Id], [o].[AddTime], [o].[Email], [o].[Firstname], [o].[IsBlocked], [o].[Lastname], [o].[ModifiedTime], [o].[PasswordHashed], [o].[RoleId]
+FROM [Accounts] AS [o]
+WHERE ([o].[Email] = @__email_0) AND ([o].[PasswordHashed] = @__HashPassword_1) (6438bdd5)
+2017-05-10T20:36:08.7500116+07:00 0HL4NL5STAFA8 [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[ModifiedTime], [e].[Name]
+FROM [Roles] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:36:08.8280709+07:00 0HL4NL5STAFA8 [INF] Request finished in 412.933ms 200 application/json (15c52c40)
+2017-05-10T20:36:08.8791052+07:00 0HL4NL5STAFA9 [INF] Request starting HTTP/1.1 GET http://localhost:5000/js/Site.js?_=1494423359545   (e5be5b71)
+2017-05-10T20:36:08.8801051+07:00 0HL4NL5STAFA9 [INF] Sending file. Request path: '"/js/Site.js"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\js\Site.js"' (27b0a520)
+2017-05-10T20:36:08.8811070+07:00 0HL4NL5STAFA9 [INF] Request finished in 2.128ms 200 application/javascript (15c52c40)
+2017-05-10T20:36:08.8821068+07:00 0HL4NL5STAFAA [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/accounts/getInfo/1 application/json  (e5be5b71)
+2017-05-10T20:36:09.0107118+07:00 0HL4NL5STAFAA [INF] Successfully validated the token. (60169667)
+2017-05-10T20:36:09.0147148+07:00 0HL4NL5STAFAA [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:36:09.0287806+07:00 0HL4NL5STAFAA [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:36:09.1114726+07:00 0HL4NL5STAFAA [INF] Executing action method "MockPrj.Controllers.AccountsController.GetInfo (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:36:09.1184804+07:00 0HL4NL5STAFAA [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[Email], [e].[Firstname], [e].[IsBlocked], [e].[Lastname], [e].[ModifiedTime], [e].[PasswordHashed], [e].[RoleId]
+FROM [Accounts] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:36:09.1350334+07:00 0HL4NL5STAFAA [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:36:09.1670563+07:00 0HL4NL5STAFAA [INF] Executed action "MockPrj.Controllers.AccountsController.GetInfo (MockPrj)" in 269.9576ms (afa2e885)
+2017-05-10T20:36:09.1690556+07:00 0HL4NL5STAFAA [INF] Request finished in 286.9622ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:36:09.8927226+07:00 0HL4NL5STAFAB [INF] Request starting HTTP/1.1 GET http://localhost:5000/font/roboto/Roboto-Light.woff2   (e5be5b71)
+2017-05-10T20:36:09.8927226+07:00 0HL4NL5STAFAB [INF] Sending file. Request path: '"/font/roboto/Roboto-Light.woff2"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\font\roboto\Roboto-Light.woff2"' (27b0a520)
+2017-05-10T20:36:09.8987206+07:00 0HL4NL5STAFAC [INF] Request starting HTTP/1.1 GET http://localhost:5000/font/roboto/Roboto-Bold.woff2   (e5be5b71)
+2017-05-10T20:36:09.8987206+07:00 0HL4NL5STAFAC [INF] Sending file. Request path: '"/font/roboto/Roboto-Bold.woff2"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\font\roboto\Roboto-Bold.woff2"' (27b0a520)
+2017-05-10T20:36:09.8997209+07:00 0HL4NL5STAFAD [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/accounts/getRole/4 application/json  (e5be5b71)
+2017-05-10T20:36:09.9017218+07:00 0HL4NL5STAFAD [INF] Successfully validated the token. (60169667)
+2017-05-10T20:36:09.9017218+07:00 0HL4NL5STAFAD [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:36:09.9027225+07:00 0HL4NL5STAFAD [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:36:09.9047242+07:00 0HL4NL5STAFAD [INF] Executing action method "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" with arguments (["4"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:36:09.9057249+07:00 0HL4NL5STAFAD [INF] GET => Role Id 4 (83c4da84)
+2017-05-10T20:36:09.9147364+07:00 0HL4NL5STAFAD [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[ModifiedTime], [e].[Name]
+FROM [Roles] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:36:09.9157355+07:00 0HL4NL5STAFAD [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:36:09.9202399+07:00 0HL4NL5STAFAD [INF] Executed action "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" in 18.1765ms (afa2e885)
+2017-05-10T20:36:09.9212409+07:00 0HL4NL5STAFAD [INF] Request finished in 20.7629ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:36:09.9237550+07:00 0HL4NL5STAFAB [INF] Request finished in 31.4583ms 200 application/font-woff2 (15c52c40)
+2017-05-10T20:36:09.9257556+07:00 0HL4NL5STAFAC [INF] Request finished in 30.7016ms 200 application/font-woff2 (15c52c40)
+2017-05-10T20:36:09.9297578+07:00 0HL4NL5STAFAE [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/accounts/getRole/4 application/json  (e5be5b71)
+2017-05-10T20:36:09.9387622+07:00 0HL4NL5STAFAE [INF] Successfully validated the token. (60169667)
+2017-05-10T20:36:09.9457673+07:00 0HL4NL5STAFAE [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:36:09.9457673+07:00 0HL4NL5STAFAE [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:36:09.9457673+07:00 0HL4NL5STAFAE [INF] Executing action method "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" with arguments (["4"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:36:09.9457673+07:00 0HL4NL5STAFAE [INF] GET => Role Id 4 (83c4da84)
+2017-05-10T20:36:09.9477702+07:00 0HL4NL5STAFAE [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[ModifiedTime], [e].[Name]
+FROM [Roles] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:36:09.9487704+07:00 0HL4NL5STAFAE [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:36:09.9487704+07:00 0HL4NL5STAFAE [INF] Executed action "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" in 17.1194ms (afa2e885)
+2017-05-10T20:36:09.9497711+07:00 0HL4NL5STAFAE [INF] Request finished in 19.1855ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:36:13.5397792+07:00 0HL4NL5STAFAF [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/users application/json  (e5be5b71)
+2017-05-10T20:36:13.5427789+07:00 0HL4NL5STAFAF [INF] Successfully validated the token. (60169667)
+2017-05-10T20:36:13.5547860+07:00 0HL4NL5STAFAF [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:36:13.5577880+07:00 0HL4NL5STAFAF [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:36:13.5607896+07:00 0HL4NL5STAFAF [INF] Executing action method "MockPrj.Controllers.UsersController.Get (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:36:13.5617911+07:00 0HL4NL5STAFAF [INF] GET => All (162e22b8)
+2017-05-10T20:36:13.5758012+07:00 0HL4NL5STAFAF [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AddTime], [a].[Email], [a].[Firstname], [a].[IsBlocked], [a].[Lastname], [a].[ModifiedTime], [a].[PasswordHashed], [a].[RoleId]
+FROM [Accounts] AS [a] (6438bdd5)
+2017-05-10T20:36:13.5778029+07:00 0HL4NL5STAFAF [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:36:13.5808065+07:00 0HL4NL5STAFAF [INF] Executed action "MockPrj.Controllers.UsersController.Get (MockPrj)" in 37.9088ms (afa2e885)
+2017-05-10T20:36:13.5818052+07:00 0HL4NL5STAFAF [INF] Request finished in 42.9973ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:36:44.5684002+07:00 0HL4NL5STAFAG [INF] Node will restart because file changed: E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\app\components\home\home.component.ts (6c48804b)
+2017-05-10T20:36:44.8540791+07:00  [INF] webpack building... (478286db)
+2017-05-10T20:36:47.6706966+07:00  [INF] webpack built 604cd6abeb11985244d5 in 2728ms (b8d64799)
+2017-05-10T20:36:47.6772027+07:00 0HL4NL5STAFAG [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/383d0a3abb5f1066e538.hot-update.json   (e5be5b71)
+2017-05-10T20:36:47.7267401+07:00 0HL4NL5STAFAG [INF] Request finished in 50.6356ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-05-10T20:36:47.7307424+07:00 0HL4NL5STAFAH [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/0.383d0a3abb5f1066e538.hot-update.js   (e5be5b71)
+2017-05-10T20:36:47.7367475+07:00 0HL4NL5STAFAH [INF] Request finished in 2.0096ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-05-10T20:36:48.6570090+07:00 0HL4NL5STAFAI [INF] Request starting HTTP/1.1 GET http://localhost:5000/js/Site.js?_=1494423359546   (e5be5b71)
+2017-05-10T20:36:48.6570090+07:00 0HL4NL5STAFAI [INF] Sending file. Request path: '"/js/Site.js"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\js\Site.js"' (27b0a520)
+2017-05-10T20:36:48.6580096+07:00 0HL4NL5STAFAI [INF] Request finished in 1.0361ms 200 application/javascript (15c52c40)
+2017-05-10T20:36:48.6610108+07:00 0HL4NL5STAFAJ [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/accounts/getInfo/1 application/json  (e5be5b71)
+2017-05-10T20:36:48.6620131+07:00 0HL4NL5STAFAJ [INF] Successfully validated the token. (60169667)
+2017-05-10T20:36:48.6620131+07:00 0HL4NL5STAFAJ [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:36:48.6620131+07:00 0HL4NL5STAFAJ [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:36:48.6630122+07:00 0HL4NL5STAFAJ [INF] Executing action method "MockPrj.Controllers.AccountsController.GetInfo (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:36:48.6650147+07:00 0HL4NL5STAFAJ [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[Email], [e].[Firstname], [e].[IsBlocked], [e].[Lastname], [e].[ModifiedTime], [e].[PasswordHashed], [e].[RoleId]
+FROM [Accounts] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:36:48.6650147+07:00 0HL4NL5STAFAJ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:36:48.6660142+07:00 0HL4NL5STAFAJ [INF] Executed action "MockPrj.Controllers.AccountsController.GetInfo (MockPrj)" in 4.0958ms (afa2e885)
+2017-05-10T20:36:48.6670148+07:00 0HL4NL5STAFAJ [INF] Request finished in 5.428ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:36:48.7255658+07:00 0HL4NL5STAFAK [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/accounts/getRole/4 application/json  (e5be5b71)
+2017-05-10T20:36:48.7265656+07:00 0HL4NL5STAFAK [INF] Successfully validated the token. (60169667)
+2017-05-10T20:36:48.7265656+07:00 0HL4NL5STAFAK [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:36:48.7265656+07:00 0HL4NL5STAFAK [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:36:48.7275659+07:00 0HL4NL5STAFAK [INF] Executing action method "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" with arguments (["4"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:36:48.7275659+07:00 0HL4NL5STAFAK [INF] GET => Role Id 4 (83c4da84)
+2017-05-10T20:36:48.7295684+07:00 0HL4NL5STAFAK [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[ModifiedTime], [e].[Name]
+FROM [Roles] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:36:48.7295684+07:00 0HL4NL5STAFAK [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:36:48.7305683+07:00 0HL4NL5STAFAK [INF] Executed action "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" in 3.6706ms (afa2e885)
+2017-05-10T20:36:48.7305683+07:00 0HL4NL5STAFAK [INF] Request finished in 4.59ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:36:48.7415760+07:00 0HL4NL5STAFAL [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/accounts/getRole/4 application/json  (e5be5b71)
+2017-05-10T20:36:48.7425759+07:00 0HL4NL5STAFAL [INF] Successfully validated the token. (60169667)
+2017-05-10T20:36:48.7425759+07:00 0HL4NL5STAFAL [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:36:48.7425759+07:00 0HL4NL5STAFAL [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:36:48.7425759+07:00 0HL4NL5STAFAL [INF] Executing action method "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" with arguments (["4"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:36:48.7435769+07:00 0HL4NL5STAFAL [INF] GET => Role Id 4 (83c4da84)
+2017-05-10T20:36:48.7455787+07:00 0HL4NL5STAFAL [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[ModifiedTime], [e].[Name]
+FROM [Roles] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:36:48.7455787+07:00 0HL4NL5STAFAL [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:36:48.7465781+07:00 0HL4NL5STAFAL [INF] Executed action "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" in 3.9995ms (afa2e885)
+2017-05-10T20:36:48.7465781+07:00 0HL4NL5STAFAL [INF] Request finished in 4.7041ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:36:51.6901000+07:00  [INF] webpack building... (478286db)
+2017-05-10T20:36:52.7126017+07:00  [INF] webpack built 7def240daf5ee8afe52e in 957ms (b0b3d463)
+2017-05-10T20:36:52.7616343+07:00  [INF] Hash: 7def240daf5ee8afe52e
+Version: webpack 2.4.1
+Time: 957ms
+                                   Asset       Size  Chunks                    Chunk Names
+                          main-client.js     594 kB       0  [emitted]  [big]  main-client
+    0.604cd6abeb11985244d5.hot-update.js  410 bytes       0  [emitted]         main-client
+    604cd6abeb11985244d5.hot-update.json   43 bytes          [emitted]         
+                      main-client.js.map     667 kB       0  [emitted]         main-client
+0.604cd6abeb11985244d5.hot-update.js.map  113 bytes       0  [emitted]         main-client
+chunk    {0} main-client.js, 0.604cd6abeb11985244d5.hot-update.js, main-client.js.map, 0.604cd6abeb11985244d5.hot-update.js.map (main-client) 502 kB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/index.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+    [1] external "vendor_9e1f6cfdc9b31917f438" 42 bytes {0} [not cacheable]
+   [70] delegated ./node_modules/angular2-universal/browser/index.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+   [71] ./ClientApp/boot-client.ts 1.3 kB {0} [built]
+   [72] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+   [73] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+   [83] ./ClientApp/app/app.module.ts 4.71 kB {0} [built]
+  [125] ./~/querystring-es3/index.js 127 bytes {0}
+  [136] ./~/strip-ansi/index.js 161 bytes {0}
+  [148] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0}
+  [149] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+  [159] delegated ./node_modules/angular2-universal-polyfills/browser.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+  [160] delegated ./node_modules/bootstrap/dist/js/npm.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+  [163] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+  [165] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 148 hidden modules
+
+ERROR in ./ClientApp/app/components/home/profile/profile.component.ts
+Module build failed: Error: ENOENT: no such file or directory, open 'E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\app\components\home\profile\profile.component.ts'
+ @ ./ClientApp/app/app.module.ts 20:26-80
+ @ ./ClientApp/boot-client.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts (1da0ee87)
+2017-05-10T20:37:03.4219736+07:00  [INF] webpack building... (478286db)
+2017-05-10T20:37:06.3000105+07:00  [ERR] [at-loader] Checking finished with 1 errors (2b84c4c9)
+2017-05-10T20:37:06.7528344+07:00  [ERR] [at-loader] Checking finished with 1 errors (2b84c4c9)
+2017-05-10T20:37:06.8609121+07:00  [INF] webpack built 3d096219bdefdd2933dc in 3351ms (96268b1b)
+2017-05-10T20:37:06.9129459+07:00  [INF] Hash: 3d096219bdefdd2933dc
+Version: webpack 2.4.1
+Time: 3351ms
+                                   Asset      Size  Chunks                    Chunk Names
+                          main-client.js    594 kB       0  [emitted]  [big]  main-client
+    0.7def240daf5ee8afe52e.hot-update.js   4.08 kB       0  [emitted]         main-client
+    7def240daf5ee8afe52e.hot-update.json  43 bytes          [emitted]         
+                      main-client.js.map    667 kB       0  [emitted]         main-client
+0.7def240daf5ee8afe52e.hot-update.js.map   4.64 kB       0  [emitted]         main-client
+chunk    {0} main-client.js, 0.7def240daf5ee8afe52e.hot-update.js, main-client.js.map, 0.7def240daf5ee8afe52e.hot-update.js.map (main-client) 502 kB [entry] [rendered]
+    [0] delegated ./node_modules/@angular/core/index.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+    [1] external "vendor_9e1f6cfdc9b31917f438" 42 bytes {0} [not cacheable]
+   [70] delegated ./node_modules/angular2-universal/browser/index.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+   [71] ./ClientApp/boot-client.ts 1.3 kB {0} [built]
+   [72] (webpack)-hot-middleware/client.js?path=%2F__webpack_hmr 6.68 kB {0}
+   [73] delegated ./node_modules/event-source-polyfill/eventsource.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+   [83] ./ClientApp/app/app.module.ts 4.58 kB {0} [built]
+  [125] ./~/querystring-es3/index.js 127 bytes {0}
+  [136] ./~/strip-ansi/index.js 161 bytes {0}
+  [148] (webpack)-hot-middleware/client-overlay.js 1.82 kB {0}
+  [149] (webpack)-hot-middleware/process-update.js 3.88 kB {0}
+  [159] delegated ./node_modules/angular2-universal-polyfills/browser.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+  [160] delegated ./node_modules/bootstrap/dist/js/npm.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+  [163] delegated ./node_modules/webpack/buildin/module.js from dll-reference vendor_9e1f6cfdc9b31917f438 42 bytes {0} [not cacheable] [built]
+  [165] multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts 52 bytes {0}
+     + 148 hidden modules
+
+ERROR in ./ClientApp/app/components/home/profile/profile.component.ts
+Module build failed: Error: ENOENT: no such file or directory, open 'E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\app\components\home\profile\profile.component.ts'
+ @ ./ClientApp/app/app.routes.ts 10:26-80
+ @ ./ClientApp/app/app.module.ts
+ @ ./ClientApp/boot-client.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=%2F__webpack_hmr ./ClientApp/boot-client.ts
+
+ERROR in [at-loader] ./ClientApp/app/app.routes.ts:9:34 
+    TS2307: Cannot find module './components/home/profile/profile.component'. (9ed26385)
+2017-05-10T20:37:12.5106147+07:00  [INF] webpack building... (478286db)
+2017-05-10T20:37:15.7040761+07:00  [INF] webpack built 2d6ce0abd1315f6680a0 in 3130ms (f1640499)
+2017-05-10T20:37:15.7105811+07:00 0HL4NL5STAFAM [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/604cd6abeb11985244d5.hot-update.json   (e5be5b71)
+2017-05-10T20:37:15.7340988+07:00 0HL4NL5STAFAM [INF] Request finished in 25.9924ms 200 application/json; charset=UTF-8 (15c52c40)
+2017-05-10T20:37:15.7371008+07:00 0HL4NL5STAFAN [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/0.604cd6abeb11985244d5.hot-update.js   (e5be5b71)
+2017-05-10T20:37:15.7391022+07:00 0HL4NL5STAFAN [INF] Request finished in 2.0261ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-05-10T20:37:15.9468291+07:00  [INF] webpack building... (478286db)
+2017-05-10T20:37:16.1544791+07:00  [INF] webpack built 2d6ce0abd1315f6680a0 in 97ms (754bd33c)
+2017-05-10T20:37:19.0981004+07:00 0HL4NL5STAFAO [INF] Request starting HTTP/1.1 GET http://localhost:5000/dashboard   (e5be5b71)
+2017-05-10T20:37:19.0991015+07:00 0HL4NL5STAFAO [INF] Executing action method "MockPrj.Controllers.HomeController.Index (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:37:19.1026091+07:00 0HL4NL5STAFAO [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-05-10T20:37:21.7013951+07:00 0HL4NL5STAFAO [INF] Executed action "MockPrj.Controllers.HomeController.Index (MockPrj)" in 2602.4882ms (afa2e885)
+2017-05-10T20:37:21.8224787+07:00 0HL4NL5STAFAO [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.Exception: Call to Node module failed with error: Error: Template parse errors:
+Can't bind to 'user' since it isn't a known property of 'profile'. ("
+</header>
+
+<profile *ngIf="user" [ERROR ->][user]="user" id="profileModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myMod"): SidebarComponent@98:22
+'profile' is not a known element:
+1. If 'profile' is an Angular component, then verify that it is part of this module.
+2. If 'profile' is a Web Component then add "CUSTOM_ELEMENTS_SCHEMA" to the '@NgModule.schemas' of this component to suppress this message. ("
+</header>
+
+[ERROR ->]<profile *ngIf="user" [user]="user" id="profileModal" class="modal fade" tabindex="-1" role="dialog" "): SidebarComponent@98:0
+    at SyntaxError.ZoneAwareError (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:74842:33)
+    at SyntaxError.BaseError [as constructor] (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:33342:20)
+    at new SyntaxError (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:33545:20)
+    at TemplateParser.parse (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:43194:23)
+    at JitCompiler._compileTemplate (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:59307:72)
+    at E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:59190:66
+    at Set.forEach (native)
+    at JitCompiler._compileComponents (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:59190:23)
+    at createResult (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:59072:23)
+    at ZoneDelegate.module.exports.ZoneDelegate.invoke (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:74184:26)
+    at Zone.module.exports.Zone.run (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:73976:43)
+    at E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:74563:57
+    at ZoneDelegate.module.exports.ZoneDelegate.invokeTask (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:74217:31)
+    at Zone.module.exports.Zone.runTask (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:74016:47)
+    at drainMicroTaskQueue (E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\dist\vendor.js:74396:35)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.<InvokeExportAsync>d__7`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.<InvokeExportAsync>d__14`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.<InvokeExportWithPossibleRetryAsync>d__10`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.<InvokeExportWithPossibleRetryAsync>d__10`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper.<ProcessAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at AspNetCore._Views_Home_Index_cshtml.<ExecuteAsync>d__34.MoveNext() in /Views/Home/Index.cshtml:line 2
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResultFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware`1.<Invoke>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2017-05-10T20:37:21.9896043+07:00 0HL4NL5STAFAO [INF] Request finished in 2891.6601ms 500 text/html; charset=utf-8 (15c52c40)
+2017-05-10T20:37:29.8655242+07:00  [INF] Connection id ""0HL4NL5SQIP11"" communication error. (7fa6c29c)
+Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvException: Error -4081 ECANCELED operation canceled
+2017-05-10T20:38:03.6566841+07:00 0HL4NL5STAFAP [INF] Node will restart because file changed: E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\app\app.module.ts (d60e8700)
+2017-05-10T20:38:03.8858509+07:00  [INF] webpack building... (478286db)
+2017-05-10T20:38:08.4182713+07:00  [INF] webpack built d6fe7447bdbc4a88c327 in 4415ms (73a1fb45)
+2017-05-10T20:38:08.6857436+07:00  [INF] webpack building... (478286db)
+2017-05-10T20:38:09.0640956+07:00  [INF] webpack built d6fe7447bdbc4a88c327 in 300ms (b33c58fb)
+2017-05-10T20:38:14.0802977+07:00 0HL4NL5STAFAP [INF] Request starting HTTP/1.1 GET http://localhost:5000/dashboard   (e5be5b71)
+2017-05-10T20:38:14.0953128+07:00 0HL4NL5STAFAP [INF] Executing action method "MockPrj.Controllers.HomeController.Index (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:38:14.0958125+07:00 0HL4NL5STAFAP [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-05-10T20:38:16.8078508+07:00 0HL4NL5STAFAP [INF] Executed action "MockPrj.Controllers.HomeController.Index (MockPrj)" in 2727.0249ms (afa2e885)
+2017-05-10T20:38:16.8088515+07:00 0HL4NL5STAFAP [INF] Request finished in 2728.8084ms 200 text/html; charset=utf-8 (15c52c40)
+2017-05-10T20:38:16.8468767+07:00 0HL4NL5STAFAQ [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/css/compiled.min.css   (e5be5b71)
+2017-05-10T20:38:16.8468767+07:00 0HL4NL5STAFAR [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/Site.css   (e5be5b71)
+2017-05-10T20:38:16.8488784+07:00 0HL4NL5STAFAS [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/mdb-dashboard.css   (e5be5b71)
+2017-05-10T20:38:16.8558823+07:00 0HL4NL5STAFAR [INF] The file "/css/Site.css" was not modified (f1f8d725)
+2017-05-10T20:38:16.8839013+07:00 0HL4NL5STAFAS [INF] The file "/css/mdb-dashboard.css" was not modified (f1f8d725)
+2017-05-10T20:38:16.8874082+07:00 0HL4NL5STAFAS [INF] Request finished in 36.6365ms 304 text/css (15c52c40)
+2017-05-10T20:38:16.8884096+07:00 0HL4NL5STAFAT [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/main-client.js?v=36HDA8JsAdWsSuYLC6jlRfXf16T8eVRiNVZZOA6VBTk   (e5be5b71)
+2017-05-10T20:38:16.8934118+07:00 0HL4NL5STAFAU [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/js/jquery-3.1.1.min.js   (e5be5b71)
+2017-05-10T20:38:16.8949130+07:00 0HL4NL5STAFAV [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/js/compiled.min.js   (e5be5b71)
+2017-05-10T20:38:16.8964138+07:00 0HL4NL5STAFAR [INF] Request finished in 20.0338ms 304 text/css (15c52c40)
+2017-05-10T20:38:16.9289395+07:00 0HL4NL5STAFAU [INF] The file "/dist/js/jquery-3.1.1.min.js" was not modified (f1f8d725)
+2017-05-10T20:38:16.9289395+07:00 0HL4NL5STAFAQ [INF] The file "/dist/css/compiled.min.css" was not modified (f1f8d725)
+2017-05-10T20:38:16.9289395+07:00 0HL4NL5STAFAU [INF] Request finished in 40.2192ms 304 application/javascript (15c52c40)
+2017-05-10T20:38:16.9359438+07:00 0HL4NL5STAFAQ [INF] Request finished in 85.1326ms 304 text/css (15c52c40)
+2017-05-10T20:38:16.9429492+07:00 0HL4NL5STAFAV [INF] The file "/dist/js/compiled.min.js" was not modified (f1f8d725)
+2017-05-10T20:38:16.9509553+07:00 0HL4NL5STAFAV [INF] Request finished in 49.0163ms 304 application/javascript (15c52c40)
+2017-05-10T20:38:16.9509553+07:00 0HL4NL5STAFAT [INF] Request finished in 42.3247ms 200 application/javascript; charset=UTF-8 (15c52c40)
+2017-05-10T20:38:17.5889381+07:00 0HL4NL5STAFB0 [INF] Request starting HTTP/1.1 GET http://localhost:5000/font/roboto/Roboto-Regular.woff2   (e5be5b71)
+2017-05-10T20:38:17.5889381+07:00 0HL4NL5STAFB0 [INF] The file "/font/roboto/Roboto-Regular.woff2" was not modified (f1f8d725)
+2017-05-10T20:38:17.5894383+07:00 0HL4NL5STAFB0 [INF] Request finished in 0.8731ms 304 application/font-woff2 (15c52c40)
+2017-05-10T20:38:17.6683068+07:00 0HL4NL5STAFB1 [INF] Request starting HTTP/1.1 GET http://localhost:5000/__webpack_hmr   (e5be5b71)
+2017-05-10T20:38:18.7334665+07:00 0HL4NL5STAFB2 [INF] Request starting HTTP/1.1 GET http://localhost:5000/js/Site.js?_=1494423497382   (e5be5b71)
+2017-05-10T20:38:18.7344671+07:00 0HL4NL5STAFB2 [INF] Sending file. Request path: '"/js/Site.js"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\js\Site.js"' (27b0a520)
+2017-05-10T20:38:18.7364689+07:00 0HL4NL5STAFB2 [INF] Request finished in 1.2809ms 200 application/javascript (15c52c40)
+2017-05-10T20:38:18.7404711+07:00 0HL4NL5STAFB3 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/accounts/getInfo/1 application/json  (e5be5b71)
+2017-05-10T20:38:18.7404711+07:00 0HL4NL5STAFB3 [INF] Successfully validated the token. (60169667)
+2017-05-10T20:38:18.7414710+07:00 0HL4NL5STAFB3 [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:38:18.7414710+07:00 0HL4NL5STAFB3 [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:38:18.7414710+07:00 0HL4NL5STAFB3 [INF] Executing action method "MockPrj.Controllers.AccountsController.GetInfo (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:38:18.7434735+07:00 0HL4NL5STAFB3 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[Email], [e].[Firstname], [e].[IsBlocked], [e].[Lastname], [e].[ModifiedTime], [e].[PasswordHashed], [e].[RoleId]
+FROM [Accounts] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:38:18.7434735+07:00 0HL4NL5STAFB3 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:38:18.7444734+07:00 0HL4NL5STAFB3 [INF] Executed action "MockPrj.Controllers.AccountsController.GetInfo (MockPrj)" in 3.4034ms (afa2e885)
+2017-05-10T20:38:18.7454748+07:00 0HL4NL5STAFB3 [INF] Request finished in 4.4633ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:38:18.7774957+07:00 0HL4NL5STAFB4 [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/font/fa/fontawesome-webfont.woff2?v=4.7.0   (e5be5b71)
+2017-05-10T20:38:18.7804981+07:00 0HL4NL5STAFB5 [INF] Request starting HTTP/1.1 GET http://localhost:5000/font/roboto/Roboto-Light.woff2   (e5be5b71)
+2017-05-10T20:38:18.7814984+07:00 0HL4NL5STAFB4 [INF] The file "/dist/font/fa/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2017-05-10T20:38:18.7814984+07:00 0HL4NL5STAFB4 [INF] Request finished in 4.228ms 304 application/font-woff2 (15c52c40)
+2017-05-10T20:38:18.7845004+07:00 0HL4NL5STAFB5 [INF] The file "/font/roboto/Roboto-Light.woff2" was not modified (f1f8d725)
+2017-05-10T20:38:18.7900117+07:00 0HL4NL5STAFB5 [INF] Request finished in 5.5149ms 304 application/font-woff2 (15c52c40)
+2017-05-10T20:38:18.8575592+07:00 0HL4NL5STAFB6 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/accounts/getRole/4 application/json  (e5be5b71)
+2017-05-10T20:38:18.8585598+07:00 0HL4NL5STAFB6 [INF] Successfully validated the token. (60169667)
+2017-05-10T20:38:18.8585598+07:00 0HL4NL5STAFB6 [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:38:18.8585598+07:00 0HL4NL5STAFB6 [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:38:18.8585598+07:00 0HL4NL5STAFB6 [INF] Executing action method "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" with arguments (["4"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:38:18.8595597+07:00 0HL4NL5STAFB6 [INF] GET => Role Id 4 (83c4da84)
+2017-05-10T20:38:18.8615606+07:00 0HL4NL5STAFB6 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[ModifiedTime], [e].[Name]
+FROM [Roles] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:38:18.8615606+07:00 0HL4NL5STAFB6 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:38:18.8615606+07:00 0HL4NL5STAFB6 [INF] Executed action "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" in 4.0425ms (afa2e885)
+2017-05-10T20:38:18.8625617+07:00 0HL4NL5STAFB6 [INF] Request finished in 4.8963ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:38:18.8815751+07:00 0HL4NL5STAFB7 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/accounts/getRole/4 application/json  (e5be5b71)
+2017-05-10T20:38:18.8815751+07:00 0HL4NL5STAFB7 [INF] Successfully validated the token. (60169667)
+2017-05-10T20:38:18.8825754+07:00 0HL4NL5STAFB7 [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:38:18.8825754+07:00 0HL4NL5STAFB7 [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:38:18.8825754+07:00 0HL4NL5STAFB7 [INF] Executing action method "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" with arguments (["4"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:38:18.8825754+07:00 0HL4NL5STAFB7 [INF] GET => Role Id 4 (83c4da84)
+2017-05-10T20:38:18.8845763+07:00 0HL4NL5STAFB7 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[ModifiedTime], [e].[Name]
+FROM [Roles] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:38:18.8865848+07:00 0HL4NL5STAFB7 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:38:18.8885833+07:00 0HL4NL5STAFB7 [INF] Executed action "MockPrj.Controllers.AccountsController.GetRole (MockPrj)" in 5.0802ms (afa2e885)
+2017-05-10T20:38:18.8890839+07:00 0HL4NL5STAFB7 [INF] Request finished in 10.6871ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:38:21.2947656+07:00 0HL4NL5STAFB8 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/users application/json  (e5be5b71)
+2017-05-10T20:38:21.2957666+07:00 0HL4NL5STAFB8 [INF] Successfully validated the token. (60169667)
+2017-05-10T20:38:21.2957666+07:00 0HL4NL5STAFB8 [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:38:21.2967669+07:00 0HL4NL5STAFB8 [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:38:21.2972678+07:00 0HL4NL5STAFB8 [INF] Executing action method "MockPrj.Controllers.UsersController.Get (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:38:21.2977680+07:00 0HL4NL5STAFB8 [INF] GET => All (162e22b8)
+2017-05-10T20:38:21.2987690+07:00 0HL4NL5STAFB8 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[AddTime], [a].[Email], [a].[Firstname], [a].[IsBlocked], [a].[Lastname], [a].[ModifiedTime], [a].[PasswordHashed], [a].[RoleId]
+FROM [Accounts] AS [a] (6438bdd5)
+2017-05-10T20:38:21.2992688+07:00 0HL4NL5STAFB8 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:38:21.3002694+07:00 0HL4NL5STAFB8 [INF] Executed action "MockPrj.Controllers.UsersController.Get (MockPrj)" in 4.7881ms (afa2e885)
+2017-05-10T20:38:21.3017722+07:00 0HL4NL5STAFB8 [INF] Request finished in 6.4907ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:38:21.3563090+07:00 0HL4NL5STAFB9 [INF] Request starting HTTP/1.1 GET http://localhost:5000/font/roboto/Roboto-Bold.woff2   (e5be5b71)
+2017-05-10T20:38:21.3573097+07:00 0HL4NL5STAFB9 [INF] The file "/font/roboto/Roboto-Bold.woff2" was not modified (f1f8d725)
+2017-05-10T20:38:21.3573097+07:00 0HL4NL5STAFB9 [INF] Request finished in 3.9296ms 304 application/font-woff2 (15c52c40)
+2017-05-10T20:38:21.4761196+07:00 0HL4NL5STAFBA [INF] Request starting HTTP/1.1 GET http://localhost:5000/font/roboto/Roboto-Medium.woff2   (e5be5b71)
+2017-05-10T20:38:21.4771199+07:00 0HL4NL5STAFBA [INF] Sending file. Request path: '"/font/roboto/Roboto-Medium.woff2"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\font\roboto\Roboto-Medium.woff2"' (27b0a520)
+2017-05-10T20:38:21.4771199+07:00 0HL4NL5STAFBA [INF] Request finished in 1.02ms 200 application/font-woff2 (15c52c40)
+2017-05-10T20:38:28.6544657+07:00 0HL4NL5STAFBB [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/accounts/getInfo/1 application/json  (e5be5b71)
+2017-05-10T20:38:28.6554663+07:00 0HL4NL5STAFBB [INF] Successfully validated the token. (60169667)
+2017-05-10T20:38:28.6554663+07:00 0HL4NL5STAFBB [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:38:28.6554663+07:00 0HL4NL5STAFBB [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:38:28.6554663+07:00 0HL4NL5STAFBB [INF] Executing action method "MockPrj.Controllers.AccountsController.GetInfo (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:38:28.6574685+07:00 0HL4NL5STAFBB [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[Email], [e].[Firstname], [e].[IsBlocked], [e].[Lastname], [e].[ModifiedTime], [e].[PasswordHashed], [e].[RoleId]
+FROM [Accounts] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-05-10T20:38:28.6584679+07:00 0HL4NL5STAFBB [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:38:28.6584679+07:00 0HL4NL5STAFBB [INF] Executed action "MockPrj.Controllers.AccountsController.GetInfo (MockPrj)" in 3.5692ms (afa2e885)
+2017-05-10T20:38:28.6584679+07:00 0HL4NL5STAFBB [INF] Request finished in 4.455ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:38:36.3870044+07:00 0HL4NL5STAFBC [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/categories application/json  (e5be5b71)
+2017-05-10T20:38:36.3910074+07:00 0HL4NL5STAFBC [INF] Successfully validated the token. (60169667)
+2017-05-10T20:38:36.3910074+07:00 0HL4NL5STAFBC [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:38:36.3910074+07:00 0HL4NL5STAFBC [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:38:36.3930103+07:00 0HL4NL5STAFBC [INF] Executing action method "MockPrj.Controllers.CategoriesController.Get (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:38:36.3940118+07:00 0HL4NL5STAFBC [INF] GET => All (162e22b8)
+2017-05-10T20:38:36.4030217+07:00 0HL4NL5STAFBC [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddTime], [c].[Description], [c].[ModifiedTime], [c].[Name]
+FROM [Categories] AS [c] (6438bdd5)
+2017-05-10T20:38:36.4035199+07:00 0HL4NL5STAFBC [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:38:36.4100252+07:00 0HL4NL5STAFBC [INF] Executed action "MockPrj.Controllers.CategoriesController.Get (MockPrj)" in 18.3869ms (afa2e885)
+2017-05-10T20:38:36.4105249+07:00 0HL4NL5STAFBC [INF] Request finished in 23.8912ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:38:49.1158219+07:00 0HL4NL5STAFBD [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/categories application/json 45 (e5be5b71)
+2017-05-10T20:38:49.1177734+07:00 0HL4NL5STAFBD [INF] Successfully validated the token. (60169667)
+2017-05-10T20:38:49.1177734+07:00 0HL4NL5STAFBD [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:38:49.1182736+07:00 0HL4NL5STAFBD [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:38:49.1793086+07:00 0HL4NL5STAFBD [INF] Executing action method "MockPrj.Controllers.CategoriesController.Post (MockPrj)" with arguments (["MockPrj.Models.Category"]) - ModelState is Invalid (ba7f4ac2)
+2017-05-10T20:38:49.1803089+07:00 0HL4NL5STAFBD [INF] BEGIN => Add category (c449d430)
+2017-05-10T20:38:49.1813107+07:00 0HL4NL5STAFBD [INF] FAILED <= Add category (9b927f40)
+2017-05-10T20:38:49.1843123+07:00 0HL4NL5STAFBD [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2017-05-10T20:38:49.1843123+07:00 0HL4NL5STAFBD [INF] Executed action "MockPrj.Controllers.CategoriesController.Post (MockPrj)" in 67.7191ms (afa2e885)
+2017-05-10T20:38:49.1853126+07:00 0HL4NL5STAFBD [INF] Request finished in 73.1977ms 400  (15c52c40)
+2017-05-10T20:38:49.1933203+07:00 0HL4NL5STAFBE [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/categories application/json  (e5be5b71)
+2017-05-10T20:38:49.1943186+07:00 0HL4NL5STAFBE [INF] Successfully validated the token. (60169667)
+2017-05-10T20:38:49.1943186+07:00 0HL4NL5STAFBE [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:38:49.1943186+07:00 0HL4NL5STAFBE [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:38:49.1943186+07:00 0HL4NL5STAFBE [INF] Executing action method "MockPrj.Controllers.CategoriesController.Get (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:38:49.1943186+07:00 0HL4NL5STAFBE [INF] GET => All (162e22b8)
+2017-05-10T20:38:49.1953196+07:00 0HL4NL5STAFBE [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddTime], [c].[Description], [c].[ModifiedTime], [c].[Name]
+FROM [Categories] AS [c] (6438bdd5)
+2017-05-10T20:38:49.1963199+07:00 0HL4NL5STAFBE [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:38:49.1963199+07:00 0HL4NL5STAFBE [INF] Executed action "MockPrj.Controllers.CategoriesController.Get (MockPrj)" in 2.5958ms (afa2e885)
+2017-05-10T20:38:49.1963199+07:00 0HL4NL5STAFBE [INF] Request finished in 3.2704ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:04.6165276+07:00 0HL4NL5STAFBF [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/categories application/json 54 (e5be5b71)
+2017-05-10T20:39:04.6175287+07:00 0HL4NL5STAFBF [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:04.6175287+07:00 0HL4NL5STAFBF [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:04.6175287+07:00 0HL4NL5STAFBF [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:04.6185286+07:00 0HL4NL5STAFBF [INF] Executing action method "MockPrj.Controllers.CategoriesController.Post (MockPrj)" with arguments (["MockPrj.Models.Category"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:04.6185286+07:00 0HL4NL5STAFBF [INF] BEGIN => Add category (c449d430)
+2017-05-10T20:39:04.7615060+07:00 0HL4NL5STAFBF [INF] Executed DbCommand (5ms) [Parameters=[@p0='?', @p1='?' (Size = 200), @p2='?', @p3='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([AddTime], [Description], [ModifiedTime], [Name])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Categories]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); (6438bdd5)
+2017-05-10T20:39:04.7905205+07:00 0HL4NL5STAFBF [INF] END <= Add category (b139a431)
+2017-05-10T20:39:04.7915208+07:00 0HL4NL5STAFBF [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2017-05-10T20:39:04.7915208+07:00 0HL4NL5STAFBF [INF] Executed action "MockPrj.Controllers.CategoriesController.Post (MockPrj)" in 175.0097ms (afa2e885)
+2017-05-10T20:39:04.7925242+07:00 0HL4NL5STAFBF [INF] Request finished in 177.5648ms 200  (15c52c40)
+2017-05-10T20:39:04.8135374+07:00 0HL4NL5STAFBG [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/categories application/json  (e5be5b71)
+2017-05-10T20:39:04.8145373+07:00 0HL4NL5STAFBG [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:04.8145373+07:00 0HL4NL5STAFBG [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:04.8145373+07:00 0HL4NL5STAFBG [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:04.8145373+07:00 0HL4NL5STAFBG [INF] Executing action method "MockPrj.Controllers.CategoriesController.Get (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:04.8155384+07:00 0HL4NL5STAFBG [INF] GET => All (162e22b8)
+2017-05-10T20:39:04.8165398+07:00 0HL4NL5STAFBG [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddTime], [c].[Description], [c].[ModifiedTime], [c].[Name]
+FROM [Categories] AS [c] (6438bdd5)
+2017-05-10T20:39:04.8175436+07:00 0HL4NL5STAFBG [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:04.8225438+07:00 0HL4NL5STAFBG [INF] Executed action "MockPrj.Controllers.CategoriesController.Get (MockPrj)" in 8.4182ms (afa2e885)
+2017-05-10T20:39:04.8235433+07:00 0HL4NL5STAFBG [INF] Request finished in 23.1167ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:04.8245439+07:00 0HL4NL5STAFBH [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/categories application/json  (e5be5b71)
+2017-05-10T20:39:04.8245439+07:00 0HL4NL5STAFBH [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:04.8245439+07:00 0HL4NL5STAFBH [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:04.8245439+07:00 0HL4NL5STAFBH [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:04.8255442+07:00 0HL4NL5STAFBH [INF] Executing action method "MockPrj.Controllers.CategoriesController.Get (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:04.8255442+07:00 0HL4NL5STAFBH [INF] GET => All (162e22b8)
+2017-05-10T20:39:04.8275463+07:00 0HL4NL5STAFBH [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddTime], [c].[Description], [c].[ModifiedTime], [c].[Name]
+FROM [Categories] AS [c] (6438bdd5)
+2017-05-10T20:39:04.8275463+07:00 0HL4NL5STAFBH [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:04.8280516+07:00 0HL4NL5STAFBH [INF] Executed action "MockPrj.Controllers.CategoriesController.Get (MockPrj)" in 3.3256ms (afa2e885)
+2017-05-10T20:39:04.8290523+07:00 0HL4NL5STAFBH [INF] Request finished in 4.0488ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:04.8370588+07:00 0HL4NL5STAFBI [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/count/1 application/json  (e5be5b71)
+2017-05-10T20:39:04.8385584+07:00 0HL4NL5STAFBI [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:04.8390589+07:00 0HL4NL5STAFBI [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:04.8390589+07:00 0HL4NL5STAFBI [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:04.8420609+07:00 0HL4NL5STAFBI [INF] Executing action method "MockPrj.Controllers.ProductsController.GetNumberProductOfCategory (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:04.8430620+07:00 0HL4NL5STAFBI [INF] GET => 1 (5b88cb13)
+2017-05-10T20:39:04.8665813+07:00 0HL4NL5STAFBI [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddTime], [o].[CalculationUnit], [o].[CategoryId], [o].[Description], [o].[ModifiedTime], [o].[Name], [o].[Price], [o].[Quantity], [o].[Status]
+FROM [Products] AS [o]
+WHERE [o].[CategoryId] = @__id_0 (6438bdd5)
+2017-05-10T20:39:04.8675879+07:00 0HL4NL5STAFBI [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:04.8685838+07:00 0HL4NL5STAFBI [INF] Executed action "MockPrj.Controllers.ProductsController.GetNumberProductOfCategory (MockPrj)" in 30.0878ms (afa2e885)
+2017-05-10T20:39:04.8705844+07:00 0HL4NL5STAFBI [INF] Request finished in 32.2849ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:04.8715858+07:00 0HL4NL5STAFBJ [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/count/1 application/json  (e5be5b71)
+2017-05-10T20:39:04.8715858+07:00 0HL4NL5STAFBJ [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:04.8715858+07:00 0HL4NL5STAFBJ [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:04.8725865+07:00 0HL4NL5STAFBJ [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:04.8725865+07:00 0HL4NL5STAFBJ [INF] Executing action method "MockPrj.Controllers.ProductsController.GetNumberProductOfCategory (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:04.8725865+07:00 0HL4NL5STAFBJ [INF] GET => 1 (5b88cb13)
+2017-05-10T20:39:04.8745870+07:00 0HL4NL5STAFBJ [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddTime], [o].[CalculationUnit], [o].[CategoryId], [o].[Description], [o].[ModifiedTime], [o].[Name], [o].[Price], [o].[Quantity], [o].[Status]
+FROM [Products] AS [o]
+WHERE [o].[CategoryId] = @__id_0 (6438bdd5)
+2017-05-10T20:39:04.8745870+07:00 0HL4NL5STAFBJ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:04.8765888+07:00 0HL4NL5STAFBJ [INF] Executed action "MockPrj.Controllers.ProductsController.GetNumberProductOfCategory (MockPrj)" in 3.8755ms (afa2e885)
+2017-05-10T20:39:04.8775898+07:00 0HL4NL5STAFBJ [INF] Request finished in 5.8081ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:09.1039055+07:00 0HL4NL5STAFBK [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/1/byCate application/json  (e5be5b71)
+2017-05-10T20:39:09.1059068+07:00 0HL4NL5STAFBK [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:09.1069071+07:00 0HL4NL5STAFBK [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:09.1069071+07:00 0HL4NL5STAFBK [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:09.1069071+07:00 0HL4NL5STAFBK [INF] Executing action method "MockPrj.Controllers.ProductsController.GetByCategory (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:09.1079073+07:00 0HL4NL5STAFBK [INF] GET by Id => 1 (bc0022f3)
+2017-05-10T20:39:09.1089080+07:00 0HL4NL5STAFBK [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddTime], [o].[CalculationUnit], [o].[CategoryId], [o].[Description], [o].[ModifiedTime], [o].[Name], [o].[Price], [o].[Quantity], [o].[Status]
+FROM [Products] AS [o]
+WHERE [o].[CategoryId] = @__id_0 (6438bdd5)
+2017-05-10T20:39:09.1099083+07:00 0HL4NL5STAFBK [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:09.1139109+07:00 0HL4NL5STAFBK [INF] Executed action "MockPrj.Controllers.ProductsController.GetByCategory (MockPrj)" in 7.813ms (afa2e885)
+2017-05-10T20:39:09.1149116+07:00 0HL4NL5STAFBK [INF] Request finished in 10.1929ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:09.1149116+07:00 0HL4NL5STAFBL [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/1/byCate application/json  (e5be5b71)
+2017-05-10T20:39:09.1159142+07:00 0HL4NL5STAFBL [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:09.1159142+07:00 0HL4NL5STAFBL [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:09.1159142+07:00 0HL4NL5STAFBL [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:09.1169125+07:00 0HL4NL5STAFBL [INF] Executing action method "MockPrj.Controllers.ProductsController.GetByCategory (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:09.1169125+07:00 0HL4NL5STAFBL [INF] GET by Id => 1 (bc0022f3)
+2017-05-10T20:39:09.1189166+07:00 0HL4NL5STAFBL [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddTime], [o].[CalculationUnit], [o].[CategoryId], [o].[Description], [o].[ModifiedTime], [o].[Name], [o].[Price], [o].[Quantity], [o].[Status]
+FROM [Products] AS [o]
+WHERE [o].[CategoryId] = @__id_0 (6438bdd5)
+2017-05-10T20:39:09.1189166+07:00 0HL4NL5STAFBL [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:09.1189166+07:00 0HL4NL5STAFBL [INF] Executed action "MockPrj.Controllers.ProductsController.GetByCategory (MockPrj)" in 3.5329ms (afa2e885)
+2017-05-10T20:39:09.1199153+07:00 0HL4NL5STAFBL [INF] Request finished in 4.3077ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:11.2157936+07:00 0HL4NL5STAFBM [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/categories application/json  (e5be5b71)
+2017-05-10T20:39:11.2157936+07:00 0HL4NL5STAFBM [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:11.2167954+07:00 0HL4NL5STAFBM [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:11.2167954+07:00 0HL4NL5STAFBM [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:11.2167954+07:00 0HL4NL5STAFBM [INF] Executing action method "MockPrj.Controllers.CategoriesController.Get (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:11.2177941+07:00 0HL4NL5STAFBM [INF] GET => All (162e22b8)
+2017-05-10T20:39:11.2187952+07:00 0HL4NL5STAFBM [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddTime], [c].[Description], [c].[ModifiedTime], [c].[Name]
+FROM [Categories] AS [c] (6438bdd5)
+2017-05-10T20:39:11.2187952+07:00 0HL4NL5STAFBM [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:11.2197962+07:00 0HL4NL5STAFBM [INF] Executed action "MockPrj.Controllers.CategoriesController.Get (MockPrj)" in 3.2605ms (afa2e885)
+2017-05-10T20:39:11.2197962+07:00 0HL4NL5STAFBM [INF] Request finished in 4.2367ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:54.0243749+07:00 0HL4NL5STAFBN [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/products application/json 139 (e5be5b71)
+2017-05-10T20:39:54.0263770+07:00 0HL4NL5STAFBN [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:54.0263770+07:00 0HL4NL5STAFBN [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:54.0263770+07:00 0HL4NL5STAFBN [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:54.0403891+07:00 0HL4NL5STAFBN [INF] Executing action method "MockPrj.Controllers.ProductsController.Post (MockPrj)" with arguments (["MockPrj.Models.Product"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:54.0423908+07:00 0HL4NL5STAFBN [INF] BEGIN => Add product (3da1e2fa)
+2017-05-10T20:39:54.0809182+07:00 0HL4NL5STAFBN [INF] Executed DbCommand (5ms) [Parameters=[@p0='?', @p1='?' (Size = 4000), @p2='?', @p3='?' (Size = 200), @p4='?', @p5='?' (Size = 30), @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Products] ([AddTime], [CalculationUnit], [CategoryId], [Description], [ModifiedTime], [Name], [Price], [Quantity], [Status])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Products]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); (6438bdd5)
+2017-05-10T20:39:54.0868120+07:00 0HL4NL5STAFBN [INF] END <= Add product (bfb4ddb9)
+2017-05-10T20:39:54.0878080+07:00 0HL4NL5STAFBN [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2017-05-10T20:39:54.0878080+07:00 0HL4NL5STAFBN [INF] Executed action "MockPrj.Controllers.ProductsController.Post (MockPrj)" in 61.976ms (afa2e885)
+2017-05-10T20:39:54.0878080+07:00 0HL4NL5STAFBN [INF] Request finished in 63.6324ms 200  (15c52c40)
+2017-05-10T20:39:54.0958129+07:00 0HL4NL5STAFBO [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/1/byCate application/json  (e5be5b71)
+2017-05-10T20:39:54.0968147+07:00 0HL4NL5STAFBO [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:54.0968147+07:00 0HL4NL5STAFBO [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:54.0978146+07:00 0HL4NL5STAFBP [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/categories application/json  (e5be5b71)
+2017-05-10T20:39:54.0978146+07:00 0HL4NL5STAFBO [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:54.0978146+07:00 0HL4NL5STAFBO [INF] Executing action method "MockPrj.Controllers.ProductsController.GetByCategory (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:54.1008174+07:00 0HL4NL5STAFBP [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:54.1068218+07:00 0HL4NL5STAFBP [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:54.1068218+07:00 0HL4NL5STAFBO [INF] GET by Id => 1 (bc0022f3)
+2017-05-10T20:39:54.1068218+07:00 0HL4NL5STAFBP [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:54.1078213+07:00 0HL4NL5STAFBP [INF] Executing action method "MockPrj.Controllers.CategoriesController.Get (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:54.1088219+07:00 0HL4NL5STAFBP [INF] GET => All (162e22b8)
+2017-05-10T20:39:54.1258321+07:00 0HL4NL5STAFBO [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddTime], [o].[CalculationUnit], [o].[CategoryId], [o].[Description], [o].[ModifiedTime], [o].[Name], [o].[Price], [o].[Quantity], [o].[Status]
+FROM [Products] AS [o]
+WHERE [o].[CategoryId] = @__id_0 (6438bdd5)
+2017-05-10T20:39:54.1258321+07:00 0HL4NL5STAFBP [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddTime], [c].[Description], [c].[ModifiedTime], [c].[Name]
+FROM [Categories] AS [c] (6438bdd5)
+2017-05-10T20:39:54.1258321+07:00 0HL4NL5STAFBP [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:54.1258321+07:00 0HL4NL5STAFBP [INF] Executed action "MockPrj.Controllers.CategoriesController.Get (MockPrj)" in 28.1982ms (afa2e885)
+2017-05-10T20:39:54.1268339+07:00 0HL4NL5STAFBP [INF] Request finished in 29.1065ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:54.1278350+07:00 0HL4NL5STAFBO [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:54.1288380+07:00 0HL4NL5STAFBQ [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/categories application/json  (e5be5b71)
+2017-05-10T20:39:54.1308385+07:00 0HL4NL5STAFBQ [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:54.1308385+07:00 0HL4NL5STAFBQ [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:54.1318388+07:00 0HL4NL5STAFBQ [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:54.1328387+07:00 0HL4NL5STAFBQ [INF] Executing action method "MockPrj.Controllers.CategoriesController.Get (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:54.1328387+07:00 0HL4NL5STAFBQ [INF] GET => All (162e22b8)
+2017-05-10T20:39:54.1348392+07:00 0HL4NL5STAFBQ [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddTime], [c].[Description], [c].[ModifiedTime], [c].[Name]
+FROM [Categories] AS [c] (6438bdd5)
+2017-05-10T20:39:54.1348392+07:00 0HL4NL5STAFBQ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:54.1358399+07:00 0HL4NL5STAFBQ [INF] Executed action "MockPrj.Controllers.CategoriesController.Get (MockPrj)" in 5.1927ms (afa2e885)
+2017-05-10T20:39:54.1428445+07:00 0HL4NL5STAFBQ [INF] Request finished in 8.1774ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:54.1438452+07:00 0HL4NL5STAFBR [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/count/1 application/json  (e5be5b71)
+2017-05-10T20:39:54.1448459+07:00 0HL4NL5STAFBR [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:54.1448459+07:00 0HL4NL5STAFBR [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:54.1458465+07:00 0HL4NL5STAFBR [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:54.1793773+07:00 0HL4NL5STAFBO [INF] Executed action "MockPrj.Controllers.ProductsController.GetByCategory (MockPrj)" in 44.75ms (afa2e885)
+2017-05-10T20:39:54.1793773+07:00 0HL4NL5STAFBR [INF] Executing action method "MockPrj.Controllers.ProductsController.GetNumberProductOfCategory (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:54.1798833+07:00 0HL4NL5STAFBR [INF] GET => 1 (5b88cb13)
+2017-05-10T20:39:54.1813798+07:00 0HL4NL5STAFBO [INF] Request finished in 84.627ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:54.1828798+07:00 0HL4NL5STAFBR [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddTime], [o].[CalculationUnit], [o].[CategoryId], [o].[Description], [o].[ModifiedTime], [o].[Name], [o].[Price], [o].[Quantity], [o].[Status]
+FROM [Products] AS [o]
+WHERE [o].[CategoryId] = @__id_0 (6438bdd5)
+2017-05-10T20:39:54.1828798+07:00 0HL4NL5STAFBR [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:54.1828798+07:00 0HL4NL5STAFBR [INF] Executed action "MockPrj.Controllers.ProductsController.GetNumberProductOfCategory (MockPrj)" in 39.1147ms (afa2e885)
+2017-05-10T20:39:54.1848855+07:00 0HL4NL5STAFBR [INF] Request finished in 40.1706ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:39:54.1848855+07:00 0HL4NL5STAFBS [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/products/count/1 application/json  (e5be5b71)
+2017-05-10T20:39:54.1848855+07:00 0HL4NL5STAFBS [INF] Successfully validated the token. (60169667)
+2017-05-10T20:39:54.1858877+07:00 0HL4NL5STAFBS [INF] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2017-05-10T20:39:54.1858877+07:00 0HL4NL5STAFBS [INF] Authorization was successful for user: "skordesign@outlook.com". (d7eb274a)
+2017-05-10T20:39:54.1858877+07:00 0HL4NL5STAFBS [INF] Executing action method "MockPrj.Controllers.ProductsController.GetNumberProductOfCategory (MockPrj)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2017-05-10T20:39:54.1858877+07:00 0HL4NL5STAFBS [INF] GET => 1 (5b88cb13)
+2017-05-10T20:39:54.1888881+07:00 0HL4NL5STAFBS [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[AddTime], [o].[CalculationUnit], [o].[CategoryId], [o].[Description], [o].[ModifiedTime], [o].[Name], [o].[Price], [o].[Quantity], [o].[Status]
+FROM [Products] AS [o]
+WHERE [o].[CategoryId] = @__id_0 (6438bdd5)
+2017-05-10T20:39:54.1888881+07:00 0HL4NL5STAFBS [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-05-10T20:39:54.1908899+07:00 0HL4NL5STAFBS [INF] Executed action "MockPrj.Controllers.ProductsController.GetNumberProductOfCategory (MockPrj)" in 3.9987ms (afa2e885)
+2017-05-10T20:39:54.1918905+07:00 0HL4NL5STAFBS [INF] Request finished in 6.482ms 200 application/json; charset=utf-8 (15c52c40)
+2017-05-10T20:40:47.1627738+07:00 0HL4NL5STAFBT [INF] Received SIGINT. Waiting for .NET process to exit... (39e2bf0e)

@@ -19,8 +19,7 @@ export const routes: any = [
         ]
     },
     { path: "/sale", title: "Sale Management",icon:"fa fa-bars", child: [] },
-    { path: "/usermngt", title: "User Management",icon:"fa fa-user", child: [] },
-    { path: "/profile", title: "Profiles",icon:"fa fa-info-circle", child: [] }
+    { path: "/usermngt", title: "User Management",icon:"fa fa-user", child: [] }
 ]
 
 
