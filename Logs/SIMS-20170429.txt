@@ -1,0 +1,85 @@
+2017-04-29T09:31:22.2044685+07:00  [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 (6438bdd5)
+2017-04-29T09:31:22.7013078+07:00  [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Accounts] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2017-04-29T09:31:39.9085035+07:00 0HL4EKVETT3AN [INF] Request starting HTTP/1.1 GET http://localhost:5000/signin   (e5be5b71)
+2017-04-29T09:31:40.2840980+07:00 0HL4EKVETT3AN [INF] Executing action method "MockPrj.Controllers.HomeController.Index (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-04-29T09:31:42.1553444+07:00 0HL4EKVETT3AN [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-04-29T09:31:42.2744245+07:00 0HL4EKVETT3AN [INF] User profile is available. Using '"C:\Users\skord\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-04-29T09:31:45.6320011+07:00 0HL4EKVETT3AO [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/css/bootstrap-material-design.css   (e5be5b71)
+2017-04-29T09:31:45.6400072+07:00 0HL4EKVETT3AN [INF] Executed action "MockPrj.Controllers.HomeController.Index (MockPrj)" in 5401.6539ms (afa2e885)
+2017-04-29T09:31:45.6570240+07:00 0HL4EKVETT3AO [INF] Sending file. Request path: '"/dist/css/bootstrap-material-design.css"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\css\bootstrap-material-design.css"' (27b0a520)
+2017-04-29T09:31:45.6680356+07:00 0HL4EKVETT3AN [INF] Request finished in 5774.0174ms 200 text/html; charset=utf-8 (15c52c40)
+2017-04-29T09:31:45.7020582+07:00 0HL4EKVETT3AP [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/main-client.js?v=OIr19WBkFHc04qlTzx8CBK9FSKniBXYXLc_LNMeyaXI   (e5be5b71)
+2017-04-29T09:31:45.7020582+07:00 0HL4EKVETT3AQ [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/toaster.css   (e5be5b71)
+2017-04-29T09:31:45.7030585+07:00 0HL4EKVETT3AQ [INF] Sending file. Request path: '"/dist/toaster.css"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\toaster.css"' (27b0a520)
+2017-04-29T09:31:45.7040595+07:00 0HL4EKVETT3AP [INF] Sending file. Request path: '"/dist/main-client.js"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\main-client.js"' (27b0a520)
+2017-04-29T09:31:45.7080626+07:00 0HL4EKVETT3AR [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/vendor.js?v=zXjAceTbWZzNTMXFaXt8RHn0kEuzf0rVAtRzIJqw-9Q   (e5be5b71)
+2017-04-29T09:31:45.7090632+07:00 0HL4EKVETT3AR [INF] Sending file. Request path: '"/dist/vendor.js"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\vendor.js"' (27b0a520)
+2017-04-29T09:31:45.7150672+07:00 0HL4EKVETT3AS [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/vendor.css?v=RqkmnM-9Alrau0fjw4g08-3A0YvC-0qsGAr8YGUrMgQ   (e5be5b71)
+2017-04-29T09:31:45.7170685+07:00 0HL4EKVETT3AS [INF] Sending file. Request path: '"/dist/vendor.css"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\vendor.css"' (27b0a520)
+2017-04-29T09:31:45.7220714+07:00 0HL4EKVETT3AQ [INF] Request finished in 15.3324ms 200 text/css (15c52c40)
+2017-04-29T09:31:45.7320781+07:00 0HL4EKVETT3AT [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/css/ripples.min.css   (e5be5b71)
+2017-04-29T09:31:45.7330783+07:00 0HL4EKVETT3AT [INF] Sending file. Request path: '"/dist/css/ripples.min.css"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\css\ripples.min.css"' (27b0a520)
+2017-04-29T09:31:45.7340794+07:00 0HL4EKVETT3AO [INF] Request finished in 92.6681ms 200 text/css (15c52c40)
+2017-04-29T09:31:45.7540982+07:00 0HL4EKVETT3AP [INF] Request finished in 65.9415ms 200 application/javascript (15c52c40)
+2017-04-29T09:31:45.7636043+07:00 0HL4EKVETT3AS [INF] Request finished in 35.8379ms 200 text/css (15c52c40)
+2017-04-29T09:31:45.7666067+07:00 0HL4EKVETT3AT [INF] Request finished in 32.3859ms 200 text/css (15c52c40)
+2017-04-29T09:31:45.9582489+07:00 0HL4EKVETT3AR [INF] Request finished in 251.9144ms 200 application/javascript (15c52c40)
+2017-04-29T09:31:55.5580712+07:00 0HL4EKVETT3AU [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/accounts/token application/x-www-form-urlencoded;charset=UTF-8 50 (e5be5b71)
+2017-04-29T09:31:55.7781094+07:00 0HL4EKVETT3AU [INF] Executed DbCommand (39ms) [Parameters=[@__email_0='?' (Size = 4000), @__HashPassword_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[Id], [o].[AddTime], [o].[Email], [o].[Firstname], [o].[Lastname], [o].[ModifiedTime], [o].[PasswordHashed], [o].[RoleId]
+FROM [Accounts] AS [o]
+WHERE ([o].[Email] = @__email_0) AND ([o].[PasswordHashed] = @__HashPassword_1) (6438bdd5)
+2017-04-29T09:31:55.8800846+07:00 0HL4EKVETT3AU [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AddTime], [e].[ModifiedTime], [e].[Name]
+FROM [Roles] AS [e]
+WHERE [e].[Id] = @__get_Item_0 (6438bdd5)
+2017-04-29T09:31:55.9692143+07:00 0HL4EKVETT3AU [INF] Request finished in 411.6246ms 200 application/json (15c52c40)
+2017-04-29T09:40:05.7461497+07:00 0HL4EKVETT3AV [INF] Node will restart because file changed: E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\app\auth.module.ts (21a2a99c)
+2017-04-29T10:23:58.3416730+07:00 0HL4EKVETT3B0 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/dashboard   (e5be5b71)
+2017-04-29T10:23:58.3581786+07:00 0HL4EKVETT3B0 [INF] Executing action method "MockPrj.Controllers.HomeController.Index (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-04-29T10:23:58.3676855+07:00 0HL4EKVETT3B0 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-04-29T10:24:00.8024000+07:00 0HL4EKVETT3B0 [INF] Executed action "MockPrj.Controllers.HomeController.Index (MockPrj)" in 2446.3241ms (afa2e885)
+2017-04-29T10:24:00.8039000+07:00 0HL4EKVETT3B0 [INF] Request finished in 2465.4027ms 200 text/html; charset=utf-8 (15c52c40)
+2017-04-29T10:24:00.8674423+07:00 0HL4EKVETT3B1 [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/main-client.js?v=fIOxohNEd73Fqj5nBcpKXpkcsXT0IbTwUS6Xxzbw1RI   (e5be5b71)
+2017-04-29T10:24:00.8679429+07:00 0HL4EKVETT3B1 [INF] Sending file. Request path: '"/dist/main-client.js"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\main-client.js"' (27b0a520)
+2017-04-29T10:24:00.8739469+07:00 0HL4EKVETT3B1 [INF] Request finished in 7.3137ms 200 application/javascript (15c52c40)
+2017-04-29T10:24:02.4856919+07:00 0HL4EKVETT3B2 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (e5be5b71)
+2017-04-29T10:24:02.4856919+07:00 0HL4EKVETT3B2 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\favicon.ico"' (27b0a520)
+2017-04-29T10:24:02.5187138+07:00 0HL4EKVETT3B2 [INF] Request finished in 33.4999ms 200 image/x-icon (15c52c40)
+2017-04-29T10:24:50.7397633+07:00 0HL4EKVETT3B3 [INF] Node will restart because file changed: E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\ClientApp\app\components\home\profile\profile.component.html (8999079f)
+2017-04-29T10:26:27.9219289+07:00 0HL4EKVETT3B4 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/inventory/products   (e5be5b71)
+2017-04-29T10:26:27.9234270+07:00 0HL4EKVETT3B4 [INF] Executing action method "MockPrj.Controllers.HomeController.Index (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-04-29T10:26:27.9259269+07:00 0HL4EKVETT3B4 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-04-29T10:26:30.7068179+07:00 0HL4EKVETT3B4 [INF] Executed action "MockPrj.Controllers.HomeController.Index (MockPrj)" in 2783.7576ms (afa2e885)
+2017-04-29T10:26:30.7093214+07:00 0HL4EKVETT3B4 [INF] Request finished in 2787.0194ms 200 text/html; charset=utf-8 (15c52c40)
+2017-04-29T10:26:30.7488470+07:00 0HL4EKVETT3B5 [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/main-client.js?v=ZjYnztVKkGocqnIPQOhJS1RhHGhPblVnIsm6wxUW-ao   (e5be5b71)
+2017-04-29T10:26:30.7493467+07:00 0HL4EKVETT3B5 [INF] Sending file. Request path: '"/dist/main-client.js"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\dist\main-client.js"' (27b0a520)
+2017-04-29T10:26:30.7538503+07:00 0HL4EKVETT3B5 [INF] Request finished in 5.3435ms 200 application/javascript (15c52c40)
+2017-04-29T10:26:31.6734590+07:00 0HL4EKVETT3B6 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (e5be5b71)
+2017-04-29T10:26:31.6739587+07:00 0HL4EKVETT3B6 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"E:\SVN_GST\trunk\projects\Team_HelloWorld\MockPrj\wwwroot\favicon.ico"' (27b0a520)
+2017-04-29T10:26:31.6749598+07:00 0HL4EKVETT3B6 [INF] Request finished in 1.7664ms 200 image/x-icon (15c52c40)
+2017-04-29T22:16:59.8523759+07:00  [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 (6438bdd5)
+2017-04-29T22:17:00.3991553+07:00  [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Accounts] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END (6438bdd5)
+2017-04-29T22:17:09.8262253+07:00 0HL4F2B73NOTR [INF] Request starting HTTP/1.1 GET http://localhost:5000/signin   (e5be5b71)
+2017-04-29T22:17:10.1843052+07:00 0HL4F2B73NOTR [INF] Executing action method "MockPrj.Controllers.HomeController.Index (MockPrj)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-04-29T22:17:11.9569746+07:00 0HL4F2B73NOTR [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2017-04-29T22:17:12.0445321+07:00 0HL4F2B73NOTR [INF] User profile is available. Using '"C:\Users\skord\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-04-29T22:17:15.5693134+07:00 0HL4F2B73NOTR [INF] Executed action "MockPrj.Controllers.HomeController.Index (MockPrj)" in 5431.7397ms (afa2e885)
+2017-04-29T22:17:15.5758175+07:00 0HL4F2B73NOTS [INF] Request starting HTTP/1.1 GET http://localhost:5000/dist/main-client.js?v=ZjYnztVKkGocqnIPQOhJS1RhHGhPblVnIsm6wxUW-ao   (e5be5b71)
+2017-04-29T22:17:15.6298533+07:00 0HL4F2B73NOTS [INF] The file "/dist/main-client.js" was not modified (f1f8d725)
+2017-04-29T22:17:15.6328557+07:00 0HL4F2B73NOTR [INF] Request finished in 5819.2008ms 200 text/html; charset=utf-8 (15c52c40)
+2017-04-29T22:17:15.6843893+07:00 0HL4F2B73NOTS [INF] Request finished in 100.0015ms 304 application/javascript (15c52c40)

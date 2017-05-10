@@ -1,0 +1,48 @@
+﻿<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col ">
+        </div>
+        <div class="col">
+            <form (ngSubmit)="signIn(signInForm)" action="token" method="post" #signInForm="ngForm" autocomplete="off">
+                <div class="card">
+                    <div class="card-block">
+                        <!--Header-->
+                        <div class="text-center">
+                            <h3><i class="fa fa-lock"></i> Login:</h3>
+                            <hr class="mt-2 mb-2">
+                        </div>
+
+                        <!--Body-->
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix"></i>
+                            <input type="text" name="email" required id="form2" class="form-control" ngModel>
+                            <label for="form2">Your email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix"></i>
+                            <input type="password" name="password" required id="form4" class="form-control" ngModel>
+                            <label for="form4">Your password</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" name="login" class="btn btn-secondary btn-lg waves-effect waves-light">Login</button>
+                        </div>
+
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer">
+                        <div class="options">
+                            <p>Forgot <a routerLink="/forgetpwd">Password?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
+
+

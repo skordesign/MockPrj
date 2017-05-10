@@ -2,6 +2,7 @@
 using System.Linq;
 using MockPrj.Models;
 using MockPrj.Data;
+using System;
 
 namespace MockPrj.Repositories
 {
@@ -16,6 +17,8 @@ namespace MockPrj.Repositories
         {
             try
             {
+                o.AddTime = DateTime.Now;
+                o.ModifiedTime = DateTime.Now;
                 _context.Roles.Add(o);
                 _context.SaveChanges();
                 return true;
@@ -54,6 +57,7 @@ namespace MockPrj.Repositories
         {
             try
             {
+                o.ModifiedTime = DateTime.Now;
                 _context.Roles.Update(o);
                 _context.SaveChanges();
                 return true;

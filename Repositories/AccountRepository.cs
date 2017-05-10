@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using MockPrj.Models;
 using MockPrj.Data;
+using System;
 
 namespace MockPrj.Repositories
 {
@@ -18,6 +17,12 @@ namespace MockPrj.Repositories
         {
             try
             {
+                if (_context.Accounts.FirstOrDefault(k => k.Email.Equals(o.Email)) != null)
+                {
+                    return false;
+                }
+                o.AddTime = DateTime.Now;
+                o.ModifiedTime = DateTime.Now;
                 o.PasswordHashed = Protector.HashPassword(o.PasswordHashed);
                 _context.Accounts.Add(o);
                 _context.SaveChanges();
@@ -42,7 +47,7 @@ namespace MockPrj.Repositories
         public Account Get(string email, string password)
         {
             return _context.Accounts
-                .FirstOrDefault(o=>o.Email.Equals(email)&&
+                .FirstOrDefault(o => o.Email.Equals(email) &&
                 o.PasswordHashed.Equals(Protector.HashPassword(password)));
         }
 
@@ -64,6 +69,22 @@ namespace MockPrj.Repositories
         {
             try
             {
+                o.ModifiedTime = DateTime.Now;
+                _context.Accounts.Update(o);
+                _context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool UpdateWithoutPassword(Account o)
+        {
+            try
+            {
+                o.ModifiedTime = DateTime.Now;
+                _context.Entry(o).Property(k => k.PasswordHashed).IsModified = false;
                 _context.Accounts.Update(o);
                 _context.SaveChanges();
                 return true;

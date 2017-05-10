@@ -1,8 +1,6 @@
 ﻿using MockPrj.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace MockPrj.Data
 {
@@ -15,7 +13,19 @@ namespace MockPrj.Data
             {
                 _context.Roles.Add(new Role
                 {
-                    Name = "User",
+                    Name = "SalePerson",
+                    AddTime = DateTime.Now,
+                    ModifiedTime = DateTime.Now,
+                });
+                _context.Roles.Add(new Role
+                {
+                    Name = "InventoryMngr",
+                    AddTime = DateTime.Now,
+                    ModifiedTime = DateTime.Now,
+                });
+                _context.Roles.Add(new Role
+                {
+                    Name = "SaleMngr",
                     AddTime = DateTime.Now,
                     ModifiedTime = DateTime.Now,
                 });
@@ -30,6 +40,16 @@ namespace MockPrj.Data
                 _context.Accounts.Add(new Account
                 {
                     Email = "skordesign@outlook.com",
+                    PasswordHashed = Protector.HashPassword("Phatlatao123"),
+                    RoleId = 4,
+                    Firstname = "Phat",
+                    Lastname = "Huynh",
+                    AddTime = DateTime.Now,
+                    ModifiedTime = DateTime.Now
+                });
+                _context.Accounts.Add(new Account
+                {
+                    Email = "no28.a1@gmail.com",
                     PasswordHashed = Protector.HashPassword("Phatlatao123"),
                     RoleId = 1,
                     Firstname = "Phat",

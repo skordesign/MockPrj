@@ -1,0 +1,118 @@
+<div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+        <!--Header-->
+        <div class="modal-header light-blue darken-3 white-text">
+            <button type="button" class="close waves-effect waves-light" id="buttonClose" data-dismiss="modal" (click)="destroyTooltip()"
+                aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            <h4 *ngIf="!isView" class="title"><i class="fa fa-pencil"></i> Informantion of product</h4>
+            <h4 *ngIf="isView && !isAdd"><i class="fa fa-pencil"></i> Edit informantion of product</h4>
+            <h4 *ngIf="isView && isAdd"><i class="fa fa-pencil"></i> Add new product</h4>
+        </div>
+        <!--Body-->
+        <div class="modal-body mb-0">
+            <div class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control">
+                <label>ID: {{ product.id }}</label>
+            </div>
+
+
+            <div *ngIf="!isView" class="md-form form-sm">
+                <input type="text" id="formName" [(ngModel)]="product.name" required minlength="2" maxlength="50" class="form-control validate">
+                <label for="formName" [ngClass]="{'active':!isAdd}">Name ( 2 < length < 50)</label>
+            </div>
+            <div *ngIf="isView" class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control">
+                <label>Name: {{product.name}}</label>
+            </div>
+
+
+
+            <div *ngIf="!isView" class="md-form form-sm">
+                <input type="text" id="formDesc" [(ngModel)]="product.description" required maxlength="200" class="form-control validate">
+                <label for="formDesc" [ngClass]="{'active':!isAdd}">Description ( length < 200)</label>
+            </div>
+            <div *ngIf="isView" class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control">
+                <label>Description : {{product.description}}</label>
+            </div>
+
+
+            <div *ngIf="!isView" class="row">
+                <div class="col">
+                    <div class="md-form form-sm">
+                        <input type="number" min="1" id="formQuan" [(ngModel)]="product.quantity" required class="form-control validate">
+                        <label for="formQuan" [ngClass]="{'active':true}">Quantity</label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="text" id="formCal" [(ngModel)]="product.calculationUnit" required class="form-control validate">
+                        <label for="formCal" [ngClass]="{'active':true}">Calculation Unit</label>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="isView" class="row">
+                <div class="col">
+                    <div class="md-form form-sm">
+                        <input type="text" disabled="disabled" class="form-control">
+                        <label>Quantity : {{product.quantity}}</label>
+                    </div>
+                    <div class="md-form form-sm">
+                        <input type="text" disabled="disabled" class="form-control">
+                        <label>Calculation Unit : {{product.calculationUnit}}</label>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="!isView" class="md-form form-sm">
+                <input type="number" min="1" id="formPrice" [(ngModel)]="product.price" required class="form-control validate">
+                <label for="formPrice" [ngClass]="{'active':true}">Price</label>
+            </div>
+            <div *ngIf="isView" class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control">
+                <label>Price : {{product.price}}</label>
+            </div>
+
+            <fieldset class="form-group">
+                <input [disabled]="isView" type="checkbox" id="checkbox1" [checked]="product.status">
+                <label for="checkbox1">Is Available</label>
+            </fieldset>
+
+            <div *ngIf="!isAdd" class="md-form form-sm">
+                <select id="cateSelector" [disabled]="isView" class="mdb-select dropdown-ins colorful-select validate" required [(ngModel)]="product.categoryId">
+                    <option *ngFor="let item of optionsCate" [disabled]="item.id==product.categoryId"
+                   [selected]="item.id==product.categoryId"   [value]="item.id">{{item.name}}</option>
+                </select>
+                <label>Category select</label>
+            </div>
+            <div *ngIf="isAdd" class="md-form">
+                <input type="search" id="cateAutocomplete" [value]="cateName" required class="form-control mdb-autocomplete validate">
+                <button class="mdb-autocomplete-clear">
+                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </svg>
+                </button>
+                <label for="cateAutocomplete" class="active">Category (Not blank)</label>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="text" id="formAddDate" disabled="disabled" class="form-control" />
+                <label for="formAddDate">Add time :{{ product.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="text" id="formModifiedDate" disabled="disabled" class="form-control" />
+                <label for="formModifiedDate">Modified time :{{ product.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>
+            </div>
+
+            <div class="text-center mt-1-half">
+                <button *ngIf="isView" class="btn btn-info mb-2" data-dismiss="modal">OK <i class="fa fa-send ml-1"></i></button>
+                <button *ngIf="!isView" class="btn btn-info mb-2" (click)="saveChanges()" data-dismiss="modal">Submit <i class="fa fa-send ml-1"></i></button>
+            </div>
+        </div>
+    </div>
+    <!--/.Content-->
+</div>

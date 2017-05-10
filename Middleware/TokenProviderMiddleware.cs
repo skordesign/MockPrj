@@ -50,6 +50,11 @@ namespace MockPrj.Middleware
                 await httpContext.Response.WriteAsync("Invalid account");
                 return;
             }
+            if(account.IsBlocked){
+                 httpContext.Response.StatusCode = 306;
+                await httpContext.Response.WriteAsync("Account has blocked");
+                return;
+            }
 
             List<Claim> claims = new List<Claim>
             {
@@ -59,7 +64,7 @@ namespace MockPrj.Middleware
             };
             var userRole = _role.Get(account.RoleId);
             claims.Add(new Claim(ClaimTypes.Role, userRole.Name.ToString()));
-
+            claims.Add(new Claim("roleSIMS",userRole.Name.ToString()));
             var jwt = new JwtSecurityToken(
                 issuer: _options.Issuer,
                 audience: _options.Audience,
@@ -72,7 +77,7 @@ namespace MockPrj.Middleware
             {
                 uid = account.Id,
                 access_token = encodedJwt,
-                expires_in = DateTime.Now.Add(_options.Expiration)
+                expires_in = (int)_options.Expiration.TotalSeconds
             };
             httpContext.Response.ContentType = "application/json";
             await httpContext.Response.WriteAsync(JsonConvert.SerializeObject(response, new JsonSerializerSettings { Formatting =  Formatting.Indented }));

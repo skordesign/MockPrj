@@ -6,9 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MockPrj.Data;
 using Microsoft.EntityFrameworkCore;
-using Npgsql.EntityFrameworkCore.PostgreSQL;
 using MockPrj.Repositories;
-using System;
+using MockPrj.Middleware;
 
 namespace MockPrj
 {
@@ -33,11 +32,13 @@ namespace MockPrj
             services.AddMvc();
             services.AddDataProtection();
             services.AddEntityFrameworkSqlServer().AddDbContext<SIMSDbContext>(options =>
-                options.UseSqlServer(Configuration["connectionString"])
-            );
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+            ).AddDbContext<SIMSDbContext>(options => options.UseInMemoryDatabase());
             //repositories
             services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<IRoleRepository, RoleRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +51,8 @@ namespace MockPrj
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions {
+                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+                {
                     HotModuleReplacement = true
                 });
             }
@@ -58,15 +60,19 @@ namespace MockPrj
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+            app.UseTokenMiddlewareExtensions();
 
             app.UseStaticFiles();
+
 
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-
+                    template: "{controller}/{action}/{id?}");
+                routes.MapRoute(
+                name: "api",
+                template: "api/{controller}/{action}/{id?}");
                 routes.MapSpaFallbackRoute(
                     name: "spa-fallback",
                     defaults: new { controller = "Home", action = "Index" });

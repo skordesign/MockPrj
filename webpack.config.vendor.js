@@ -33,6 +33,7 @@ module.exports = (env) => {
                 'event-source-polyfill',
                 'jquery',
                 'zone.js',
+                'angular2-toaster',
             ]
         },
         output: {
