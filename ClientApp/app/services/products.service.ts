@@ -23,7 +23,7 @@ export class ProductService {
         return body || {};
     }
     getByCategory(cateId: number): Observable<any[]> {
-        return this.http.get(this.baseUrl + "/" + cateId + "/byCate", { headers: AuthService.credentialHeader() })
+        return this.http.get(this.baseUrl + "/" + cateId + "/by-cate", { headers: AuthService.credentialHeader() })
             .map(this.extractData)
             .catch(err => this.toaster.popAsync("error", "Error", "System has problem."));
     }
@@ -75,7 +75,7 @@ export class ProductService {
                 this.toaster.popAsync("error", "Error", "System has problem."));
     }
     addCateGetId(category: any) {
-        return this.http.post(this.baseUrl + "/addCateId", JSON.stringify(category), { headers: AuthService.credentialHeader() })
+        return this.http.post(this.baseUrl + "/add-cate-id", JSON.stringify(category), { headers: AuthService.credentialHeader() })
             .map(response => {
                 if (response.ok) {
                     this.toaster.popAsync("success", "Successful", "Added.")

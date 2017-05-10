@@ -46,13 +46,13 @@ namespace MockPrj.Controllers
             return Ok(_product.GetByCategory(id).ToList().Count);
         }
 
-        [HttpGet("{cateId}/bycate")]
+        [HttpGet("{cateId}/by-cate")]
         public IEnumerable<Product> GetByCategory(int cateId)
         {
             _logger.LogInformation(@"GET by Id => {cateId}", cateId);
             return _product.GetByCategory(cateId);
         }
-        [HttpPost("addcateId")]
+        [HttpPost("add-cate-id")]
         public IActionResult AddCategoryReturnId([FromBody]Category category)
         {
             _logger.LogInformation("BEGIN => Add Category return Id");
