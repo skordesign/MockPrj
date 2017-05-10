@@ -1,0 +1,87 @@
+<div class="container animated fadeIn admin-panel">
+    <div class="row">
+    </div>
+    <div class="jumbotron col">
+        <div class="d-flex justify-content-end">
+            <div class="mr-auto p-2">
+                <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#editModal" (click)="addProduct()" role="button">Add product</a>
+            </div>
+            <div class="p-2">
+                Category: {{ cate.name }}
+            </div>
+        </div>
+        <div class="card-block pt-0">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="primary-color">
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th>Quantity</th>
+                            <th>CategoryID</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of products, let i = index">
+                            <th scope="row">{{i}}</th>
+                            <td>{{product.name}}</td>
+                            <td>{{product.description}}</td>
+                            <td *ngIf="!product.status"><span class="badge badge-danger">Not Available</span></td>
+                            <td *ngIf="product.status"><span class="badge badge-primary">Available</span></td>
+                            <td>{{product.quantity}}</td>
+                            <td>{{product.categoryId}}</td>
+                            <td class="center-group">
+                                <a class="blue-text"><span class="badge badge-info" (click)="viewProduct(product)"
+                        data-toggle="modal" data-target="#editModal">View</span></a>
+                                <a class="teal-text">
+                        <span class="badge badge-warning" 
+                        data-toggle="modal" data-target="#editModal" (click)="editProduct(product)">Edit</span></a>
+                                <a class="teal-text" (click)="removeProductDialog(product)" data-toggle="modal" data-target="#centralModalWarning">
+                        <span class="badge badge-danger">Remove</span></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<product-detail [cateName]="cate.name" (updateEvent)="updateData()" *ngIf="productSelected" [product]="productSelected" [isView]="isView"
+    [isAdd]="isAdd" data-backdrop="static" id="editModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true" role="dialog"></product-detail>
+
+<!--Sure to remove product-->
+
+<div *ngIf="productFocus" class="modal fade" id="centralModalWarning" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-danger" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <p class="heading lead">Warning</p>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">&times;</span>
+                </button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body">
+                <div class="text-center">
+                    <h2>Do you want remove product has name: {{productFocus.name}} ?</h2>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer flex-center">
+                <a type="button" class="btn btn-primary-modal" data-dismiss="modal" (click)="removeProduct(productFocus)">Yes</a>
+                <a type="button" class="btn btn-outline-secondary-modal waves-effect" data-dismiss="modal">No</a>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>

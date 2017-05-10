@@ -1,13 +1,27 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>@ViewData["Title"] - MockPrj</title>
         <base href="/" />
-        <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+        <!--<link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />-->
+        <link rel="stylesheet" type="text/css" href="~/dist/toaster.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+        <!--<link rel="stylesheet" type="text/css" href="~/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="~/dist/css/mdb.min.css">-->
+        <link rel="stylesheet" type="text/css" href="~/dist/css/compiled.min.css">
+        <!--
+            <link rel="stylesheet" type="text/css" href="~/dist/css/bootstrap-material-design.min.css">
+             <link rel="stylesheet" type="text/css" href="~/dist/css/ripples.min.css">
+        -->
+        <link rel="stylesheet" href="~/css/Site.css">
+        <link rel="stylesheet" href="~/css/mdb-dashboard.css">
     </head>
-    <body>
+    <body class="fixed-sn fixed-sn white-skin" style="overflow: hidden; width: 1349px;">
+        
         @RenderBody()
 
         @RenderSection("scripts", required: false)

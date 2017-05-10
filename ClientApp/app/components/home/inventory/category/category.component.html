@@ -1,0 +1,45 @@
+<div class="row">
+    <div *ngFor="let category of categories; let i = index" class="col-md-4 mb-1 animated fadeIn">
+        <category-card [category]="category" (cateDetails)="categoryDetail($event)"></category-card>
+    </div>
+</div>
+
+<category-detail (updateEvent)="updateData()" *ngIf="cate" [cate]="cate"></category-detail>
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;" data-toggle="modal" data-target="#addCategoryModal">
+    <a class="btn-floating btn-large red waves-effect waves-light" data-toggle="tooltip" data-placement="top" (click)="addCategoryModel()"
+        title="Add category">
+                <i class="fa fa-pencil"></i>
+            </a>
+</div>
+
+<div *ngIf="category" class="modal fade" id="addCategoryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header light-blue darken-3 white-text">
+                <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="title"><i class="fa fa-newspaper-o"></i> Add new Category</h4>
+            </div>
+            <div class="modal-body mb-0">
+                <div class="md-form form-sm">
+                    <input type="text" id="form27" [(ngModel)]="category.name" required minlength="2" maxlength="50" class="form-control validate">
+                    <label for="form27">Category name ( 2 < length < 50 )</label>
+                </div>
+
+                <div class="md-form form-sm">
+                    <input type="text" id="form28" [(ngModel)]="category.description" required minlength="20" maxlength="200" class="form-control validate">
+                    <label for="form28">Description ( 20 < length < 200)</label>
+                </div>
+
+                <div class="text-center mt-1-half">
+                    <button class="btn btn-info mb-1" data-dismiss="modal" aria-label="Close" (click)="saveChanges(category)">Submit <i class="fa fa-check ml-1"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

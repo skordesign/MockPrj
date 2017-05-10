@@ -1,0 +1,141 @@
+<!--Modal: Contact form-->
+
+<div *ngIf="!isView" class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+        <!--Header-->
+        <div class="modal-header light-blue darken-3 white-text">
+            <button type="button" class="close waves-effect waves-light" id="buttonClose" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            <h4 *ngIf="!isAdd" class="title"><i class="fa fa-pencil"></i> Edit informantion of user</h4>
+            <h4 *ngIf="isAdd" class="title"><i class="fa fa-pencil"></i> Edit informantion of user</h4>
+        </div>
+        <!--Body-->
+        <div class="modal-body mb-0">
+            <div class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control">
+                <label>ID: {{ user.id }}</label>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="md-form form-sm">
+                        <input type="text" id="formFName" [(ngModel)]="user.firstname" required maxlength="10" class="form-control">
+                        <label for="formFName" [ngClass]="{'active':!isAdd}">First name</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="md-form form-sm">
+                        <input type="text" id="formLName" [(ngModel)]="user.lastname" required maxlength="10" class="form-control">
+                        <label for="formLName" [ngClass]="{'active':!isAdd}">Last name</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="email" id="formEMail" [(ngModel)]="user.email" required class="form-control">
+                <label for="formEMail" [ngClass]="{'active':!isAdd}">Email</label>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="password" id="formPwd" [(ngModel)]="user.passwordHashed" [disabled]="!isAdd" class="form-control">
+                <label for="formPwd" *ngIf="!isAdd">Password : {{ user.passwordHashed }}</label>
+                <label for="formPwd" *ngIf="isAdd">Password</label>
+            </div>
+            <div class="md-form form-sm">
+                <select id="roleSelector" class="mdb-select dropdown-ins colorful-select" required [(ngModel)]="user.roleId">
+                    <option *ngFor="let item of optionsRole" [disabled]="item.id==user.roleId"
+                    [selected]="item.id==user.roleId" [value]="item.id">{{item.name}}</option>
+                </select>
+                <label>Role select</label>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="text" id="formAddDate" disabled="disabled" class="form-control" />
+                <label for="formAddDate">Add time :{{ user.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="text" id="formModifiedDate" disabled="disabled" class="form-control" />
+                <label for="formModifiedDate">Modified time :{{ user.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>
+            </div>
+
+            <div class="text-center mt-1-half">
+                <button class="btn btn-info mb-2" data-dismiss="modal" (click)="saveChanges()">OK <i class="fa fa-send ml-1"></i></button>
+            </div>
+
+        </div>
+    </div>
+    <!--/.Content-->
+</div>
+
+<div *ngIf="isView" class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+        <!--Header-->
+        <div class="modal-header light-blue darken-3 white-text">
+            <button type="button" class="close waves-effect waves-light" id="buttonClose" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            <h4 class="title"><i class="fa fa-quote-left"></i> Informantion of user</h4>
+        </div>
+        <!--Body-->
+        <div class="modal-body mb-0">
+            <div class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control">
+                <label>ID: {{ user.id }}</label>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="md-form form-sm">
+                        <input type="text" disabled="disabled" class="form-control">
+                        <label>First name: {{user.firstname}}</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="md-form form-sm">
+                        <input type="text" disabled="disabled" class="form-control">
+                        <label>Last name: {{user.lastname}}</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control">
+                <label>{{user.email}}</label>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="password" disabled="disabled" class="form-control">
+                <label>Password : {{ user.passwordHashed }}</label>
+            </div>
+            <div class="md-form form-sm">
+                <select id="roleSelector" disabled="disabled" class="mdb-select dropdown-ins colorful-select">
+                    <option *ngFor="let item of optionsRole"
+                    [selected]="item.id==user.roleId" [value]="item.id">{{item.name}}</option>
+                </select>
+                <label>Role</label>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control" />
+                <label>Add time :{{ user.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control" />
+                <label>Modified time :{{ user.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>
+            </div>
+
+            <div class="text-center mt-1-half">
+                <button class="btn btn-info mb-2" data-dismiss="modal">OK <i class="fa fa-send ml-1"></i></button>
+            </div>
+
+        </div>
+    </div>
+    <!--/.Content-->
+</div>
+
+<!--Modal: Contact form-->
