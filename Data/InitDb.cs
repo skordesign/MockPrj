@@ -39,25 +39,14 @@ namespace MockPrj.Data
 
                 _context.Accounts.Add(new Account
                 {
-                    Email = "skordesign@outlook.com",
-                    PasswordHashed = Protector.HashPassword("Phatlatao123"),
+                    Email = "sample@outlook.com",
+                    PasswordHashed = Protector.HashPassword("Sample123"),
                     RoleId = 4,
                     Firstname = "Phat",
                     Lastname = "Huynh",
                     AddTime = DateTime.Now,
                     ModifiedTime = DateTime.Now
                 });
-                _context.Accounts.Add(new Account
-                {
-                    Email = "no28.a1@gmail.com",
-                    PasswordHashed = Protector.HashPassword("Phatlatao123"),
-                    RoleId = 1,
-                    Firstname = "Phat",
-                    Lastname = "Huynh",
-                    AddTime = DateTime.Now,
-                    ModifiedTime = DateTime.Now
-                });
-
                 _context.SaveChanges();
             }
         }
