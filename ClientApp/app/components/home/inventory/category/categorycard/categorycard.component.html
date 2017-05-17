@@ -8,11 +8,11 @@
     </div>
     <div class="card-block">
         <div class="card-footer">
-            <span class="left">{{ numberProduct }} products</span>
+            <span class="left">{{ category.products.length }} products</span>
             <span class="right">
                     <a  (click)="categoryDetail(category)" ><i class="fa fa-eye"></i></a>
-                    <a  (click)="editCate(category)" ><i class="fa fa-pencil"></i></a>
-                    <a  (click)="removeCate(category)" ><i class="fa fa-remove"></i></a>
+                    <a  (click)="editCate(category)" ><i class="fa fa-pencil" data-toggle="modal" data-target="#addCategoryModal"></i></a>
+                    <a  (click)="removeCate(category)"><i class="fa fa-remove" data-toggle="modal" data-target="#centralModalWarning"></i></a>
                 </span>
         </div>
     </div>

@@ -29,7 +29,10 @@ namespace MockPrj
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc()
+                .AddJsonOptions(
+                    options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                );
             services.AddDataProtection();
             services.AddEntityFrameworkSqlServer().AddDbContext<SIMSDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
@@ -39,6 +42,13 @@ namespace MockPrj
             services.AddTransient<IRoleRepository, RoleRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IBillRepository, BillRepository>();
+            services.AddTransient<IBillDetailsRepository, BillDetailsRepository>();
+            services.AddTransient<IDeliveryRepository, DeliveryRepository>();
+            services.AddTransient<IDeliveryDetailsRepository, DeliveryDetailsRepository>();
+            services.AddTransient<IReceiptRepository, ReceiptRepository>();
+            services.AddTransient<IReceiptDetailsRepository, ReceiptDetailsRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

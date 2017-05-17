@@ -10,11 +10,12 @@ import { AuthService } from "./auth.service";
 
 @Injectable()
 export class ProductService {
-    baseUrl: string = "/api/products";
-    constructor(private http: Http, private toaster: ToasterService) {
+    baseUrl: string = "/api/products/";
+    constructor(private http: Http, private toaster: ToasterService, private router: Router,
+        private _auth: AuthService) {
     }
     getAll(): Observable<any[]> {
-        return this.http.get(this.baseUrl, { headers: AuthService.credentialHeader() })
+        return this.http.get(this.baseUrl, { headers: this._auth.credentialHeader() })
             .map(this.extractData)
             .catch(err => this.toaster.popAsync("error", "Error", "System has problem."));
     }
@@ -22,18 +23,13 @@ export class ProductService {
         let body = res.json();
         return body || {};
     }
-    getByCategory(cateId: number): Observable<any[]> {
-        return this.http.get(this.baseUrl + "/" + cateId + "/by-cate", { headers: AuthService.credentialHeader() })
-            .map(this.extractData)
-            .catch(err => this.toaster.popAsync("error", "Error", "System has problem."));
-    }
     getProduct(id: number): Observable<any> {
-        return this.http.get(this.baseUrl + "/" + id, { headers: AuthService.credentialHeader() })
+        return this.http.get(this.baseUrl + id, { headers: this._auth.credentialHeader() })
             .map(this.extractData)
             .catch(err => this.toaster.popAsync("error", "Error", "System has problem."));
     }
     addProduct(product: any) {
-        return this.http.post(this.baseUrl, JSON.stringify(product), { headers: AuthService.credentialHeader() })
+        return this.http.post(this.baseUrl, JSON.stringify(product), { headers: this._auth.credentialHeader() })
             .map(response => {
                 if (response.ok) {
                     this.toaster.popAsync("success", "Successful", "Added.")
@@ -47,7 +43,8 @@ export class ProductService {
                 this.toaster.popAsync("error", "Error", "System has problem."));
     }
     editProduct(product: any) {
-        return this.http.put(this.baseUrl + "/" + product.id, JSON.stringify(product), { headers: AuthService.credentialHeader() })
+        return this.http.put(this.baseUrl + product.id, JSON.stringify(product),
+            { headers: this._auth.credentialHeader() })
             .map(response => {
                 if (response.ok) {
                     this.toaster.popAsync("success", "Successful", "Updated.")
@@ -61,7 +58,7 @@ export class ProductService {
                 this.toaster.popAsync("error", "Error", "System has problem."));
     }
     removeProduct(product: any) {
-        return this.http.delete(this.baseUrl + "/" + product.id, { headers: AuthService.credentialHeader() })
+        return this.http.delete(this.baseUrl + product.id, { headers: this._auth.credentialHeader() })
             .map(response => {
                 if (response.ok) {
                     this.toaster.popAsync("success", "Successful", "Removed.")
@@ -74,22 +71,8 @@ export class ProductService {
             .catch(err =>
                 this.toaster.popAsync("error", "Error", "System has problem."));
     }
-    addCateGetId(category: any) {
-        return this.http.post(this.baseUrl + "/add-cate-id", JSON.stringify(category), { headers: AuthService.credentialHeader() })
-            .map(response => {
-                if (response.ok) {
-                    this.toaster.popAsync("success", "Successful", "Added.")
-                    return response.json();
-                } else {
-                    this.toaster.popAsync("error", "Error", "System has problem.")
-                    return {};
-                }
-            })
-            .catch(err =>
-                this.toaster.popAsync("error", "Error", "System has problem."));
-    }
-    getNumberProductOfCategory(id: number): Observable<number> {
-        return this.http.get(this.baseUrl + "/count/" + id, { headers: AuthService.credentialHeader() })
+    getNews() {
+        return this.http.get(this.baseUrl + "news", { headers: this._auth.credentialHeader() })
             .map(this.extractData)
             .catch(err => this.toaster.popAsync("error", "Error", "System has problem."));
     }

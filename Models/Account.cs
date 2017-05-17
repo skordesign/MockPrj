@@ -19,6 +19,7 @@ namespace MockPrj.Models
         [EmailAddress]
         public string Email { get; set; }
         [Required]
+        [MaxLength(200)]
         public string PasswordHashed { get; set; }
         public bool IsBlocked { get; set; } = false;
         public int RoleId { get; set; }

@@ -9,14 +9,15 @@ import { AuthService } from './auth.service';
 @Injectable()
 export class SignInService {
     baseUrl: string = "/api/accounts"
-    constructor(public http: Http, private router: Router, private toaster: ToasterService) {
+    constructor(public http: Http, private router: Router, private toaster: ToasterService,
+    private _auth:AuthService) {
     }
     signInService(model: any) {
         var body = new URLSearchParams();
         body.append("email", model.email);
         body.append("password", model.password);
         return this.http.post(this.baseUrl + "/token", body,
-            { headers: AuthService.credentialHeaderForLogin() })
+            { headers: this._auth.credentialHeaderForLogin() })
             .toPromise()
             .then(async response => {
                 if (response.ok) {
@@ -36,7 +37,8 @@ export class SignInService {
             });
     }
     forgetPassword(model: any) {
-        return this.http.post(this.baseUrl + "/forgetpassword", JSON.stringify(model.email), { headers: AuthService.credentialHeader() })
+        return this.http.post(this.baseUrl + "/forgetpassword", JSON.stringify(model.email), 
+        { headers: this._auth.credentialHeader() })
             .toPromise()
             .then(response => {
                 if (response.ok) {
@@ -50,7 +52,7 @@ export class SignInService {
             }).catch(err => this.toaster.popAsync("warning", "Warning", "Are you sure about email?"));
     }
     signOut() {
-        return this.http.delete(this.baseUrl + "/logout", { headers: AuthService.credentialHeader() })
+        return this.http.delete(this.baseUrl + "/logout", { headers: this._auth.credentialHeader() })
             .toPromise()
             .then(response => {
                 if (response) {

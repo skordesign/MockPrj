@@ -11,7 +11,6 @@ using MockPrj.Repositories;
 namespace MockPrj.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "Administrator")]
     public class UsersController : Controller
     {
         private readonly IAccountRepository _account;
@@ -26,6 +25,7 @@ namespace MockPrj.Controllers
         }
         // GET api/values
         [HttpGet]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "Administrator")]
         public IActionResult Get()
         {
             _logger.LogInformation("GET => All");
@@ -34,6 +34,7 @@ namespace MockPrj.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "Administrator")]
         public Account Get(int id)
         {
             _logger.LogInformation(@"GET => {id}", id);
@@ -42,10 +43,11 @@ namespace MockPrj.Controllers
 
         // POST api/values
         [HttpPost]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "Administrator")]
         public IActionResult Post([FromBody]Account account)
         {
             _logger.LogInformation("BEGIN => Add user");
-             _logger.LogInformation(account.ToString());
+            _logger.LogInformation(account.ToString());
             if (ModelState.IsValid)
             {
                 _account.Add(account);
@@ -59,6 +61,7 @@ namespace MockPrj.Controllers
             }
         }
         [HttpGet("role/{roleid}")]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "Administrator")]
         public object GetRole(int roleid)
         {
             _logger.LogInformation("GET => Role");
@@ -66,6 +69,7 @@ namespace MockPrj.Controllers
         }
 
         [HttpGet("role")]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "Administrator")]
         public IActionResult GetRole()
         {
             _logger.LogInformation("GET All => Role");
@@ -74,6 +78,7 @@ namespace MockPrj.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "Administrator")]
         public IActionResult Put(int id, [FromBody]Account account)
         {
             _logger.LogInformation("BEGIN => Edit user");
@@ -92,6 +97,7 @@ namespace MockPrj.Controllers
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "Administrator")]
         public IActionResult Delete(int id)
         {
             try
@@ -105,6 +111,13 @@ namespace MockPrj.Controllers
             {
                 return BadRequest();
             }
+        }
+        [HttpGet("{id}/bills")]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "SalePerson, SaleMngr")]
+        public IActionResult GetBills(int id)
+        {
+            _logger.LogInformation("GET All => Bills of User");
+            return new OkObjectResult(_account.Get(id).Bills);
         }
     }
 }

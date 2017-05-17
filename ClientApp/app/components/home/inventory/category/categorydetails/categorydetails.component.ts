@@ -2,6 +2,8 @@ import { Component, OnInit, OnDestroy, Input, OnChanges, EventEmitter, Output } 
 import { ProductService } from "../../../../../services/products.service";
 import { ActivatedRoute } from "@angular/router";
 import { ProductModel } from "./product.model";
+import { CategoryService } from "../../../../../services/category.service";
+import { JwtHelper } from "angular2-jwt/angular2-jwt";
 @Component({
     selector: 'category-detail',
     templateUrl: './categorydetails.component.html'
@@ -10,7 +12,11 @@ import { ProductModel } from "./product.model";
 
 export class CategoryDetailsComponent implements OnInit, OnDestroy, OnChanges {
     ngOnChanges(changes: any): void {
-        this.getProductsByCate(this.cate.id);
+        if (this.cate != undefined) {
+            this.getProductsByCate(this.cate.id);
+        } else {
+            this.getAllProducts();
+        }
     }
     @Input() cate: any;
     products: any[]
@@ -18,17 +24,30 @@ export class CategoryDetailsComponent implements OnInit, OnDestroy, OnChanges {
     isView: boolean;
     isAdd: boolean;
     productFocus: any;
+    role:string;
     @Output() public updateEvent = new EventEmitter<any>();
-    constructor(private route: ActivatedRoute, private _product: ProductService) { }
+    constructor(private route: ActivatedRoute, private _product: ProductService, private _categories: CategoryService) { }
 
     ngOnInit() {
-        this.getProductsByCate(this.cate.id);
+        if (this.cate != undefined) {
+            this.getProductsByCate(this.cate.id);
+        } else {
+            this.getAllProducts();
+        }
+        if(typeof window !== "undefined"){
+            var jwt = new JwtHelper();
+            var token = jwt.decodeToken(localStorage.getItem('token'))
+            this.role = token.roleSIMS;
+        }
     }
     ngOnDestroy() {
 
     }
     getProductsByCate(cateId: any) {
-        this._product.getByCategory(cateId).subscribe(result => this.products = result);
+        this._categories.getProducts(cateId).subscribe(result => this.products = result);
+    }
+    getAllProducts() {
+        this._product.getAll().subscribe(result => this.products = result);
     }
     viewProduct(product: any) {
         this.productSelected = product;
@@ -41,9 +60,15 @@ export class CategoryDetailsComponent implements OnInit, OnDestroy, OnChanges {
         this.isAdd = false;
     }
     addProduct() {
-        this.productSelected = new ProductModel("", "", this.cate.id);
-        this.isView = false;
-        this.isAdd = true;
+        if (this.cate) {
+            this.productSelected = new ProductModel("", "", this.cate.id);
+            this.isView = false;
+            this.isAdd = true;
+        } else {
+            this.productSelected = new ProductModel("", "", null);
+            this.isView = false;
+            this.isAdd = true;
+        }
     }
     removeProduct(product: any) {
         this._product.removeProduct(product).subscribe(result => {
@@ -56,7 +81,12 @@ export class CategoryDetailsComponent implements OnInit, OnDestroy, OnChanges {
         this.productFocus = product;
     }
     updateData() {
-        this.getProductsByCate(this.cate.id);
+        if(this.cate){
+            this.getProductsByCate(this.cate.id);
+        }
+        else{
+             this.getAllProducts();
+        }
         this.updateEvent.emit();
     }
 }

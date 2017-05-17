@@ -1,4 +1,4 @@
-<div class="container animated fadeIn admin-panel">
+<div class="container-fluid animated fadeIn admin-panel">
     <div class="row">
     </div>
     <div class="jumbotron col">
@@ -6,8 +6,11 @@
             <div class="mr-auto p-2">
                 <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#editModal" (click)="addProduct()" role="button">Add product</a>
             </div>
-            <div class="p-2">
-                Category: {{ cate.name }}
+            <div *ngIf="cate" class="p-2">
+                <h3>Category: {{ cate.name }}</h3>
+            </div>
+            <div *ngIf="!cate" class="p-2">
+                <h3>All</h3>
             </div>
         </div>
         <div class="card-block pt-0">
@@ -20,6 +23,7 @@
                             <th>Description</th>
                             <th>Status</th>
                             <th>Quantity</th>
+                            <th>Calculation Unit</th>
                             <th>CategoryID</th>
                             <th class="text-center">Action</th>
                         </tr>
@@ -32,8 +36,9 @@
                             <td *ngIf="!product.status"><span class="badge badge-danger">Not Available</span></td>
                             <td *ngIf="product.status"><span class="badge badge-primary">Available</span></td>
                             <td>{{product.quantity}}</td>
-                            <td>{{product.categoryId}}</td>
-                            <td class="center-group">
+                            <td>{{product.calculationUnit}}</td>
+                            <td>{{product.category.name}}</td>
+                            <td *ngIf="role=='Administrator'" class="center-group">
                                 <a class="blue-text"><span class="badge badge-info" (click)="viewProduct(product)"
                         data-toggle="modal" data-target="#editModal">View</span></a>
                                 <a class="teal-text">
@@ -49,7 +54,7 @@
         </div>
     </div>
 </div>
-<product-detail [cateName]="cate.name" (updateEvent)="updateData()" *ngIf="productSelected" [product]="productSelected" [isView]="isView"
+<product-detail [cate]="cate" (updateEvent)="updateData()" *ngIf="productSelected" [product]="productSelected" [isView]="isView"
     [isAdd]="isAdd" data-backdrop="static" id="editModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true" role="dialog"></product-detail>
 

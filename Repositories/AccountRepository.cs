@@ -3,6 +3,7 @@ using System.Linq;
 using MockPrj.Models;
 using MockPrj.Data;
 using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace MockPrj.Repositories
 {
@@ -36,12 +37,12 @@ namespace MockPrj.Repositories
 
         public IEnumerable<Account> All()
         {
-            return _context.Accounts.ToList();
+            return _context.Accounts.Include(o=>o.Role).ToList();
         }
 
         public Account Get(int Id)
         {
-            return _context.Accounts.Find(Id);
+            return _context.Accounts.Include(o=>o.Bills).SingleOrDefault(k=>k.Id.Equals(Id));
         }
 
         public Account Get(string email, string password)
@@ -70,6 +71,7 @@ namespace MockPrj.Repositories
             try
             {
                 o.ModifiedTime = DateTime.Now;
+                o.PasswordHashed = Protector.HashPassword(o.PasswordHashed);
                 _context.Accounts.Update(o);
                 _context.SaveChanges();
                 return true;

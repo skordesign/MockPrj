@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d6fe7447bdbc4a88c327"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "17f36b95f71711892f3d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -704,7 +704,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(165)(__webpack_require__.s = 165);
+/******/ 	return hotCreateRequire(182)(__webpack_require__.s = 182);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -721,51 +721,21 @@ module.exports = vendor_9e1f6cfdc9b31917f438;
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(1))(13)
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NG_VALUE_ACCESSOR; });
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-
-/**
- * Used to provide a {@link ControlValueAccessor} for form controls.
- *
- * See {@link DefaultValueAccessor} for how to implement one.
- * @stable
- */
-var /** @type {?} */ NG_VALUE_ACCESSOR = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["OpaqueToken"]('NgValueAccessor');
-//# sourceMappingURL=control_value_accessor.js.map
-
-/***/ }),
-/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_toast_component__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_toast_component__ = __webpack_require__(54);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ToastComponent", function() { return __WEBPACK_IMPORTED_MODULE_0__src_toast_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_toaster_container_component__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_toaster_container_component__ = __webpack_require__(56);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ToasterContainerComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__src_toaster_container_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_toaster_service__ = __webpack_require__(41);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ToasterService", function() { return __WEBPACK_IMPORTED_MODULE_2__src_toaster_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_toaster_config__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_toaster_service__ = __webpack_require__(33);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ToasterService", function() { return __WEBPACK_IMPORTED_MODULE_2__src_toaster_service__["ToasterService"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_toaster_config__ = __webpack_require__(55);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ToasterConfig", function() { return __WEBPACK_IMPORTED_MODULE_3__src_toaster_config__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_bodyOutputType__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_bodyOutputType__ = __webpack_require__(44);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BodyOutputType", function() { return __WEBPACK_IMPORTED_MODULE_4__src_bodyOutputType__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_toaster_module__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_toaster_module__ = __webpack_require__(86);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ToasterModule", function() { return __WEBPACK_IMPORTED_MODULE_5__src_toaster_module__["a"]; });
 
 
@@ -776,7 +746,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //# sourceMappingURL=angular2-toaster.js.map
 
 /***/ }),
-/* 5 */
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(1))(332)
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports) {
 
 /*
@@ -832,16 +808,52 @@ module.exports = function() {
 
 
 /***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(1))(13)
+
+/***/ }),
 /* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(68);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NG_VALUE_ACCESSOR; });
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * Used to provide a {@link ControlValueAccessor} for form controls.
+ *
+ * See {@link DefaultValueAccessor} for how to implement one.
+ * @stable
+ */
+var /** @type {?} */ NG_VALUE_ACCESSOR = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["OpaqueToken"]('NgValueAccessor');
+//# sourceMappingURL=control_value_accessor.js.map
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(1))(194)
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(53);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NG_VALIDATORS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NG_ASYNC_VALIDATORS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Validators; });
@@ -1051,11 +1063,11 @@ function _mergeErrors(arrayOfErrors) {
 //# sourceMappingURL=validators.js.map
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__abstract_control_directive__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__abstract_control_directive__ = __webpack_require__(37);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ControlContainer; });
 /**
  * @license
@@ -1109,32 +1121,463 @@ function ControlContainer_tsickle_Closure_declarations() {
 //# sourceMappingURL=control_container.js.map
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(1))(194)
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(1))(332)
-
-/***/ }),
 /* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var http_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(0);
+var Observable_1 = __webpack_require__(5);
+__webpack_require__(143);
+__webpack_require__(142);
+__webpack_require__(144);
+var AuthConfigConsts = (function () {
+    function AuthConfigConsts() {
+    }
+    return AuthConfigConsts;
+}());
+AuthConfigConsts.DEFAULT_TOKEN_NAME = 'token';
+AuthConfigConsts.DEFAULT_HEADER_NAME = 'Authorization';
+AuthConfigConsts.HEADER_PREFIX_BEARER = 'Bearer ';
+exports.AuthConfigConsts = AuthConfigConsts;
+var AuthConfigDefaults = {
+    headerName: AuthConfigConsts.DEFAULT_HEADER_NAME,
+    headerPrefix: null,
+    tokenName: AuthConfigConsts.DEFAULT_TOKEN_NAME,
+    tokenGetter: function () { return localStorage.getItem(AuthConfigDefaults.tokenName); },
+    noJwtError: false,
+    noClientCheck: false,
+    globalHeaders: [],
+    noTokenScheme: false
+};
+/**
+ * Sets up the authentication configuration.
+ */
+var AuthConfig = (function () {
+    function AuthConfig(config) {
+        config = config || {};
+        this._config = objectAssign({}, AuthConfigDefaults, config);
+        if (this._config.headerPrefix) {
+            this._config.headerPrefix += ' ';
+        }
+        else if (this._config.noTokenScheme) {
+            this._config.headerPrefix = '';
+        }
+        else {
+            this._config.headerPrefix = AuthConfigConsts.HEADER_PREFIX_BEARER;
+        }
+        if (config.tokenName && !config.tokenGetter) {
+            this._config.tokenGetter = function () { return localStorage.getItem(config.tokenName); };
+        }
+    }
+    AuthConfig.prototype.getConfig = function () {
+        return this._config;
+    };
+    return AuthConfig;
+}());
+exports.AuthConfig = AuthConfig;
+var AuthHttpError = (function (_super) {
+    __extends(AuthHttpError, _super);
+    function AuthHttpError() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return AuthHttpError;
+}(Error));
+exports.AuthHttpError = AuthHttpError;
+/**
+ * Allows for explicit authenticated HTTP requests.
+ */
+var AuthHttp = (function () {
+    function AuthHttp(options, http, defOpts) {
+        var _this = this;
+        this.http = http;
+        this.defOpts = defOpts;
+        this.config = options.getConfig();
+        this.tokenStream = new Observable_1.Observable(function (obs) {
+            obs.next(_this.config.tokenGetter());
+        });
+    }
+    AuthHttp.prototype.mergeOptions = function (providedOpts, defaultOpts) {
+        var newOptions = defaultOpts || new http_1.RequestOptions();
+        if (this.config.globalHeaders) {
+            this.setGlobalHeaders(this.config.globalHeaders, providedOpts);
+        }
+        newOptions = newOptions.merge(new http_1.RequestOptions(providedOpts));
+        return newOptions;
+    };
+    AuthHttp.prototype.requestHelper = function (requestArgs, additionalOptions) {
+        var options = new http_1.RequestOptions(requestArgs);
+        if (additionalOptions) {
+            options = options.merge(additionalOptions);
+        }
+        return this.request(new http_1.Request(this.mergeOptions(options, this.defOpts)));
+    };
+    AuthHttp.prototype.requestWithToken = function (req, token) {
+        if (!this.config.noClientCheck && !tokenNotExpired(undefined, token)) {
+            if (!this.config.noJwtError) {
+                return new Observable_1.Observable(function (obs) {
+                    obs.error(new AuthHttpError('No JWT present or has expired'));
+                });
+            }
+        }
+        else {
+            req.headers.set(this.config.headerName, this.config.headerPrefix + token);
+        }
+        return this.http.request(req);
+    };
+    AuthHttp.prototype.setGlobalHeaders = function (headers, request) {
+        if (!request.headers) {
+            request.headers = new http_1.Headers();
+        }
+        headers.forEach(function (header) {
+            var key = Object.keys(header)[0];
+            var headerValue = header[key];
+            request.headers.set(key, headerValue);
+        });
+    };
+    AuthHttp.prototype.request = function (url, options) {
+        var _this = this;
+        if (typeof url === 'string') {
+            return this.get(url, options); // Recursion: transform url from String to Request
+        }
+        // else if ( ! url instanceof Request ) {
+        //   throw new Error('First argument must be a url string or Request instance.');
+        // }
+        // from this point url is always an instance of Request;
+        var req = url;
+        // Create a cold observable and load the token just in time
+        return Observable_1.Observable.defer(function () {
+            var token = _this.config.tokenGetter();
+            if (token instanceof Promise) {
+                return Observable_1.Observable.fromPromise(token).mergeMap(function (jwtToken) { return _this.requestWithToken(req, jwtToken); });
+            }
+            else {
+                return _this.requestWithToken(req, token);
+            }
+        });
+    };
+    AuthHttp.prototype.get = function (url, options) {
+        return this.requestHelper({ body: '', method: http_1.RequestMethod.Get, url: url }, options);
+    };
+    AuthHttp.prototype.post = function (url, body, options) {
+        return this.requestHelper({ body: body, method: http_1.RequestMethod.Post, url: url }, options);
+    };
+    AuthHttp.prototype.put = function (url, body, options) {
+        return this.requestHelper({ body: body, method: http_1.RequestMethod.Put, url: url }, options);
+    };
+    AuthHttp.prototype.delete = function (url, options) {
+        return this.requestHelper({ body: '', method: http_1.RequestMethod.Delete, url: url }, options);
+    };
+    AuthHttp.prototype.patch = function (url, body, options) {
+        return this.requestHelper({ body: body, method: http_1.RequestMethod.Patch, url: url }, options);
+    };
+    AuthHttp.prototype.head = function (url, options) {
+        return this.requestHelper({ body: '', method: http_1.RequestMethod.Head, url: url }, options);
+    };
+    AuthHttp.prototype.options = function (url, options) {
+        return this.requestHelper({ body: '', method: http_1.RequestMethod.Options, url: url }, options);
+    };
+    return AuthHttp;
+}());
+AuthHttp = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [AuthConfig, http_1.Http, http_1.RequestOptions])
+], AuthHttp);
+exports.AuthHttp = AuthHttp;
+/**
+ * Helper class to decode and find JWT expiration.
+ */
+var JwtHelper = (function () {
+    function JwtHelper() {
+    }
+    JwtHelper.prototype.urlBase64Decode = function (str) {
+        var output = str.replace(/-/g, '+').replace(/_/g, '/');
+        switch (output.length % 4) {
+            case 0: {
+                break;
+            }
+            case 2: {
+                output += '==';
+                break;
+            }
+            case 3: {
+                output += '=';
+                break;
+            }
+            default: {
+                throw 'Illegal base64url string!';
+            }
+        }
+        return this.b64DecodeUnicode(output);
+    };
+    // credits for decoder goes to https://github.com/atk
+    JwtHelper.prototype.b64decode = function (str) {
+        var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+        var output = '';
+        str = String(str).replace(/=+$/, '');
+        if (str.length % 4 == 1) {
+            throw new Error("'atob' failed: The string to be decoded is not correctly encoded.");
+        }
+        for (
+        // initialize result and counters
+        var bc = 0, bs = void 0, buffer = void 0, idx = 0; 
+        // get next character
+        buffer = str.charAt(idx++); 
+        // character found in table? initialize bit storage and add its ascii value;
+        ~buffer && (bs = bc % 4 ? bs * 64 + buffer : buffer,
+            // and if not first of each 4 characters,
+            // convert the first 8 bits to one ascii character
+            bc++ % 4) ? output += String.fromCharCode(255 & bs >> (-2 * bc & 6)) : 0) {
+            // try to find character in table (0-63, not found => -1)
+            buffer = chars.indexOf(buffer);
+        }
+        return output;
+    };
+    // https://developer.mozilla.org/en/docs/Web/API/WindowBase64/Base64_encoding_and_decoding#The_Unicode_Problem
+    JwtHelper.prototype.b64DecodeUnicode = function (str) {
+        return decodeURIComponent(Array.prototype.map.call(this.b64decode(str), function (c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+    };
+    JwtHelper.prototype.decodeToken = function (token) {
+        var parts = token.split('.');
+        if (parts.length !== 3) {
+            throw new Error('JWT must have 3 parts');
+        }
+        var decoded = this.urlBase64Decode(parts[1]);
+        if (!decoded) {
+            throw new Error('Cannot decode the token');
+        }
+        return JSON.parse(decoded);
+    };
+    JwtHelper.prototype.getTokenExpirationDate = function (token) {
+        var decoded;
+        decoded = this.decodeToken(token);
+        if (!decoded.hasOwnProperty('exp')) {
+            return null;
+        }
+        var date = new Date(0); // The 0 here is the key, which sets the date to the epoch
+        date.setUTCSeconds(decoded.exp);
+        return date;
+    };
+    JwtHelper.prototype.isTokenExpired = function (token, offsetSeconds) {
+        var date = this.getTokenExpirationDate(token);
+        offsetSeconds = offsetSeconds || 0;
+        if (date == null) {
+            return false;
+        }
+        // Token expired?
+        return !(date.valueOf() > (new Date().valueOf() + (offsetSeconds * 1000)));
+    };
+    return JwtHelper;
+}());
+exports.JwtHelper = JwtHelper;
+/**
+ * Checks for presence of token and that token hasn't expired.
+ * For use with the @CanActivate router decorator and NgIf
+ */
+function tokenNotExpired(tokenName, jwt) {
+    if (tokenName === void 0) { tokenName = AuthConfigConsts.DEFAULT_TOKEN_NAME; }
+    var token = jwt || localStorage.getItem(tokenName);
+    var jwtHelper = new JwtHelper();
+    return token != null && !jwtHelper.isTokenExpired(token);
+}
+exports.tokenNotExpired = tokenNotExpired;
+exports.AUTH_PROVIDERS = [
+    {
+        provide: AuthHttp,
+        deps: [http_1.Http, http_1.RequestOptions],
+        useFactory: function (http, options) {
+            return new AuthHttp(new AuthConfig(), http, options);
+        }
+    }
+];
+function provideAuth(config) {
+    return [
+        {
+            provide: AuthHttp,
+            deps: [http_1.Http, http_1.RequestOptions],
+            useFactory: function (http, options) {
+                return new AuthHttp(new AuthConfig(config), http, options);
+            }
+        }
+    ];
+}
+exports.provideAuth = provideAuth;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+function toObject(val) {
+    if (val === null || val === undefined) {
+        throw new TypeError('Object.assign cannot be called with null or undefined');
+    }
+    return Object(val);
+}
+function objectAssign(target) {
+    var source = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        source[_i - 1] = arguments[_i];
+    }
+    var from;
+    var to = toObject(target);
+    var symbols;
+    for (var s = 1; s < arguments.length; s++) {
+        from = Object(arguments[s]);
+        for (var key in from) {
+            if (hasOwnProperty.call(from, key)) {
+                to[key] = from[key];
+            }
+        }
+        if (Object.getOwnPropertySymbols) {
+            symbols = Object.getOwnPropertySymbols(from);
+            for (var i = 0; i < symbols.length; i++) {
+                if (propIsEnumerable.call(from, symbols[i])) {
+                    to[symbols[i]] = from[symbols[i]];
+                }
+            }
+        }
+    }
+    return to;
+}
+/**
+ * Module for angular2-jwt
+ * @experimental
+ */
+var AuthModule = AuthModule_1 = (function () {
+    function AuthModule(parentModule) {
+        if (parentModule) {
+            throw new Error('AuthModule is already loaded. Import it in the AppModule only');
+        }
+    }
+    AuthModule.forRoot = function (config) {
+        return {
+            ngModule: AuthModule_1,
+            providers: [
+                { provide: AuthConfig, useValue: config }
+            ]
+        };
+    };
+    return AuthModule;
+}());
+AuthModule = AuthModule_1 = __decorate([
+    core_1.NgModule({
+        imports: [http_1.HttpModule],
+        providers: [AuthHttp, JwtHelper]
+    }),
+    __param(0, core_1.Optional()), __param(0, core_1.SkipSelf()),
+    __metadata("design:paramtypes", [AuthModule])
+], AuthModule);
+exports.AuthModule = AuthModule;
+var AuthModule_1;
+//# sourceMappingURL=angular2-jwt.js.map
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(3);
+var http_1 = __webpack_require__(7);
+var angular2_jwt_1 = __webpack_require__(10);
+var toaster_service_1 = __webpack_require__(33);
+var AuthService = (function () {
+    function AuthService(router, toaster) {
+        this.router = router;
+        this.toaster = toaster;
+    }
+    AuthService.prototype.credentialHeaderForLogin = function () {
+        var headers = new http_1.Headers();
+        var jwt = new angular2_jwt_1.JwtHelper();
+        var token = JSON.parse(localStorage.getItem("token"));
+        if (token) {
+            if (jwt.isTokenExpired(token)) {
+                this.router.navigate(["/signin"]);
+            }
+            else {
+                headers.append("Authorization", "Bearer " + token);
+            }
+        }
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        return headers;
+    };
+    AuthService.prototype.credentialHeader = function () {
+        var headers = new http_1.Headers();
+        var jwt = new angular2_jwt_1.JwtHelper();
+        var token = JSON.parse(localStorage.getItem("token"));
+        if (token) {
+            if (jwt.isTokenExpired(token)) {
+                this.router.navigate(["/signin"]);
+            }
+            else {
+                headers.append("Authorization", "Bearer " + token);
+            }
+        }
+        headers.append('Content-Type', 'application/json');
+        return headers;
+    };
+    AuthService.prototype.getRole = function () {
+        var jwt = new angular2_jwt_1.JwtHelper();
+        var token = localStorage.getItem('token');
+        if (token) {
+            var roleJson = jwt.decodeToken(token);
+            var role = roleJson.roleSIMS;
+            return role;
+        }
+        return null;
+    };
+    return AuthService;
+}());
+AuthService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [router_1.Router, toaster_service_1.ToasterService])
+], AuthService);
+exports.AuthService = AuthService;
+
+
+/***/ }),
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox_value_accessor__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__default_value_accessor__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__normalize_validator__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__number_value_accessor__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radio_control_value_accessor__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__range_value_accessor__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__select_control_value_accessor__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__select_multiple_control_value_accessor__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__facade_lang__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox_value_accessor__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__default_value_accessor__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__normalize_validator__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__number_value_accessor__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radio_control_value_accessor__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__range_value_accessor__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__select_control_value_accessor__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__select_multiple_control_value_accessor__ = __webpack_require__(31);
 /* harmony export (immutable) */ __webpack_exports__["c"] = controlPath;
 /* harmony export (immutable) */ __webpack_exports__["d"] = setUpControl;
 /* harmony export (immutable) */ __webpack_exports__["f"] = cleanUpControl;
@@ -1348,11 +1791,125 @@ function selectValueAccessor(dir, valueAccessors) {
 //# sourceMappingURL=shared.js.map
 
 /***/ }),
-/* 11 */
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(3);
+__webpack_require__(18);
+__webpack_require__(15);
+var angular2_toaster_1 = __webpack_require__(2);
+var http_1 = __webpack_require__(7);
+var auth_service_1 = __webpack_require__(11);
+var ProductService = (function () {
+    function ProductService(http, toaster, router, _auth) {
+        this.http = http;
+        this.toaster = toaster;
+        this.router = router;
+        this._auth = _auth;
+        this.baseUrl = "/api/products/";
+    }
+    ProductService.prototype.getAll = function () {
+        var _this = this;
+        return this.http.get(this.baseUrl, { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    ProductService.prototype.extractData = function (res) {
+        var body = res.json();
+        return body || {};
+    };
+    ProductService.prototype.getProduct = function (id) {
+        var _this = this;
+        return this.http.get(this.baseUrl + id, { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    ProductService.prototype.addProduct = function (product) {
+        var _this = this;
+        return this.http.post(this.baseUrl, JSON.stringify(product), { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.popAsync("success", "Successful", "Added.");
+                return true;
+            }
+            else {
+                _this.toaster.popAsync("error", "Error", "System has problem.");
+                return false;
+            }
+        })
+            .catch(function (err) {
+            return _this.toaster.popAsync("error", "Error", "System has problem.");
+        });
+    };
+    ProductService.prototype.editProduct = function (product) {
+        var _this = this;
+        return this.http.put(this.baseUrl + product.id, JSON.stringify(product), { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.popAsync("success", "Successful", "Updated.");
+                return true;
+            }
+            else {
+                _this.toaster.popAsync("error", "Error", "System has problem.");
+                return false;
+            }
+        })
+            .catch(function (err) {
+            return _this.toaster.popAsync("error", "Error", "System has problem.");
+        });
+    };
+    ProductService.prototype.removeProduct = function (product) {
+        var _this = this;
+        return this.http.delete(this.baseUrl + product.id, { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.popAsync("success", "Successful", "Removed.");
+                return true;
+            }
+            else {
+                _this.toaster.popAsync("error", "Error", "System has problem.");
+                return false;
+            }
+        })
+            .catch(function (err) {
+            return _this.toaster.popAsync("error", "Error", "System has problem.");
+        });
+    };
+    ProductService.prototype.getNews = function () {
+        var _this = this;
+        return this.http.get(this.baseUrl + "news", { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    return ProductService;
+}());
+ProductService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http, angular2_toaster_1.ToasterService, router_1.Router,
+        auth_service_1.AuthService])
+], ProductService);
+exports.ProductService = ProductService;
+
+
+/***/ }),
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__abstract_control_directive__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__abstract_control_directive__ = __webpack_require__(37);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgControl; });
 /**
  * @license
@@ -1443,13 +2000,24 @@ function NgControl_tsickle_Closure_declarations() {
 //# sourceMappingURL=ng_control.js.map
 
 /***/ }),
-/* 12 */
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(5);
+var map_1 = __webpack_require__(168);
+Observable_1.Observable.prototype.map = map_1.map;
+//# sourceMappingURL=map.js.map
+
+/***/ }),
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* unused harmony reexport Observable */
 /* unused harmony reexport Subject */
@@ -1579,7 +2147,7 @@ function EventEmitter_tsickle_Closure_declarations() {
 //# sourceMappingURL=async.js.map
 
 /***/ }),
-/* 13 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1798,15 +2366,27 @@ function escapeRegExp(s) {
     return s.replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$1');
 }
 //# sourceMappingURL=lang.js.map
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(150)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(167)))
 
 /***/ }),
-/* 14 */
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(5);
+var catch_1 = __webpack_require__(175);
+Observable_1.Observable.prototype.catch = catch_1._catch;
+Observable_1.Observable.prototype._catch = catch_1._catch;
+//# sourceMappingURL=catch.js.map
+
+/***/ }),
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__control_container__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__control_container__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared__ = __webpack_require__(12);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AbstractFormGroupDirective; });
 /**
  * @license
@@ -1917,16 +2497,16 @@ function AbstractFormGroupDirective_tsickle_Closure_declarations() {
 //# sourceMappingURL=abstract_form_group_directive.js.map
 
 /***/ }),
-/* 15 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared__ = __webpack_require__(12);
 /* unused harmony export formDirectiveProvider */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgForm; });
 /**
@@ -2181,13 +2761,13 @@ function NgForm_tsickle_Closure_declarations() {
 //# sourceMappingURL=ng_form.js.map
 
 /***/ }),
-/* 16 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_control__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_control__ = __webpack_require__(14);
 /* unused harmony export RADIO_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return RadioControlRegistry; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RadioControlValueAccessor; });
@@ -2451,17 +3031,17 @@ function RadioControlValueAccessor_tsickle_Closure_declarations() {
 //# sourceMappingURL=radio_control_value_accessor.js.map
 
 /***/ }),
-/* 17 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reactive_errors__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reactive_errors__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared__ = __webpack_require__(12);
 /* unused harmony export formDirectiveProvider */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormGroupDirective; });
 /**
@@ -2762,17 +3342,17 @@ function FormGroupDirective_tsickle_Closure_declarations() {
 //# sourceMappingURL=form_group_directive.js.map
 
 /***/ }),
-/* 18 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__abstract_form_group_directive__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_container__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reactive_errors__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form_group_directive__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__abstract_form_group_directive__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_container__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reactive_errors__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form_group_directive__ = __webpack_require__(22);
 /* unused harmony export formGroupNameProvider */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FormGroupName; });
 /* unused harmony export formArrayNameProvider */
@@ -3075,52 +3655,7 @@ function _hasInvalidParent(parent) {
 //# sourceMappingURL=form_group_name.js.map
 
 /***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(0);
-var http_1 = __webpack_require__(8);
-var AuthService = (function () {
-    function AuthService() {
-    }
-    // baseUrl: string = "/api/usermngt"
-    AuthService.credentialHeaderForLogin = function () {
-        var headers = new http_1.Headers();
-        var token = JSON.parse(localStorage.getItem("token"));
-        if (token) {
-            headers.append("Authorization", "Bearer " + token);
-        }
-        headers.append('Content-Type', 'application/x-www-form-urlencoded');
-        return headers;
-    };
-    AuthService.credentialHeader = function () {
-        var headers = new http_1.Headers();
-        var token = JSON.parse(localStorage.getItem("token"));
-        if (token) {
-            headers.append("Authorization", "Bearer " + token);
-        }
-        headers.append('Content-Type', 'application/json');
-        return headers;
-    };
-    return AuthService;
-}());
-AuthService = __decorate([
-    core_1.Injectable()
-], AuthService);
-exports.AuthService = AuthService;
-
-
-/***/ }),
-/* 20 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3136,42 +3671,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-__webpack_require__(32);
-__webpack_require__(21);
-var angular2_toaster_1 = __webpack_require__(4);
-var http_1 = __webpack_require__(8);
-var auth_service_1 = __webpack_require__(19);
-var ProductService = (function () {
-    function ProductService(http, toaster) {
+__webpack_require__(18);
+__webpack_require__(15);
+var angular2_toaster_1 = __webpack_require__(2);
+var http_1 = __webpack_require__(7);
+var auth_service_1 = __webpack_require__(11);
+var CategoryService = (function () {
+    function CategoryService(http, toaster, _auth) {
         this.http = http;
         this.toaster = toaster;
-        this.baseUrl = "/api/products";
+        this._auth = _auth;
+        this.baseUrl = "/api/categories/";
     }
-    ProductService.prototype.getAll = function () {
+    CategoryService.prototype.getCategories = function () {
         var _this = this;
-        return this.http.get(this.baseUrl, { headers: auth_service_1.AuthService.credentialHeader() })
+        return this.http.get(this.baseUrl, { headers: this._auth.credentialHeader() })
             .map(this.extractData)
             .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
     };
-    ProductService.prototype.extractData = function (res) {
-        var body = res.json();
-        return body || {};
-    };
-    ProductService.prototype.getByCategory = function (cateId) {
+    CategoryService.prototype.addCategory = function (category) {
         var _this = this;
-        return this.http.get(this.baseUrl + "/" + cateId + "/byCate", { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(this.extractData)
-            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
-    };
-    ProductService.prototype.getProduct = function (id) {
-        var _this = this;
-        return this.http.get(this.baseUrl + "/" + id, { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(this.extractData)
-            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
-    };
-    ProductService.prototype.addProduct = function (product) {
-        var _this = this;
-        return this.http.post(this.baseUrl, JSON.stringify(product), { headers: auth_service_1.AuthService.credentialHeader() })
+        return this.http.post(this.baseUrl, JSON.stringify(category), { headers: this._auth.credentialHeader() })
             .map(function (response) {
             if (response.ok) {
                 _this.toaster.popAsync("success", "Successful", "Added.");
@@ -3186,43 +3706,9 @@ var ProductService = (function () {
             return _this.toaster.popAsync("error", "Error", "System has problem.");
         });
     };
-    ProductService.prototype.editProduct = function (product) {
+    CategoryService.prototype.addCateGetId = function (category) {
         var _this = this;
-        return this.http.put(this.baseUrl + "/" + product.id, JSON.stringify(product), { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(function (response) {
-            if (response.ok) {
-                _this.toaster.popAsync("success", "Successful", "Updated.");
-                return true;
-            }
-            else {
-                _this.toaster.popAsync("error", "Error", "System has problem.");
-                return false;
-            }
-        })
-            .catch(function (err) {
-            return _this.toaster.popAsync("error", "Error", "System has problem.");
-        });
-    };
-    ProductService.prototype.removeProduct = function (product) {
-        var _this = this;
-        return this.http.delete(this.baseUrl + "/" + product.id, { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(function (response) {
-            if (response.ok) {
-                _this.toaster.popAsync("success", "Successful", "Removed.");
-                return true;
-            }
-            else {
-                _this.toaster.popAsync("error", "Error", "System has problem.");
-                return false;
-            }
-        })
-            .catch(function (err) {
-            return _this.toaster.popAsync("error", "Error", "System has problem.");
-        });
-    };
-    ProductService.prototype.addCateGetId = function (category) {
-        var _this = this;
-        return this.http.post(this.baseUrl + "/addCateId", JSON.stringify(category), { headers: auth_service_1.AuthService.credentialHeader() })
+        return this.http.post(this.baseUrl + "add-cate-id", JSON.stringify(category), { headers: this._auth.credentialHeader() })
             .map(function (response) {
             if (response.ok) {
                 _this.toaster.popAsync("success", "Successful", "Added.");
@@ -3237,45 +3723,71 @@ var ProductService = (function () {
             return _this.toaster.popAsync("error", "Error", "System has problem.");
         });
     };
-    ProductService.prototype.getNumberProductOfCategory = function (id) {
+    CategoryService.prototype.getProducts = function (cateId) {
         var _this = this;
-        return this.http.get(this.baseUrl + "/count/" + id, { headers: auth_service_1.AuthService.credentialHeader() })
+        return this.http.get(this.baseUrl + cateId + "/products", { headers: this._auth.credentialHeader() })
             .map(this.extractData)
             .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
     };
-    return ProductService;
+    CategoryService.prototype.removeCategory = function (cateId) {
+        var _this = this;
+        return this.http.delete(this.baseUrl + cateId, { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.popAsync("success", "Successful", "Removed.");
+                return true;
+            }
+            else {
+                _this.toaster.popAsync("error", "Error", "System has problem.");
+                return false;
+            }
+        })
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    CategoryService.prototype.editCategory = function (category) {
+        var _this = this;
+        return this.http.put(this.baseUrl + category.id, JSON.stringify(category), { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.popAsync("success", "Successful", "Updated.");
+                return true;
+            }
+            else {
+                _this.toaster.popAsync("error", "Error", "System has problem.");
+                return false;
+            }
+        })
+            .catch(function (err) {
+            return _this.toaster.popAsync("error", "Error", "System has problem.");
+        });
+    };
+    CategoryService.prototype.extractData = function (res) {
+        var body = res.json();
+        return body || {};
+    };
+    return CategoryService;
 }());
-ProductService = __decorate([
+CategoryService = __decorate([
     core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http, angular2_toaster_1.ToasterService])
-], ProductService);
-exports.ProductService = ProductService;
+    __metadata("design:paramtypes", [http_1.Http, angular2_toaster_1.ToasterService,
+        auth_service_1.AuthService])
+], CategoryService);
+exports.CategoryService = CategoryService;
 
 
 /***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(2);
-var map_1 = __webpack_require__(151);
-Observable_1.Observable.prototype.map = map_1.map;
-//# sourceMappingURL=map.js.map
-
-/***/ }),
-/* 22 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(120)
 
 /***/ }),
-/* 23 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(6);
 /* unused harmony export CHECKBOX_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxControlValueAccessor; });
 /**
@@ -3371,12 +3883,12 @@ function CheckboxControlValueAccessor_tsickle_Closure_declarations() {
 //# sourceMappingURL=checkbox_value_accessor.js.map
 
 /***/ }),
-/* 24 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(6);
 /* unused harmony export DEFAULT_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DefaultValueAccessor; });
 /**
@@ -3477,16 +3989,16 @@ function DefaultValueAccessor_tsickle_Closure_declarations() {
 //# sourceMappingURL=default_value_accessor.js.map
 
 /***/ }),
-/* 25 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__abstract_form_group_directive__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_container__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_form__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__template_driven_errors__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__abstract_form_group_directive__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_container__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_form__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__template_driven_errors__ = __webpack_require__(49);
 /* unused harmony export modelGroupProvider */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgModelGroup; });
 /**
@@ -3588,11 +4100,11 @@ function NgModelGroup_tsickle_Closure_declarations() {
 //# sourceMappingURL=ng_model_group.js.map
 
 /***/ }),
-/* 26 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(48);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReactiveErrors; });
 /**
  * @license
@@ -3646,13 +4158,13 @@ var ReactiveErrors = (function () {
 //# sourceMappingURL=reactive_errors.js.map
 
 /***/ }),
-/* 27 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__control_value_accessor__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__control_value_accessor__ = __webpack_require__(6);
 /* unused harmony export SELECT_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SelectControlValueAccessor; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgSelectOption; });
@@ -3953,13 +4465,13 @@ function NgSelectOption_tsickle_Closure_declarations() {
 //# sourceMappingURL=select_control_value_accessor.js.map
 
 /***/ }),
-/* 28 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__control_value_accessor__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__control_value_accessor__ = __webpack_require__(6);
 /* unused harmony export SELECT_MULTIPLE_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectMultipleControlValueAccessor; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NgSelectMultipleOption; });
@@ -4298,15 +4810,15 @@ function NgSelectMultipleOption_tsickle_Closure_declarations() {
 //# sourceMappingURL=select_multiple_control_value_accessor.js.map
 
 /***/ }),
-/* 29 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_shared__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_async__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_shared__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_async__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(53);
 /* unused harmony export VALID */
 /* unused harmony export INVALID */
 /* unused harmony export PENDING */
@@ -6013,375 +6525,128 @@ function FormArray_tsickle_Closure_declarations() {
 //# sourceMappingURL=model.js.map
 
 /***/ }),
-/* 30 */
+/* 33 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_share__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_share__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToasterService", function() { return ToasterService; });
+
+
+
+
+var ToasterService = (function () {
+    /**
+     * Creates an instance of ToasterService.
+     */
+    function ToasterService() {
+        var _this = this;
+        this.addToast = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (observer) { return _this._addToast = observer; }).share();
+        this.clearToasts = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (observer) { return _this._clearToasts = observer; }).share();
+        this._removeToastSubject = new __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__["Subject"]();
+        this.removeToast = this._removeToastSubject.share();
+    }
+    /**
+     * Synchronously create and show a new toast instance.
+     *
+     * @param {(string | Toast)} type The type of the toast, or a Toast object.
+     * @param {string=} title The toast title.
+     * @param {string=} body The toast body.
+     * @returns {Toast}
+     *          The newly created Toast instance with a randomly generated GUID Id.
+     */
+    ToasterService.prototype.pop = function (type, title, body) {
+        var toast = typeof type === 'string' ? { type: type, title: title, body: body } : type;
+        toast.toastId = Guid.newGuid();
+        if (!this._addToast) {
+            throw new Error("No Toaster Containers have been initialized to receive toasts.");
+        }
+        this._addToast.next(toast);
+        return toast;
+    };
+    /**
+     * Asynchronously create and show a new toast instance.
+     *
+     * @param {(string | Toast)} type The type of the toast, or a Toast object.
+     * @param {string=} title The toast title.
+     * @param {string=} body The toast body.
+     * @returns {Observable<Toast>}
+     *          A hot Observable that can be subscribed to in order to receive the Toast instance
+     *          with a randomly generated GUID Id.
+     */
+    ToasterService.prototype.popAsync = function (type, title, body) {
+        var _this = this;
+        setTimeout(function () {
+            _this.pop(type, title, body);
+        }, 0);
+        return this.addToast;
+    };
+    /**
+     * Clears a toast by toastId and/or toastContainerId.
+     *
+     * @param {string} toastId The toastId to clear.
+     * @param {number=} toastContainerId
+     *        The toastContainerId of the container to remove toasts from.
+     */
+    ToasterService.prototype.clear = function (toastId, toastContainerId) {
+        var clearWrapper = {
+            toastId: toastId, toastContainerId: toastContainerId
+        };
+        this._clearToasts.next(clearWrapper);
+    };
+    return ToasterService;
+}());
+
+ToasterService.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+ToasterService.ctorParameters = function () { return []; };
+// http://stackoverflow.com/questions/26501688/a-typescript-guid-class
+var Guid = (function () {
+    function Guid() {
+    }
+    Guid.newGuid = function () {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    };
+    return Guid;
+}());
+//# sourceMappingURL=toaster.service.js.map
+
+/***/ }),
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-var http_1 = __webpack_require__(8);
-var core_1 = __webpack_require__(0);
-var Observable_1 = __webpack_require__(2);
-__webpack_require__(127);
-__webpack_require__(126);
-__webpack_require__(128);
-var AuthConfigConsts = (function () {
-    function AuthConfigConsts() {
+Object.defineProperty(exports, "__esModule", { value: true });
+var BillDetails = (function () {
+    function BillDetails(billId, productId, quantity) {
+        if (billId === void 0) { billId = null; }
+        if (productId === void 0) { productId = null; }
+        if (quantity === void 0) { quantity = null; }
+        this.quantity = 100;
+        this.billId = billId || null;
+        this.productId = productId || null;
+        this.quantity = quantity || 0;
     }
-    return AuthConfigConsts;
+    return BillDetails;
 }());
-AuthConfigConsts.DEFAULT_TOKEN_NAME = 'token';
-AuthConfigConsts.DEFAULT_HEADER_NAME = 'Authorization';
-AuthConfigConsts.HEADER_PREFIX_BEARER = 'Bearer ';
-exports.AuthConfigConsts = AuthConfigConsts;
-var AuthConfigDefaults = {
-    headerName: AuthConfigConsts.DEFAULT_HEADER_NAME,
-    headerPrefix: null,
-    tokenName: AuthConfigConsts.DEFAULT_TOKEN_NAME,
-    tokenGetter: function () { return localStorage.getItem(AuthConfigDefaults.tokenName); },
-    noJwtError: false,
-    noClientCheck: false,
-    globalHeaders: [],
-    noTokenScheme: false
-};
-/**
- * Sets up the authentication configuration.
- */
-var AuthConfig = (function () {
-    function AuthConfig(config) {
-        config = config || {};
-        this._config = objectAssign({}, AuthConfigDefaults, config);
-        if (this._config.headerPrefix) {
-            this._config.headerPrefix += ' ';
-        }
-        else if (this._config.noTokenScheme) {
-            this._config.headerPrefix = '';
-        }
-        else {
-            this._config.headerPrefix = AuthConfigConsts.HEADER_PREFIX_BEARER;
-        }
-        if (config.tokenName && !config.tokenGetter) {
-            this._config.tokenGetter = function () { return localStorage.getItem(config.tokenName); };
-        }
-    }
-    AuthConfig.prototype.getConfig = function () {
-        return this._config;
-    };
-    return AuthConfig;
-}());
-exports.AuthConfig = AuthConfig;
-var AuthHttpError = (function (_super) {
-    __extends(AuthHttpError, _super);
-    function AuthHttpError() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    return AuthHttpError;
-}(Error));
-exports.AuthHttpError = AuthHttpError;
-/**
- * Allows for explicit authenticated HTTP requests.
- */
-var AuthHttp = (function () {
-    function AuthHttp(options, http, defOpts) {
-        var _this = this;
-        this.http = http;
-        this.defOpts = defOpts;
-        this.config = options.getConfig();
-        this.tokenStream = new Observable_1.Observable(function (obs) {
-            obs.next(_this.config.tokenGetter());
-        });
-    }
-    AuthHttp.prototype.mergeOptions = function (providedOpts, defaultOpts) {
-        var newOptions = defaultOpts || new http_1.RequestOptions();
-        if (this.config.globalHeaders) {
-            this.setGlobalHeaders(this.config.globalHeaders, providedOpts);
-        }
-        newOptions = newOptions.merge(new http_1.RequestOptions(providedOpts));
-        return newOptions;
-    };
-    AuthHttp.prototype.requestHelper = function (requestArgs, additionalOptions) {
-        var options = new http_1.RequestOptions(requestArgs);
-        if (additionalOptions) {
-            options = options.merge(additionalOptions);
-        }
-        return this.request(new http_1.Request(this.mergeOptions(options, this.defOpts)));
-    };
-    AuthHttp.prototype.requestWithToken = function (req, token) {
-        if (!this.config.noClientCheck && !tokenNotExpired(undefined, token)) {
-            if (!this.config.noJwtError) {
-                return new Observable_1.Observable(function (obs) {
-                    obs.error(new AuthHttpError('No JWT present or has expired'));
-                });
-            }
-        }
-        else {
-            req.headers.set(this.config.headerName, this.config.headerPrefix + token);
-        }
-        return this.http.request(req);
-    };
-    AuthHttp.prototype.setGlobalHeaders = function (headers, request) {
-        if (!request.headers) {
-            request.headers = new http_1.Headers();
-        }
-        headers.forEach(function (header) {
-            var key = Object.keys(header)[0];
-            var headerValue = header[key];
-            request.headers.set(key, headerValue);
-        });
-    };
-    AuthHttp.prototype.request = function (url, options) {
-        var _this = this;
-        if (typeof url === 'string') {
-            return this.get(url, options); // Recursion: transform url from String to Request
-        }
-        // else if ( ! url instanceof Request ) {
-        //   throw new Error('First argument must be a url string or Request instance.');
-        // }
-        // from this point url is always an instance of Request;
-        var req = url;
-        // Create a cold observable and load the token just in time
-        return Observable_1.Observable.defer(function () {
-            var token = _this.config.tokenGetter();
-            if (token instanceof Promise) {
-                return Observable_1.Observable.fromPromise(token).mergeMap(function (jwtToken) { return _this.requestWithToken(req, jwtToken); });
-            }
-            else {
-                return _this.requestWithToken(req, token);
-            }
-        });
-    };
-    AuthHttp.prototype.get = function (url, options) {
-        return this.requestHelper({ body: '', method: http_1.RequestMethod.Get, url: url }, options);
-    };
-    AuthHttp.prototype.post = function (url, body, options) {
-        return this.requestHelper({ body: body, method: http_1.RequestMethod.Post, url: url }, options);
-    };
-    AuthHttp.prototype.put = function (url, body, options) {
-        return this.requestHelper({ body: body, method: http_1.RequestMethod.Put, url: url }, options);
-    };
-    AuthHttp.prototype.delete = function (url, options) {
-        return this.requestHelper({ body: '', method: http_1.RequestMethod.Delete, url: url }, options);
-    };
-    AuthHttp.prototype.patch = function (url, body, options) {
-        return this.requestHelper({ body: body, method: http_1.RequestMethod.Patch, url: url }, options);
-    };
-    AuthHttp.prototype.head = function (url, options) {
-        return this.requestHelper({ body: '', method: http_1.RequestMethod.Head, url: url }, options);
-    };
-    AuthHttp.prototype.options = function (url, options) {
-        return this.requestHelper({ body: '', method: http_1.RequestMethod.Options, url: url }, options);
-    };
-    return AuthHttp;
-}());
-AuthHttp = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [AuthConfig, http_1.Http, http_1.RequestOptions])
-], AuthHttp);
-exports.AuthHttp = AuthHttp;
-/**
- * Helper class to decode and find JWT expiration.
- */
-var JwtHelper = (function () {
-    function JwtHelper() {
-    }
-    JwtHelper.prototype.urlBase64Decode = function (str) {
-        var output = str.replace(/-/g, '+').replace(/_/g, '/');
-        switch (output.length % 4) {
-            case 0: {
-                break;
-            }
-            case 2: {
-                output += '==';
-                break;
-            }
-            case 3: {
-                output += '=';
-                break;
-            }
-            default: {
-                throw 'Illegal base64url string!';
-            }
-        }
-        return this.b64DecodeUnicode(output);
-    };
-    // credits for decoder goes to https://github.com/atk
-    JwtHelper.prototype.b64decode = function (str) {
-        var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
-        var output = '';
-        str = String(str).replace(/=+$/, '');
-        if (str.length % 4 == 1) {
-            throw new Error("'atob' failed: The string to be decoded is not correctly encoded.");
-        }
-        for (
-        // initialize result and counters
-        var bc = 0, bs = void 0, buffer = void 0, idx = 0; 
-        // get next character
-        buffer = str.charAt(idx++); 
-        // character found in table? initialize bit storage and add its ascii value;
-        ~buffer && (bs = bc % 4 ? bs * 64 + buffer : buffer,
-            // and if not first of each 4 characters,
-            // convert the first 8 bits to one ascii character
-            bc++ % 4) ? output += String.fromCharCode(255 & bs >> (-2 * bc & 6)) : 0) {
-            // try to find character in table (0-63, not found => -1)
-            buffer = chars.indexOf(buffer);
-        }
-        return output;
-    };
-    // https://developer.mozilla.org/en/docs/Web/API/WindowBase64/Base64_encoding_and_decoding#The_Unicode_Problem
-    JwtHelper.prototype.b64DecodeUnicode = function (str) {
-        return decodeURIComponent(Array.prototype.map.call(this.b64decode(str), function (c) {
-            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-        }).join(''));
-    };
-    JwtHelper.prototype.decodeToken = function (token) {
-        var parts = token.split('.');
-        if (parts.length !== 3) {
-            throw new Error('JWT must have 3 parts');
-        }
-        var decoded = this.urlBase64Decode(parts[1]);
-        if (!decoded) {
-            throw new Error('Cannot decode the token');
-        }
-        return JSON.parse(decoded);
-    };
-    JwtHelper.prototype.getTokenExpirationDate = function (token) {
-        var decoded;
-        decoded = this.decodeToken(token);
-        if (!decoded.hasOwnProperty('exp')) {
-            return null;
-        }
-        var date = new Date(0); // The 0 here is the key, which sets the date to the epoch
-        date.setUTCSeconds(decoded.exp);
-        return date;
-    };
-    JwtHelper.prototype.isTokenExpired = function (token, offsetSeconds) {
-        var date = this.getTokenExpirationDate(token);
-        offsetSeconds = offsetSeconds || 0;
-        if (date == null) {
-            return false;
-        }
-        // Token expired?
-        return !(date.valueOf() > (new Date().valueOf() + (offsetSeconds * 1000)));
-    };
-    return JwtHelper;
-}());
-exports.JwtHelper = JwtHelper;
-/**
- * Checks for presence of token and that token hasn't expired.
- * For use with the @CanActivate router decorator and NgIf
- */
-function tokenNotExpired(tokenName, jwt) {
-    if (tokenName === void 0) { tokenName = AuthConfigConsts.DEFAULT_TOKEN_NAME; }
-    var token = jwt || localStorage.getItem(tokenName);
-    var jwtHelper = new JwtHelper();
-    return token != null && !jwtHelper.isTokenExpired(token);
-}
-exports.tokenNotExpired = tokenNotExpired;
-exports.AUTH_PROVIDERS = [
-    {
-        provide: AuthHttp,
-        deps: [http_1.Http, http_1.RequestOptions],
-        useFactory: function (http, options) {
-            return new AuthHttp(new AuthConfig(), http, options);
-        }
-    }
-];
-function provideAuth(config) {
-    return [
-        {
-            provide: AuthHttp,
-            deps: [http_1.Http, http_1.RequestOptions],
-            useFactory: function (http, options) {
-                return new AuthHttp(new AuthConfig(config), http, options);
-            }
-        }
-    ];
-}
-exports.provideAuth = provideAuth;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-function toObject(val) {
-    if (val === null || val === undefined) {
-        throw new TypeError('Object.assign cannot be called with null or undefined');
-    }
-    return Object(val);
-}
-function objectAssign(target) {
-    var source = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        source[_i - 1] = arguments[_i];
-    }
-    var from;
-    var to = toObject(target);
-    var symbols;
-    for (var s = 1; s < arguments.length; s++) {
-        from = Object(arguments[s]);
-        for (var key in from) {
-            if (hasOwnProperty.call(from, key)) {
-                to[key] = from[key];
-            }
-        }
-        if (Object.getOwnPropertySymbols) {
-            symbols = Object.getOwnPropertySymbols(from);
-            for (var i = 0; i < symbols.length; i++) {
-                if (propIsEnumerable.call(from, symbols[i])) {
-                    to[symbols[i]] = from[symbols[i]];
-                }
-            }
-        }
-    }
-    return to;
-}
-/**
- * Module for angular2-jwt
- * @experimental
- */
-var AuthModule = AuthModule_1 = (function () {
-    function AuthModule(parentModule) {
-        if (parentModule) {
-            throw new Error('AuthModule is already loaded. Import it in the AppModule only');
-        }
-    }
-    AuthModule.forRoot = function (config) {
-        return {
-            ngModule: AuthModule_1,
-            providers: [
-                { provide: AuthConfig, useValue: config }
-            ]
-        };
-    };
-    return AuthModule;
-}());
-AuthModule = AuthModule_1 = __decorate([
-    core_1.NgModule({
-        imports: [http_1.HttpModule],
-        providers: [AuthHttp, JwtHelper]
-    }),
-    __param(0, core_1.Optional()), __param(0, core_1.SkipSelf()),
-    __metadata("design:paramtypes", [AuthModule])
-], AuthModule);
-exports.AuthModule = AuthModule;
-var AuthModule_1;
-//# sourceMappingURL=angular2-jwt.js.map
+exports.BillDetails = BillDetails;
+
 
 /***/ }),
-/* 31 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6431,18 +6696,19 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var http_1 = __webpack_require__(8);
+var http_1 = __webpack_require__(7);
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(9);
-__webpack_require__(130);
-__webpack_require__(21);
-var angular2_toaster_1 = __webpack_require__(4);
-var auth_service_1 = __webpack_require__(19);
+var router_1 = __webpack_require__(3);
+__webpack_require__(146);
+__webpack_require__(15);
+var angular2_toaster_1 = __webpack_require__(2);
+var auth_service_1 = __webpack_require__(11);
 var SignInService = (function () {
-    function SignInService(http, router, toaster) {
+    function SignInService(http, router, toaster, _auth) {
         this.http = http;
         this.router = router;
         this.toaster = toaster;
+        this._auth = _auth;
         this.baseUrl = "/api/accounts";
     }
     SignInService.prototype.signInService = function (model) {
@@ -6450,7 +6716,7 @@ var SignInService = (function () {
         var body = new http_1.URLSearchParams();
         body.append("email", model.email);
         body.append("password", model.password);
-        return this.http.post(this.baseUrl + "/token", body, { headers: auth_service_1.AuthService.credentialHeaderForLogin() })
+        return this.http.post(this.baseUrl + "/token", body, { headers: this._auth.credentialHeaderForLogin() })
             .toPromise()
             .then(function (response) { return __awaiter(_this, void 0, void 0, function () {
             var tokenAuth;
@@ -6475,7 +6741,7 @@ var SignInService = (function () {
     };
     SignInService.prototype.forgetPassword = function (model) {
         var _this = this;
-        return this.http.post(this.baseUrl + "/forgetpassword", JSON.stringify(model.email), { headers: auth_service_1.AuthService.credentialHeader() })
+        return this.http.post(this.baseUrl + "/forgetpassword", JSON.stringify(model.email), { headers: this._auth.credentialHeader() })
             .toPromise()
             .then(function (response) {
             if (response.ok) {
@@ -6490,7 +6756,7 @@ var SignInService = (function () {
     };
     SignInService.prototype.signOut = function () {
         var _this = this;
-        return this.http.delete(this.baseUrl + "/logout", { headers: auth_service_1.AuthService.credentialHeader() })
+        return this.http.delete(this.baseUrl + "/logout", { headers: this._auth.credentialHeader() })
             .toPromise()
             .then(function (response) {
             if (response) {
@@ -6504,25 +6770,134 @@ var SignInService = (function () {
 }());
 SignInService = __decorate([
     core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http, router_1.Router, angular2_toaster_1.ToasterService])
+    __metadata("design:paramtypes", [http_1.Http, router_1.Router, angular2_toaster_1.ToasterService,
+        auth_service_1.AuthService])
 ], SignInService);
 exports.SignInService = SignInService;
 
 
 /***/ }),
-/* 32 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Observable_1 = __webpack_require__(2);
-var catch_1 = __webpack_require__(158);
-Observable_1.Observable.prototype.catch = catch_1._catch;
-Observable_1.Observable.prototype._catch = catch_1._catch;
-//# sourceMappingURL=catch.js.map
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(3);
+__webpack_require__(18);
+__webpack_require__(15);
+var angular2_toaster_1 = __webpack_require__(2);
+var http_1 = __webpack_require__(7);
+var auth_service_1 = __webpack_require__(11);
+var UserMngtService = (function () {
+    function UserMngtService(http, toaster, router, _auth) {
+        this.http = http;
+        this.toaster = toaster;
+        this.router = router;
+        this._auth = _auth;
+        this.baseUrl = "/api/users/";
+    }
+    UserMngtService.prototype.getAll = function () {
+        var _this = this;
+        return this.http.get(this.baseUrl, { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    UserMngtService.prototype.extractData = function (res) {
+        var body = res.json();
+        return body || {};
+    };
+    UserMngtService.prototype.getRoles = function () {
+        var _this = this;
+        return this.http.get(this.baseUrl + "role", { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    UserMngtService.prototype.getRole = function (roleId) {
+        var _this = this;
+        return this.http.get(this.baseUrl + "role/" + roleId, { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    UserMngtService.prototype.edit = function (user) {
+        var _this = this;
+        return this.http.put(this.baseUrl + user.id, JSON.stringify(user), { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.popAsync("success", "Successful", "Updated.");
+                return true;
+            }
+            else {
+                _this.toaster.popAsync("error", "Error", "System has problem.");
+                return false;
+            }
+        })
+            .catch(function (err) {
+            return _this.toaster.popAsync("error", "Error", "System has problem.");
+        });
+    };
+    UserMngtService.prototype.add = function (user) {
+        var _this = this;
+        return this.http.post(this.baseUrl, JSON.stringify(user), { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.popAsync("success", "Successful", "Added.");
+                return true;
+            }
+            else {
+                _this.toaster.popAsync("error", "Error", "System has problem.");
+                return false;
+            }
+        })
+            .catch(function (err) {
+            return _this.toaster.popAsync("error", "Error", "System has problem.");
+        });
+    };
+    UserMngtService.prototype.remove = function (user) {
+        var _this = this;
+        return this.http.delete(this.baseUrl + user.id, { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.popAsync("success", "Successful", "Removed.");
+                return true;
+            }
+            else {
+                _this.toaster.popAsync("error", "Error", "System has problem.");
+                return false;
+            }
+        })
+            .catch(function (err) {
+            return _this.toaster.popAsync("error", "Error", "System has problem.");
+        });
+    };
+    UserMngtService.prototype.getBills = function (uid) {
+        var _this = this;
+        return this.http.get(this.baseUrl + uid + "/bills", { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    return UserMngtService;
+}());
+UserMngtService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http, angular2_toaster_1.ToasterService, router_1.Router,
+        auth_service_1.AuthService])
+], UserMngtService);
+exports.UserMngtService = UserMngtService;
+
 
 /***/ }),
-/* 33 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6697,13 +7072,13 @@ var AbstractControlDirective = (function () {
 //# sourceMappingURL=abstract_control_directive.js.map
 
 /***/ }),
-/* 34 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_container__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_control__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_container__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_control__ = __webpack_require__(14);
 /* unused harmony export AbstractControlStatus */
 /* unused harmony export ngControlStatusHost */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgControlStatus; });
@@ -6871,22 +7246,22 @@ function NgControlStatusGroup_tsickle_Closure_declarations() {
 //# sourceMappingURL=ng_control_status.js.map
 
 /***/ }),
-/* 35 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__abstract_form_group_directive__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__control_container__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__control_value_accessor__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_control__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng_form__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng_model_group__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__template_driven_errors__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__abstract_form_group_directive__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__control_container__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__control_value_accessor__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_control__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng_form__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng_model_group__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__template_driven_errors__ = __webpack_require__(49);
 /* unused harmony export formControlBinding */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgModel; });
 /**
@@ -7221,12 +7596,12 @@ function NgModel_tsickle_Closure_declarations() {
 //# sourceMappingURL=ng_model.js.map
 
 /***/ }),
-/* 36 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(6);
 /* unused harmony export NUMBER_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NumberValueAccessor; });
 /**
@@ -7329,12 +7704,12 @@ function NumberValueAccessor_tsickle_Closure_declarations() {
 //# sourceMappingURL=number_value_accessor.js.map
 
 /***/ }),
-/* 37 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(6);
 /* unused harmony export RANGE_VALUE_ACCESSOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RangeValueAccessor; });
 /**
@@ -7435,17 +7810,17 @@ function RangeValueAccessor_tsickle_Closure_declarations() {
 //# sourceMappingURL=range_value_accessor.js.map
 
 /***/ }),
-/* 38 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validators__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_value_accessor__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_control__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reactive_errors__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validators__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_value_accessor__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_control__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reactive_errors__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared__ = __webpack_require__(12);
 /* unused harmony export formControlBinding */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormControlDirective; });
 /**
@@ -7641,21 +8016,21 @@ function FormControlDirective_tsickle_Closure_declarations() {
 //# sourceMappingURL=form_control_directive.js.map
 
 /***/ }),
-/* 39 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validators__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__abstract_form_group_directive__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__control_value_accessor__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_control__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__reactive_errors__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__form_group_directive__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__form_group_name__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validators__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__abstract_form_group_directive__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__control_value_accessor__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_control__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__reactive_errors__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__form_group_directive__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__form_group_name__ = __webpack_require__(23);
 /* unused harmony export controlNameBinding */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormControlName; });
 /**
@@ -7906,7 +8281,7 @@ function FormControlName_tsickle_Closure_declarations() {
 //# sourceMappingURL=form_control_name.js.map
 
 /***/ }),
-/* 40 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7918,276 +8293,6 @@ var BodyOutputType;
     BodyOutputType[BodyOutputType["Component"] = 2] = "Component";
 })(BodyOutputType || (BodyOutputType = {}));
 //# sourceMappingURL=bodyOutputType.js.map
-
-/***/ }),
-/* 41 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_share__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_share__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToasterService; });
-
-
-
-
-var ToasterService = (function () {
-    /**
-     * Creates an instance of ToasterService.
-     */
-    function ToasterService() {
-        var _this = this;
-        this.addToast = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (observer) { return _this._addToast = observer; }).share();
-        this.clearToasts = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (observer) { return _this._clearToasts = observer; }).share();
-        this._removeToastSubject = new __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__["Subject"]();
-        this.removeToast = this._removeToastSubject.share();
-    }
-    /**
-     * Synchronously create and show a new toast instance.
-     *
-     * @param {(string | Toast)} type The type of the toast, or a Toast object.
-     * @param {string=} title The toast title.
-     * @param {string=} body The toast body.
-     * @returns {Toast}
-     *          The newly created Toast instance with a randomly generated GUID Id.
-     */
-    ToasterService.prototype.pop = function (type, title, body) {
-        var toast = typeof type === 'string' ? { type: type, title: title, body: body } : type;
-        toast.toastId = Guid.newGuid();
-        if (!this._addToast) {
-            throw new Error("No Toaster Containers have been initialized to receive toasts.");
-        }
-        this._addToast.next(toast);
-        return toast;
-    };
-    /**
-     * Asynchronously create and show a new toast instance.
-     *
-     * @param {(string | Toast)} type The type of the toast, or a Toast object.
-     * @param {string=} title The toast title.
-     * @param {string=} body The toast body.
-     * @returns {Observable<Toast>}
-     *          A hot Observable that can be subscribed to in order to receive the Toast instance
-     *          with a randomly generated GUID Id.
-     */
-    ToasterService.prototype.popAsync = function (type, title, body) {
-        var _this = this;
-        setTimeout(function () {
-            _this.pop(type, title, body);
-        }, 0);
-        return this.addToast;
-    };
-    /**
-     * Clears a toast by toastId and/or toastContainerId.
-     *
-     * @param {string} toastId The toastId to clear.
-     * @param {number=} toastContainerId
-     *        The toastContainerId of the container to remove toasts from.
-     */
-    ToasterService.prototype.clear = function (toastId, toastContainerId) {
-        var clearWrapper = {
-            toastId: toastId, toastContainerId: toastContainerId
-        };
-        this._clearToasts.next(clearWrapper);
-    };
-    return ToasterService;
-}());
-
-ToasterService.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-ToasterService.ctorParameters = function () { return []; };
-// http://stackoverflow.com/questions/26501688/a-typescript-guid-class
-var Guid = (function () {
-    function Guid() {
-    }
-    Guid.newGuid = function () {
-        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-            var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-            return v.toString(16);
-        });
-    };
-    return Guid;
-}());
-//# sourceMappingURL=toaster.service.js.map
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(0);
-var HomeComponent = (function () {
-    function HomeComponent() {
-    }
-    return HomeComponent;
-}());
-HomeComponent = __decorate([
-    core_1.Component({
-        selector: 'home',
-        template: __webpack_require__(111),
-        styles: [__webpack_require__(140)]
-    })
-], HomeComponent);
-exports.HomeComponent = HomeComponent;
-exports.routes = [
-    { path: '/dashboard', title: 'Dashboard', icon: "fa fa-area-chart", child: [] },
-    {
-        path: '/inventory', title: "Inventory", icon: "fa fa-industry", child: [
-            { path: "/categories", title: "Categories", child: [] },
-            { path: "/reports", title: "Reports", child: [] }
-        ]
-    },
-    { path: "/sale", title: "Sale Management", icon: "fa fa-bars", child: [] },
-    { path: "/usermngt", title: "User Management", icon: "fa fa-user", child: [] }
-];
-
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(0);
-__webpack_require__(32);
-__webpack_require__(21);
-var angular2_toaster_1 = __webpack_require__(4);
-var http_1 = __webpack_require__(8);
-var auth_service_1 = __webpack_require__(19);
-var AccountService = (function () {
-    function AccountService(http, toaster) {
-        this.http = http;
-        this.toaster = toaster;
-        this.baseUrl = "/api/accounts";
-    }
-    AccountService.prototype.getInfo = function (uid) {
-        var _this = this;
-        return this.http.get(this.baseUrl + '/getInfo/' + uid, { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(this.extractData)
-            .catch(function (err) { return _this.toaster.popAsync('error', "Get Info", "Failed!"); });
-    };
-    AccountService.prototype.editInfo = function (user) {
-        var _this = this;
-        return this.http.put(this.baseUrl + '/edit/' + user.id, JSON.stringify(user), { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(function (response) {
-            if (response.ok) {
-                _this.toaster.pop("success", "Information", "Updated");
-                return true;
-            }
-            else {
-                _this.toaster.popAsync('error', "Get Info", "Failed!");
-                return false;
-            }
-        })
-            .catch(function (err) { return _this.toaster.popAsync('error', "Get Info", "Failed!"); });
-    };
-    AccountService.prototype.extractData = function (res) {
-        var body = res.json();
-        return body || {};
-    };
-    AccountService.prototype.getRole = function (roleId) {
-        var _this = this;
-        return this.http.get(this.baseUrl + "/getRole/" + roleId, { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(this.extractData)
-            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
-    };
-    return AccountService;
-}());
-AccountService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http, angular2_toaster_1.ToasterService])
-], AccountService);
-exports.AccountService = AccountService;
-
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(0);
-__webpack_require__(32);
-__webpack_require__(21);
-var angular2_toaster_1 = __webpack_require__(4);
-var http_1 = __webpack_require__(8);
-var auth_service_1 = __webpack_require__(19);
-var CategoryService = (function () {
-    function CategoryService(http, toaster) {
-        this.http = http;
-        this.toaster = toaster;
-        this.baseUrl = "/api/categories";
-    }
-    CategoryService.prototype.getCategories = function () {
-        var _this = this;
-        return this.http.get(this.baseUrl, { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(this.extractData)
-            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
-    };
-    CategoryService.prototype.addCategory = function (category) {
-        var _this = this;
-        return this.http.post(this.baseUrl, JSON.stringify(category), { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(function (response) {
-            if (response.ok) {
-                _this.toaster.popAsync("success", "Successful", "Added.");
-                return true;
-            }
-            else {
-                _this.toaster.popAsync("error", "Error", "System has problem.");
-                return false;
-            }
-        })
-            .catch(function (err) {
-            return _this.toaster.popAsync("error", "Error", "System has problem.");
-        });
-    };
-    CategoryService.prototype.extractData = function (res) {
-        var body = res.json();
-        return body || {};
-    };
-    return CategoryService;
-}());
-CategoryService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http, angular2_toaster_1.ToasterService])
-], CategoryService);
-exports.CategoryService = CategoryService;
-
 
 /***/ }),
 /* 45 */
@@ -8206,103 +8311,268 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(9);
-__webpack_require__(32);
-__webpack_require__(21);
-var angular2_toaster_1 = __webpack_require__(4);
-var http_1 = __webpack_require__(8);
-var auth_service_1 = __webpack_require__(19);
-var UserMngtService = (function () {
-    function UserMngtService(http, toaster, router) {
-        this.http = http;
-        this.toaster = toaster;
-        this.router = router;
-        this.baseUrl = "/api/users";
+var products_service_1 = __webpack_require__(13);
+var router_1 = __webpack_require__(3);
+var product_model_1 = __webpack_require__(95);
+var category_service_1 = __webpack_require__(24);
+var angular2_jwt_1 = __webpack_require__(10);
+var CategoryDetailsComponent = (function () {
+    function CategoryDetailsComponent(route, _product, _categories) {
+        this.route = route;
+        this._product = _product;
+        this._categories = _categories;
+        this.updateEvent = new core_1.EventEmitter();
     }
-    UserMngtService.prototype.getAll = function () {
-        var _this = this;
-        return this.http.get(this.baseUrl, { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(this.extractData)
-            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    CategoryDetailsComponent.prototype.ngOnChanges = function (changes) {
+        if (this.cate != undefined) {
+            this.getProductsByCate(this.cate.id);
+        }
+        else {
+            this.getAllProducts();
+        }
     };
-    UserMngtService.prototype.extractData = function (res) {
-        var body = res.json();
-        return body || {};
+    CategoryDetailsComponent.prototype.ngOnInit = function () {
+        if (this.cate != undefined) {
+            this.getProductsByCate(this.cate.id);
+        }
+        else {
+            this.getAllProducts();
+        }
+        if (typeof window !== "undefined") {
+            var jwt = new angular2_jwt_1.JwtHelper();
+            var token = jwt.decodeToken(localStorage.getItem('token'));
+            this.role = token.roleSIMS;
+        }
     };
-    UserMngtService.prototype.getRoles = function () {
-        var _this = this;
-        return this.http.get(this.baseUrl + "/role", { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(this.extractData)
-            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    CategoryDetailsComponent.prototype.ngOnDestroy = function () {
     };
-    UserMngtService.prototype.getRole = function (roleId) {
+    CategoryDetailsComponent.prototype.getProductsByCate = function (cateId) {
         var _this = this;
-        return this.http.get(this.baseUrl + "/role/" + roleId, { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(this.extractData)
-            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+        this._categories.getProducts(cateId).subscribe(function (result) { return _this.products = result; });
     };
-    UserMngtService.prototype.edit = function (user) {
+    CategoryDetailsComponent.prototype.getAllProducts = function () {
         var _this = this;
-        return this.http.put(this.baseUrl + "/" + user.id, JSON.stringify(user), { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(function (response) {
-            if (response.ok) {
-                _this.toaster.popAsync("success", "Successful", "Updated.");
-                return true;
+        this._product.getAll().subscribe(function (result) { return _this.products = result; });
+    };
+    CategoryDetailsComponent.prototype.viewProduct = function (product) {
+        this.productSelected = product;
+        this.isView = true;
+        this.isAdd = false;
+    };
+    CategoryDetailsComponent.prototype.editProduct = function (product) {
+        this.productSelected = product;
+        this.isView = false;
+        this.isAdd = false;
+    };
+    CategoryDetailsComponent.prototype.addProduct = function () {
+        if (this.cate) {
+            this.productSelected = new product_model_1.ProductModel("", "", this.cate.id);
+            this.isView = false;
+            this.isAdd = true;
+        }
+        else {
+            this.productSelected = new product_model_1.ProductModel("", "", null);
+            this.isView = false;
+            this.isAdd = true;
+        }
+    };
+    CategoryDetailsComponent.prototype.removeProduct = function (product) {
+        var _this = this;
+        this._product.removeProduct(product).subscribe(function (result) {
+            if (result) {
+                _this.getProductsByCate(_this.cate.id);
             }
-            else {
-                _this.toaster.popAsync("error", "Error", "System has problem.");
-                return false;
-            }
-        })
-            .catch(function (err) {
-            return _this.toaster.popAsync("error", "Error", "System has problem.");
         });
     };
-    UserMngtService.prototype.add = function (user) {
-        var _this = this;
-        return this.http.post(this.baseUrl, JSON.stringify(user), { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(function (response) {
-            if (response.ok) {
-                _this.toaster.popAsync("success", "Successful", "Added.");
-                return true;
-            }
-            else {
-                _this.toaster.popAsync("error", "Error", "System has problem.");
-                return false;
-            }
-        })
-            .catch(function (err) {
-            return _this.toaster.popAsync("error", "Error", "System has problem.");
-        });
+    CategoryDetailsComponent.prototype.removeProductDialog = function (product) {
+        this.productFocus = product;
     };
-    UserMngtService.prototype.remove = function (user) {
-        var _this = this;
-        return this.http.delete(this.baseUrl + "/" + user.id, { headers: auth_service_1.AuthService.credentialHeader() })
-            .map(function (response) {
-            if (response.ok) {
-                _this.toaster.popAsync("success", "Successful", "Removed.");
-                return true;
-            }
-            else {
-                _this.toaster.popAsync("error", "Error", "System has problem.");
-                return false;
-            }
-        })
-            .catch(function (err) {
-            return _this.toaster.popAsync("error", "Error", "System has problem.");
-        });
+    CategoryDetailsComponent.prototype.updateData = function () {
+        if (this.cate) {
+            this.getProductsByCate(this.cate.id);
+        }
+        else {
+            this.getAllProducts();
+        }
+        this.updateEvent.emit();
     };
-    return UserMngtService;
+    return CategoryDetailsComponent;
 }());
-UserMngtService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http, angular2_toaster_1.ToasterService, router_1.Router])
-], UserMngtService);
-exports.UserMngtService = UserMngtService;
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], CategoryDetailsComponent.prototype, "cate", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], CategoryDetailsComponent.prototype, "updateEvent", void 0);
+CategoryDetailsComponent = __decorate([
+    core_1.Component({
+        selector: 'category-detail',
+        template: __webpack_require__(126)
+    }),
+    __metadata("design:paramtypes", [router_1.ActivatedRoute, products_service_1.ProductService, category_service_1.CategoryService])
+], CategoryDetailsComponent);
+exports.CategoryDetailsComponent = CategoryDetailsComponent;
 
 
 /***/ }),
 /* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+__webpack_require__(18);
+__webpack_require__(15);
+var angular2_toaster_1 = __webpack_require__(2);
+var http_1 = __webpack_require__(7);
+var auth_service_1 = __webpack_require__(11);
+var AccountService = (function () {
+    function AccountService(http, toaster, _auth) {
+        this.http = http;
+        this.toaster = toaster;
+        this._auth = _auth;
+        this.baseUrl = "/api/accounts";
+    }
+    AccountService.prototype.getInfo = function (uid) {
+        var _this = this;
+        return this.http.get(this.baseUrl + '/getInfo/' + uid, { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync('error', "Get Info", "Failed!"); });
+    };
+    AccountService.prototype.editInfo = function (user) {
+        var _this = this;
+        return this.http.put(this.baseUrl + '/edit/' + user.id, JSON.stringify(user), { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.pop("success", "Information", "Updated");
+                return true;
+            }
+            else {
+                _this.toaster.popAsync('error', "Get Info", "Failed!");
+                return false;
+            }
+        })
+            .catch(function (err) { return _this.toaster.popAsync('error', "Get Info", "Failed!"); });
+    };
+    AccountService.prototype.changPwd = function (user) {
+        var _this = this;
+        return this.http.put(this.baseUrl + '/ChangePwd/' + user.id, JSON.stringify(user), { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.pop("success", "Information", "Updated");
+                return true;
+            }
+            else {
+                _this.toaster.popAsync('error', "Get Info", "Failed!");
+                return false;
+            }
+        })
+            .catch(function (err) { return _this.toaster.popAsync('error', "Get Info", "Failed!"); });
+    };
+    AccountService.prototype.extractData = function (res) {
+        var body = res.json();
+        return body || {};
+    };
+    AccountService.prototype.getRole = function (roleId) {
+        var _this = this;
+        return this.http.get(this.baseUrl + "/getRole/" + roleId, { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    return AccountService;
+}());
+AccountService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http, angular2_toaster_1.ToasterService, auth_service_1.AuthService])
+], AccountService);
+exports.AccountService = AccountService;
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+__webpack_require__(18);
+__webpack_require__(15);
+var angular2_toaster_1 = __webpack_require__(2);
+var http_1 = __webpack_require__(7);
+var auth_service_1 = __webpack_require__(11);
+var BillsService = (function () {
+    function BillsService(http, toaster, _auth) {
+        this.http = http;
+        this.toaster = toaster;
+        this._auth = _auth;
+        this.baseUrl = "/api/bills/";
+    }
+    BillsService.prototype.getAll = function () {
+        var _this = this;
+        return this.http.get(this.baseUrl + "news", { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    BillsService.prototype.addBill = function (bill) {
+        var _this = this;
+        return this.http.post(this.baseUrl, JSON.stringify(bill), { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    BillsService.prototype.getBill = function (id) {
+        var _this = this;
+        return this.http.get(this.baseUrl + id, { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    BillsService.prototype.editBill = function (bill) {
+        var _this = this;
+        return this.http.put(this.baseUrl + bill.id, JSON.stringify(bill), { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                return true;
+            }
+            return false;
+        })
+            .catch(function (err) { return _this.toaster.popAsync("error", "Error", "System has problem."); });
+    };
+    BillsService.prototype.extractData = function (res) {
+        var body = res.json();
+        return body || {};
+    };
+    return BillsService;
+}());
+BillsService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http, angular2_toaster_1.ToasterService, auth_service_1.AuthService])
+], BillsService);
+exports.BillsService = BillsService;
+
+
+/***/ }),
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8324,11 +8594,11 @@ var /** @type {?} */ FormErrorExamples = {
 //# sourceMappingURL=error_examples.js.map
 
 /***/ }),
-/* 47 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(48);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TemplateDrivenErrors; });
 /**
  * @license
@@ -8370,12 +8640,12 @@ var TemplateDrivenErrors = (function () {
 //# sourceMappingURL=template_driven_errors.js.map
 
 /***/ }),
-/* 48 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(8);
 /* unused harmony export REQUIRED_VALIDATOR */
 /* unused harmony export CHECKBOX_REQUIRED_VALIDATOR */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return RequiredValidator; });
@@ -8763,11 +9033,11 @@ function PatternValidator_tsickle_Closure_declarations() {
 //# sourceMappingURL=validators.js.map
 
 /***/ }),
-/* 49 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lang__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lang__ = __webpack_require__(17);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StringMapWrapper; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ListWrapper; });
 /* unused harmony export isListLikeIterable */
@@ -8946,13 +9216,13 @@ function iterateListLike(obj, fn) {
 //# sourceMappingURL=collection.js.map
 
 /***/ }),
-/* 50 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_lang__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model__ = __webpack_require__(32);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormBuilder; });
 /**
  * @license
@@ -9087,7 +9357,7 @@ function FormBuilder_tsickle_Closure_declarations() {
 //# sourceMappingURL=form_builder.js.map
 
 /***/ }),
-/* 51 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9107,13 +9377,13 @@ var /** @type {?} */ isObservable = __WEBPACK_IMPORTED_MODULE_0__angular_core__[
 //# sourceMappingURL=private_import_core.js.map
 
 /***/ }),
-/* 52 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bodyOutputType__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bodyOutputType__ = __webpack_require__(44);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToastComponent; });
 
 
@@ -9169,11 +9439,11 @@ ToastComponent.propDecorators = {
 //# sourceMappingURL=toast.component.js.map
 
 /***/ }),
-/* 53 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bodyOutputType__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bodyOutputType__ = __webpack_require__(44);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToasterConfig; });
 
 var ToasterConfig = (function () {
@@ -9216,13 +9486,13 @@ var ToasterConfig = (function () {
 //# sourceMappingURL=toaster-config.js.map
 
 /***/ }),
-/* 54 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__toaster_config__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toaster_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__toaster_config__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toaster_service__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToasterContainerComponent; });
 
 
@@ -9407,85 +9677,13 @@ ToasterContainerComponent.decorators = [
 ];
 /** @nocollapse */
 ToasterContainerComponent.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_2__toaster_service__["a" /* ToasterService */], },
+    { type: __WEBPACK_IMPORTED_MODULE_2__toaster_service__["ToasterService"], },
     { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"], },
 ]; };
 ToasterContainerComponent.propDecorators = {
     'toasterconfig': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
 };
 //# sourceMappingURL=toaster-container.component.js.map
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(0);
-var signin_service_1 = __webpack_require__(31);
-var router_1 = __webpack_require__(9);
-var ForgetPwdComponent = (function () {
-    function ForgetPwdComponent(service, router) {
-        this.service = service;
-        this.router = router;
-    }
-    ForgetPwdComponent.prototype.signIn = function (form) {
-        if (form.valid) {
-            var model = form.value;
-            this.service.forgetPassword(model);
-        }
-    };
-    return ForgetPwdComponent;
-}());
-ForgetPwdComponent = __decorate([
-    core_1.Component({
-        selector: 'forgetpwd',
-        template: __webpack_require__(109),
-        styles: [__webpack_require__(138)]
-    }),
-    __metadata("design:paramtypes", [signin_service_1.SignInService, router_1.Router])
-], ForgetPwdComponent);
-exports.ForgetPwdComponent = ForgetPwdComponent;
-
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(0);
-var DashboardComponent = (function () {
-    function DashboardComponent() {
-    }
-    return DashboardComponent;
-}());
-DashboardComponent = __decorate([
-    core_1.Component({
-        selector: 'dashboard',
-        template: __webpack_require__(110),
-        styles: [__webpack_require__(139)]
-    })
-], DashboardComponent);
-exports.DashboardComponent = DashboardComponent;
-
 
 /***/ }),
 /* 57 */
@@ -9504,50 +9702,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var products_service_1 = __webpack_require__(20);
-var category_model_1 = __webpack_require__(87);
-var category_service_1 = __webpack_require__(44);
-var CategoryComponent = (function () {
-    function CategoryComponent(_products, _categories) {
-        this._products = _products;
-        this._categories = _categories;
+var signin_service_1 = __webpack_require__(35);
+var router_1 = __webpack_require__(3);
+var ForgetPwdComponent = (function () {
+    function ForgetPwdComponent(service, router) {
+        this.service = service;
+        this.router = router;
     }
-    CategoryComponent.prototype.ngOnInit = function () {
-        this.getCategories();
+    ForgetPwdComponent.prototype.signIn = function (form) {
+        if (form.valid) {
+            var model = form.value;
+            this.service.forgetPassword(model);
+        }
     };
-    CategoryComponent.prototype.updateData = function () {
-        this.getCategories();
-    };
-    CategoryComponent.prototype.getCategories = function () {
-        var _this = this;
-        this._categories.getCategories().subscribe(function (result) { return _this.categories = result; });
-    };
-    CategoryComponent.prototype.categoryDetail = function (cate) {
-        this.cate = cate;
-    };
-    CategoryComponent.prototype.addCategoryModel = function () {
-        this.category = new category_model_1.CategoryModel("", "");
-    };
-    CategoryComponent.prototype.saveChanges = function (category) {
-        var _this = this;
-        this._categories.addCategory(category).subscribe(function (result) {
-            if (result) {
-                _this.getCategories();
-            }
-        });
-    };
-    return CategoryComponent;
+    return ForgetPwdComponent;
 }());
-CategoryComponent = __decorate([
+ForgetPwdComponent = __decorate([
     core_1.Component({
-        selector: 'category',
-        template: __webpack_require__(112),
-        styles: [__webpack_require__(141)]
+        selector: 'forgetpwd',
+        template: __webpack_require__(121),
+        styles: [__webpack_require__(154)]
     }),
-    __metadata("design:paramtypes", [products_service_1.ProductService,
-        category_service_1.CategoryService])
-], CategoryComponent);
-exports.CategoryComponent = CategoryComponent;
+    __metadata("design:paramtypes", [signin_service_1.SignInService, router_1.Router])
+], ForgetPwdComponent);
+exports.ForgetPwdComponent = ForgetPwdComponent;
 
 
 /***/ }),
@@ -9567,75 +9745,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var products_service_1 = __webpack_require__(20);
-var router_1 = __webpack_require__(9);
-var product_model_1 = __webpack_require__(89);
-var CategoryDetailsComponent = (function () {
-    function CategoryDetailsComponent(route, _product) {
-        this.route = route;
-        this._product = _product;
-        this.updateEvent = new core_1.EventEmitter();
+var products_service_1 = __webpack_require__(13);
+var DashboardComponent = (function () {
+    function DashboardComponent(_products) {
+        this._products = _products;
     }
-    CategoryDetailsComponent.prototype.ngOnChanges = function (changes) {
-        this.getProductsByCate(this.cate.id);
+    DashboardComponent.prototype.ngOnInit = function () {
+        this.getNewProducts();
     };
-    CategoryDetailsComponent.prototype.ngOnInit = function () {
-        this.getProductsByCate(this.cate.id);
-    };
-    CategoryDetailsComponent.prototype.ngOnDestroy = function () {
-    };
-    CategoryDetailsComponent.prototype.getProductsByCate = function (cateId) {
+    DashboardComponent.prototype.getNewProducts = function () {
         var _this = this;
-        this._product.getByCategory(cateId).subscribe(function (result) { return _this.products = result; });
+        this._products.getNews().subscribe(function (result) { return _this.topFiveProducts = result; });
     };
-    CategoryDetailsComponent.prototype.viewProduct = function (product) {
-        this.productSelected = product;
-        this.isView = true;
-        this.isAdd = false;
-    };
-    CategoryDetailsComponent.prototype.editProduct = function (product) {
-        this.productSelected = product;
-        this.isView = false;
-        this.isAdd = false;
-    };
-    CategoryDetailsComponent.prototype.addProduct = function () {
-        this.productSelected = new product_model_1.ProductModel("", "", this.cate.id);
-        this.isView = false;
-        this.isAdd = true;
-    };
-    CategoryDetailsComponent.prototype.removeProduct = function (product) {
-        var _this = this;
-        this._product.removeProduct(product).subscribe(function (result) {
-            if (result) {
-                _this.getProductsByCate(_this.cate.id);
-            }
-        });
-    };
-    CategoryDetailsComponent.prototype.removeProductDialog = function (product) {
-        this.productFocus = product;
-    };
-    CategoryDetailsComponent.prototype.updateData = function () {
-        this.getProductsByCate(this.cate.id);
-        this.updateEvent.emit();
-    };
-    return CategoryDetailsComponent;
+    return DashboardComponent;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Object)
-], CategoryDetailsComponent.prototype, "cate", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Object)
-], CategoryDetailsComponent.prototype, "updateEvent", void 0);
-CategoryDetailsComponent = __decorate([
+DashboardComponent = __decorate([
     core_1.Component({
-        selector: 'category-detail',
-        template: __webpack_require__(114)
+        selector: 'dashboard',
+        template: __webpack_require__(122),
+        styles: [__webpack_require__(155)]
     }),
-    __metadata("design:paramtypes", [router_1.ActivatedRoute, products_service_1.ProductService])
-], CategoryDetailsComponent);
-exports.CategoryDetailsComponent = CategoryDetailsComponent;
+    __metadata("design:paramtypes", [products_service_1.ProductService])
+], DashboardComponent);
+exports.DashboardComponent = DashboardComponent;
 
 
 /***/ }),
@@ -9652,19 +9784,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var ReporttComponent = (function () {
-    function ReporttComponent() {
+var HomeComponent = (function () {
+    function HomeComponent() {
     }
-    return ReporttComponent;
+    return HomeComponent;
 }());
-ReporttComponent = __decorate([
+HomeComponent = __decorate([
     core_1.Component({
-        selector: 'report',
-        template: __webpack_require__(116),
-        styles: [__webpack_require__(142)]
+        selector: 'home',
+        template: __webpack_require__(123),
+        styles: [__webpack_require__(156)]
     })
-], ReporttComponent);
-exports.ReporttComponent = ReporttComponent;
+], HomeComponent);
+exports.HomeComponent = HomeComponent;
 
 
 /***/ }),
@@ -9684,46 +9816,91 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var account_service_1 = __webpack_require__(43);
-var ProfileComponent = (function () {
-    function ProfileComponent(_account) {
-        this._account = _account;
+var products_service_1 = __webpack_require__(13);
+var category_model_1 = __webpack_require__(93);
+var category_service_1 = __webpack_require__(24);
+var angular2_toaster_1 = __webpack_require__(2);
+var categorydetails_component_1 = __webpack_require__(45);
+var CategoryComponent = (function () {
+    function CategoryComponent(_products, _categories, _toast) {
+        this._products = _products;
+        this._categories = _categories;
+        this._toast = _toast;
+        this.updateProduct = new core_1.EventEmitter();
     }
-    ProfileComponent.prototype.ngOnChanges = function (changes) {
+    CategoryComponent.prototype.ngOnInit = function () {
+        this.getCategories();
     };
-    ProfileComponent.prototype.ngOnDestroy = function () {
+    CategoryComponent.prototype.updateData = function () {
+        this.getCategories();
     };
-    ProfileComponent.prototype.ngAfterViewInit = function () {
-        this.getRole(this.user.roleId);
-    };
-    ProfileComponent.prototype.ngOnInit = function () {
-        this.getRole(this.user.roleId);
-    };
-    ProfileComponent.prototype.getRole = function (id) {
+    CategoryComponent.prototype.getCategories = function () {
         var _this = this;
-        this._account.getRole(id).subscribe(function (result) { return _this.role = result.name; });
+        this._categories.getCategories().subscribe(function (result) { return _this.categories = result; });
     };
-    ProfileComponent.prototype.saveChanges = function () {
-        this._account.editInfo(this.user).subscribe(function (result) {
+    CategoryComponent.prototype.categoryDetail = function (cate) {
+        this.cate = cate;
+    };
+    CategoryComponent.prototype.addCategoryModel = function () {
+        this.category = new category_model_1.CategoryModel("", "");
+        this.isRemove = true;
+    };
+    CategoryComponent.prototype.saveChanges = function (category) {
+        var _this = this;
+        if (this.isRemove) {
+            console.log(category);
+            this._categories.addCategory(category).subscribe(function (result) {
+                if (result) {
+                    _this.getCategories();
+                }
+            });
+        }
+        else {
+            this._categories.editCategory(category).subscribe(function (result) {
+                if (result) {
+                    _this.getCategories();
+                }
+            });
+        }
+    };
+    CategoryComponent.prototype.actionCate = function (action) {
+        this.isRemove = action.isRemove;
+        if (action.isRemove) {
+            this.cateFocus = action.category;
+            $('#centralModalWarning').modal('show');
+        }
+        else {
+            this.category = action.category;
+            $('#addCategoryModal').modal('show');
+        }
+    };
+    CategoryComponent.prototype.removeCategory = function (cate) {
+        var _this = this;
+        this._categories.removeCategory(cate.id).subscribe(function (result) {
             if (result) {
+                _this.getCategories();
+                _this.child.getAllProducts();
             }
+            return;
         });
     };
-    return ProfileComponent;
+    return CategoryComponent;
 }());
 __decorate([
-    core_1.Input(),
-    __metadata("design:type", Object)
-], ProfileComponent.prototype, "user", void 0);
-ProfileComponent = __decorate([
+    core_1.ViewChild(categorydetails_component_1.CategoryDetailsComponent),
+    __metadata("design:type", categorydetails_component_1.CategoryDetailsComponent)
+], CategoryComponent.prototype, "child", void 0);
+CategoryComponent = __decorate([
     core_1.Component({
-        selector: 'profile',
-        template: __webpack_require__(117),
-        styles: [__webpack_require__(143)]
+        selector: 'category',
+        template: __webpack_require__(124),
+        styles: [__webpack_require__(157)]
     }),
-    __metadata("design:paramtypes", [account_service_1.AccountService])
-], ProfileComponent);
-exports.ProfileComponent = ProfileComponent;
+    __metadata("design:paramtypes", [products_service_1.ProductService,
+        category_service_1.CategoryService,
+        angular2_toaster_1.ToasterService])
+], CategoryComponent);
+exports.CategoryComponent = CategoryComponent;
 
 
 /***/ }),
@@ -9740,22 +9917,79 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var SaleComponent = (function () {
-    function SaleComponent() {
+var DeliveryComponent = (function () {
+    function DeliveryComponent() {
     }
-    return SaleComponent;
+    return DeliveryComponent;
 }());
-SaleComponent = __decorate([
+DeliveryComponent = __decorate([
     core_1.Component({
-        selector: 'sale',
-        template: __webpack_require__(118)
+        selector: 'delivery',
+        template: __webpack_require__(128)
     })
-], SaleComponent);
-exports.SaleComponent = SaleComponent;
+], DeliveryComponent);
+exports.DeliveryComponent = DeliveryComponent;
 
 
 /***/ }),
 /* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var ReceiptComponent = (function () {
+    function ReceiptComponent() {
+    }
+    return ReceiptComponent;
+}());
+ReceiptComponent = __decorate([
+    core_1.Component({
+        selector: 'receipt',
+        template: __webpack_require__(129)
+    })
+], ReceiptComponent);
+exports.ReceiptComponent = ReceiptComponent;
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var ReportComponent = (function () {
+    function ReportComponent() {
+    }
+    return ReportComponent;
+}());
+ReportComponent = __decorate([
+    core_1.Component({
+        selector: 'report',
+        template: __webpack_require__(131),
+        styles: [__webpack_require__(159)]
+    })
+], ReportComponent);
+exports.ReportComponent = ReportComponent;
+
+
+/***/ }),
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9771,9 +10005,126 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var usermngt_service_1 = __webpack_require__(45);
-var angular2_toaster_1 = __webpack_require__(4);
-var usermngt_model_1 = __webpack_require__(93);
+var bills_service_1 = __webpack_require__(47);
+var users_service_1 = __webpack_require__(36);
+var bill_model_1 = __webpack_require__(65);
+var angular2_toaster_1 = __webpack_require__(2);
+var billdetails_model_1 = __webpack_require__(34);
+var BillComponent = (function () {
+    function BillComponent(_bills, _user, _toast) {
+        this._bills = _bills;
+        this._user = _user;
+        this._toast = _toast;
+        this.bills = [];
+    }
+    BillComponent.prototype.ngAfterViewInit = function () {
+        if (typeof window !== "undefined") {
+            var uid = +localStorage.getItem("uid");
+            this.uid = +uid;
+            if (uid != undefined) {
+                this.getBills(uid);
+            }
+        }
+    };
+    BillComponent.prototype.ngOnInit = function () {
+    };
+    BillComponent.prototype.getBills = function (uid) {
+        var _this = this;
+        this._user.getBills(uid).subscribe(function (result) { return _this.bills = result; });
+    };
+    BillComponent.prototype.addBillDialog = function () {
+        this.isAdd = true;
+        this.isView = false;
+        this.bill = new bill_model_1.Bill("New bill description", [new billdetails_model_1.BillDetails()]);
+    };
+    BillComponent.prototype.info = function (bill) {
+        this.isAdd = false;
+        this.isView = true;
+        this.bill = bill;
+    };
+    BillComponent.prototype.deal = function (bill) {
+        var _this = this;
+        bill.isDealt = true;
+        this._bills.editBill(bill).subscribe(function (result) {
+            if (result) {
+                _this._toast.popAsync("success", "Bill", "Updated.");
+                _this.getBills(_this.uid);
+            }
+        });
+    };
+    BillComponent.prototype.edit = function (bill) {
+        this.isAdd = false;
+        this.isView = false;
+        this.bill = bill;
+    };
+    BillComponent.prototype.updateData = function ($event) {
+        if (typeof window !== "undefined") {
+            var uid = +localStorage.getItem("uid");
+            this.uid = +uid;
+            if (uid != undefined) {
+                this.getBills(uid);
+            }
+        }
+    };
+    return BillComponent;
+}());
+BillComponent = __decorate([
+    core_1.Component({
+        selector: 'bill',
+        template: __webpack_require__(132)
+    }),
+    __metadata("design:paramtypes", [bills_service_1.BillsService, users_service_1.UserMngtService,
+        angular2_toaster_1.ToasterService])
+], BillComponent);
+exports.BillComponent = BillComponent;
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var billdetails_model_1 = __webpack_require__(34);
+var Bill = (function () {
+    function Bill(description, bdetails) {
+        if (description === void 0) { description = null; }
+        if (bdetails === void 0) { bdetails = null; }
+        this.billDetailses = [];
+        this.billDetailses = bdetails || [new billdetails_model_1.BillDetails()];
+        this.description = description || "";
+        this.total = 0;
+        this.isDealt = false;
+    }
+    Bill.prototype.addBillDetails = function (bdetail) {
+        this.billDetailses.push(bdetail);
+    };
+    return Bill;
+}());
+exports.Bill = Bill;
+
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var users_service_1 = __webpack_require__(36);
+var angular2_toaster_1 = __webpack_require__(2);
+var usermngt_model_1 = __webpack_require__(102);
 var UserMngtComponent = (function () {
     function UserMngtComponent(usermngt, toaster) {
         this.usermngt = usermngt;
@@ -9833,16 +10184,16 @@ var UserMngtComponent = (function () {
 UserMngtComponent = __decorate([
     core_1.Component({
         selector: 'user-mngt',
-        template: __webpack_require__(121),
-        styles: [__webpack_require__(146)],
+        template: __webpack_require__(137),
+        styles: [__webpack_require__(163)],
     }),
-    __metadata("design:paramtypes", [usermngt_service_1.UserMngtService, angular2_toaster_1.ToasterService])
+    __metadata("design:paramtypes", [users_service_1.UserMngtService, angular2_toaster_1.ToasterService])
 ], UserMngtComponent);
 exports.UserMngtComponent = UserMngtComponent;
 
 
 /***/ }),
-/* 63 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9858,8 +10209,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var signin_service_1 = __webpack_require__(31);
-var router_1 = __webpack_require__(9);
+var signin_service_1 = __webpack_require__(35);
+var router_1 = __webpack_require__(3);
 var SignInComponent = (function () {
     function SignInComponent(service, router) {
         this.service = service;
@@ -9876,25 +10227,16 @@ var SignInComponent = (function () {
 SignInComponent = __decorate([
     core_1.Component({
         selector: 'signin',
-        template: __webpack_require__(122),
-        styles: [__webpack_require__(147)]
+        template: __webpack_require__(138),
+        styles: [__webpack_require__(164)]
     }),
     __metadata("design:paramtypes", [signin_service_1.SignInService, router_1.Router])
 ], SignInComponent);
 exports.SignInComponent = SignInComponent;
-// if (typeof window !== "undefined") {
-//     window.onload = () => {
-//         $(document).ready(() => {
-//             $(".login-help").click(() => {
-//                 alert('Test Jquery in TS');
-//             });
-//         });
-//     }
-// }
 
 
 /***/ }),
-/* 64 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9910,9 +10252,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(9);
-var angular2_jwt_1 = __webpack_require__(30);
-var angular2_toaster_1 = __webpack_require__(4);
+var router_1 = __webpack_require__(3);
+var angular2_jwt_1 = __webpack_require__(10);
+var angular2_toaster_1 = __webpack_require__(2);
 var AdminGuard = (function () {
     function AdminGuard(router, toaster) {
         this.router = router;
@@ -9951,7 +10293,7 @@ exports.AdminGuard = AdminGuard;
 
 
 /***/ }),
-/* 65 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9967,8 +10309,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(9);
-var angular2_jwt_1 = __webpack_require__(30);
+var router_1 = __webpack_require__(3);
+var angular2_jwt_1 = __webpack_require__(10);
 var AuthenticateGuard = (function () {
     function AuthenticateGuard(router) {
         this.router = router;
@@ -9998,7 +10340,7 @@ exports.AuthenticateGuard = AuthenticateGuard;
 
 
 /***/ }),
-/* 66 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10014,8 +10356,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(9);
-var angular2_jwt_1 = __webpack_require__(30);
+var router_1 = __webpack_require__(3);
+var angular2_jwt_1 = __webpack_require__(10);
 var LoginGuard = (function () {
     function LoginGuard(router) {
         this.router = router;
@@ -10044,7 +10386,118 @@ exports.LoginGuard = LoginGuard;
 
 
 /***/ }),
-/* 67 */
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(3);
+var angular2_jwt_1 = __webpack_require__(10);
+var angular2_toaster_1 = __webpack_require__(2);
+var SalePersonGuard = (function () {
+    function SalePersonGuard(router, toaster) {
+        this.router = router;
+        this.toaster = toaster;
+    }
+    SalePersonGuard.prototype.canActivate = function (route, state) {
+        if (typeof window !== "undefined") {
+            var jwt = new angular2_jwt_1.JwtHelper();
+            var token = localStorage.getItem('token');
+            if (token) {
+                if (jwt.isTokenExpired(token)) {
+                    this.router.navigate(["/signin"]);
+                    return false;
+                }
+                var roleJson = jwt.decodeToken(token);
+                var role = roleJson.roleSIMS;
+                if (role === "SalePerson") {
+                    this.toaster.popAsync("success", "Information", "Access accepted.");
+                    return true;
+                }
+                this.toaster.popAsync("warning", "Warning!!", "Access denied!");
+                this.router.navigate([""]);
+                return false;
+            }
+            this.router.navigate(["/signin"]);
+            return false;
+        }
+    };
+    return SalePersonGuard;
+}());
+SalePersonGuard = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [router_1.Router, angular2_toaster_1.ToasterService])
+], SalePersonGuard);
+exports.SalePersonGuard = SalePersonGuard;
+
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+__webpack_require__(18);
+__webpack_require__(15);
+var angular2_toaster_1 = __webpack_require__(2);
+var http_1 = __webpack_require__(7);
+var auth_service_1 = __webpack_require__(11);
+var BillDetailsService = (function () {
+    function BillDetailsService(http, toaster, _auth) {
+        this.http = http;
+        this.toaster = toaster;
+        this._auth = _auth;
+        this.baseUrl = "/api/billDetails/";
+    }
+    BillDetailsService.prototype.addBillDetails = function (billDetails) {
+        var _this = this;
+        return this.http.post(this.baseUrl, JSON.stringify(billDetails), { headers: this._auth.credentialHeader() })
+            .map(function (response) {
+            if (response.ok) {
+                _this.toaster.popAsync('success', "Success", "Added.");
+                return true;
+            }
+            return false;
+        })
+            .catch(function (err) { return _this.toaster.popAsync('error', "Error", "System has problem."); });
+    };
+    BillDetailsService.prototype.extractData = function (res) {
+        var body = res.json();
+        return body || {};
+    };
+    return BillDetailsService;
+}());
+BillDetailsService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http, angular2_toaster_1.ToasterService, auth_service_1.AuthService])
+], BillDetailsService);
+exports.BillDetailsService = BillDetailsService;
+
+
+/***/ }),
+/* 73 */
 /***/ (function(module, exports) {
 
 var ENTITIES = [['Aacute', [193]], ['aacute', [225]], ['Abreve', [258]], ['abreve', [259]], ['ac', [8766]], ['acd', [8767]], ['acE', [8766, 819]], ['Acirc', [194]], ['acirc', [226]], ['acute', [180]], ['Acy', [1040]], ['acy', [1072]], ['AElig', [198]], ['aelig', [230]], ['af', [8289]], ['Afr', [120068]], ['afr', [120094]], ['Agrave', [192]], ['agrave', [224]], ['alefsym', [8501]], ['aleph', [8501]], ['Alpha', [913]], ['alpha', [945]], ['Amacr', [256]], ['amacr', [257]], ['amalg', [10815]], ['amp', [38]], ['AMP', [38]], ['andand', [10837]], ['And', [10835]], ['and', [8743]], ['andd', [10844]], ['andslope', [10840]], ['andv', [10842]], ['ang', [8736]], ['ange', [10660]], ['angle', [8736]], ['angmsdaa', [10664]], ['angmsdab', [10665]], ['angmsdac', [10666]], ['angmsdad', [10667]], ['angmsdae', [10668]], ['angmsdaf', [10669]], ['angmsdag', [10670]], ['angmsdah', [10671]], ['angmsd', [8737]], ['angrt', [8735]], ['angrtvb', [8894]], ['angrtvbd', [10653]], ['angsph', [8738]], ['angst', [197]], ['angzarr', [9084]], ['Aogon', [260]], ['aogon', [261]], ['Aopf', [120120]], ['aopf', [120146]], ['apacir', [10863]], ['ap', [8776]], ['apE', [10864]], ['ape', [8778]], ['apid', [8779]], ['apos', [39]], ['ApplyFunction', [8289]], ['approx', [8776]], ['approxeq', [8778]], ['Aring', [197]], ['aring', [229]], ['Ascr', [119964]], ['ascr', [119990]], ['Assign', [8788]], ['ast', [42]], ['asymp', [8776]], ['asympeq', [8781]], ['Atilde', [195]], ['atilde', [227]], ['Auml', [196]], ['auml', [228]], ['awconint', [8755]], ['awint', [10769]], ['backcong', [8780]], ['backepsilon', [1014]], ['backprime', [8245]], ['backsim', [8765]], ['backsimeq', [8909]], ['Backslash', [8726]], ['Barv', [10983]], ['barvee', [8893]], ['barwed', [8965]], ['Barwed', [8966]], ['barwedge', [8965]], ['bbrk', [9141]], ['bbrktbrk', [9142]], ['bcong', [8780]], ['Bcy', [1041]], ['bcy', [1073]], ['bdquo', [8222]], ['becaus', [8757]], ['because', [8757]], ['Because', [8757]], ['bemptyv', [10672]], ['bepsi', [1014]], ['bernou', [8492]], ['Bernoullis', [8492]], ['Beta', [914]], ['beta', [946]], ['beth', [8502]], ['between', [8812]], ['Bfr', [120069]], ['bfr', [120095]], ['bigcap', [8898]], ['bigcirc', [9711]], ['bigcup', [8899]], ['bigodot', [10752]], ['bigoplus', [10753]], ['bigotimes', [10754]], ['bigsqcup', [10758]], ['bigstar', [9733]], ['bigtriangledown', [9661]], ['bigtriangleup', [9651]], ['biguplus', [10756]], ['bigvee', [8897]], ['bigwedge', [8896]], ['bkarow', [10509]], ['blacklozenge', [10731]], ['blacksquare', [9642]], ['blacktriangle', [9652]], ['blacktriangledown', [9662]], ['blacktriangleleft', [9666]], ['blacktriangleright', [9656]], ['blank', [9251]], ['blk12', [9618]], ['blk14', [9617]], ['blk34', [9619]], ['block', [9608]], ['bne', [61, 8421]], ['bnequiv', [8801, 8421]], ['bNot', [10989]], ['bnot', [8976]], ['Bopf', [120121]], ['bopf', [120147]], ['bot', [8869]], ['bottom', [8869]], ['bowtie', [8904]], ['boxbox', [10697]], ['boxdl', [9488]], ['boxdL', [9557]], ['boxDl', [9558]], ['boxDL', [9559]], ['boxdr', [9484]], ['boxdR', [9554]], ['boxDr', [9555]], ['boxDR', [9556]], ['boxh', [9472]], ['boxH', [9552]], ['boxhd', [9516]], ['boxHd', [9572]], ['boxhD', [9573]], ['boxHD', [9574]], ['boxhu', [9524]], ['boxHu', [9575]], ['boxhU', [9576]], ['boxHU', [9577]], ['boxminus', [8863]], ['boxplus', [8862]], ['boxtimes', [8864]], ['boxul', [9496]], ['boxuL', [9563]], ['boxUl', [9564]], ['boxUL', [9565]], ['boxur', [9492]], ['boxuR', [9560]], ['boxUr', [9561]], ['boxUR', [9562]], ['boxv', [9474]], ['boxV', [9553]], ['boxvh', [9532]], ['boxvH', [9578]], ['boxVh', [9579]], ['boxVH', [9580]], ['boxvl', [9508]], ['boxvL', [9569]], ['boxVl', [9570]], ['boxVL', [9571]], ['boxvr', [9500]], ['boxvR', [9566]], ['boxVr', [9567]], ['boxVR', [9568]], ['bprime', [8245]], ['breve', [728]], ['Breve', [728]], ['brvbar', [166]], ['bscr', [119991]], ['Bscr', [8492]], ['bsemi', [8271]], ['bsim', [8765]], ['bsime', [8909]], ['bsolb', [10693]], ['bsol', [92]], ['bsolhsub', [10184]], ['bull', [8226]], ['bullet', [8226]], ['bump', [8782]], ['bumpE', [10926]], ['bumpe', [8783]], ['Bumpeq', [8782]], ['bumpeq', [8783]], ['Cacute', [262]], ['cacute', [263]], ['capand', [10820]], ['capbrcup', [10825]], ['capcap', [10827]], ['cap', [8745]], ['Cap', [8914]], ['capcup', [10823]], ['capdot', [10816]], ['CapitalDifferentialD', [8517]], ['caps', [8745, 65024]], ['caret', [8257]], ['caron', [711]], ['Cayleys', [8493]], ['ccaps', [10829]], ['Ccaron', [268]], ['ccaron', [269]], ['Ccedil', [199]], ['ccedil', [231]], ['Ccirc', [264]], ['ccirc', [265]], ['Cconint', [8752]], ['ccups', [10828]], ['ccupssm', [10832]], ['Cdot', [266]], ['cdot', [267]], ['cedil', [184]], ['Cedilla', [184]], ['cemptyv', [10674]], ['cent', [162]], ['centerdot', [183]], ['CenterDot', [183]], ['cfr', [120096]], ['Cfr', [8493]], ['CHcy', [1063]], ['chcy', [1095]], ['check', [10003]], ['checkmark', [10003]], ['Chi', [935]], ['chi', [967]], ['circ', [710]], ['circeq', [8791]], ['circlearrowleft', [8634]], ['circlearrowright', [8635]], ['circledast', [8859]], ['circledcirc', [8858]], ['circleddash', [8861]], ['CircleDot', [8857]], ['circledR', [174]], ['circledS', [9416]], ['CircleMinus', [8854]], ['CirclePlus', [8853]], ['CircleTimes', [8855]], ['cir', [9675]], ['cirE', [10691]], ['cire', [8791]], ['cirfnint', [10768]], ['cirmid', [10991]], ['cirscir', [10690]], ['ClockwiseContourIntegral', [8754]], ['clubs', [9827]], ['clubsuit', [9827]], ['colon', [58]], ['Colon', [8759]], ['Colone', [10868]], ['colone', [8788]], ['coloneq', [8788]], ['comma', [44]], ['commat', [64]], ['comp', [8705]], ['compfn', [8728]], ['complement', [8705]], ['complexes', [8450]], ['cong', [8773]], ['congdot', [10861]], ['Congruent', [8801]], ['conint', [8750]], ['Conint', [8751]], ['ContourIntegral', [8750]], ['copf', [120148]], ['Copf', [8450]], ['coprod', [8720]], ['Coproduct', [8720]], ['copy', [169]], ['COPY', [169]], ['copysr', [8471]], ['CounterClockwiseContourIntegral', [8755]], ['crarr', [8629]], ['cross', [10007]], ['Cross', [10799]], ['Cscr', [119966]], ['cscr', [119992]], ['csub', [10959]], ['csube', [10961]], ['csup', [10960]], ['csupe', [10962]], ['ctdot', [8943]], ['cudarrl', [10552]], ['cudarrr', [10549]], ['cuepr', [8926]], ['cuesc', [8927]], ['cularr', [8630]], ['cularrp', [10557]], ['cupbrcap', [10824]], ['cupcap', [10822]], ['CupCap', [8781]], ['cup', [8746]], ['Cup', [8915]], ['cupcup', [10826]], ['cupdot', [8845]], ['cupor', [10821]], ['cups', [8746, 65024]], ['curarr', [8631]], ['curarrm', [10556]], ['curlyeqprec', [8926]], ['curlyeqsucc', [8927]], ['curlyvee', [8910]], ['curlywedge', [8911]], ['curren', [164]], ['curvearrowleft', [8630]], ['curvearrowright', [8631]], ['cuvee', [8910]], ['cuwed', [8911]], ['cwconint', [8754]], ['cwint', [8753]], ['cylcty', [9005]], ['dagger', [8224]], ['Dagger', [8225]], ['daleth', [8504]], ['darr', [8595]], ['Darr', [8609]], ['dArr', [8659]], ['dash', [8208]], ['Dashv', [10980]], ['dashv', [8867]], ['dbkarow', [10511]], ['dblac', [733]], ['Dcaron', [270]], ['dcaron', [271]], ['Dcy', [1044]], ['dcy', [1076]], ['ddagger', [8225]], ['ddarr', [8650]], ['DD', [8517]], ['dd', [8518]], ['DDotrahd', [10513]], ['ddotseq', [10871]], ['deg', [176]], ['Del', [8711]], ['Delta', [916]], ['delta', [948]], ['demptyv', [10673]], ['dfisht', [10623]], ['Dfr', [120071]], ['dfr', [120097]], ['dHar', [10597]], ['dharl', [8643]], ['dharr', [8642]], ['DiacriticalAcute', [180]], ['DiacriticalDot', [729]], ['DiacriticalDoubleAcute', [733]], ['DiacriticalGrave', [96]], ['DiacriticalTilde', [732]], ['diam', [8900]], ['diamond', [8900]], ['Diamond', [8900]], ['diamondsuit', [9830]], ['diams', [9830]], ['die', [168]], ['DifferentialD', [8518]], ['digamma', [989]], ['disin', [8946]], ['div', [247]], ['divide', [247]], ['divideontimes', [8903]], ['divonx', [8903]], ['DJcy', [1026]], ['djcy', [1106]], ['dlcorn', [8990]], ['dlcrop', [8973]], ['dollar', [36]], ['Dopf', [120123]], ['dopf', [120149]], ['Dot', [168]], ['dot', [729]], ['DotDot', [8412]], ['doteq', [8784]], ['doteqdot', [8785]], ['DotEqual', [8784]], ['dotminus', [8760]], ['dotplus', [8724]], ['dotsquare', [8865]], ['doublebarwedge', [8966]], ['DoubleContourIntegral', [8751]], ['DoubleDot', [168]], ['DoubleDownArrow', [8659]], ['DoubleLeftArrow', [8656]], ['DoubleLeftRightArrow', [8660]], ['DoubleLeftTee', [10980]], ['DoubleLongLeftArrow', [10232]], ['DoubleLongLeftRightArrow', [10234]], ['DoubleLongRightArrow', [10233]], ['DoubleRightArrow', [8658]], ['DoubleRightTee', [8872]], ['DoubleUpArrow', [8657]], ['DoubleUpDownArrow', [8661]], ['DoubleVerticalBar', [8741]], ['DownArrowBar', [10515]], ['downarrow', [8595]], ['DownArrow', [8595]], ['Downarrow', [8659]], ['DownArrowUpArrow', [8693]], ['DownBreve', [785]], ['downdownarrows', [8650]], ['downharpoonleft', [8643]], ['downharpoonright', [8642]], ['DownLeftRightVector', [10576]], ['DownLeftTeeVector', [10590]], ['DownLeftVectorBar', [10582]], ['DownLeftVector', [8637]], ['DownRightTeeVector', [10591]], ['DownRightVectorBar', [10583]], ['DownRightVector', [8641]], ['DownTeeArrow', [8615]], ['DownTee', [8868]], ['drbkarow', [10512]], ['drcorn', [8991]], ['drcrop', [8972]], ['Dscr', [119967]], ['dscr', [119993]], ['DScy', [1029]], ['dscy', [1109]], ['dsol', [10742]], ['Dstrok', [272]], ['dstrok', [273]], ['dtdot', [8945]], ['dtri', [9663]], ['dtrif', [9662]], ['duarr', [8693]], ['duhar', [10607]], ['dwangle', [10662]], ['DZcy', [1039]], ['dzcy', [1119]], ['dzigrarr', [10239]], ['Eacute', [201]], ['eacute', [233]], ['easter', [10862]], ['Ecaron', [282]], ['ecaron', [283]], ['Ecirc', [202]], ['ecirc', [234]], ['ecir', [8790]], ['ecolon', [8789]], ['Ecy', [1069]], ['ecy', [1101]], ['eDDot', [10871]], ['Edot', [278]], ['edot', [279]], ['eDot', [8785]], ['ee', [8519]], ['efDot', [8786]], ['Efr', [120072]], ['efr', [120098]], ['eg', [10906]], ['Egrave', [200]], ['egrave', [232]], ['egs', [10902]], ['egsdot', [10904]], ['el', [10905]], ['Element', [8712]], ['elinters', [9191]], ['ell', [8467]], ['els', [10901]], ['elsdot', [10903]], ['Emacr', [274]], ['emacr', [275]], ['empty', [8709]], ['emptyset', [8709]], ['EmptySmallSquare', [9723]], ['emptyv', [8709]], ['EmptyVerySmallSquare', [9643]], ['emsp13', [8196]], ['emsp14', [8197]], ['emsp', [8195]], ['ENG', [330]], ['eng', [331]], ['ensp', [8194]], ['Eogon', [280]], ['eogon', [281]], ['Eopf', [120124]], ['eopf', [120150]], ['epar', [8917]], ['eparsl', [10723]], ['eplus', [10865]], ['epsi', [949]], ['Epsilon', [917]], ['epsilon', [949]], ['epsiv', [1013]], ['eqcirc', [8790]], ['eqcolon', [8789]], ['eqsim', [8770]], ['eqslantgtr', [10902]], ['eqslantless', [10901]], ['Equal', [10869]], ['equals', [61]], ['EqualTilde', [8770]], ['equest', [8799]], ['Equilibrium', [8652]], ['equiv', [8801]], ['equivDD', [10872]], ['eqvparsl', [10725]], ['erarr', [10609]], ['erDot', [8787]], ['escr', [8495]], ['Escr', [8496]], ['esdot', [8784]], ['Esim', [10867]], ['esim', [8770]], ['Eta', [919]], ['eta', [951]], ['ETH', [208]], ['eth', [240]], ['Euml', [203]], ['euml', [235]], ['euro', [8364]], ['excl', [33]], ['exist', [8707]], ['Exists', [8707]], ['expectation', [8496]], ['exponentiale', [8519]], ['ExponentialE', [8519]], ['fallingdotseq', [8786]], ['Fcy', [1060]], ['fcy', [1092]], ['female', [9792]], ['ffilig', [64259]], ['fflig', [64256]], ['ffllig', [64260]], ['Ffr', [120073]], ['ffr', [120099]], ['filig', [64257]], ['FilledSmallSquare', [9724]], ['FilledVerySmallSquare', [9642]], ['fjlig', [102, 106]], ['flat', [9837]], ['fllig', [64258]], ['fltns', [9649]], ['fnof', [402]], ['Fopf', [120125]], ['fopf', [120151]], ['forall', [8704]], ['ForAll', [8704]], ['fork', [8916]], ['forkv', [10969]], ['Fouriertrf', [8497]], ['fpartint', [10765]], ['frac12', [189]], ['frac13', [8531]], ['frac14', [188]], ['frac15', [8533]], ['frac16', [8537]], ['frac18', [8539]], ['frac23', [8532]], ['frac25', [8534]], ['frac34', [190]], ['frac35', [8535]], ['frac38', [8540]], ['frac45', [8536]], ['frac56', [8538]], ['frac58', [8541]], ['frac78', [8542]], ['frasl', [8260]], ['frown', [8994]], ['fscr', [119995]], ['Fscr', [8497]], ['gacute', [501]], ['Gamma', [915]], ['gamma', [947]], ['Gammad', [988]], ['gammad', [989]], ['gap', [10886]], ['Gbreve', [286]], ['gbreve', [287]], ['Gcedil', [290]], ['Gcirc', [284]], ['gcirc', [285]], ['Gcy', [1043]], ['gcy', [1075]], ['Gdot', [288]], ['gdot', [289]], ['ge', [8805]], ['gE', [8807]], ['gEl', [10892]], ['gel', [8923]], ['geq', [8805]], ['geqq', [8807]], ['geqslant', [10878]], ['gescc', [10921]], ['ges', [10878]], ['gesdot', [10880]], ['gesdoto', [10882]], ['gesdotol', [10884]], ['gesl', [8923, 65024]], ['gesles', [10900]], ['Gfr', [120074]], ['gfr', [120100]], ['gg', [8811]], ['Gg', [8921]], ['ggg', [8921]], ['gimel', [8503]], ['GJcy', [1027]], ['gjcy', [1107]], ['gla', [10917]], ['gl', [8823]], ['glE', [10898]], ['glj', [10916]], ['gnap', [10890]], ['gnapprox', [10890]], ['gne', [10888]], ['gnE', [8809]], ['gneq', [10888]], ['gneqq', [8809]], ['gnsim', [8935]], ['Gopf', [120126]], ['gopf', [120152]], ['grave', [96]], ['GreaterEqual', [8805]], ['GreaterEqualLess', [8923]], ['GreaterFullEqual', [8807]], ['GreaterGreater', [10914]], ['GreaterLess', [8823]], ['GreaterSlantEqual', [10878]], ['GreaterTilde', [8819]], ['Gscr', [119970]], ['gscr', [8458]], ['gsim', [8819]], ['gsime', [10894]], ['gsiml', [10896]], ['gtcc', [10919]], ['gtcir', [10874]], ['gt', [62]], ['GT', [62]], ['Gt', [8811]], ['gtdot', [8919]], ['gtlPar', [10645]], ['gtquest', [10876]], ['gtrapprox', [10886]], ['gtrarr', [10616]], ['gtrdot', [8919]], ['gtreqless', [8923]], ['gtreqqless', [10892]], ['gtrless', [8823]], ['gtrsim', [8819]], ['gvertneqq', [8809, 65024]], ['gvnE', [8809, 65024]], ['Hacek', [711]], ['hairsp', [8202]], ['half', [189]], ['hamilt', [8459]], ['HARDcy', [1066]], ['hardcy', [1098]], ['harrcir', [10568]], ['harr', [8596]], ['hArr', [8660]], ['harrw', [8621]], ['Hat', [94]], ['hbar', [8463]], ['Hcirc', [292]], ['hcirc', [293]], ['hearts', [9829]], ['heartsuit', [9829]], ['hellip', [8230]], ['hercon', [8889]], ['hfr', [120101]], ['Hfr', [8460]], ['HilbertSpace', [8459]], ['hksearow', [10533]], ['hkswarow', [10534]], ['hoarr', [8703]], ['homtht', [8763]], ['hookleftarrow', [8617]], ['hookrightarrow', [8618]], ['hopf', [120153]], ['Hopf', [8461]], ['horbar', [8213]], ['HorizontalLine', [9472]], ['hscr', [119997]], ['Hscr', [8459]], ['hslash', [8463]], ['Hstrok', [294]], ['hstrok', [295]], ['HumpDownHump', [8782]], ['HumpEqual', [8783]], ['hybull', [8259]], ['hyphen', [8208]], ['Iacute', [205]], ['iacute', [237]], ['ic', [8291]], ['Icirc', [206]], ['icirc', [238]], ['Icy', [1048]], ['icy', [1080]], ['Idot', [304]], ['IEcy', [1045]], ['iecy', [1077]], ['iexcl', [161]], ['iff', [8660]], ['ifr', [120102]], ['Ifr', [8465]], ['Igrave', [204]], ['igrave', [236]], ['ii', [8520]], ['iiiint', [10764]], ['iiint', [8749]], ['iinfin', [10716]], ['iiota', [8489]], ['IJlig', [306]], ['ijlig', [307]], ['Imacr', [298]], ['imacr', [299]], ['image', [8465]], ['ImaginaryI', [8520]], ['imagline', [8464]], ['imagpart', [8465]], ['imath', [305]], ['Im', [8465]], ['imof', [8887]], ['imped', [437]], ['Implies', [8658]], ['incare', [8453]], ['in', [8712]], ['infin', [8734]], ['infintie', [10717]], ['inodot', [305]], ['intcal', [8890]], ['int', [8747]], ['Int', [8748]], ['integers', [8484]], ['Integral', [8747]], ['intercal', [8890]], ['Intersection', [8898]], ['intlarhk', [10775]], ['intprod', [10812]], ['InvisibleComma', [8291]], ['InvisibleTimes', [8290]], ['IOcy', [1025]], ['iocy', [1105]], ['Iogon', [302]], ['iogon', [303]], ['Iopf', [120128]], ['iopf', [120154]], ['Iota', [921]], ['iota', [953]], ['iprod', [10812]], ['iquest', [191]], ['iscr', [119998]], ['Iscr', [8464]], ['isin', [8712]], ['isindot', [8949]], ['isinE', [8953]], ['isins', [8948]], ['isinsv', [8947]], ['isinv', [8712]], ['it', [8290]], ['Itilde', [296]], ['itilde', [297]], ['Iukcy', [1030]], ['iukcy', [1110]], ['Iuml', [207]], ['iuml', [239]], ['Jcirc', [308]], ['jcirc', [309]], ['Jcy', [1049]], ['jcy', [1081]], ['Jfr', [120077]], ['jfr', [120103]], ['jmath', [567]], ['Jopf', [120129]], ['jopf', [120155]], ['Jscr', [119973]], ['jscr', [119999]], ['Jsercy', [1032]], ['jsercy', [1112]], ['Jukcy', [1028]], ['jukcy', [1108]], ['Kappa', [922]], ['kappa', [954]], ['kappav', [1008]], ['Kcedil', [310]], ['kcedil', [311]], ['Kcy', [1050]], ['kcy', [1082]], ['Kfr', [120078]], ['kfr', [120104]], ['kgreen', [312]], ['KHcy', [1061]], ['khcy', [1093]], ['KJcy', [1036]], ['kjcy', [1116]], ['Kopf', [120130]], ['kopf', [120156]], ['Kscr', [119974]], ['kscr', [120000]], ['lAarr', [8666]], ['Lacute', [313]], ['lacute', [314]], ['laemptyv', [10676]], ['lagran', [8466]], ['Lambda', [923]], ['lambda', [955]], ['lang', [10216]], ['Lang', [10218]], ['langd', [10641]], ['langle', [10216]], ['lap', [10885]], ['Laplacetrf', [8466]], ['laquo', [171]], ['larrb', [8676]], ['larrbfs', [10527]], ['larr', [8592]], ['Larr', [8606]], ['lArr', [8656]], ['larrfs', [10525]], ['larrhk', [8617]], ['larrlp', [8619]], ['larrpl', [10553]], ['larrsim', [10611]], ['larrtl', [8610]], ['latail', [10521]], ['lAtail', [10523]], ['lat', [10923]], ['late', [10925]], ['lates', [10925, 65024]], ['lbarr', [10508]], ['lBarr', [10510]], ['lbbrk', [10098]], ['lbrace', [123]], ['lbrack', [91]], ['lbrke', [10635]], ['lbrksld', [10639]], ['lbrkslu', [10637]], ['Lcaron', [317]], ['lcaron', [318]], ['Lcedil', [315]], ['lcedil', [316]], ['lceil', [8968]], ['lcub', [123]], ['Lcy', [1051]], ['lcy', [1083]], ['ldca', [10550]], ['ldquo', [8220]], ['ldquor', [8222]], ['ldrdhar', [10599]], ['ldrushar', [10571]], ['ldsh', [8626]], ['le', [8804]], ['lE', [8806]], ['LeftAngleBracket', [10216]], ['LeftArrowBar', [8676]], ['leftarrow', [8592]], ['LeftArrow', [8592]], ['Leftarrow', [8656]], ['LeftArrowRightArrow', [8646]], ['leftarrowtail', [8610]], ['LeftCeiling', [8968]], ['LeftDoubleBracket', [10214]], ['LeftDownTeeVector', [10593]], ['LeftDownVectorBar', [10585]], ['LeftDownVector', [8643]], ['LeftFloor', [8970]], ['leftharpoondown', [8637]], ['leftharpoonup', [8636]], ['leftleftarrows', [8647]], ['leftrightarrow', [8596]], ['LeftRightArrow', [8596]], ['Leftrightarrow', [8660]], ['leftrightarrows', [8646]], ['leftrightharpoons', [8651]], ['leftrightsquigarrow', [8621]], ['LeftRightVector', [10574]], ['LeftTeeArrow', [8612]], ['LeftTee', [8867]], ['LeftTeeVector', [10586]], ['leftthreetimes', [8907]], ['LeftTriangleBar', [10703]], ['LeftTriangle', [8882]], ['LeftTriangleEqual', [8884]], ['LeftUpDownVector', [10577]], ['LeftUpTeeVector', [10592]], ['LeftUpVectorBar', [10584]], ['LeftUpVector', [8639]], ['LeftVectorBar', [10578]], ['LeftVector', [8636]], ['lEg', [10891]], ['leg', [8922]], ['leq', [8804]], ['leqq', [8806]], ['leqslant', [10877]], ['lescc', [10920]], ['les', [10877]], ['lesdot', [10879]], ['lesdoto', [10881]], ['lesdotor', [10883]], ['lesg', [8922, 65024]], ['lesges', [10899]], ['lessapprox', [10885]], ['lessdot', [8918]], ['lesseqgtr', [8922]], ['lesseqqgtr', [10891]], ['LessEqualGreater', [8922]], ['LessFullEqual', [8806]], ['LessGreater', [8822]], ['lessgtr', [8822]], ['LessLess', [10913]], ['lesssim', [8818]], ['LessSlantEqual', [10877]], ['LessTilde', [8818]], ['lfisht', [10620]], ['lfloor', [8970]], ['Lfr', [120079]], ['lfr', [120105]], ['lg', [8822]], ['lgE', [10897]], ['lHar', [10594]], ['lhard', [8637]], ['lharu', [8636]], ['lharul', [10602]], ['lhblk', [9604]], ['LJcy', [1033]], ['ljcy', [1113]], ['llarr', [8647]], ['ll', [8810]], ['Ll', [8920]], ['llcorner', [8990]], ['Lleftarrow', [8666]], ['llhard', [10603]], ['lltri', [9722]], ['Lmidot', [319]], ['lmidot', [320]], ['lmoustache', [9136]], ['lmoust', [9136]], ['lnap', [10889]], ['lnapprox', [10889]], ['lne', [10887]], ['lnE', [8808]], ['lneq', [10887]], ['lneqq', [8808]], ['lnsim', [8934]], ['loang', [10220]], ['loarr', [8701]], ['lobrk', [10214]], ['longleftarrow', [10229]], ['LongLeftArrow', [10229]], ['Longleftarrow', [10232]], ['longleftrightarrow', [10231]], ['LongLeftRightArrow', [10231]], ['Longleftrightarrow', [10234]], ['longmapsto', [10236]], ['longrightarrow', [10230]], ['LongRightArrow', [10230]], ['Longrightarrow', [10233]], ['looparrowleft', [8619]], ['looparrowright', [8620]], ['lopar', [10629]], ['Lopf', [120131]], ['lopf', [120157]], ['loplus', [10797]], ['lotimes', [10804]], ['lowast', [8727]], ['lowbar', [95]], ['LowerLeftArrow', [8601]], ['LowerRightArrow', [8600]], ['loz', [9674]], ['lozenge', [9674]], ['lozf', [10731]], ['lpar', [40]], ['lparlt', [10643]], ['lrarr', [8646]], ['lrcorner', [8991]], ['lrhar', [8651]], ['lrhard', [10605]], ['lrm', [8206]], ['lrtri', [8895]], ['lsaquo', [8249]], ['lscr', [120001]], ['Lscr', [8466]], ['lsh', [8624]], ['Lsh', [8624]], ['lsim', [8818]], ['lsime', [10893]], ['lsimg', [10895]], ['lsqb', [91]], ['lsquo', [8216]], ['lsquor', [8218]], ['Lstrok', [321]], ['lstrok', [322]], ['ltcc', [10918]], ['ltcir', [10873]], ['lt', [60]], ['LT', [60]], ['Lt', [8810]], ['ltdot', [8918]], ['lthree', [8907]], ['ltimes', [8905]], ['ltlarr', [10614]], ['ltquest', [10875]], ['ltri', [9667]], ['ltrie', [8884]], ['ltrif', [9666]], ['ltrPar', [10646]], ['lurdshar', [10570]], ['luruhar', [10598]], ['lvertneqq', [8808, 65024]], ['lvnE', [8808, 65024]], ['macr', [175]], ['male', [9794]], ['malt', [10016]], ['maltese', [10016]], ['Map', [10501]], ['map', [8614]], ['mapsto', [8614]], ['mapstodown', [8615]], ['mapstoleft', [8612]], ['mapstoup', [8613]], ['marker', [9646]], ['mcomma', [10793]], ['Mcy', [1052]], ['mcy', [1084]], ['mdash', [8212]], ['mDDot', [8762]], ['measuredangle', [8737]], ['MediumSpace', [8287]], ['Mellintrf', [8499]], ['Mfr', [120080]], ['mfr', [120106]], ['mho', [8487]], ['micro', [181]], ['midast', [42]], ['midcir', [10992]], ['mid', [8739]], ['middot', [183]], ['minusb', [8863]], ['minus', [8722]], ['minusd', [8760]], ['minusdu', [10794]], ['MinusPlus', [8723]], ['mlcp', [10971]], ['mldr', [8230]], ['mnplus', [8723]], ['models', [8871]], ['Mopf', [120132]], ['mopf', [120158]], ['mp', [8723]], ['mscr', [120002]], ['Mscr', [8499]], ['mstpos', [8766]], ['Mu', [924]], ['mu', [956]], ['multimap', [8888]], ['mumap', [8888]], ['nabla', [8711]], ['Nacute', [323]], ['nacute', [324]], ['nang', [8736, 8402]], ['nap', [8777]], ['napE', [10864, 824]], ['napid', [8779, 824]], ['napos', [329]], ['napprox', [8777]], ['natural', [9838]], ['naturals', [8469]], ['natur', [9838]], ['nbsp', [160]], ['nbump', [8782, 824]], ['nbumpe', [8783, 824]], ['ncap', [10819]], ['Ncaron', [327]], ['ncaron', [328]], ['Ncedil', [325]], ['ncedil', [326]], ['ncong', [8775]], ['ncongdot', [10861, 824]], ['ncup', [10818]], ['Ncy', [1053]], ['ncy', [1085]], ['ndash', [8211]], ['nearhk', [10532]], ['nearr', [8599]], ['neArr', [8663]], ['nearrow', [8599]], ['ne', [8800]], ['nedot', [8784, 824]], ['NegativeMediumSpace', [8203]], ['NegativeThickSpace', [8203]], ['NegativeThinSpace', [8203]], ['NegativeVeryThinSpace', [8203]], ['nequiv', [8802]], ['nesear', [10536]], ['nesim', [8770, 824]], ['NestedGreaterGreater', [8811]], ['NestedLessLess', [8810]], ['nexist', [8708]], ['nexists', [8708]], ['Nfr', [120081]], ['nfr', [120107]], ['ngE', [8807, 824]], ['nge', [8817]], ['ngeq', [8817]], ['ngeqq', [8807, 824]], ['ngeqslant', [10878, 824]], ['nges', [10878, 824]], ['nGg', [8921, 824]], ['ngsim', [8821]], ['nGt', [8811, 8402]], ['ngt', [8815]], ['ngtr', [8815]], ['nGtv', [8811, 824]], ['nharr', [8622]], ['nhArr', [8654]], ['nhpar', [10994]], ['ni', [8715]], ['nis', [8956]], ['nisd', [8954]], ['niv', [8715]], ['NJcy', [1034]], ['njcy', [1114]], ['nlarr', [8602]], ['nlArr', [8653]], ['nldr', [8229]], ['nlE', [8806, 824]], ['nle', [8816]], ['nleftarrow', [8602]], ['nLeftarrow', [8653]], ['nleftrightarrow', [8622]], ['nLeftrightarrow', [8654]], ['nleq', [8816]], ['nleqq', [8806, 824]], ['nleqslant', [10877, 824]], ['nles', [10877, 824]], ['nless', [8814]], ['nLl', [8920, 824]], ['nlsim', [8820]], ['nLt', [8810, 8402]], ['nlt', [8814]], ['nltri', [8938]], ['nltrie', [8940]], ['nLtv', [8810, 824]], ['nmid', [8740]], ['NoBreak', [8288]], ['NonBreakingSpace', [160]], ['nopf', [120159]], ['Nopf', [8469]], ['Not', [10988]], ['not', [172]], ['NotCongruent', [8802]], ['NotCupCap', [8813]], ['NotDoubleVerticalBar', [8742]], ['NotElement', [8713]], ['NotEqual', [8800]], ['NotEqualTilde', [8770, 824]], ['NotExists', [8708]], ['NotGreater', [8815]], ['NotGreaterEqual', [8817]], ['NotGreaterFullEqual', [8807, 824]], ['NotGreaterGreater', [8811, 824]], ['NotGreaterLess', [8825]], ['NotGreaterSlantEqual', [10878, 824]], ['NotGreaterTilde', [8821]], ['NotHumpDownHump', [8782, 824]], ['NotHumpEqual', [8783, 824]], ['notin', [8713]], ['notindot', [8949, 824]], ['notinE', [8953, 824]], ['notinva', [8713]], ['notinvb', [8951]], ['notinvc', [8950]], ['NotLeftTriangleBar', [10703, 824]], ['NotLeftTriangle', [8938]], ['NotLeftTriangleEqual', [8940]], ['NotLess', [8814]], ['NotLessEqual', [8816]], ['NotLessGreater', [8824]], ['NotLessLess', [8810, 824]], ['NotLessSlantEqual', [10877, 824]], ['NotLessTilde', [8820]], ['NotNestedGreaterGreater', [10914, 824]], ['NotNestedLessLess', [10913, 824]], ['notni', [8716]], ['notniva', [8716]], ['notnivb', [8958]], ['notnivc', [8957]], ['NotPrecedes', [8832]], ['NotPrecedesEqual', [10927, 824]], ['NotPrecedesSlantEqual', [8928]], ['NotReverseElement', [8716]], ['NotRightTriangleBar', [10704, 824]], ['NotRightTriangle', [8939]], ['NotRightTriangleEqual', [8941]], ['NotSquareSubset', [8847, 824]], ['NotSquareSubsetEqual', [8930]], ['NotSquareSuperset', [8848, 824]], ['NotSquareSupersetEqual', [8931]], ['NotSubset', [8834, 8402]], ['NotSubsetEqual', [8840]], ['NotSucceeds', [8833]], ['NotSucceedsEqual', [10928, 824]], ['NotSucceedsSlantEqual', [8929]], ['NotSucceedsTilde', [8831, 824]], ['NotSuperset', [8835, 8402]], ['NotSupersetEqual', [8841]], ['NotTilde', [8769]], ['NotTildeEqual', [8772]], ['NotTildeFullEqual', [8775]], ['NotTildeTilde', [8777]], ['NotVerticalBar', [8740]], ['nparallel', [8742]], ['npar', [8742]], ['nparsl', [11005, 8421]], ['npart', [8706, 824]], ['npolint', [10772]], ['npr', [8832]], ['nprcue', [8928]], ['nprec', [8832]], ['npreceq', [10927, 824]], ['npre', [10927, 824]], ['nrarrc', [10547, 824]], ['nrarr', [8603]], ['nrArr', [8655]], ['nrarrw', [8605, 824]], ['nrightarrow', [8603]], ['nRightarrow', [8655]], ['nrtri', [8939]], ['nrtrie', [8941]], ['nsc', [8833]], ['nsccue', [8929]], ['nsce', [10928, 824]], ['Nscr', [119977]], ['nscr', [120003]], ['nshortmid', [8740]], ['nshortparallel', [8742]], ['nsim', [8769]], ['nsime', [8772]], ['nsimeq', [8772]], ['nsmid', [8740]], ['nspar', [8742]], ['nsqsube', [8930]], ['nsqsupe', [8931]], ['nsub', [8836]], ['nsubE', [10949, 824]], ['nsube', [8840]], ['nsubset', [8834, 8402]], ['nsubseteq', [8840]], ['nsubseteqq', [10949, 824]], ['nsucc', [8833]], ['nsucceq', [10928, 824]], ['nsup', [8837]], ['nsupE', [10950, 824]], ['nsupe', [8841]], ['nsupset', [8835, 8402]], ['nsupseteq', [8841]], ['nsupseteqq', [10950, 824]], ['ntgl', [8825]], ['Ntilde', [209]], ['ntilde', [241]], ['ntlg', [8824]], ['ntriangleleft', [8938]], ['ntrianglelefteq', [8940]], ['ntriangleright', [8939]], ['ntrianglerighteq', [8941]], ['Nu', [925]], ['nu', [957]], ['num', [35]], ['numero', [8470]], ['numsp', [8199]], ['nvap', [8781, 8402]], ['nvdash', [8876]], ['nvDash', [8877]], ['nVdash', [8878]], ['nVDash', [8879]], ['nvge', [8805, 8402]], ['nvgt', [62, 8402]], ['nvHarr', [10500]], ['nvinfin', [10718]], ['nvlArr', [10498]], ['nvle', [8804, 8402]], ['nvlt', [60, 8402]], ['nvltrie', [8884, 8402]], ['nvrArr', [10499]], ['nvrtrie', [8885, 8402]], ['nvsim', [8764, 8402]], ['nwarhk', [10531]], ['nwarr', [8598]], ['nwArr', [8662]], ['nwarrow', [8598]], ['nwnear', [10535]], ['Oacute', [211]], ['oacute', [243]], ['oast', [8859]], ['Ocirc', [212]], ['ocirc', [244]], ['ocir', [8858]], ['Ocy', [1054]], ['ocy', [1086]], ['odash', [8861]], ['Odblac', [336]], ['odblac', [337]], ['odiv', [10808]], ['odot', [8857]], ['odsold', [10684]], ['OElig', [338]], ['oelig', [339]], ['ofcir', [10687]], ['Ofr', [120082]], ['ofr', [120108]], ['ogon', [731]], ['Ograve', [210]], ['ograve', [242]], ['ogt', [10689]], ['ohbar', [10677]], ['ohm', [937]], ['oint', [8750]], ['olarr', [8634]], ['olcir', [10686]], ['olcross', [10683]], ['oline', [8254]], ['olt', [10688]], ['Omacr', [332]], ['omacr', [333]], ['Omega', [937]], ['omega', [969]], ['Omicron', [927]], ['omicron', [959]], ['omid', [10678]], ['ominus', [8854]], ['Oopf', [120134]], ['oopf', [120160]], ['opar', [10679]], ['OpenCurlyDoubleQuote', [8220]], ['OpenCurlyQuote', [8216]], ['operp', [10681]], ['oplus', [8853]], ['orarr', [8635]], ['Or', [10836]], ['or', [8744]], ['ord', [10845]], ['order', [8500]], ['orderof', [8500]], ['ordf', [170]], ['ordm', [186]], ['origof', [8886]], ['oror', [10838]], ['orslope', [10839]], ['orv', [10843]], ['oS', [9416]], ['Oscr', [119978]], ['oscr', [8500]], ['Oslash', [216]], ['oslash', [248]], ['osol', [8856]], ['Otilde', [213]], ['otilde', [245]], ['otimesas', [10806]], ['Otimes', [10807]], ['otimes', [8855]], ['Ouml', [214]], ['ouml', [246]], ['ovbar', [9021]], ['OverBar', [8254]], ['OverBrace', [9182]], ['OverBracket', [9140]], ['OverParenthesis', [9180]], ['para', [182]], ['parallel', [8741]], ['par', [8741]], ['parsim', [10995]], ['parsl', [11005]], ['part', [8706]], ['PartialD', [8706]], ['Pcy', [1055]], ['pcy', [1087]], ['percnt', [37]], ['period', [46]], ['permil', [8240]], ['perp', [8869]], ['pertenk', [8241]], ['Pfr', [120083]], ['pfr', [120109]], ['Phi', [934]], ['phi', [966]], ['phiv', [981]], ['phmmat', [8499]], ['phone', [9742]], ['Pi', [928]], ['pi', [960]], ['pitchfork', [8916]], ['piv', [982]], ['planck', [8463]], ['planckh', [8462]], ['plankv', [8463]], ['plusacir', [10787]], ['plusb', [8862]], ['pluscir', [10786]], ['plus', [43]], ['plusdo', [8724]], ['plusdu', [10789]], ['pluse', [10866]], ['PlusMinus', [177]], ['plusmn', [177]], ['plussim', [10790]], ['plustwo', [10791]], ['pm', [177]], ['Poincareplane', [8460]], ['pointint', [10773]], ['popf', [120161]], ['Popf', [8473]], ['pound', [163]], ['prap', [10935]], ['Pr', [10939]], ['pr', [8826]], ['prcue', [8828]], ['precapprox', [10935]], ['prec', [8826]], ['preccurlyeq', [8828]], ['Precedes', [8826]], ['PrecedesEqual', [10927]], ['PrecedesSlantEqual', [8828]], ['PrecedesTilde', [8830]], ['preceq', [10927]], ['precnapprox', [10937]], ['precneqq', [10933]], ['precnsim', [8936]], ['pre', [10927]], ['prE', [10931]], ['precsim', [8830]], ['prime', [8242]], ['Prime', [8243]], ['primes', [8473]], ['prnap', [10937]], ['prnE', [10933]], ['prnsim', [8936]], ['prod', [8719]], ['Product', [8719]], ['profalar', [9006]], ['profline', [8978]], ['profsurf', [8979]], ['prop', [8733]], ['Proportional', [8733]], ['Proportion', [8759]], ['propto', [8733]], ['prsim', [8830]], ['prurel', [8880]], ['Pscr', [119979]], ['pscr', [120005]], ['Psi', [936]], ['psi', [968]], ['puncsp', [8200]], ['Qfr', [120084]], ['qfr', [120110]], ['qint', [10764]], ['qopf', [120162]], ['Qopf', [8474]], ['qprime', [8279]], ['Qscr', [119980]], ['qscr', [120006]], ['quaternions', [8461]], ['quatint', [10774]], ['quest', [63]], ['questeq', [8799]], ['quot', [34]], ['QUOT', [34]], ['rAarr', [8667]], ['race', [8765, 817]], ['Racute', [340]], ['racute', [341]], ['radic', [8730]], ['raemptyv', [10675]], ['rang', [10217]], ['Rang', [10219]], ['rangd', [10642]], ['range', [10661]], ['rangle', [10217]], ['raquo', [187]], ['rarrap', [10613]], ['rarrb', [8677]], ['rarrbfs', [10528]], ['rarrc', [10547]], ['rarr', [8594]], ['Rarr', [8608]], ['rArr', [8658]], ['rarrfs', [10526]], ['rarrhk', [8618]], ['rarrlp', [8620]], ['rarrpl', [10565]], ['rarrsim', [10612]], ['Rarrtl', [10518]], ['rarrtl', [8611]], ['rarrw', [8605]], ['ratail', [10522]], ['rAtail', [10524]], ['ratio', [8758]], ['rationals', [8474]], ['rbarr', [10509]], ['rBarr', [10511]], ['RBarr', [10512]], ['rbbrk', [10099]], ['rbrace', [125]], ['rbrack', [93]], ['rbrke', [10636]], ['rbrksld', [10638]], ['rbrkslu', [10640]], ['Rcaron', [344]], ['rcaron', [345]], ['Rcedil', [342]], ['rcedil', [343]], ['rceil', [8969]], ['rcub', [125]], ['Rcy', [1056]], ['rcy', [1088]], ['rdca', [10551]], ['rdldhar', [10601]], ['rdquo', [8221]], ['rdquor', [8221]], ['CloseCurlyDoubleQuote', [8221]], ['rdsh', [8627]], ['real', [8476]], ['realine', [8475]], ['realpart', [8476]], ['reals', [8477]], ['Re', [8476]], ['rect', [9645]], ['reg', [174]], ['REG', [174]], ['ReverseElement', [8715]], ['ReverseEquilibrium', [8651]], ['ReverseUpEquilibrium', [10607]], ['rfisht', [10621]], ['rfloor', [8971]], ['rfr', [120111]], ['Rfr', [8476]], ['rHar', [10596]], ['rhard', [8641]], ['rharu', [8640]], ['rharul', [10604]], ['Rho', [929]], ['rho', [961]], ['rhov', [1009]], ['RightAngleBracket', [10217]], ['RightArrowBar', [8677]], ['rightarrow', [8594]], ['RightArrow', [8594]], ['Rightarrow', [8658]], ['RightArrowLeftArrow', [8644]], ['rightarrowtail', [8611]], ['RightCeiling', [8969]], ['RightDoubleBracket', [10215]], ['RightDownTeeVector', [10589]], ['RightDownVectorBar', [10581]], ['RightDownVector', [8642]], ['RightFloor', [8971]], ['rightharpoondown', [8641]], ['rightharpoonup', [8640]], ['rightleftarrows', [8644]], ['rightleftharpoons', [8652]], ['rightrightarrows', [8649]], ['rightsquigarrow', [8605]], ['RightTeeArrow', [8614]], ['RightTee', [8866]], ['RightTeeVector', [10587]], ['rightthreetimes', [8908]], ['RightTriangleBar', [10704]], ['RightTriangle', [8883]], ['RightTriangleEqual', [8885]], ['RightUpDownVector', [10575]], ['RightUpTeeVector', [10588]], ['RightUpVectorBar', [10580]], ['RightUpVector', [8638]], ['RightVectorBar', [10579]], ['RightVector', [8640]], ['ring', [730]], ['risingdotseq', [8787]], ['rlarr', [8644]], ['rlhar', [8652]], ['rlm', [8207]], ['rmoustache', [9137]], ['rmoust', [9137]], ['rnmid', [10990]], ['roang', [10221]], ['roarr', [8702]], ['robrk', [10215]], ['ropar', [10630]], ['ropf', [120163]], ['Ropf', [8477]], ['roplus', [10798]], ['rotimes', [10805]], ['RoundImplies', [10608]], ['rpar', [41]], ['rpargt', [10644]], ['rppolint', [10770]], ['rrarr', [8649]], ['Rrightarrow', [8667]], ['rsaquo', [8250]], ['rscr', [120007]], ['Rscr', [8475]], ['rsh', [8625]], ['Rsh', [8625]], ['rsqb', [93]], ['rsquo', [8217]], ['rsquor', [8217]], ['CloseCurlyQuote', [8217]], ['rthree', [8908]], ['rtimes', [8906]], ['rtri', [9657]], ['rtrie', [8885]], ['rtrif', [9656]], ['rtriltri', [10702]], ['RuleDelayed', [10740]], ['ruluhar', [10600]], ['rx', [8478]], ['Sacute', [346]], ['sacute', [347]], ['sbquo', [8218]], ['scap', [10936]], ['Scaron', [352]], ['scaron', [353]], ['Sc', [10940]], ['sc', [8827]], ['sccue', [8829]], ['sce', [10928]], ['scE', [10932]], ['Scedil', [350]], ['scedil', [351]], ['Scirc', [348]], ['scirc', [349]], ['scnap', [10938]], ['scnE', [10934]], ['scnsim', [8937]], ['scpolint', [10771]], ['scsim', [8831]], ['Scy', [1057]], ['scy', [1089]], ['sdotb', [8865]], ['sdot', [8901]], ['sdote', [10854]], ['searhk', [10533]], ['searr', [8600]], ['seArr', [8664]], ['searrow', [8600]], ['sect', [167]], ['semi', [59]], ['seswar', [10537]], ['setminus', [8726]], ['setmn', [8726]], ['sext', [10038]], ['Sfr', [120086]], ['sfr', [120112]], ['sfrown', [8994]], ['sharp', [9839]], ['SHCHcy', [1065]], ['shchcy', [1097]], ['SHcy', [1064]], ['shcy', [1096]], ['ShortDownArrow', [8595]], ['ShortLeftArrow', [8592]], ['shortmid', [8739]], ['shortparallel', [8741]], ['ShortRightArrow', [8594]], ['ShortUpArrow', [8593]], ['shy', [173]], ['Sigma', [931]], ['sigma', [963]], ['sigmaf', [962]], ['sigmav', [962]], ['sim', [8764]], ['simdot', [10858]], ['sime', [8771]], ['simeq', [8771]], ['simg', [10910]], ['simgE', [10912]], ['siml', [10909]], ['simlE', [10911]], ['simne', [8774]], ['simplus', [10788]], ['simrarr', [10610]], ['slarr', [8592]], ['SmallCircle', [8728]], ['smallsetminus', [8726]], ['smashp', [10803]], ['smeparsl', [10724]], ['smid', [8739]], ['smile', [8995]], ['smt', [10922]], ['smte', [10924]], ['smtes', [10924, 65024]], ['SOFTcy', [1068]], ['softcy', [1100]], ['solbar', [9023]], ['solb', [10692]], ['sol', [47]], ['Sopf', [120138]], ['sopf', [120164]], ['spades', [9824]], ['spadesuit', [9824]], ['spar', [8741]], ['sqcap', [8851]], ['sqcaps', [8851, 65024]], ['sqcup', [8852]], ['sqcups', [8852, 65024]], ['Sqrt', [8730]], ['sqsub', [8847]], ['sqsube', [8849]], ['sqsubset', [8847]], ['sqsubseteq', [8849]], ['sqsup', [8848]], ['sqsupe', [8850]], ['sqsupset', [8848]], ['sqsupseteq', [8850]], ['square', [9633]], ['Square', [9633]], ['SquareIntersection', [8851]], ['SquareSubset', [8847]], ['SquareSubsetEqual', [8849]], ['SquareSuperset', [8848]], ['SquareSupersetEqual', [8850]], ['SquareUnion', [8852]], ['squarf', [9642]], ['squ', [9633]], ['squf', [9642]], ['srarr', [8594]], ['Sscr', [119982]], ['sscr', [120008]], ['ssetmn', [8726]], ['ssmile', [8995]], ['sstarf', [8902]], ['Star', [8902]], ['star', [9734]], ['starf', [9733]], ['straightepsilon', [1013]], ['straightphi', [981]], ['strns', [175]], ['sub', [8834]], ['Sub', [8912]], ['subdot', [10941]], ['subE', [10949]], ['sube', [8838]], ['subedot', [10947]], ['submult', [10945]], ['subnE', [10955]], ['subne', [8842]], ['subplus', [10943]], ['subrarr', [10617]], ['subset', [8834]], ['Subset', [8912]], ['subseteq', [8838]], ['subseteqq', [10949]], ['SubsetEqual', [8838]], ['subsetneq', [8842]], ['subsetneqq', [10955]], ['subsim', [10951]], ['subsub', [10965]], ['subsup', [10963]], ['succapprox', [10936]], ['succ', [8827]], ['succcurlyeq', [8829]], ['Succeeds', [8827]], ['SucceedsEqual', [10928]], ['SucceedsSlantEqual', [8829]], ['SucceedsTilde', [8831]], ['succeq', [10928]], ['succnapprox', [10938]], ['succneqq', [10934]], ['succnsim', [8937]], ['succsim', [8831]], ['SuchThat', [8715]], ['sum', [8721]], ['Sum', [8721]], ['sung', [9834]], ['sup1', [185]], ['sup2', [178]], ['sup3', [179]], ['sup', [8835]], ['Sup', [8913]], ['supdot', [10942]], ['supdsub', [10968]], ['supE', [10950]], ['supe', [8839]], ['supedot', [10948]], ['Superset', [8835]], ['SupersetEqual', [8839]], ['suphsol', [10185]], ['suphsub', [10967]], ['suplarr', [10619]], ['supmult', [10946]], ['supnE', [10956]], ['supne', [8843]], ['supplus', [10944]], ['supset', [8835]], ['Supset', [8913]], ['supseteq', [8839]], ['supseteqq', [10950]], ['supsetneq', [8843]], ['supsetneqq', [10956]], ['supsim', [10952]], ['supsub', [10964]], ['supsup', [10966]], ['swarhk', [10534]], ['swarr', [8601]], ['swArr', [8665]], ['swarrow', [8601]], ['swnwar', [10538]], ['szlig', [223]], ['Tab', [9]], ['target', [8982]], ['Tau', [932]], ['tau', [964]], ['tbrk', [9140]], ['Tcaron', [356]], ['tcaron', [357]], ['Tcedil', [354]], ['tcedil', [355]], ['Tcy', [1058]], ['tcy', [1090]], ['tdot', [8411]], ['telrec', [8981]], ['Tfr', [120087]], ['tfr', [120113]], ['there4', [8756]], ['therefore', [8756]], ['Therefore', [8756]], ['Theta', [920]], ['theta', [952]], ['thetasym', [977]], ['thetav', [977]], ['thickapprox', [8776]], ['thicksim', [8764]], ['ThickSpace', [8287, 8202]], ['ThinSpace', [8201]], ['thinsp', [8201]], ['thkap', [8776]], ['thksim', [8764]], ['THORN', [222]], ['thorn', [254]], ['tilde', [732]], ['Tilde', [8764]], ['TildeEqual', [8771]], ['TildeFullEqual', [8773]], ['TildeTilde', [8776]], ['timesbar', [10801]], ['timesb', [8864]], ['times', [215]], ['timesd', [10800]], ['tint', [8749]], ['toea', [10536]], ['topbot', [9014]], ['topcir', [10993]], ['top', [8868]], ['Topf', [120139]], ['topf', [120165]], ['topfork', [10970]], ['tosa', [10537]], ['tprime', [8244]], ['trade', [8482]], ['TRADE', [8482]], ['triangle', [9653]], ['triangledown', [9663]], ['triangleleft', [9667]], ['trianglelefteq', [8884]], ['triangleq', [8796]], ['triangleright', [9657]], ['trianglerighteq', [8885]], ['tridot', [9708]], ['trie', [8796]], ['triminus', [10810]], ['TripleDot', [8411]], ['triplus', [10809]], ['trisb', [10701]], ['tritime', [10811]], ['trpezium', [9186]], ['Tscr', [119983]], ['tscr', [120009]], ['TScy', [1062]], ['tscy', [1094]], ['TSHcy', [1035]], ['tshcy', [1115]], ['Tstrok', [358]], ['tstrok', [359]], ['twixt', [8812]], ['twoheadleftarrow', [8606]], ['twoheadrightarrow', [8608]], ['Uacute', [218]], ['uacute', [250]], ['uarr', [8593]], ['Uarr', [8607]], ['uArr', [8657]], ['Uarrocir', [10569]], ['Ubrcy', [1038]], ['ubrcy', [1118]], ['Ubreve', [364]], ['ubreve', [365]], ['Ucirc', [219]], ['ucirc', [251]], ['Ucy', [1059]], ['ucy', [1091]], ['udarr', [8645]], ['Udblac', [368]], ['udblac', [369]], ['udhar', [10606]], ['ufisht', [10622]], ['Ufr', [120088]], ['ufr', [120114]], ['Ugrave', [217]], ['ugrave', [249]], ['uHar', [10595]], ['uharl', [8639]], ['uharr', [8638]], ['uhblk', [9600]], ['ulcorn', [8988]], ['ulcorner', [8988]], ['ulcrop', [8975]], ['ultri', [9720]], ['Umacr', [362]], ['umacr', [363]], ['uml', [168]], ['UnderBar', [95]], ['UnderBrace', [9183]], ['UnderBracket', [9141]], ['UnderParenthesis', [9181]], ['Union', [8899]], ['UnionPlus', [8846]], ['Uogon', [370]], ['uogon', [371]], ['Uopf', [120140]], ['uopf', [120166]], ['UpArrowBar', [10514]], ['uparrow', [8593]], ['UpArrow', [8593]], ['Uparrow', [8657]], ['UpArrowDownArrow', [8645]], ['updownarrow', [8597]], ['UpDownArrow', [8597]], ['Updownarrow', [8661]], ['UpEquilibrium', [10606]], ['upharpoonleft', [8639]], ['upharpoonright', [8638]], ['uplus', [8846]], ['UpperLeftArrow', [8598]], ['UpperRightArrow', [8599]], ['upsi', [965]], ['Upsi', [978]], ['upsih', [978]], ['Upsilon', [933]], ['upsilon', [965]], ['UpTeeArrow', [8613]], ['UpTee', [8869]], ['upuparrows', [8648]], ['urcorn', [8989]], ['urcorner', [8989]], ['urcrop', [8974]], ['Uring', [366]], ['uring', [367]], ['urtri', [9721]], ['Uscr', [119984]], ['uscr', [120010]], ['utdot', [8944]], ['Utilde', [360]], ['utilde', [361]], ['utri', [9653]], ['utrif', [9652]], ['uuarr', [8648]], ['Uuml', [220]], ['uuml', [252]], ['uwangle', [10663]], ['vangrt', [10652]], ['varepsilon', [1013]], ['varkappa', [1008]], ['varnothing', [8709]], ['varphi', [981]], ['varpi', [982]], ['varpropto', [8733]], ['varr', [8597]], ['vArr', [8661]], ['varrho', [1009]], ['varsigma', [962]], ['varsubsetneq', [8842, 65024]], ['varsubsetneqq', [10955, 65024]], ['varsupsetneq', [8843, 65024]], ['varsupsetneqq', [10956, 65024]], ['vartheta', [977]], ['vartriangleleft', [8882]], ['vartriangleright', [8883]], ['vBar', [10984]], ['Vbar', [10987]], ['vBarv', [10985]], ['Vcy', [1042]], ['vcy', [1074]], ['vdash', [8866]], ['vDash', [8872]], ['Vdash', [8873]], ['VDash', [8875]], ['Vdashl', [10982]], ['veebar', [8891]], ['vee', [8744]], ['Vee', [8897]], ['veeeq', [8794]], ['vellip', [8942]], ['verbar', [124]], ['Verbar', [8214]], ['vert', [124]], ['Vert', [8214]], ['VerticalBar', [8739]], ['VerticalLine', [124]], ['VerticalSeparator', [10072]], ['VerticalTilde', [8768]], ['VeryThinSpace', [8202]], ['Vfr', [120089]], ['vfr', [120115]], ['vltri', [8882]], ['vnsub', [8834, 8402]], ['vnsup', [8835, 8402]], ['Vopf', [120141]], ['vopf', [120167]], ['vprop', [8733]], ['vrtri', [8883]], ['Vscr', [119985]], ['vscr', [120011]], ['vsubnE', [10955, 65024]], ['vsubne', [8842, 65024]], ['vsupnE', [10956, 65024]], ['vsupne', [8843, 65024]], ['Vvdash', [8874]], ['vzigzag', [10650]], ['Wcirc', [372]], ['wcirc', [373]], ['wedbar', [10847]], ['wedge', [8743]], ['Wedge', [8896]], ['wedgeq', [8793]], ['weierp', [8472]], ['Wfr', [120090]], ['wfr', [120116]], ['Wopf', [120142]], ['wopf', [120168]], ['wp', [8472]], ['wr', [8768]], ['wreath', [8768]], ['Wscr', [119986]], ['wscr', [120012]], ['xcap', [8898]], ['xcirc', [9711]], ['xcup', [8899]], ['xdtri', [9661]], ['Xfr', [120091]], ['xfr', [120117]], ['xharr', [10231]], ['xhArr', [10234]], ['Xi', [926]], ['xi', [958]], ['xlarr', [10229]], ['xlArr', [10232]], ['xmap', [10236]], ['xnis', [8955]], ['xodot', [10752]], ['Xopf', [120143]], ['xopf', [120169]], ['xoplus', [10753]], ['xotime', [10754]], ['xrarr', [10230]], ['xrArr', [10233]], ['Xscr', [119987]], ['xscr', [120013]], ['xsqcup', [10758]], ['xuplus', [10756]], ['xutri', [9651]], ['xvee', [8897]], ['xwedge', [8896]], ['Yacute', [221]], ['yacute', [253]], ['YAcy', [1071]], ['yacy', [1103]], ['Ycirc', [374]], ['ycirc', [375]], ['Ycy', [1067]], ['ycy', [1099]], ['yen', [165]], ['Yfr', [120092]], ['yfr', [120118]], ['YIcy', [1031]], ['yicy', [1111]], ['Yopf', [120144]], ['yopf', [120170]], ['Yscr', [119988]], ['yscr', [120014]], ['YUcy', [1070]], ['yucy', [1102]], ['yuml', [255]], ['Yuml', [376]], ['Zacute', [377]], ['zacute', [378]], ['Zcaron', [381]], ['zcaron', [382]], ['Zcy', [1047]], ['zcy', [1079]], ['Zdot', [379]], ['zdot', [380]], ['zeetrf', [8488]], ['ZeroWidthSpace', [8203]], ['Zeta', [918]], ['zeta', [950]], ['zfr', [120119]], ['Zfr', [8488]], ['ZHcy', [1046]], ['zhcy', [1078]], ['zigrarr', [8669]], ['zopf', [120171]], ['Zopf', [8484]], ['Zscr', [119989]], ['zscr', [120015]], ['zwj', [8205]], ['zwnj', [8204]]];
@@ -10240,12 +10693,12 @@ module.exports = Html5Entities;
 
 
 /***/ }),
-/* 68 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var root_1 = __webpack_require__(161);
+var root_1 = __webpack_require__(178);
 /* tslint:enable:max-line-length */
 /**
  * Converts an Observable sequence to a ES2015 compliant promise.
@@ -10318,29 +10771,29 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ }),
-/* 69 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(316)
 
 /***/ }),
-/* 70 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(334)
 
 /***/ }),
-/* 71 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(159);
+__webpack_require__(176);
 var core_1 = __webpack_require__(0);
-var angular2_universal_1 = __webpack_require__(70);
-var app_module_1 = __webpack_require__(83);
-__webpack_require__(160);
+var angular2_universal_1 = __webpack_require__(76);
+var app_module_1 = __webpack_require__(89);
+__webpack_require__(177);
 var rootElemTagName = 'app'; // Update this if you change your root component selector
 // Enable either Hot Module Reloading or production mode
 if (true) {
@@ -10368,7 +10821,7 @@ else {
 
 
 /***/ }),
-/* 72 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__resourceQuery, module) {/*eslint-env browser*/
@@ -10384,7 +10837,7 @@ var options = {
   name: ''
 };
 if (true) {
-  var querystring = __webpack_require__(125);
+  var querystring = __webpack_require__(141);
   var overrides = querystring.parse(__resourceQuery.slice(1));
   if (overrides.path) options.path = overrides.path;
   if (overrides.timeout) options.timeout = overrides.timeout;
@@ -10504,11 +10957,11 @@ if (typeof window !== 'undefined') {
 }
 
 function createReporter() {
-  var strip = __webpack_require__(136);
+  var strip = __webpack_require__(152);
 
   var overlay;
   if (typeof document !== 'undefined' && options.overlay) {
-    overlay = __webpack_require__(148);
+    overlay = __webpack_require__(165);
   }
 
   var styles = {
@@ -10561,7 +11014,7 @@ function createReporter() {
   };
 }
 
-var processUpdate = __webpack_require__(149);
+var processUpdate = __webpack_require__(166);
 
 var customHandler;
 var subscribeAllHandler;
@@ -10626,21 +11079,21 @@ if (module) {
   };
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, "?path=%2F__webpack_hmr", __webpack_require__(163)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, "?path=%2F__webpack_hmr", __webpack_require__(180)(module)))
 
 /***/ }),
-/* 73 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(336)
 
 /***/ }),
-/* 74 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_forms__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_forms__ = __webpack_require__(84);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractControlDirective", function() { return __WEBPACK_IMPORTED_MODULE_0__src_forms__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractFormGroupDirective", function() { return __WEBPACK_IMPORTED_MODULE_0__src_forms__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CheckboxControlValueAccessor", function() { return __WEBPACK_IMPORTED_MODULE_0__src_forms__["c"]; });
@@ -10694,30 +11147,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 75 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_checkbox_value_accessor__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_default_value_accessor__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_ng_control_status__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_ng_form__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_ng_model__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ng_model_group__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_number_value_accessor__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_radio_control_value_accessor__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_range_value_accessor__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_reactive_directives_form_control_directive__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_reactive_directives_form_control_name__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_reactive_directives_form_group_directive__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__directives_reactive_directives_form_group_name__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__directives_select_control_value_accessor__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_select_multiple_control_value_accessor__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_validators__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_checkbox_value_accessor__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_default_value_accessor__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_ng_control_status__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_ng_form__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_ng_model__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ng_model_group__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_number_value_accessor__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_radio_control_value_accessor__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_range_value_accessor__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_reactive_directives_form_control_directive__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_reactive_directives_form_control_name__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_reactive_directives_form_group_directive__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__directives_reactive_directives_form_group_name__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__directives_select_control_value_accessor__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_select_multiple_control_value_accessor__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_validators__ = __webpack_require__(50);
 /* unused harmony reexport CheckboxControlValueAccessor */
 /* unused harmony reexport DefaultValueAccessor */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__directives_ng_control__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__directives_ng_control__ = __webpack_require__(14);
 /* unused harmony reexport NgControl */
 /* unused harmony reexport NgControlStatus */
 /* unused harmony reexport NgControlStatusGroup */
@@ -10828,7 +11281,7 @@ function InternalFormsSharedModule_tsickle_Closure_declarations() {
 //# sourceMappingURL=directives.js.map
 
 /***/ }),
-/* 76 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10868,14 +11321,14 @@ function normalizeAsyncValidator(validator) {
 //# sourceMappingURL=normalize_validator.js.map
 
 /***/ }),
-/* 77 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_radio_control_value_accessor__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_builder__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_radio_control_value_accessor__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_builder__ = __webpack_require__(52);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormsModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ReactiveFormsModule; });
 /**
@@ -10946,69 +11399,69 @@ function ReactiveFormsModule_tsickle_Closure_declarations() {
 //# sourceMappingURL=form_providers.js.map
 
 /***/ }),
-/* 78 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__directives_abstract_control_directive__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__directives_abstract_control_directive__ = __webpack_require__(37);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__directives_abstract_control_directive__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_abstract_form_group_directive__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_abstract_form_group_directive__ = __webpack_require__(19);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__directives_abstract_form_group_directive__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_checkbox_value_accessor__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_checkbox_value_accessor__ = __webpack_require__(26);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__directives_checkbox_value_accessor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_control_container__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_control_container__ = __webpack_require__(9);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__directives_control_container__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_control_value_accessor__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_control_value_accessor__ = __webpack_require__(6);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__directives_control_value_accessor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_default_value_accessor__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_default_value_accessor__ = __webpack_require__(27);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__directives_default_value_accessor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ng_control__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ng_control__ = __webpack_require__(14);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_6__directives_ng_control__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_ng_control_status__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_ng_control_status__ = __webpack_require__(38);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_7__directives_ng_control_status__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_7__directives_ng_control_status__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ng_form__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ng_form__ = __webpack_require__(20);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_8__directives_ng_form__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ng_model__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ng_model__ = __webpack_require__(39);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_9__directives_ng_model__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_ng_model_group__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_ng_model_group__ = __webpack_require__(28);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_10__directives_ng_model_group__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_radio_control_value_accessor__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_radio_control_value_accessor__ = __webpack_require__(21);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_11__directives_radio_control_value_accessor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_reactive_directives_form_control_directive__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_reactive_directives_form_control_directive__ = __webpack_require__(42);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return __WEBPACK_IMPORTED_MODULE_12__directives_reactive_directives_form_control_directive__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__directives_reactive_directives_form_control_name__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__directives_reactive_directives_form_control_name__ = __webpack_require__(43);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return __WEBPACK_IMPORTED_MODULE_13__directives_reactive_directives_form_control_name__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__directives_reactive_directives_form_group_directive__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__directives_reactive_directives_form_group_directive__ = __webpack_require__(22);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return __WEBPACK_IMPORTED_MODULE_14__directives_reactive_directives_form_group_directive__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_reactive_directives_form_group_name__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_reactive_directives_form_group_name__ = __webpack_require__(23);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return __WEBPACK_IMPORTED_MODULE_15__directives_reactive_directives_form_group_name__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return __WEBPACK_IMPORTED_MODULE_15__directives_reactive_directives_form_group_name__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_select_control_value_accessor__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_select_control_value_accessor__ = __webpack_require__(30);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return __WEBPACK_IMPORTED_MODULE_16__directives_select_control_value_accessor__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return __WEBPACK_IMPORTED_MODULE_16__directives_select_control_value_accessor__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__directives_select_multiple_control_value_accessor__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__directives_select_multiple_control_value_accessor__ = __webpack_require__(31);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return __WEBPACK_IMPORTED_MODULE_17__directives_select_multiple_control_value_accessor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__directives_validators__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__directives_validators__ = __webpack_require__(50);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return __WEBPACK_IMPORTED_MODULE_18__directives_validators__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return __WEBPACK_IMPORTED_MODULE_18__directives_validators__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return __WEBPACK_IMPORTED_MODULE_18__directives_validators__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return __WEBPACK_IMPORTED_MODULE_18__directives_validators__["d"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return __WEBPACK_IMPORTED_MODULE_18__directives_validators__["e"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_builder__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_builder__ = __webpack_require__(52);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return __WEBPACK_IMPORTED_MODULE_19__form_builder__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__model__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__model__ = __webpack_require__(32);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return __WEBPACK_IMPORTED_MODULE_20__model__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return __WEBPACK_IMPORTED_MODULE_20__model__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return __WEBPACK_IMPORTED_MODULE_20__model__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "E", function() { return __WEBPACK_IMPORTED_MODULE_20__model__["d"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__validators__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__validators__ = __webpack_require__(8);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return __WEBPACK_IMPORTED_MODULE_21__validators__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return __WEBPACK_IMPORTED_MODULE_21__validators__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "H", function() { return __WEBPACK_IMPORTED_MODULE_21__validators__["c"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__version__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__version__ = __webpack_require__(85);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "I", function() { return __WEBPACK_IMPORTED_MODULE_22__version__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__form_providers__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__form_providers__ = __webpack_require__(83);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "J", function() { return __WEBPACK_IMPORTED_MODULE_23__form_providers__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "K", function() { return __WEBPACK_IMPORTED_MODULE_23__form_providers__["b"]; });
 /**
@@ -11056,7 +11509,7 @@ function ReactiveFormsModule_tsickle_Closure_declarations() {
 //# sourceMappingURL=forms.js.map
 
 /***/ }),
-/* 79 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11077,15 +11530,15 @@ var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["
 //# sourceMappingURL=version.js.map
 
 /***/ }),
-/* 80 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toast_component__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toaster_container_component__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__toaster_service__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toast_component__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__toaster_container_component__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__toaster_service__ = __webpack_require__(33);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToasterModule; });
 
 
@@ -11105,7 +11558,7 @@ ToasterModule.decorators = [
                     __WEBPACK_IMPORTED_MODULE_2__toast_component__["a" /* ToastComponent */],
                     __WEBPACK_IMPORTED_MODULE_3__toaster_container_component__["a" /* ToasterContainerComponent */]
                 ],
-                providers: [__WEBPACK_IMPORTED_MODULE_4__toaster_service__["a" /* ToasterService */]],
+                providers: [__WEBPACK_IMPORTED_MODULE_4__toaster_service__["ToasterService"]],
                 exports: [
                     __WEBPACK_IMPORTED_MODULE_3__toaster_container_component__["a" /* ToasterContainerComponent */],
                     __WEBPACK_IMPORTED_MODULE_2__toast_component__["a" /* ToastComponent */]
@@ -11117,7 +11570,7 @@ ToasterModule.ctorParameters = function () { return []; };
 //# sourceMappingURL=toaster.module.js.map
 
 /***/ }),
-/* 81 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11300,7 +11753,7 @@ ansiHTML.reset()
 
 
 /***/ }),
-/* 82 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11311,7 +11764,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 83 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11324,35 +11777,45 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var angular2_universal_1 = __webpack_require__(70);
-var app_component_1 = __webpack_require__(86);
-var home_component_1 = __webpack_require__(42);
-var signin_component_1 = __webpack_require__(63);
-var dashboard_component_1 = __webpack_require__(56);
-var forgetpwd_component_1 = __webpack_require__(55);
-var category_component_1 = __webpack_require__(57);
-var signin_service_1 = __webpack_require__(31);
-var forms_1 = __webpack_require__(74);
-var http_1 = __webpack_require__(8);
-var profile_component_1 = __webpack_require__(60);
-var sidebar_component_1 = __webpack_require__(91);
-var report_component_1 = __webpack_require__(59);
-var angular2_toaster_1 = __webpack_require__(4);
-var app_routes_1 = __webpack_require__(84);
-var usermngt_component_1 = __webpack_require__(62);
-var authenticate_guard_1 = __webpack_require__(65);
-var login_guard_1 = __webpack_require__(66);
-var auth_module_1 = __webpack_require__(85);
-var admin_guard_1 = __webpack_require__(64);
-var usermngt_service_1 = __webpack_require__(45);
-var userdetail_component_1 = __webpack_require__(92);
-var products_service_1 = __webpack_require__(20);
-var categorydetails_component_1 = __webpack_require__(58);
-var productdetails_component_1 = __webpack_require__(90);
-var account_service_1 = __webpack_require__(43);
-var categorycard_component_1 = __webpack_require__(88);
-var sale_component_1 = __webpack_require__(61);
-var category_service_1 = __webpack_require__(44);
+var angular2_universal_1 = __webpack_require__(76);
+var app_component_1 = __webpack_require__(92);
+var home_component_1 = __webpack_require__(59);
+var signin_component_1 = __webpack_require__(67);
+var dashboard_component_1 = __webpack_require__(58);
+var forgetpwd_component_1 = __webpack_require__(57);
+var category_component_1 = __webpack_require__(60);
+var signin_service_1 = __webpack_require__(35);
+var forms_1 = __webpack_require__(80);
+var http_1 = __webpack_require__(7);
+var profile_component_1 = __webpack_require__(97);
+var sidebar_component_1 = __webpack_require__(100);
+var report_component_1 = __webpack_require__(63);
+var angular2_toaster_1 = __webpack_require__(2);
+var app_routes_1 = __webpack_require__(90);
+var usermngt_component_1 = __webpack_require__(66);
+var authenticate_guard_1 = __webpack_require__(69);
+var login_guard_1 = __webpack_require__(70);
+var auth_module_1 = __webpack_require__(91);
+var admin_guard_1 = __webpack_require__(68);
+var users_service_1 = __webpack_require__(36);
+var userdetail_component_1 = __webpack_require__(101);
+var products_service_1 = __webpack_require__(13);
+var categorydetails_component_1 = __webpack_require__(45);
+var productdetails_component_1 = __webpack_require__(96);
+var account_service_1 = __webpack_require__(46);
+var categorycard_component_1 = __webpack_require__(94);
+var category_service_1 = __webpack_require__(24);
+var bill_component_1 = __webpack_require__(64);
+var receipt_component_1 = __webpack_require__(62);
+var delivery_component_1 = __webpack_require__(61);
+var auth_service_1 = __webpack_require__(11);
+var saleperson_guard_1 = __webpack_require__(71);
+var salemngr_guard_1 = __webpack_require__(104);
+var inventorymngr_guard_1 = __webpack_require__(103);
+var billdetails_component_1 = __webpack_require__(99);
+var bills_service_1 = __webpack_require__(47);
+var billcard_component_1 = __webpack_require__(98);
+var billDetails_service_1 = __webpack_require__(72);
 var AppModule = (function () {
     function AppModule() {
     }
@@ -11364,7 +11827,10 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             home_component_1.HomeComponent,
-            report_component_1.ReporttComponent,
+            bill_component_1.BillComponent,
+            receipt_component_1.ReceiptComponent,
+            delivery_component_1.DeliveryComponent,
+            report_component_1.ReportComponent,
             category_component_1.CategoryComponent,
             usermngt_component_1.UserMngtComponent,
             signin_component_1.SignInComponent,
@@ -11376,7 +11842,8 @@ AppModule = __decorate([
             categorydetails_component_1.CategoryDetailsComponent,
             productdetails_component_1.ProductDetailsComponent,
             categorycard_component_1.CategoryCardComponent,
-            sale_component_1.SaleComponent
+            billdetails_component_1.BillDetailsComponent,
+            billcard_component_1.BillCardComponent
         ],
         imports: [
             http_1.HttpModule,
@@ -11391,12 +11858,18 @@ AppModule = __decorate([
             signin_service_1.SignInService,
             angular2_toaster_1.ToasterService,
             authenticate_guard_1.AuthenticateGuard,
+            billDetails_service_1.BillDetailsService,
+            saleperson_guard_1.SalePersonGuard,
+            salemngr_guard_1.SaleMngrGuard,
+            inventorymngr_guard_1.InventoryMngrGuard,
             login_guard_1.LoginGuard,
+            auth_service_1.AuthService,
             account_service_1.AccountService,
             admin_guard_1.AdminGuard,
             products_service_1.ProductService,
+            bills_service_1.BillsService,
             category_service_1.CategoryService,
-            usermngt_service_1.UserMngtService
+            users_service_1.UserMngtService
         ],
     })
 ], AppModule);
@@ -11404,25 +11877,28 @@ exports.AppModule = AppModule;
 
 
 /***/ }),
-/* 84 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var router_1 = __webpack_require__(9);
-var home_component_1 = __webpack_require__(42);
-var dashboard_component_1 = __webpack_require__(56);
-var signin_component_1 = __webpack_require__(63);
-var forgetpwd_component_1 = __webpack_require__(55);
-var category_component_1 = __webpack_require__(57);
-var report_component_1 = __webpack_require__(59);
-var usermngt_component_1 = __webpack_require__(62);
-var authenticate_guard_1 = __webpack_require__(65);
-var login_guard_1 = __webpack_require__(66);
-var admin_guard_1 = __webpack_require__(64);
-var categorydetails_component_1 = __webpack_require__(58);
-var sale_component_1 = __webpack_require__(61);
+var router_1 = __webpack_require__(3);
+var home_component_1 = __webpack_require__(59);
+var dashboard_component_1 = __webpack_require__(58);
+var signin_component_1 = __webpack_require__(67);
+var forgetpwd_component_1 = __webpack_require__(57);
+var category_component_1 = __webpack_require__(60);
+var report_component_1 = __webpack_require__(63);
+var usermngt_component_1 = __webpack_require__(66);
+var authenticate_guard_1 = __webpack_require__(69);
+var login_guard_1 = __webpack_require__(70);
+var admin_guard_1 = __webpack_require__(68);
+var categorydetails_component_1 = __webpack_require__(45);
+var bill_component_1 = __webpack_require__(64);
+var receipt_component_1 = __webpack_require__(62);
+var delivery_component_1 = __webpack_require__(61);
+var saleperson_guard_1 = __webpack_require__(71);
 exports.routes = [
     { path: "signin", component: signin_component_1.SignInComponent, canActivate: [login_guard_1.LoginGuard] },
     { path: "forgetpwd", component: forgetpwd_component_1.ForgetPwdComponent, canActivate: [login_guard_1.LoginGuard] },
@@ -11436,21 +11912,29 @@ exports.routes = [
             {
                 path: "inventory", children: [
                     { path: "", redirectTo: "categories", pathMatch: "full" },
-                    { path: "categories", component: category_component_1.CategoryComponent },
+                    { path: "categories", component: category_component_1.CategoryComponent, canActivate: [authenticate_guard_1.AuthenticateGuard] },
                     { path: 'categorydetails/:id', component: categorydetails_component_1.CategoryDetailsComponent },
-                    { path: "reports", component: report_component_1.ReporttComponent }
+                    { path: "receipts", component: receipt_component_1.ReceiptComponent },
+                    { path: "deliveries", component: delivery_component_1.DeliveryComponent },
                 ]
             },
-            { path: "sale", component: sale_component_1.SaleComponent, canActivate: [authenticate_guard_1.AuthenticateGuard], children: [] },
-            { path: "usermngt", component: usermngt_component_1.UserMngtComponent, canActivate: [admin_guard_1.AdminGuard, authenticate_guard_1.AuthenticateGuard], children: [] }
+            { path: "reports", component: report_component_1.ReportComponent, canActivate: [authenticate_guard_1.AuthenticateGuard] },
+            {
+                path: "sale", canActivate: [authenticate_guard_1.AuthenticateGuard, saleperson_guard_1.SalePersonGuard], children: [
+                    { path: "", redirectTo: "bill", pathMatch: "full" },
+                    { path: "bills", component: bill_component_1.BillComponent },
+                ]
+            },
+            { path: "usermngt", component: usermngt_component_1.UserMngtComponent, canActivate: [authenticate_guard_1.AuthenticateGuard, admin_guard_1.AdminGuard], children: [] }
         ]
     },
+    { path: "**", redirectTo: "" }
 ];
 exports.routing = router_1.RouterModule.forRoot(exports.routes);
 
 
 /***/ }),
-/* 85 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11463,8 +11947,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var http_1 = __webpack_require__(8);
-var angular2_jwt_1 = __webpack_require__(30);
+var http_1 = __webpack_require__(7);
+var angular2_jwt_1 = __webpack_require__(10);
 function authHttpServiceFactory(http, options) {
     return new angular2_jwt_1.AuthHttp(new angular2_jwt_1.AuthConfig({
         tokenName: 'token',
@@ -11492,7 +11976,7 @@ exports.AuthModule = AuthModule;
 
 
 /***/ }),
-/* 86 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11515,15 +11999,15 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'app',
-        template: __webpack_require__(108),
-        styles: [__webpack_require__(137)]
+        template: __webpack_require__(120),
+        styles: [__webpack_require__(153)]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
 
 
 /***/ }),
-/* 87 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11540,7 +12024,7 @@ exports.CategoryModel = CategoryModel;
 
 
 /***/ }),
-/* 88 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11556,10 +12040,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var products_service_1 = __webpack_require__(20);
+var products_service_1 = __webpack_require__(13);
+var category_service_1 = __webpack_require__(24);
 var CategoryCardComponent = (function () {
-    function CategoryCardComponent(_product) {
+    function CategoryCardComponent(_product, _categories) {
         this._product = _product;
+        this._categories = _categories;
         this.color = [
             'indigo accent-2', 'indigo', 'purple', 'red', 'green', 'yellow',
             'orange', 'cyan', 'purple darken-4', 'blue lighten-4',
@@ -11567,20 +12053,24 @@ var CategoryCardComponent = (function () {
             'cyan accent-3'
         ];
         this.cateDetails = new core_1.EventEmitter();
+        this.actionCate = new core_1.EventEmitter();
     }
-    CategoryCardComponent.prototype.ngOnInit = function () {
-        this.getNumberProOfCate(this.category.id);
-    };
-    CategoryCardComponent.prototype.getNumberProOfCate = function (id) {
-        var _this = this;
-        this._product.getNumberProductOfCategory(id).subscribe(function (result) { return _this.numberProduct = +result || 0; });
-    };
     CategoryCardComponent.prototype.categoryDetail = function (category) {
         this.cateDetails.emit(category);
     };
     CategoryCardComponent.prototype.removeCate = function (category) {
+        var action = {
+            category: category,
+            isRemove: true
+        };
+        this.actionCate.emit(action);
     };
     CategoryCardComponent.prototype.editCate = function (category) {
+        var action = {
+            category: category,
+            isRemove: false
+        };
+        this.actionCate.emit(action);
     };
     return CategoryCardComponent;
 }());
@@ -11592,18 +12082,22 @@ __decorate([
     core_1.Output(),
     __metadata("design:type", Object)
 ], CategoryCardComponent.prototype, "cateDetails", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], CategoryCardComponent.prototype, "actionCate", void 0);
 CategoryCardComponent = __decorate([
     core_1.Component({
         selector: 'category-card',
-        template: __webpack_require__(113)
+        template: __webpack_require__(125)
     }),
-    __metadata("design:paramtypes", [products_service_1.ProductService])
+    __metadata("design:paramtypes", [products_service_1.ProductService, category_service_1.CategoryService])
 ], CategoryCardComponent);
 exports.CategoryCardComponent = CategoryCardComponent;
 
 
 /***/ }),
-/* 89 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11613,7 +12107,7 @@ var ProductModel = (function () {
     function ProductModel(name, des, cateId) {
         this.status = true;
         this.categoryId = 1;
-        this.quantity = 100;
+        this.quantity = 0;
         this.name = name;
         this.description = des;
         this.categoryId = cateId;
@@ -11624,7 +12118,7 @@ exports.ProductModel = ProductModel;
 
 
 /***/ }),
-/* 90 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11640,9 +12134,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var products_service_1 = __webpack_require__(20);
-var angular2_toaster_1 = __webpack_require__(4);
-var category_service_1 = __webpack_require__(44);
+var products_service_1 = __webpack_require__(13);
+var angular2_toaster_1 = __webpack_require__(2);
+var category_service_1 = __webpack_require__(24);
 var ProductDetailsComponent = (function () {
     function ProductDetailsComponent(_product, toaster, _categories) {
         this._product = _product;
@@ -11709,7 +12203,7 @@ var ProductDetailsComponent = (function () {
                     });
                 }
                 else {
-                    this._product.addCateGetId({ "name": nameCate, "description": "Not have description" })
+                    this._categories.addCateGetId({ "name": nameCate, "description": "Not have description" })
                         .subscribe(function (result) {
                         _this.product.categoryId = +result;
                         _this._product.addProduct(_this.product).subscribe(function (result) {
@@ -11748,8 +12242,8 @@ __decorate([
 ], ProductDetailsComponent.prototype, "isAdd", void 0);
 __decorate([
     core_1.Input(),
-    __metadata("design:type", String)
-], ProductDetailsComponent.prototype, "cateName", void 0);
+    __metadata("design:type", Object)
+], ProductDetailsComponent.prototype, "cate", void 0);
 __decorate([
     core_1.Output(),
     __metadata("design:type", Object)
@@ -11757,7 +12251,7 @@ __decorate([
 ProductDetailsComponent = __decorate([
     core_1.Component({
         selector: 'product-detail',
-        template: __webpack_require__(115)
+        template: __webpack_require__(127)
     }),
     __metadata("design:paramtypes", [products_service_1.ProductService,
         angular2_toaster_1.ToasterService,
@@ -11767,7 +12261,7 @@ exports.ProductDetailsComponent = ProductDetailsComponent;
 
 
 /***/ }),
-/* 91 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11783,17 +12277,286 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var home_component_1 = __webpack_require__(42);
-var signin_service_1 = __webpack_require__(31);
-var $ = __webpack_require__(152);
-var account_service_1 = __webpack_require__(43);
-var angular2_toaster_1 = __webpack_require__(4);
+var account_service_1 = __webpack_require__(46);
+var ProfileComponent = (function () {
+    function ProfileComponent(_account) {
+        this._account = _account;
+        this.isChange = false;
+    }
+    ProfileComponent.prototype.ngOnChanges = function (changes) {
+    };
+    ProfileComponent.prototype.ngOnDestroy = function () {
+    };
+    ProfileComponent.prototype.ngAfterViewInit = function () {
+        this.getRole(this.user.roleId);
+    };
+    ProfileComponent.prototype.ngOnInit = function () {
+        this.getRole(this.user.roleId);
+    };
+    ProfileComponent.prototype.getRole = function (id) {
+        var _this = this;
+        this._account.getRole(id).subscribe(function (result) { return _this.role = result.name; });
+    };
+    ProfileComponent.prototype.saveChanges = function () {
+        this._account.editInfo(this.user).subscribe(function (result) { });
+    };
+    ProfileComponent.prototype.cancel = function () {
+        this.isChange = false;
+        this.pwdModel = null;
+    };
+    ProfileComponent.prototype.changePwd = function () {
+        this.pwdModel = {
+            pwd: "",
+            pwdRt: ""
+        };
+        this.isChange = true;
+    };
+    ProfileComponent.prototype.saveChangePwd = function (pwdModel) {
+        var _this = this;
+        if (pwdModel.pwd !== pwdModel.pwdRt) {
+            return;
+        }
+        else {
+            this.user.passwordHashed = pwdModel.pwd;
+            this._account.changPwd(this.user).subscribe(function (result) {
+                if (result) {
+                    _this.isChange = false;
+                }
+            });
+        }
+    };
+    return ProfileComponent;
+}());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], ProfileComponent.prototype, "user", void 0);
+ProfileComponent = __decorate([
+    core_1.Component({
+        selector: 'profile',
+        template: __webpack_require__(130),
+        styles: [__webpack_require__(158)]
+    }),
+    __metadata("design:paramtypes", [account_service_1.AccountService])
+], ProfileComponent);
+exports.ProfileComponent = ProfileComponent;
+
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var products_service_1 = __webpack_require__(13);
+var billdetails_model_1 = __webpack_require__(34);
+var BillCardComponent = (function () {
+    function BillCardComponent(_products) {
+        this._products = _products;
+        this.billDetailsUpdate = new core_1.EventEmitter();
+    }
+    BillCardComponent.prototype.ngOnInit = function () {
+        if (!this.isView) {
+            this.getProducts();
+        }
+    };
+    BillCardComponent.prototype.getProducts = function () {
+        var _this = this;
+        this._products.getAll().subscribe(function (result) { return _this.products = result; });
+    };
+    BillCardComponent.prototype.updateBillDetails = function ($event) {
+        this.billDetailsUpdate.emit();
+    };
+    return BillCardComponent;
+}());
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], BillCardComponent.prototype, "billDetailsUpdate", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", billdetails_model_1.BillDetails)
+], BillCardComponent.prototype, "billDetails", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], BillCardComponent.prototype, "billDetailsView", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], BillCardComponent.prototype, "isView", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], BillCardComponent.prototype, "index", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], BillCardComponent.prototype, "isAdd", void 0);
+BillCardComponent = __decorate([
+    core_1.Component({
+        selector: 'li[bill-card]',
+        template: __webpack_require__(133),
+        styles: [__webpack_require__(160)]
+    }),
+    __metadata("design:paramtypes", [products_service_1.ProductService])
+], BillCardComponent);
+exports.BillCardComponent = BillCardComponent;
+
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var bill_model_1 = __webpack_require__(65);
+var bills_service_1 = __webpack_require__(47);
+var billdetails_model_1 = __webpack_require__(34);
+var products_service_1 = __webpack_require__(13);
+var billDetails_service_1 = __webpack_require__(72);
+var BillDetailsComponent = (function () {
+    function BillDetailsComponent(_bills, _products, _billDetails) {
+        this._bills = _bills;
+        this._products = _products;
+        this._billDetails = _billDetails;
+        this.updateData = new core_1.EventEmitter();
+    }
+    BillDetailsComponent.prototype.ngOnInit = function () {
+        this.getBill(this.bill.id);
+    };
+    BillDetailsComponent.prototype.getBill = function (id) {
+        var _this = this;
+        if (id) {
+            this._bills.getBill(this.bill.id).subscribe(function (result) {
+                _this.bill.billDetailses = result.billDetailses;
+            });
+        }
+    };
+    BillDetailsComponent.prototype.addItem = function () {
+        this.bill.addBillDetails(new billdetails_model_1.BillDetails());
+    };
+    BillDetailsComponent.prototype.saveChanges = function () {
+        var _this = this;
+        if (this.isAdd) {
+            this.isAdd = false;
+            this.isView = false;
+            var billDt = this.bill;
+            var billDt2 = this.bill.billDetailses;
+            billDt.billDetailses = null;
+            billDt.accountId = +localStorage.getItem('uid');
+            this._bills.addBill(billDt).subscribe(function (result) {
+                if (result) {
+                    billDt2.forEach(function (one) {
+                        one.billId = result;
+                    });
+                }
+            }, function (err) { return err; }, function () {
+                billDt2.forEach(function (one) {
+                    one.productId = +one.productId;
+                    _this._billDetails.addBillDetails(one).subscribe(function (result) {
+                        if (result) {
+                            _this.updateData.emit();
+                        }
+                    });
+                });
+            });
+        }
+        else {
+            console.log(this.bill);
+        }
+    };
+    BillDetailsComponent.prototype.billDetailsUpdate = function ($event) {
+        var _this = this;
+        this.bill.total = 0;
+        this.bill.billDetailses.forEach(function (one) {
+            if (one.productId) {
+                _this._products.getProduct(one.productId).subscribe(function (result) {
+                    _this.bill.total = _this.bill.total + (result.price * one.quantity);
+                });
+            }
+        });
+    };
+    return BillDetailsComponent;
+}());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", bill_model_1.Bill)
+], BillDetailsComponent.prototype, "bill", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], BillDetailsComponent.prototype, "isView", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], BillDetailsComponent.prototype, "isAdd", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], BillDetailsComponent.prototype, "updateData", void 0);
+BillDetailsComponent = __decorate([
+    core_1.Component({
+        selector: 'bill-details',
+        template: __webpack_require__(134)
+    }),
+    __metadata("design:paramtypes", [bills_service_1.BillsService, products_service_1.ProductService,
+        billDetails_service_1.BillDetailsService])
+], BillDetailsComponent);
+exports.BillDetailsComponent = BillDetailsComponent;
+
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var signin_service_1 = __webpack_require__(35);
+var $ = __webpack_require__(169);
+var account_service_1 = __webpack_require__(46);
+var angular2_toaster_1 = __webpack_require__(2);
+var auth_service_1 = __webpack_require__(11);
 var SidebarComponent = (function () {
-    function SidebarComponent(signInService, _account, _toaster) {
+    function SidebarComponent(signInService, _account, _toaster, _auth) {
         this.signInService = signInService;
         this._account = _account;
         this._toaster = _toaster;
-        this.items = home_component_1.routes;
+        this._auth = _auth;
+        this.breadcrumb = " -- Welcome to SIMS -- ";
     }
     SidebarComponent.prototype.ngOnInit = function () {
         if (typeof window !== "undefined") {
@@ -11807,10 +12570,30 @@ var SidebarComponent = (function () {
             else {
                 this._toaster.popAsync("error", "Error", "Something was wrong");
             }
+            this.getItems();
         }
     };
     SidebarComponent.prototype.logout = function () {
         this.signInService.signOut();
+    };
+    SidebarComponent.prototype.getItems = function () {
+        this.items = [
+            { path: '/dashboard', title: 'Dashboard', icon: "fa fa-area-chart", child: [] },
+            {
+                path: '/inventory', title: "Inventory", icon: "fa fa-industry", child: [
+                    { path: "categories", title: "Categories", child: [] },
+                    { path: "receipts", title: "Receipts Note", child: [] },
+                    { path: "deliveries", title: "Deliveries Note", child: [] }
+                ]
+            },
+            {
+                path: "/sale", title: "Sale Management", icon: "fa fa-bars", child: [
+                    { path: "bills", title: "Bills", child: [] }
+                ]
+            },
+            { path: "/usermngt", title: "User Management", icon: "fa fa-user", child: [] },
+            { path: "/reports", title: "Reports", icon: "fa fa-wpforms", child: [] }
+        ];
     };
     SidebarComponent.prototype.settings = function () {
         if (typeof window !== "undefined") {
@@ -11826,22 +12609,30 @@ var SidebarComponent = (function () {
         var _this = this;
         this._account.getInfo(uid).subscribe(function (result) { return _this.user = result; });
     };
+    SidebarComponent.prototype.linkC = function (item, children) {
+        this.breadcrumb = " > " + item.toString() + " > " + children.toString();
+    };
+    SidebarComponent.prototype.linkP = function (item) {
+        this.breadcrumb = " > " + item.toString();
+    };
     return SidebarComponent;
 }());
 SidebarComponent = __decorate([
     core_1.Component({
         selector: 'sidebar',
-        template: __webpack_require__(119),
-        styles: [__webpack_require__(144)]
+        template: __webpack_require__(135),
+        styles: [__webpack_require__(161)]
     }),
-    __metadata("design:paramtypes", [signin_service_1.SignInService, account_service_1.AccountService,
-        angular2_toaster_1.ToasterService])
+    __metadata("design:paramtypes", [signin_service_1.SignInService,
+        account_service_1.AccountService,
+        angular2_toaster_1.ToasterService,
+        auth_service_1.AuthService])
 ], SidebarComponent);
 exports.SidebarComponent = SidebarComponent;
 
 
 /***/ }),
-/* 92 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11857,8 +12648,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var usermngt_service_1 = __webpack_require__(45);
-var angular2_toaster_1 = __webpack_require__(4);
+var users_service_1 = __webpack_require__(36);
+var angular2_toaster_1 = __webpack_require__(2);
 var UserDetailComponent = (function () {
     function UserDetailComponent(userService, toaster) {
         this.userService = userService;
@@ -11931,16 +12722,16 @@ __decorate([
 UserDetailComponent = __decorate([
     core_1.Component({
         selector: 'user-detail',
-        template: __webpack_require__(120),
-        styles: [__webpack_require__(145)]
+        template: __webpack_require__(136),
+        styles: [__webpack_require__(162)]
     }),
-    __metadata("design:paramtypes", [usermngt_service_1.UserMngtService, angular2_toaster_1.ToasterService])
+    __metadata("design:paramtypes", [users_service_1.UserMngtService, angular2_toaster_1.ToasterService])
 ], UserDetailComponent);
 exports.UserDetailComponent = UserDetailComponent;
 
 
 /***/ }),
-/* 93 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11961,10 +12752,124 @@ exports.UserModel = UserModel;
 
 
 /***/ }),
-/* 94 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(3);
+var angular2_jwt_1 = __webpack_require__(10);
+var angular2_toaster_1 = __webpack_require__(2);
+var InventoryMngrGuard = (function () {
+    function InventoryMngrGuard(router, toaster) {
+        this.router = router;
+        this.toaster = toaster;
+    }
+    InventoryMngrGuard.prototype.canActivate = function (route, state) {
+        if (typeof window !== "undefined") {
+            var jwt = new angular2_jwt_1.JwtHelper();
+            var token = localStorage.getItem('token');
+            if (token) {
+                if (jwt.isTokenExpired(token)) {
+                    this.router.navigate(["/signin"]);
+                    return false;
+                }
+                var roleJson = jwt.decodeToken(token);
+                var role = roleJson.roleSIMS;
+                if (role === "InventoryMngr") {
+                    this.toaster.popAsync("success", "Information", "Access accepted.");
+                    return true;
+                }
+                this.toaster.popAsync("warning", "Warning!!", "Access denied!");
+                this.router.navigate([""]);
+                return false;
+            }
+            this.router.navigate(["/signin"]);
+            return false;
+        }
+    };
+    return InventoryMngrGuard;
+}());
+InventoryMngrGuard = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [router_1.Router, angular2_toaster_1.ToasterService])
+], InventoryMngrGuard);
+exports.InventoryMngrGuard = InventoryMngrGuard;
+
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(3);
+var angular2_jwt_1 = __webpack_require__(10);
+var angular2_toaster_1 = __webpack_require__(2);
+var SaleMngrGuard = (function () {
+    function SaleMngrGuard(router, toaster) {
+        this.router = router;
+        this.toaster = toaster;
+    }
+    SaleMngrGuard.prototype.canActivate = function (route, state) {
+        if (typeof window !== "undefined") {
+            var jwt = new angular2_jwt_1.JwtHelper();
+            var token = localStorage.getItem('token');
+            if (token) {
+                if (jwt.isTokenExpired(token)) {
+                    this.router.navigate(["/signin"]);
+                    return false;
+                }
+                var roleJson = jwt.decodeToken(token);
+                var role = roleJson.roleSIMS;
+                if (role === "SaleMngr") {
+                    this.toaster.popAsync("success", "Information", "Access accepted.");
+                    return true;
+                }
+                this.toaster.popAsync("warning", "Warning!!", "Access denied!");
+                this.router.navigate([""]);
+                return false;
+            }
+            this.router.navigate(["/signin"]);
+            return false;
+        }
+    };
+    return SaleMngrGuard;
+}());
+SaleMngrGuard = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [router_1.Router, angular2_toaster_1.ToasterService])
+], SaleMngrGuard);
+exports.SaleMngrGuard = SaleMngrGuard;
+
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -11975,10 +12880,10 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 95 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -11989,10 +12894,10 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 96 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -12003,10 +12908,10 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 97 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -12017,10 +12922,10 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 98 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -12031,10 +12936,10 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 99 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -12045,10 +12950,10 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 100 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -12059,10 +12964,24 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 101 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "select#soflow, select#soflow-color {\r\n   -webkit-appearance: button;\r\n   -webkit-border-radius: 2px;\r\n   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);\r\n   -webkit-padding-end: 20px;\r\n   -webkit-padding-start: 2px;\r\n   -webkit-user-select: none;\r\n   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);\r\n   background-position: 97% center;\r\n   background-repeat: no-repeat;\r\n   border: 1px solid #AAA;\r\n   color: #555;\r\n   font-size: inherit;\r\n   margin: 20px;\r\n   overflow: hidden;\r\n   padding: 5px 10px;\r\n   text-overflow: ellipsis;\r\n   white-space: nowrap;\r\n   width: 200px;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 113 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -12073,10 +12992,10 @@ exports.push([module.i, "\r\n    ", ""]);
 
 
 /***/ }),
-/* 102 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -12087,10 +13006,10 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 103 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -12101,10 +13020,10 @@ exports.push([module.i, "table tbody tr td {\r\n    text-align: left !important;
 
 
 /***/ }),
-/* 104 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -12115,19 +13034,19 @@ exports.push([module.i, "", ""]);
 
 
 /***/ }),
-/* 105 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  XmlEntities: __webpack_require__(107),
-  Html4Entities: __webpack_require__(106),
-  Html5Entities: __webpack_require__(67),
-  AllHtmlEntities: __webpack_require__(67)
+  XmlEntities: __webpack_require__(119),
+  Html4Entities: __webpack_require__(118),
+  Html5Entities: __webpack_require__(73),
+  AllHtmlEntities: __webpack_require__(73)
 };
 
 
 /***/ }),
-/* 106 */
+/* 118 */
 /***/ (function(module, exports) {
 
 var HTML_ALPHA = ['apos', 'nbsp', 'iexcl', 'cent', 'pound', 'curren', 'yen', 'brvbar', 'sect', 'uml', 'copy', 'ordf', 'laquo', 'not', 'shy', 'reg', 'macr', 'deg', 'plusmn', 'sup2', 'sup3', 'acute', 'micro', 'para', 'middot', 'cedil', 'sup1', 'ordm', 'raquo', 'frac14', 'frac12', 'frac34', 'iquest', 'Agrave', 'Aacute', 'Acirc', 'Atilde', 'Auml', 'Aring', 'Aelig', 'Ccedil', 'Egrave', 'Eacute', 'Ecirc', 'Euml', 'Igrave', 'Iacute', 'Icirc', 'Iuml', 'ETH', 'Ntilde', 'Ograve', 'Oacute', 'Ocirc', 'Otilde', 'Ouml', 'times', 'Oslash', 'Ugrave', 'Uacute', 'Ucirc', 'Uuml', 'Yacute', 'THORN', 'szlig', 'agrave', 'aacute', 'acirc', 'atilde', 'auml', 'aring', 'aelig', 'ccedil', 'egrave', 'eacute', 'ecirc', 'euml', 'igrave', 'iacute', 'icirc', 'iuml', 'eth', 'ntilde', 'ograve', 'oacute', 'ocirc', 'otilde', 'ouml', 'divide', 'oslash', 'ugrave', 'uacute', 'ucirc', 'uuml', 'yacute', 'thorn', 'yuml', 'quot', 'amp', 'lt', 'gt', 'OElig', 'oelig', 'Scaron', 'scaron', 'Yuml', 'circ', 'tilde', 'ensp', 'emsp', 'thinsp', 'zwnj', 'zwj', 'lrm', 'rlm', 'ndash', 'mdash', 'lsquo', 'rsquo', 'sbquo', 'ldquo', 'rdquo', 'bdquo', 'dagger', 'Dagger', 'permil', 'lsaquo', 'rsaquo', 'euro', 'fnof', 'Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon', 'Zeta', 'Eta', 'Theta', 'Iota', 'Kappa', 'Lambda', 'Mu', 'Nu', 'Xi', 'Omicron', 'Pi', 'Rho', 'Sigma', 'Tau', 'Upsilon', 'Phi', 'Chi', 'Psi', 'Omega', 'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron', 'pi', 'rho', 'sigmaf', 'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega', 'thetasym', 'upsih', 'piv', 'bull', 'hellip', 'prime', 'Prime', 'oline', 'frasl', 'weierp', 'image', 'real', 'trade', 'alefsym', 'larr', 'uarr', 'rarr', 'darr', 'harr', 'crarr', 'lArr', 'uArr', 'rArr', 'dArr', 'hArr', 'forall', 'part', 'exist', 'empty', 'nabla', 'isin', 'notin', 'ni', 'prod', 'sum', 'minus', 'lowast', 'radic', 'prop', 'infin', 'ang', 'and', 'or', 'cap', 'cup', 'int', 'there4', 'sim', 'cong', 'asymp', 'ne', 'equiv', 'le', 'ge', 'sub', 'sup', 'nsub', 'sube', 'supe', 'oplus', 'otimes', 'perp', 'sdot', 'lceil', 'rceil', 'lfloor', 'rfloor', 'lang', 'rang', 'loz', 'spades', 'clubs', 'hearts', 'diams'];
@@ -12280,7 +13199,7 @@ module.exports = Html4Entities;
 
 
 /***/ }),
-/* 107 */
+/* 119 */
 /***/ (function(module, exports) {
 
 var ALPHA_INDEX = {
@@ -12441,97 +13360,121 @@ module.exports = XmlEntities;
 
 
 /***/ }),
-/* 108 */
+/* 120 */
 /***/ (function(module, exports) {
 
 module.exports = "<router-outlet>\r\n</router-outlet>\r\n\r\n<toaster-container></toaster-container>";
 
 /***/ }),
-/* 109 */
+/* 121 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <div class=\"row justify-content-md-center\">\r\n        <div class=\"col \">\r\n        </div>\r\n        <div class=\"col\">\r\n            <form (ngSubmit)=\"forget(forgetForm)\" action=\"token\" method=\"post\" #forgetForm=\"ngForm\" autocomplete=\"off\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-block\">\r\n                        <!--Header-->\r\n                        <div class=\"text-center\">\r\n                            <h3><i class=\"fa fa-lock\"></i> Request password</h3>\r\n                            <hr class=\"mt-2 mb-2\">\r\n                        </div>\r\n\r\n                        <!--Body-->\r\n                        <div class=\"md-form\">\r\n                            <i class=\"fa fa-envelope prefix\"></i>\r\n                            <input type=\"text\" name=\"email\" required id=\"form2\" class=\"form-control\" ngModel>\r\n                            <label for=\"form2\">Your email</label>\r\n                        </div>\r\n\r\n                        <div class=\"text-center\">\r\n                            <button type=\"submit\" name=\"login\" class=\"btn btn-secondary btn-lg waves-effect waves-light\">Login</button>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                    <!--Footer-->\r\n                    <div class=\"modal-footer\">\r\n                        <div class=\"options\">\r\n                            <p>Want to <a routerLink=\"/signin\">Login?</a></p>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n        <div class=\"col\">\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 110 */
+/* 122 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron\">\r\n  <h1>Jumbotron</h1>\r\n\r\n  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>\r\n\r\n  <p><a class=\"btn btn-primary btn-lg\">Learn more</a></p>\r\n</div>";
+module.exports = "<div class=\"card card-cascade narrower\">\r\n\r\n  <!--Admin panel-->\r\n  <div class=\"admin-panel\">\r\n\r\n    <!--First row-->\r\n    <div class=\"row m-b-0\">\r\n\r\n      <!--First column-->\r\n      <div class=\"col-md-5\">\r\n\r\n        <!--Panel title-->\r\n        <div class=\"view left primary-color\">\r\n          <h2>Sales</h2>\r\n        </div>\r\n        <!--/Panel title-->\r\n\r\n        <!--Panel data-->\r\n        <div class=\"row card-block pt-3\">\r\n\r\n          <!--First column-->\r\n          <div class=\"col-md-6\">\r\n\r\n            <!--Date select-->\r\n            <h4><span class=\"badge big-badge primary-color\">Data range</span></h4>\r\n            <div class=\"select-wrapper mdb-select colorful-select dropdown-primary\"><span class=\"caret\">▼</span><input type=\"text\" class=\"select-dropdown\" readonly=\"true\" data-activates=\"select-options-aa75f0cb-af30-e153-ebb0-89686aa1b914\"\r\n                value=\"Choose time period\">\r\n              <ul id=\"select-options-aa75f0cb-af30-e153-ebb0-89686aa1b914\" class=\"dropdown-content select-dropdown \">\r\n                <li class=\"disabled \"><span>Choose time period</span></li>\r\n                <li class=\"\"><span>Today</span></li>\r\n                <li class=\"\"><span>Yesterday</span></li>\r\n                <li class=\"\"><span>Last 7 days</span></li>\r\n                <li class=\"\"><span>Last 30 days</span></li>\r\n                <li class=\"\"><span>Last week</span></li>\r\n                <li class=\"\"><span>Last month</span></li>\r\n              </ul><select class=\"mdb-select colorful-select dropdown-primary initialized\">\r\n                                                    <option value=\"\" disabled=\"\" selected=\"\">Choose time period</option>\r\n                                                    <option value=\"1\">Today</option>\r\n                                                    <option value=\"2\">Yesterday</option>\r\n                                                    <option value=\"3\">Last 7 days</option>\r\n                                                    <option value=\"3\">Last 30 days</option>\r\n                                                    <option value=\"3\">Last week</option>\r\n                                                    <option value=\"3\">Last month</option>\r\n                                                </select></div>\r\n            <br>\r\n\r\n            <!--Date pickers-->\r\n            <h4><span class=\"badge big-badge primary-color\">Custom date</span></h4>\r\n            <br>\r\n            <div class=\"md-form\">\r\n              <input placeholder=\"Selected date\" type=\"text\" id=\"from\" class=\"form-control datepicker picker__input\" readonly=\"\" aria-haspopup=\"true\"\r\n                aria-expanded=\"false\" aria-readonly=\"false\" aria-owns=\"from_root\">\r\n              <div class=\"picker\" id=\"from_root\" aria-hidden=\"true\">\r\n                <div class=\"picker__holder\" tabindex=\"-1\">\r\n                  <div class=\"picker__frame\">\r\n                    <div class=\"picker__wrap\">\r\n                      <div class=\"picker__box\">\r\n                        <div class=\"picker__header\">\r\n                          <div class=\"picker__date-display\">\r\n                            <div class=\"picker__weekday-display\">Saturday</div>\r\n                            <div class=\"picker__month-display\">\r\n                              <div>May</div>\r\n                            </div>\r\n                            <div class=\"picker__day-display\">\r\n                              <div>13</div>\r\n                            </div>\r\n                            <div class=\"picker__year-display\">\r\n                              <div>2017</div>\r\n                            </div>\r\n                          </div><select class=\"picker__select--year\" disabled=\"\" aria-controls=\"from_table\" title=\"Select a year\"><option value=\"2010\">2010</option><option value=\"2011\">2011</option><option value=\"2012\">2012</option><option value=\"2013\">2013</option><option value=\"2014\">2014</option><option value=\"2015\">2015</option><option value=\"2016\">2016</option><option value=\"2017\" selected=\"\">2017</option><option value=\"2018\">2018</option><option value=\"2019\">2019</option><option value=\"2020\">2020</option><option value=\"2021\">2021</option><option value=\"2022\">2022</option><option value=\"2023\">2023</option><option value=\"2024\">2024</option></select>\r\n                          <select class=\"picker__select--month\" disabled=\"\" aria-controls=\"from_table\" title=\"Select a month\">\r\n                            <option value=\"0\">January</option>\r\n                            <option value=\"1\">February</option>\r\n                            <option value=\"2\">March</option>\r\n                            <option value=\"3\">April</option>\r\n                            <option value=\"4\" selected=\"\">May</option>\r\n                            <option value=\"5\">June</option>\r\n                            <option value=\"6\">July</option>\r\n                            <option value=\"7\">August</option>\r\n                            <option value=\"8\">September</option>\r\n                            <option value=\"9\">October</option>\r\n                            <option value=\"10\">November</option>\r\n                            <option value=\"11\">December</option>\r\n                            </select>\r\n                          <div class=\"picker__nav--prev\" data-nav=\"-1\" role=\"button\" aria-controls=\"from_table\" title=\"Previous month\">\r\n                          </div>\r\n                          <div class=\"picker__nav--next\" data-nav=\"1\" role=\"button\" aria-controls=\"from_table\" title=\"Next month\">\r\n                          </div>\r\n                        </div>\r\n                        <table class=\"picker__table\" id=\"from_table\" role=\"grid\" aria-controls=\"from\" aria-readonly=\"true\">\r\n                          <thead>\r\n                            <tr>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Sunday\">Sun</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Monday\">Mon</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Tuesday\">Tue</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Wednesday\">Wed</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Thursday\">Thu</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Friday\">Fri</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Saturday\">Sat</th>\r\n                            </tr>\r\n                          </thead>\r\n                          <tbody>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1493485200000\" role=\"gridcell\" aria-label=\"30 April, 2017\">30</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1493571600000\" role=\"gridcell\" aria-label=\"1 May, 2017\">1</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1493658000000\" role=\"gridcell\" aria-label=\"2 May, 2017\">2</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1493744400000\" role=\"gridcell\" aria-label=\"3 May, 2017\">3</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1493830800000\" role=\"gridcell\" aria-label=\"4 May, 2017\">4</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1493917200000\" role=\"gridcell\" aria-label=\"5 May, 2017\">5</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494003600000\" role=\"gridcell\" aria-label=\"6 May, 2017\">6</div>\r\n                              </td>\r\n                            </tr>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494090000000\" role=\"gridcell\" aria-label=\"7 May, 2017\">7</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494176400000\" role=\"gridcell\" aria-label=\"8 May, 2017\">8</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494262800000\" role=\"gridcell\" aria-label=\"9 May, 2017\">9</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494349200000\" role=\"gridcell\" aria-label=\"10 May, 2017\">10</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494435600000\" role=\"gridcell\" aria-label=\"11 May, 2017\">11</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494522000000\" role=\"gridcell\" aria-label=\"12 May, 2017\">12</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus picker__day--today picker__day--highlighted\" data-pick=\"1494608400000\" role=\"gridcell\"\r\n                                  aria-label=\"13 May, 2017\" aria-activedescendant=\"true\">13</div>\r\n                              </td>\r\n                            </tr>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494694800000\" role=\"gridcell\" aria-label=\"14 May, 2017\">14</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494781200000\" role=\"gridcell\" aria-label=\"15 May, 2017\">15</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494867600000\" role=\"gridcell\" aria-label=\"16 May, 2017\">16</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494954000000\" role=\"gridcell\" aria-label=\"17 May, 2017\">17</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495040400000\" role=\"gridcell\" aria-label=\"18 May, 2017\">18</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495126800000\" role=\"gridcell\" aria-label=\"19 May, 2017\">19</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495213200000\" role=\"gridcell\" aria-label=\"20 May, 2017\">20</div>\r\n                              </td>\r\n                            </tr>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495299600000\" role=\"gridcell\" aria-label=\"21 May, 2017\">21</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495386000000\" role=\"gridcell\" aria-label=\"22 May, 2017\">22</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495472400000\" role=\"gridcell\" aria-label=\"23 May, 2017\">23</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495558800000\" role=\"gridcell\" aria-label=\"24 May, 2017\">24</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495645200000\" role=\"gridcell\" aria-label=\"25 May, 2017\">25</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495731600000\" role=\"gridcell\" aria-label=\"26 May, 2017\">26</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495818000000\" role=\"gridcell\" aria-label=\"27 May, 2017\">27</div>\r\n                              </td>\r\n                            </tr>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495904400000\" role=\"gridcell\" aria-label=\"28 May, 2017\">28</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495990800000\" role=\"gridcell\" aria-label=\"29 May, 2017\">29</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1496077200000\" role=\"gridcell\" aria-label=\"30 May, 2017\">30</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1496163600000\" role=\"gridcell\" aria-label=\"31 May, 2017\">31</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496250000000\" role=\"gridcell\" aria-label=\"1 June, 2017\">1</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496336400000\" role=\"gridcell\" aria-label=\"2 June, 2017\">2</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496422800000\" role=\"gridcell\" aria-label=\"3 June, 2017\">3</div>\r\n                              </td>\r\n                            </tr>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496509200000\" role=\"gridcell\" aria-label=\"4 June, 2017\">4</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496595600000\" role=\"gridcell\" aria-label=\"5 June, 2017\">5</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496682000000\" role=\"gridcell\" aria-label=\"6 June, 2017\">6</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496768400000\" role=\"gridcell\" aria-label=\"7 June, 2017\">7</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496854800000\" role=\"gridcell\" aria-label=\"8 June, 2017\">8</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496941200000\" role=\"gridcell\" aria-label=\"9 June, 2017\">9</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1497027600000\" role=\"gridcell\" aria-label=\"10 June, 2017\">10</div>\r\n                              </td>\r\n                            </tr>\r\n                          </tbody>\r\n                        </table>\r\n                        <div class=\"picker__footer\"><button class=\"picker__button--today\" type=\"button\" data-pick=\"1494608400000\" disabled=\"\" aria-controls=\"from\">Today</button>\r\n                          <button class=\"picker__button--clear\" type=\"button\" data-clear=\"1\" disabled=\"\" aria-controls=\"from\">Clear</button>\r\n                          <button\r\n                            class=\"picker__button--close\" type=\"button\" data-close=\"true\" disabled=\"\" aria-controls=\"from\">Close</button>\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <label for=\"date-picker-example\" class=\"active\">From</label>\r\n            </div>\r\n            <div class=\"md-form\">\r\n              <input placeholder=\"Selected date\" type=\"text\" id=\"to\" class=\"form-control datepicker picker__input\" readonly=\"\" aria-haspopup=\"true\"\r\n                aria-expanded=\"false\" aria-readonly=\"false\" aria-owns=\"to_root\">\r\n              <div class=\"picker\" id=\"to_root\" aria-hidden=\"true\">\r\n                <div class=\"picker__holder\" tabindex=\"-1\">\r\n                  <div class=\"picker__frame\">\r\n                    <div class=\"picker__wrap\">\r\n                      <div class=\"picker__box\">\r\n                        <div class=\"picker__header\">\r\n                          <div class=\"picker__date-display\">\r\n                            <div class=\"picker__weekday-display\">Saturday</div>\r\n                            <div class=\"picker__month-display\">\r\n                              <div>May</div>\r\n                            </div>\r\n                            <div class=\"picker__day-display\">\r\n                              <div>13</div>\r\n                            </div>\r\n                            <div class=\"picker__year-display\">\r\n                              <div>2017</div>\r\n                            </div>\r\n                          </div><select class=\"picker__select--year\" disabled=\"\" aria-controls=\"to_table\" title=\"Select a year\"><option value=\"2010\">2010</option><option value=\"2011\">2011</option><option value=\"2012\">2012</option><option value=\"2013\">2013</option><option value=\"2014\">2014</option><option value=\"2015\">2015</option><option value=\"2016\">2016</option><option value=\"2017\" selected=\"\">2017</option><option value=\"2018\">2018</option><option value=\"2019\">2019</option><option value=\"2020\">2020</option><option value=\"2021\">2021</option><option value=\"2022\">2022</option><option value=\"2023\">2023</option><option value=\"2024\">2024</option></select>\r\n                          <select class=\"picker__select--month\" disabled=\"\" aria-controls=\"to_table\" title=\"Select a month\">\r\n                            <option value=\"0\">January</option>\r\n                            <option value=\"1\">February</option>\r\n                            <option value=\"2\">March</option>\r\n                            <option value=\"3\">April</option>\r\n                            <option value=\"4\" selected=\"\">May</option>\r\n                            <option value=\"5\">June</option>\r\n                            <option value=\"6\">July</option>\r\n                            <option value=\"7\">August</option>\r\n                            <option value=\"8\">September</option>\r\n                            <option value=\"9\">October</option>\r\n                            <option value=\"10\">November</option>\r\n                            <option value=\"11\">December</option>\r\n                            </select>\r\n                          <div class=\"picker__nav--prev\" data-nav=\"-1\" role=\"button\" aria-controls=\"to_table\" title=\"Previous month\">\r\n                          </div>\r\n                          <div class=\"picker__nav--next\" data-nav=\"1\" role=\"button\" aria-controls=\"to_table\" title=\"Next month\">\r\n                          </div>\r\n                        </div>\r\n                        <table class=\"picker__table\" id=\"to_table\" role=\"grid\" aria-controls=\"to\" aria-readonly=\"true\">\r\n                          <thead>\r\n                            <tr>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Sunday\">Sun</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Monday\">Mon</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Tuesday\">Tue</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Wednesday\">Wed</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Thursday\">Thu</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Friday\">Fri</th>\r\n                              <th class=\"picker__weekday\" scope=\"col\" title=\"Saturday\">Sat</th>\r\n                            </tr>\r\n                          </thead>\r\n                          <tbody>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1493485200000\" role=\"gridcell\" aria-label=\"30 April, 2017\">30</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1493571600000\" role=\"gridcell\" aria-label=\"1 May, 2017\">1</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1493658000000\" role=\"gridcell\" aria-label=\"2 May, 2017\">2</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1493744400000\" role=\"gridcell\" aria-label=\"3 May, 2017\">3</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1493830800000\" role=\"gridcell\" aria-label=\"4 May, 2017\">4</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1493917200000\" role=\"gridcell\" aria-label=\"5 May, 2017\">5</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494003600000\" role=\"gridcell\" aria-label=\"6 May, 2017\">6</div>\r\n                              </td>\r\n                            </tr>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494090000000\" role=\"gridcell\" aria-label=\"7 May, 2017\">7</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494176400000\" role=\"gridcell\" aria-label=\"8 May, 2017\">8</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494262800000\" role=\"gridcell\" aria-label=\"9 May, 2017\">9</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494349200000\" role=\"gridcell\" aria-label=\"10 May, 2017\">10</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494435600000\" role=\"gridcell\" aria-label=\"11 May, 2017\">11</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494522000000\" role=\"gridcell\" aria-label=\"12 May, 2017\">12</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus picker__day--today picker__day--highlighted\" data-pick=\"1494608400000\" role=\"gridcell\"\r\n                                  aria-label=\"13 May, 2017\" aria-activedescendant=\"true\">13</div>\r\n                              </td>\r\n                            </tr>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494694800000\" role=\"gridcell\" aria-label=\"14 May, 2017\">14</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494781200000\" role=\"gridcell\" aria-label=\"15 May, 2017\">15</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494867600000\" role=\"gridcell\" aria-label=\"16 May, 2017\">16</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1494954000000\" role=\"gridcell\" aria-label=\"17 May, 2017\">17</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495040400000\" role=\"gridcell\" aria-label=\"18 May, 2017\">18</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495126800000\" role=\"gridcell\" aria-label=\"19 May, 2017\">19</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495213200000\" role=\"gridcell\" aria-label=\"20 May, 2017\">20</div>\r\n                              </td>\r\n                            </tr>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495299600000\" role=\"gridcell\" aria-label=\"21 May, 2017\">21</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495386000000\" role=\"gridcell\" aria-label=\"22 May, 2017\">22</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495472400000\" role=\"gridcell\" aria-label=\"23 May, 2017\">23</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495558800000\" role=\"gridcell\" aria-label=\"24 May, 2017\">24</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495645200000\" role=\"gridcell\" aria-label=\"25 May, 2017\">25</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495731600000\" role=\"gridcell\" aria-label=\"26 May, 2017\">26</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495818000000\" role=\"gridcell\" aria-label=\"27 May, 2017\">27</div>\r\n                              </td>\r\n                            </tr>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495904400000\" role=\"gridcell\" aria-label=\"28 May, 2017\">28</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1495990800000\" role=\"gridcell\" aria-label=\"29 May, 2017\">29</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1496077200000\" role=\"gridcell\" aria-label=\"30 May, 2017\">30</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--infocus\" data-pick=\"1496163600000\" role=\"gridcell\" aria-label=\"31 May, 2017\">31</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496250000000\" role=\"gridcell\" aria-label=\"1 June, 2017\">1</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496336400000\" role=\"gridcell\" aria-label=\"2 June, 2017\">2</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496422800000\" role=\"gridcell\" aria-label=\"3 June, 2017\">3</div>\r\n                              </td>\r\n                            </tr>\r\n                            <tr>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496509200000\" role=\"gridcell\" aria-label=\"4 June, 2017\">4</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496595600000\" role=\"gridcell\" aria-label=\"5 June, 2017\">5</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496682000000\" role=\"gridcell\" aria-label=\"6 June, 2017\">6</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496768400000\" role=\"gridcell\" aria-label=\"7 June, 2017\">7</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496854800000\" role=\"gridcell\" aria-label=\"8 June, 2017\">8</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1496941200000\" role=\"gridcell\" aria-label=\"9 June, 2017\">9</div>\r\n                              </td>\r\n                              <td role=\"presentation\">\r\n                                <div class=\"picker__day picker__day--outfocus\" data-pick=\"1497027600000\" role=\"gridcell\" aria-label=\"10 June, 2017\">10</div>\r\n                              </td>\r\n                            </tr>\r\n                          </tbody>\r\n                        </table>\r\n                        <div class=\"picker__footer\"><button class=\"picker__button--today\" type=\"button\" data-pick=\"1494608400000\" disabled=\"\" aria-controls=\"to\">Today</button>\r\n                          <button class=\"picker__button--clear\" type=\"button\" data-clear=\"1\" disabled=\"\" aria-controls=\"to\">Clear</button>\r\n                          <button\r\n                            class=\"picker__button--close\" type=\"button\" data-close=\"true\" disabled=\"\" aria-controls=\"to\">Close</button>\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <label for=\"date-picker-example\" class=\"active\">To</label>\r\n            </div>\r\n\r\n          </div>\r\n          <!--/First column-->\r\n\r\n          <!--Second column-->\r\n          <div class=\"col-md-6 text-center\">\r\n\r\n            <!--Summary-->\r\n            <p>Total sales: <strong>2000$</strong> <button type=\"button\" class=\"btn btn-sm btn-primary waves-effect waves-light\"\r\n                data-toggle=\"tooltip\" data-placement=\"top\" title=\"\" data-original-title=\"Total sales in the given period\"><i class=\"fa fa-question\"></i></button></p>\r\n            <p>Average sales: <strong>100$</strong> <button type=\"button\" class=\"btn btn-sm btn-primary waves-effect waves-light\"\r\n                data-toggle=\"tooltip\" data-placement=\"top\" title=\"\" data-original-title=\"Average daily sales in the given period\"><i class=\"fa fa-question\"></i></button></p>\r\n\r\n            <!--Change chart-->\r\n            <span class=\"min-chart\" id=\"chart-sales\" data-percent=\"76\"><span class=\"percent\">76</span>\r\n            <canvas height=\"110\" width=\"110\"></canvas>\r\n            </span>\r\n            <h5><span class=\"badge green\">Change <i class=\"fa fa-arrow-circle-up\"></i></span><button type=\"button\" class=\"btn btn-sm btn-primary waves-effect waves-light\"\r\n                data-toggle=\"tooltip\" data-placement=\"top\" title=\"\" data-original-title=\"Percentage change compared to the same period in the past\"><i class=\"fa fa-question\"></i></button></h5>\r\n          </div>\r\n          <!--/Second column-->\r\n\r\n        </div>\r\n        <!--/Panel data-->\r\n      </div>\r\n      <!--/First column-->\r\n\r\n      <!--Second column-->\r\n      <div class=\"col-md-7\">\r\n        <!--Cascading element-->\r\n        <div class=\"view right primary-color\">\r\n          <!--Main chart-->\r\n          <canvas id=\"sales\" height=\"319\" width=\"619\" style=\"width: 619px; height: 319px;\"></canvas>\r\n        </div>\r\n        <!--/Cascading element-->\r\n      </div>\r\n      <!--/Second column-->\r\n\r\n    </div>\r\n    <!--/First row-->\r\n\r\n    <!--Second row-->\r\n    <div class=\"row mb-0\">\r\n      <!--First column-->\r\n      <div class=\"col-md-12\">\r\n\r\n        <!--Panel content-->\r\n        <div class=\"card-block pt-0\">\r\n\r\n          <div class=\"table-responsive\">\r\n\r\n            <!--Table-->\r\n            <table class=\"table table-hover\">\r\n              <!--Table head-->\r\n              <thead>\r\n                <tr class=\"primary-color\">\r\n                  <th>#</th>\r\n                  <th>Name</th>\r\n                  <th>Quantity</th>\r\n                  <th>Category</th>\r\n                </tr>\r\n              </thead>\r\n              <!--/Table head-->\r\n\r\n              <!--Table body-->\r\n              <tbody>\r\n                <tr *ngFor=\"let product of topFiveProducts, let i=index\">\r\n                  <td>{{ i+1}}</td>\r\n                  <td>{{product.name}}</td>\r\n                  <td>{{product.quantity}}</td>\r\n                  <td>{{product.category.name}}</td>\r\n                </tr>\r\n              </tbody>\r\n              <!--/Table body-->\r\n            </table>\r\n            <!--/Table-->\r\n\r\n          </div>\r\n\r\n        </div>\r\n        <!--/.Panel content-->\r\n\r\n      </div>\r\n      <!--/First column-->\r\n    </div>\r\n    <!--/Second row-->\r\n\r\n  </div>\r\n  <!--/Admin panel-->\r\n\r\n</div>";
 
 /***/ }),
-/* 111 */
+/* 123 */
 /***/ (function(module, exports) {
 
 module.exports = "<sidebar>\r\n</sidebar>\r\n<main>\r\n    <router-outlet>\r\n    </router-outlet>\r\n</main>";
 
 /***/ }),
-/* 112 */
+/* 124 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div *ngFor=\"let category of categories; let i = index\" class=\"col-md-4 mb-1 animated fadeIn\">\r\n        <category-card [category]=\"category\" (cateDetails)=\"categoryDetail($event)\"></category-card>\r\n    </div>\r\n</div>\r\n\r\n<category-detail (updateEvent)=\"updateData()\" *ngIf=\"cate\" [cate]=\"cate\"></category-detail>\r\n\r\n<div class=\"fixed-action-btn\" style=\"bottom: 45px; right: 24px;\" data-toggle=\"modal\" data-target=\"#addCategoryModal\">\r\n    <a class=\"btn-floating btn-large red waves-effect waves-light\" data-toggle=\"tooltip\" data-placement=\"top\" (click)=\"addCategoryModel()\"\r\n        title=\"Add category\">\r\n                <i class=\"fa fa-pencil\"></i>\r\n            </a>\r\n</div>\r\n\r\n<div *ngIf=\"category\" class=\"modal fade\" id=\"addCategoryModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog cascading-modal\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n\r\n            <div class=\"modal-header light-blue darken-3 white-text\">\r\n                <button type=\"button\" class=\"close waves-effect waves-light\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"title\"><i class=\"fa fa-newspaper-o\"></i> Add new Category</h4>\r\n            </div>\r\n            <div class=\"modal-body mb-0\">\r\n                <div class=\"md-form form-sm\">\r\n                    <input type=\"text\" id=\"form27\" [(ngModel)]=\"category.name\" required minlength=\"2\" maxlength=\"50\" class=\"form-control validate\">\r\n                    <label for=\"form27\">Category name ( 2 < length < 50 )</label>\r\n                </div>\r\n\r\n                <div class=\"md-form form-sm\">\r\n                    <input type=\"text\" id=\"form28\" [(ngModel)]=\"category.description\" required minlength=\"20\" maxlength=\"200\" class=\"form-control validate\">\r\n                    <label for=\"form28\">Description ( 20 < length < 200)</label>\r\n                </div>\r\n\r\n                <div class=\"text-center mt-1-half\">\r\n                    <button class=\"btn btn-info mb-1\" data-dismiss=\"modal\" aria-label=\"Close\" (click)=\"saveChanges(category)\">Submit <i class=\"fa fa-check ml-1\"></i></button>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
+module.exports = "<div class=\"row\">\r\n    <div *ngFor=\"let category of categories; let i = index\" class=\"col-md-4 mb-1 animated fadeIn\">\r\n        <category-card [category]=\"category\" (actionCate)=\"actionCate($event)\" (cateDetails)=\"categoryDetail($event)\"></category-card>\r\n    </div>\r\n</div>\r\n\r\n<category-detail (updateEvent)=\"updateData()\" [cate]=\"cate\"></category-detail>\r\n\r\n<div class=\"fixed-action-btn\" style=\"bottom: 45px; right: 24px;\" data-toggle=\"modal\" data-target=\"#addCategoryModal\">\r\n    <a class=\"btn-floating btn-large red waves-effect waves-light\" data-toggle=\"tooltip\" data-placement=\"top\" (click)=\"addCategoryModel()\"\r\n        title=\"Add category\">\r\n                <i class=\"fa fa-pencil\"></i>\r\n            </a>\r\n</div>\r\n\r\n<div *ngIf=\"category\" class=\"modal fade\" id=\"addCategoryModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog cascading-modal\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n\r\n            <div class=\"modal-header light-blue darken-3 white-text\">\r\n                <button type=\"button\" class=\"close waves-effect waves-light\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 *ngIf=\"isRemove\" class=\"title\"><i class=\"fa fa-newspaper-o\"></i> Add new Category</h4>\r\n                <h4 *ngIf=\"!isRemove\"><i class=\"fa fa-newspaper-o\"></i> Edit Category</h4>\r\n            </div>\r\n            <div class=\"modal-body mb-0\">\r\n                <div class=\"md-form form-sm\">\r\n                    <input type=\"text\" id=\"form27\" [(ngModel)]=\"category.name\" required minlength=\"2\" maxlength=\"50\" class=\"form-control validate\">\r\n                    <label for=\"form27\" [ngClass]=\"{'active':!isRemove}\">Category name ( 2 < length < 50 )</label>\r\n                </div>\r\n\r\n                <div class=\"md-form form-sm\">\r\n                    <input type=\"text\" id=\"form28\" [(ngModel)]=\"category.description\" required minlength=\"20\" maxlength=\"200\" class=\"form-control validate\">\r\n                    <label for=\"form28\" [ngClass]=\"{'active':!isRemove}\">Description ( 20 < length < 200)</label>\r\n                </div>\r\n\r\n                <div class=\"text-center mt-1-half\">\r\n                    <button class=\"btn btn-info mb-1\" data-dismiss=\"modal\" aria-label=\"Close\" (click)=\"saveChanges(category)\">Submit <i class=\"fa fa-check ml-1\"></i></button>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div *ngIf=\"cateFocus\" class=\"modal fade\" id=\"centralModalWarning\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div [ngClass]=\"{'modal-dialog modal-notify':true, ' modal-danger':isRemove}\" role=\"document\">\r\n        <!--Content-->\r\n        <div class=\"modal-content\">\r\n            <!--Header-->\r\n            <div class=\"modal-header\">\r\n                <p class=\"heading lead\">Warning</p>\r\n\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\" class=\"white-text\">&times;</span>\r\n                </button>\r\n            </div>\r\n\r\n            <!--Body-->\r\n            <div class=\"modal-body\">\r\n                <div class=\"text-center\">\r\n                    <h2>Do you want remove category {{ cateFocus.name }} ?</h2>\r\n                </div>\r\n            </div>\r\n\r\n            <!--Footer-->\r\n            <div class=\"modal-footer flex-center\">\r\n                <a type=\"button\" class=\"btn btn-primary-modal\" data-dismiss=\"modal\" (click)=\"removeCategory(cateFocus)\">Yes</a>\r\n                <a type=\"button\" class=\"btn btn-outline-secondary-modal waves-effect\" data-dismiss=\"modal\">No</a>\r\n            </div>\r\n        </div>\r\n        <!--/.Content-->\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 113 */
+/* 125 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card card-cascade cascading-admin-card action-btn\" role=\"document\">\r\n    <div class=\"admin-up\">\r\n        <i class=\"fa fa-pie-chart {{ color[category.id] }}\"></i>\r\n        <div class=\"data\">\r\n            <p>{{category.description}}</p>\r\n            <h2>{{category.name}}</h2>\r\n        </div>\r\n    </div>\r\n    <div class=\"card-block\">\r\n        <div class=\"card-footer\">\r\n            <span class=\"left\">{{ numberProduct }} products</span>\r\n            <span class=\"right\">\r\n                    <a  (click)=\"categoryDetail(category)\" ><i class=\"fa fa-eye\"></i></a>\r\n                    <a  (click)=\"editCate(category)\" ><i class=\"fa fa-pencil\"></i></a>\r\n                    <a  (click)=\"removeCate(category)\" ><i class=\"fa fa-remove\"></i></a>\r\n                </span>\r\n        </div>\r\n    </div>\r\n</div>";
+module.exports = "<div class=\"card card-cascade cascading-admin-card action-btn\" role=\"document\">\r\n    <div class=\"admin-up\">\r\n        <i class=\"fa fa-pie-chart {{ color[category.id] }}\"></i>\r\n        <div class=\"data\">\r\n            <p>{{category.description}}</p>\r\n            <h2>{{category.name}}</h2>\r\n        </div>\r\n    </div>\r\n    <div class=\"card-block\">\r\n        <div class=\"card-footer\">\r\n            <span class=\"left\">{{ category.products.length }} products</span>\r\n            <span class=\"right\">\r\n                    <a  (click)=\"categoryDetail(category)\" ><i class=\"fa fa-eye\"></i></a>\r\n                    <a  (click)=\"editCate(category)\" ><i class=\"fa fa-pencil\" data-toggle=\"modal\" data-target=\"#addCategoryModal\"></i></a>\r\n                    <a  (click)=\"removeCate(category)\"><i class=\"fa fa-remove\" data-toggle=\"modal\" data-target=\"#centralModalWarning\"></i></a>\r\n                </span>\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 114 */
+/* 126 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container animated fadeIn admin-panel\">\r\n    <div class=\"row\">\r\n    </div>\r\n    <div class=\"jumbotron col\">\r\n        <div class=\"d-flex justify-content-end\">\r\n            <div class=\"mr-auto p-2\">\r\n                <a class=\"btn btn-default btn-sm\" data-toggle=\"modal\" data-target=\"#editModal\" (click)=\"addProduct()\" role=\"button\">Add product</a>\r\n            </div>\r\n            <div class=\"p-2\">\r\n                Category: {{ cate.name }}\r\n            </div>\r\n        </div>\r\n        <div class=\"card-block pt-0\">\r\n            <div class=\"table-responsive\">\r\n                <table class=\"table table-hover\">\r\n                    <thead>\r\n                        <tr class=\"primary-color\">\r\n                            <th>#</th>\r\n                            <th>Name</th>\r\n                            <th>Description</th>\r\n                            <th>Status</th>\r\n                            <th>Quantity</th>\r\n                            <th>CategoryID</th>\r\n                            <th class=\"text-center\">Action</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let product of products, let i = index\">\r\n                            <th scope=\"row\">{{i}}</th>\r\n                            <td>{{product.name}}</td>\r\n                            <td>{{product.description}}</td>\r\n                            <td *ngIf=\"!product.status\"><span class=\"badge badge-danger\">Not Available</span></td>\r\n                            <td *ngIf=\"product.status\"><span class=\"badge badge-primary\">Available</span></td>\r\n                            <td>{{product.quantity}}</td>\r\n                            <td>{{product.categoryId}}</td>\r\n                            <td class=\"center-group\">\r\n                                <a class=\"blue-text\"><span class=\"badge badge-info\" (click)=\"viewProduct(product)\"\r\n                        data-toggle=\"modal\" data-target=\"#editModal\">View</span></a>\r\n                                <a class=\"teal-text\">\r\n                        <span class=\"badge badge-warning\" \r\n                        data-toggle=\"modal\" data-target=\"#editModal\" (click)=\"editProduct(product)\">Edit</span></a>\r\n                                <a class=\"teal-text\" (click)=\"removeProductDialog(product)\" data-toggle=\"modal\" data-target=\"#centralModalWarning\">\r\n                        <span class=\"badge badge-danger\">Remove</span></a>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<product-detail [cateName]=\"cate.name\" (updateEvent)=\"updateData()\" *ngIf=\"productSelected\" [product]=\"productSelected\" [isView]=\"isView\"\r\n    [isAdd]=\"isAdd\" data-backdrop=\"static\" id=\"editModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\r\n    aria-hidden=\"true\" role=\"dialog\"></product-detail>\r\n\r\n<!--Sure to remove product-->\r\n\r\n<div *ngIf=\"productFocus\" class=\"modal fade\" id=\"centralModalWarning\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-notify modal-danger\" role=\"document\">\r\n        <!--Content-->\r\n        <div class=\"modal-content\">\r\n            <!--Header-->\r\n            <div class=\"modal-header\">\r\n                <p class=\"heading lead\">Warning</p>\r\n\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\" class=\"white-text\">&times;</span>\r\n                </button>\r\n            </div>\r\n\r\n            <!--Body-->\r\n            <div class=\"modal-body\">\r\n                <div class=\"text-center\">\r\n                    <h2>Do you want remove product has name: {{productFocus.name}} ?</h2>\r\n                </div>\r\n            </div>\r\n\r\n            <!--Footer-->\r\n            <div class=\"modal-footer flex-center\">\r\n                <a type=\"button\" class=\"btn btn-primary-modal\" data-dismiss=\"modal\" (click)=\"removeProduct(productFocus)\">Yes</a>\r\n                <a type=\"button\" class=\"btn btn-outline-secondary-modal waves-effect\" data-dismiss=\"modal\">No</a>\r\n            </div>\r\n        </div>\r\n        <!--/.Content-->\r\n    </div>\r\n</div>";
+module.exports = "<div class=\"container-fluid animated fadeIn admin-panel\">\r\n    <div class=\"row\">\r\n    </div>\r\n    <div class=\"jumbotron col\">\r\n        <div class=\"d-flex justify-content-end\">\r\n            <div class=\"mr-auto p-2\">\r\n                <a class=\"btn btn-default btn-sm\" data-toggle=\"modal\" data-target=\"#editModal\" (click)=\"addProduct()\" role=\"button\">Add product</a>\r\n            </div>\r\n            <div *ngIf=\"cate\" class=\"p-2\">\r\n                <h3>Category: {{ cate.name }}</h3>\r\n            </div>\r\n            <div *ngIf=\"!cate\" class=\"p-2\">\r\n                <h3>All</h3>\r\n            </div>\r\n        </div>\r\n        <div class=\"card-block pt-0\">\r\n            <div class=\"table-responsive\">\r\n                <table class=\"table table-hover\">\r\n                    <thead>\r\n                        <tr class=\"primary-color\">\r\n                            <th>#</th>\r\n                            <th>Name</th>\r\n                            <th>Description</th>\r\n                            <th>Status</th>\r\n                            <th>Quantity</th>\r\n                            <th>Calculation Unit</th>\r\n                            <th>CategoryID</th>\r\n                            <th class=\"text-center\">Action</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let product of products, let i = index\">\r\n                            <th scope=\"row\">{{i}}</th>\r\n                            <td>{{product.name}}</td>\r\n                            <td>{{product.description}}</td>\r\n                            <td *ngIf=\"!product.status\"><span class=\"badge badge-danger\">Not Available</span></td>\r\n                            <td *ngIf=\"product.status\"><span class=\"badge badge-primary\">Available</span></td>\r\n                            <td>{{product.quantity}}</td>\r\n                            <td>{{product.calculationUnit}}</td>\r\n                            <td>{{product.category.name}}</td>\r\n                            <td *ngIf=\"role=='Administrator'\" class=\"center-group\">\r\n                                <a class=\"blue-text\"><span class=\"badge badge-info\" (click)=\"viewProduct(product)\"\r\n                        data-toggle=\"modal\" data-target=\"#editModal\">View</span></a>\r\n                                <a class=\"teal-text\">\r\n                        <span class=\"badge badge-warning\" \r\n                        data-toggle=\"modal\" data-target=\"#editModal\" (click)=\"editProduct(product)\">Edit</span></a>\r\n                                <a class=\"teal-text\" (click)=\"removeProductDialog(product)\" data-toggle=\"modal\" data-target=\"#centralModalWarning\">\r\n                        <span class=\"badge badge-danger\">Remove</span></a>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<product-detail [cate]=\"cate\" (updateEvent)=\"updateData()\" *ngIf=\"productSelected\" [product]=\"productSelected\" [isView]=\"isView\"\r\n    [isAdd]=\"isAdd\" data-backdrop=\"static\" id=\"editModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\r\n    aria-hidden=\"true\" role=\"dialog\"></product-detail>\r\n\r\n<!--Sure to remove product-->\r\n\r\n<div *ngIf=\"productFocus\" class=\"modal fade\" id=\"centralModalWarning\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div class=\"modal-dialog modal-notify modal-danger\" role=\"document\">\r\n        <!--Content-->\r\n        <div class=\"modal-content\">\r\n            <!--Header-->\r\n            <div class=\"modal-header\">\r\n                <p class=\"heading lead\">Warning</p>\r\n\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\" class=\"white-text\">&times;</span>\r\n                </button>\r\n            </div>\r\n\r\n            <!--Body-->\r\n            <div class=\"modal-body\">\r\n                <div class=\"text-center\">\r\n                    <h2>Do you want remove product has name: {{productFocus.name}} ?</h2>\r\n                </div>\r\n            </div>\r\n\r\n            <!--Footer-->\r\n            <div class=\"modal-footer flex-center\">\r\n                <a type=\"button\" class=\"btn btn-primary-modal\" data-dismiss=\"modal\" (click)=\"removeProduct(productFocus)\">Yes</a>\r\n                <a type=\"button\" class=\"btn btn-outline-secondary-modal waves-effect\" data-dismiss=\"modal\">No</a>\r\n            </div>\r\n        </div>\r\n        <!--/.Content-->\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 115 */
+/* 127 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal-dialog cascading-modal\" role=\"document\">\r\n    <!--Content-->\r\n    <div class=\"modal-content\">\r\n\r\n        <!--Header-->\r\n        <div class=\"modal-header light-blue darken-3 white-text\">\r\n            <button type=\"button\" class=\"close waves-effect waves-light\" id=\"buttonClose\" data-dismiss=\"modal\" (click)=\"destroyTooltip()\"\r\n                aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n            <h4 *ngIf=\"!isView\" class=\"title\"><i class=\"fa fa-pencil\"></i> Informantion of product</h4>\r\n            <h4 *ngIf=\"isView && !isAdd\"><i class=\"fa fa-pencil\"></i> Edit informantion of product</h4>\r\n            <h4 *ngIf=\"isView && isAdd\"><i class=\"fa fa-pencil\"></i> Add new product</h4>\r\n        </div>\r\n        <!--Body-->\r\n        <div class=\"modal-body mb-0\">\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>ID: {{ product.id }}</label>\r\n            </div>\r\n\r\n\r\n            <div *ngIf=\"!isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formName\" [(ngModel)]=\"product.name\" required minlength=\"2\" maxlength=\"50\" class=\"form-control validate\">\r\n                <label for=\"formName\" [ngClass]=\"{'active':!isAdd}\">Name ( 2 < length < 50)</label>\r\n            </div>\r\n            <div *ngIf=\"isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>Name: {{product.name}}</label>\r\n            </div>\r\n\r\n\r\n\r\n            <div *ngIf=\"!isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formDesc\" [(ngModel)]=\"product.description\" required maxlength=\"200\" class=\"form-control validate\">\r\n                <label for=\"formDesc\" [ngClass]=\"{'active':!isAdd}\">Description ( length < 200)</label>\r\n            </div>\r\n            <div *ngIf=\"isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>Description : {{product.description}}</label>\r\n            </div>\r\n\r\n\r\n            <div *ngIf=\"!isView\" class=\"row\">\r\n                <div class=\"col\">\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"number\" min=\"1\" id=\"formQuan\" [(ngModel)]=\"product.quantity\" required class=\"form-control validate\">\r\n                        <label for=\"formQuan\" [ngClass]=\"{'active':true}\">Quantity</label>\r\n                    </div>\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"text\" id=\"formCal\" [(ngModel)]=\"product.calculationUnit\" required class=\"form-control validate\">\r\n                        <label for=\"formCal\" [ngClass]=\"{'active':true}\">Calculation Unit</label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div *ngIf=\"isView\" class=\"row\">\r\n                <div class=\"col\">\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                        <label>Quantity : {{product.quantity}}</label>\r\n                    </div>\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                        <label>Calculation Unit : {{product.calculationUnit}}</label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n            <div *ngIf=\"!isView\" class=\"md-form form-sm\">\r\n                <input type=\"number\" min=\"1\" id=\"formPrice\" [(ngModel)]=\"product.price\" required class=\"form-control validate\">\r\n                <label for=\"formPrice\" [ngClass]=\"{'active':true}\">Price</label>\r\n            </div>\r\n            <div *ngIf=\"isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>Price : {{product.price}}</label>\r\n            </div>\r\n\r\n            <fieldset class=\"form-group\">\r\n                <input [disabled]=\"isView\" type=\"checkbox\" id=\"checkbox1\" [checked]=\"product.status\">\r\n                <label for=\"checkbox1\">Is Available</label>\r\n            </fieldset>\r\n\r\n            <div *ngIf=\"!isAdd\" class=\"md-form form-sm\">\r\n                <select id=\"cateSelector\" [disabled]=\"isView\" class=\"mdb-select dropdown-ins colorful-select validate\" required [(ngModel)]=\"product.categoryId\">\r\n                    <option *ngFor=\"let item of optionsCate\" [disabled]=\"item.id==product.categoryId\"\r\n                   [selected]=\"item.id==product.categoryId\"   [value]=\"item.id\">{{item.name}}</option>\r\n                </select>\r\n                <label>Category select</label>\r\n            </div>\r\n            <div *ngIf=\"isAdd\" class=\"md-form\">\r\n                <input type=\"search\" id=\"cateAutocomplete\" [value]=\"cateName\" required class=\"form-control mdb-autocomplete validate\">\r\n                <button class=\"mdb-autocomplete-clear\">\r\n                    <svg fill=\"#000000\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"https://www.w3.org/2000/svg\">\r\n                        <path d=\"M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z\" />\r\n                        <path d=\"M0 0h24v24H0z\" fill=\"none\" />\r\n                    </svg>\r\n                </button>\r\n                <label for=\"cateAutocomplete\" class=\"active\">Category (Not blank)</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formAddDate\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label for=\"formAddDate\">Add time :{{ product.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formModifiedDate\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label for=\"formModifiedDate\">Modified time :{{ product.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n            </div>\r\n\r\n            <div class=\"text-center mt-1-half\">\r\n                <button *ngIf=\"isView\" class=\"btn btn-info mb-2\" data-dismiss=\"modal\">OK <i class=\"fa fa-send ml-1\"></i></button>\r\n                <button *ngIf=\"!isView\" class=\"btn btn-info mb-2\" (click)=\"saveChanges()\" data-dismiss=\"modal\">Submit <i class=\"fa fa-send ml-1\"></i></button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!--/.Content-->\r\n</div>";
+module.exports = "<div class=\"modal-dialog cascading-modal\" role=\"document\">\r\n    <!--Content-->\r\n    <div class=\"modal-content\">\r\n\r\n        <!--Header-->\r\n        <div class=\"modal-header light-blue darken-3 white-text\">\r\n            <button type=\"button\" class=\"close waves-effect waves-light\" id=\"buttonClose\" data-dismiss=\"modal\"\r\n                aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n            <h4 *ngIf=\"!isView\" class=\"title\"><i class=\"fa fa-pencil\"></i> Informantion of product</h4>\r\n            <h4 *ngIf=\"isView && !isAdd\"><i class=\"fa fa-pencil\"></i> Edit informantion of product</h4>\r\n            <h4 *ngIf=\"isView && isAdd\"><i class=\"fa fa-pencil\"></i> Add new product</h4>\r\n        </div>\r\n        <!--Body-->\r\n        <div class=\"modal-body mb-0\">\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>ID: {{ product.id }}</label>\r\n            </div>\r\n            <div *ngIf=\"!isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formName\" [(ngModel)]=\"product.name\" required minlength=\"2\" maxlength=\"50\" class=\"form-control validate\">\r\n                <label for=\"formName\" [ngClass]=\"{'active':!isAdd}\">Name ( 2 < length < 50)</label>\r\n            </div>\r\n            <div *ngIf=\"isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>Name: {{product.name}}</label>\r\n            </div>\r\n\r\n\r\n\r\n            <div *ngIf=\"!isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formDesc\" [(ngModel)]=\"product.description\" required maxlength=\"200\" class=\"form-control validate\">\r\n                <label for=\"formDesc\" [ngClass]=\"{'active':!isAdd}\">Description ( length < 200)</label>\r\n            </div>\r\n            <div *ngIf=\"isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>Description : {{product.description}}</label>\r\n            </div>\r\n\r\n\r\n            <div *ngIf=\"!isView\" class=\"row\">\r\n                <div class=\"col\">\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"number\" min=\"1\" id=\"formQuan\" [(ngModel)]=\"product.quantity\" required class=\"form-control validate\">\r\n                        <label for=\"formQuan\" [ngClass]=\"{'active':true}\">Quantity</label>\r\n                    </div>\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"text\" id=\"formCal\" [(ngModel)]=\"product.calculationUnit\" required class=\"form-control validate\">\r\n                        <label for=\"formCal\" [ngClass]=\"{'active':true}\">Calculation Unit</label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div *ngIf=\"isView\" class=\"row\">\r\n                <div class=\"col\">\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                        <label>Quantity : {{product.quantity}}</label>\r\n                    </div>\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                        <label>Calculation Unit : {{product.calculationUnit}}</label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n            <div *ngIf=\"!isView\" class=\"md-form form-sm\">\r\n                <input type=\"number\" min=\"1\" id=\"formPrice\" [(ngModel)]=\"product.price\" required class=\"form-control validate\">\r\n                <label for=\"formPrice\" [ngClass]=\"{'active':true}\">Price</label>\r\n            </div>\r\n            <div *ngIf=\"isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>Price : {{product.price}}</label>\r\n            </div>\r\n\r\n            <fieldset class=\"form-group\">\r\n                <input [disabled]=\"isView\" type=\"checkbox\" id=\"checkbox1\" [checked]=\"product.status\">\r\n                <label for=\"checkbox1\">Is Available</label>\r\n            </fieldset>\r\n\r\n            <div *ngIf=\"!isAdd && product.categoryId!=null\" class=\"md-form form-sm\">\r\n                <select id=\"cateSelector\" [disabled]=\"isView\" class=\"mdb-select dropdown-ins colorful-select validate\" required [(ngModel)]=\"product.categoryId\">\r\n                    <option *ngFor=\"let item of optionsCate\" [disabled]=\"item.id==product.categoryId\"\r\n                   [selected]=\"item.id==product.categoryId\"   [value]=\"item.id\">{{item.name}}</option>\r\n                </select>\r\n                <label>Category select</label>\r\n            </div>\r\n            <div *ngIf=\"!isAdd && product.categoryId==null\" class=\"md-form form-sm\">\r\n                <select id=\"cateSelector\" [disabled]=\"isView\" class=\"mdb-select dropdown-ins colorful-select validate\" required [(ngModel)]=\"product.categoryId\">\r\n                    <option *ngFor=\"let item of optionsCate\" [value]=\"item.id\">{{item.name}}</option>\r\n                </select>\r\n                <label>Category select</label>\r\n            </div>\r\n            <div *ngIf=\"isAdd && cate!=null\" class=\"md-form\">\r\n                <input type=\"search\" id=\"cateAutocomplete\" [value]=\"cate.name\" required class=\"form-control mdb-autocomplete validate\">\r\n                <button class=\"mdb-autocomplete-clear\">\r\n                    <svg fill=\"#000000\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"https://www.w3.org/2000/svg\">\r\n                        <path d=\"M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z\" />\r\n                        <path d=\"M0 0h24v24H0z\" fill=\"none\" />\r\n                    </svg>\r\n                </button>\r\n                <label for=\"cateAutocomplete\" class=\"active\">Category (Not blank)</label>\r\n            </div>\r\n            <div *ngIf=\"isAdd && cate==null\" class=\"md-form\">\r\n                <input type=\"search\" id=\"cateAutocomplete\" value=\"\" required class=\"form-control mdb-autocomplete validate\">\r\n                <button class=\"mdb-autocomplete-clear\">\r\n                    <svg fill=\"#000000\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"https://www.w3.org/2000/svg\">\r\n                        <path d=\"M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z\" />\r\n                        <path d=\"M0 0h24v24H0z\" fill=\"none\" />\r\n                    </svg>\r\n                </button>\r\n                <label for=\"cateAutocomplete\" class=\"active\">Category (Not blank)</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formAddDate\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label for=\"formAddDate\">Add time :{{ product.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formModifiedDate\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label for=\"formModifiedDate\">Modified time :{{ product.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n            </div>\r\n\r\n            <div class=\"text-center mt-1-half\">\r\n                <button *ngIf=\"isView\" class=\"btn btn-info mb-2\" data-dismiss=\"modal\">OK <i class=\"fa fa-send ml-1\"></i></button>\r\n                <button *ngIf=\"!isView\" class=\"btn btn-info mb-2\" (click)=\"saveChanges()\" data-dismiss=\"modal\">Submit <i class=\"fa fa-send ml-1\"></i></button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!--/.Content-->\r\n</div>";
 
 /***/ }),
-/* 116 */
+/* 128 */
+/***/ (function(module, exports) {
+
+module.exports = "";
+
+/***/ }),
+/* 129 */
+/***/ (function(module, exports) {
+
+module.exports = "";
+
+/***/ }),
+/* 130 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"modal-dialog cascading-modal\" role=\"document\">\r\n  <div class=\"modal-content\">\r\n    <div class=\"modal-header light-blue darken-3 white-text\">\r\n      <button type=\"button\" class=\"close waves-effect waves-light\" id=\"buttonClose\" data-dismiss=\"modal\" (click)=\"cancel()\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n      <h4><i class=\"fa fa-pencil\"></i> Edit profile</h4>\r\n    </div>\r\n    <!--Body-->\r\n    <div class=\"modal-body mb-0\">\r\n      <div class=\"md-form form-sm\">\r\n        <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n        <label>ID: {{ user.id }}</label>\r\n      </div>\r\n\r\n\r\n      <div class=\"row\">\r\n        <div class=\"col\">\r\n          <div class=\"md-form form-sm\">\r\n            <input type=\"text\" id=\"formFName\" [(ngModel)]=\"user.firstname\" required maxlength=\"10\" class=\"form-control\">\r\n            <label for=\"formFName\" [ngClass]=\"{'active':true}\">First Name</label>\r\n          </div>\r\n        </div>\r\n        <div class=\"col\">\r\n          <div class=\"md-form form-sm\">\r\n            <input type=\"text\" id=\"formLName\" [(ngModel)]=\"user.lastname\" required maxlength=\"10\" class=\"form-control\">\r\n            <label for=\"formLName\" [ngClass]=\"{'active':true}\">Last Name</label>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <div *ngIf=\"!isChange\" class=\"row\">\r\n        <div class=\"col-8\">\r\n          <div class=\"md-form form-sm\">\r\n            <input type=\"password\" id=\"formFName\" disabled=\"disabled\" [(ngModel)]=\"user.passwordHashed\" required maxlength=\"10\" class=\"form-control\">\r\n            <label for=\"formFName\" [ngClass]=\"{'active':true}\">Password (Hashed)</label>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-4\">\r\n          <div class=\"md-form form-sm\">\r\n            <button class=\"btn btn-primary btn-sm\" (click)=\"changePwd()\" type=\"button\" data-toggle=\"modal\" data-target=\"#changePasswordForm\">Change Password</button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div *ngIf=\"isChange\">\r\n        <div class=\"row\">\r\n          <div class=\"col-8\">\r\n            <div class=\"md-form form-sm\">\r\n              <input type=\"password\" id=\"formFName\" [(ngModel)]=\"pwdModel.pwd\" required minlength=\"10\" maxlength=\"50\" class=\"form-control validate\">\r\n              <label for=\"formFName\" [ngClass]=\"{'active':true}\">New password ( 10 < length < 50 )</label>\r\n            </div>\r\n          </div>\r\n          <div class=\"col-4\">\r\n          </div>\r\n        </div>\r\n        <div class=\"row\">\r\n          <div class=\"col-8\">\r\n            <div class=\"md-form form-sm\">\r\n              <input type=\"password\" id=\"formFName\" [(ngModel)]=\"pwdModel.pwdRt\" required minlength=\"10\" maxlength=\"50\" class=\"form-control validate\">\r\n              <label for=\"formFName\" [ngClass]=\"{'active':true}\">Confirm new password</label>\r\n            </div>\r\n          </div>\r\n          <div class=\"col-4\">\r\n            <div class=\"md-form form-sm\">\r\n              <button class=\"btn btn-primary btn-sm\" (click)=\"saveChangePwd(pwdModel)\" type=\"button\" data-toggle=\"modal\" data-target=\"#changePasswordForm\">Change Password</button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n\r\n      <div class=\"md-form form-sm\">\r\n        <input type=\"text\" min=\"1\" disabled=\"disabled\" id=\"formEmail\" [(ngModel)]=\"user.email\" required class=\"form-control\">\r\n        <label for=\"formEmail\" [ngClass]=\"{'active':true}\">Email</label>\r\n      </div>\r\n\r\n      <div class=\"md-form form-sm\">\r\n        <input type=\"text\" disabled=\"disabled\" id=\"formPos\" [(ngModel)]=\"role\" required class=\"form-control\">\r\n        <label for=\"formPos\" [ngClass]=\"{'active':true}\">Position</label>\r\n      </div>\r\n      <fieldset class=\"form-group\">\r\n        <input type=\"checkbox\" id=\"checkbox1\" [checked]=\"!user.isBlocked\">\r\n        <label for=\"checkbox1\">Is Actived</label>\r\n      </fieldset>\r\n\r\n      <div class=\"md-form form-sm\">\r\n        <input type=\"text\" id=\"formAddDate\" disabled=\"disabled\" class=\"form-control\" />\r\n        <label for=\"formAddDate\">Add time :{{ user.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n      </div>\r\n\r\n      <div class=\"md-form form-sm\">\r\n        <input type=\"text\" id=\"formModifiedDate\" disabled=\"disabled\" class=\"form-control\" />\r\n        <label for=\"formModifiedDate\">Modified time :{{ user.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n      </div>\r\n\r\n      <div class=\"text-center mt-1-half\">\r\n        <button class=\"btn btn-info mb-2\" (click)=\"saveChanges()\" data-dismiss=\"modal\">Submit <i class=\"fa fa-send ml-1\"></i></button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<!--\r\n<div *ngIf=\"pwdModel\" class=\"modal fade\" data-backdrop=\"static\" id=\"changePasswordForm\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">\r\n    <div class=\"modal-dialog cascading-modal\" role=\"document\">\r\n        <div class=\"modal-content\">\r\n\r\n            <div class=\"modal-header light-blue darken-3 white-text\">\r\n                <button type=\"button\" class=\"close waves-effect waves-light\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n                <h4 class=\"title\"><i class=\"fa fa-pencil\"></i> Change password</h4>\r\n            </div>\r\n            <div class=\"modal-body mb-0\">\r\n                <div class=\"md-form form-sm\">\r\n                    <i class=\"fa fa-envelope prefix\"></i>\r\n                    <input type=\"text\" id=\"form19\" class=\"form-control\" [(ngModel)]=\"pwdModel.pwd\">\r\n                    <label for=\"form19\">New password</label>\r\n                </div>\r\n\r\n                <div class=\"md-form form-sm\">\r\n                    <i class=\"fa fa-lock prefix\"></i>\r\n                    <input type=\"password\" id=\"form20\" class=\"form-control\" [(ngModel)]=\"pwdModel.pwdRt\">\r\n                    <label for=\"form20\">Confirm New password</label>\r\n                </div>\r\n\r\n                <div class=\"text-center mt-1-half\">\r\n                    <button class=\"btn btn-info mb-2\">Send <i class=\"fa fa-send ml-1\"></i></button>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>-->";
+
+/***/ }),
+/* 131 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"jumbotron\">\r\n  <h1>Reports</h1>\r\n\r\n  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>\r\n\r\n  <p><a class=\"btn btn-primary btn-lg\">Learn more</a></p>\r\n</div>";
 
 /***/ }),
-/* 117 */
+/* 132 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal-dialog cascading-modal\" role=\"document\">\r\n  <div class=\"modal-content\">\r\n    <div class=\"modal-header light-blue darken-3 white-text\">\r\n      <button type=\"button\" class=\"close waves-effect waves-light\" id=\"buttonClose\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n      <h4><i class=\"fa fa-pencil\"></i> Edit profile</h4>\r\n    </div>\r\n    <!--Body-->\r\n    <div class=\"modal-body mb-0\">\r\n      <div class=\"md-form form-sm\">\r\n        <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n        <label>ID: {{ user.id }}</label>\r\n      </div>\r\n\r\n\r\n      <div class=\"row\">\r\n        <div class=\"col\">\r\n          <div class=\"md-form form-sm\">\r\n            <input type=\"text\" id=\"formFName\" [(ngModel)]=\"user.firstname\" required maxlength=\"10\" class=\"form-control\">\r\n            <label for=\"formFName\" [ngClass]=\"{'active':true}\">First Name</label>\r\n          </div>\r\n        </div>\r\n        <div class=\"col\">\r\n          <div class=\"md-form form-sm\">\r\n            <input type=\"text\" id=\"formLName\" [(ngModel)]=\"user.lastname\" required maxlength=\"10\" class=\"form-control\">\r\n            <label for=\"formLName\" [ngClass]=\"{'active':true}\">Last Name</label>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n\r\n      <div class=\"md-form form-sm\">\r\n        <input type=\"text\" min=\"1\" disabled=\"disabled\" id=\"formEmail\" [(ngModel)]=\"user.email\" required class=\"form-control\">\r\n        <label for=\"formEmail\" [ngClass]=\"{'active':true}\">Email</label>\r\n      </div>\r\n\r\n      <div class=\"md-form form-sm\">\r\n        <input type=\"text\" disabled=\"disabled\" id=\"formPos\" [(ngModel)]=\"role\" required class=\"form-control\">\r\n        <label for=\"formPos\" [ngClass]=\"{'active':true}\">Position</label>\r\n      </div>\r\n      <fieldset class=\"form-group\">\r\n        <input  type=\"checkbox\" id=\"checkbox1\" [checked]=\"!user.isBlocked\">\r\n        <label for=\"checkbox1\">Is Actived</label>\r\n      </fieldset>\r\n\r\n      <div class=\"md-form form-sm\">\r\n        <input type=\"text\" id=\"formAddDate\" disabled=\"disabled\" class=\"form-control\" />\r\n        <label for=\"formAddDate\">Add time :{{ user.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n      </div>\r\n\r\n      <div class=\"md-form form-sm\">\r\n        <input type=\"text\" id=\"formModifiedDate\" disabled=\"disabled\" class=\"form-control\" />\r\n        <label for=\"formModifiedDate\">Modified time :{{ user.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n      </div>\r\n\r\n      <div class=\"text-center mt-1-half\">\r\n        <button class=\"btn btn-info mb-2\" (click)=\"saveChanges()\" data-dismiss=\"modal\">Submit <i class=\"fa fa-send ml-1\"></i></button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>";
+module.exports = "<div class=\"container animated fadeIn admin-panel\">\r\n    <div class=\"row\">\r\n    </div>\r\n    <div class=\"jumbotron col \">\r\n        <a class=\"btn btn-default btn-sm\" (click)=\"addBillDialog()\" data-toggle=\"modal\" data-target=\"#editModal\" role=\"button\">Add bill</a>\r\n        <div class=\"card-block pt-0\">\r\n            <div class=\"table-responsive\">\r\n                <table class=\"table table-hover\">\r\n                    <thead>\r\n                        <tr class=\"primary-color\">\r\n                            <th>#</th>\r\n                            <th>Description</th>\r\n                            <th>Added Date</th>\r\n                            <th>Saleperson</th>\r\n                            <th>Status</th>\r\n                            <th class=\"text-center\">Action</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let bill of bills, let i = index\">\r\n                            <th scope=\"row\">{{i+1}}</th>\r\n                            <td>{{bill.description}}</td>\r\n                            <td>{{bill.addTime | date: 'dd/MM/yyyy hh:mm'}}</td>\r\n                            <td>{{bill.sale.firstname}}</td>\r\n                            <td *ngIf=\"bill.isDealt\"><span class=\"badge badge-danger\">Dealt</span></td>\r\n                            <td *ngIf=\"!bill.isDealt\"><span class=\"badge badge-primary\">In Progress</span></td>\r\n                            <td class=\"center-group\">\r\n                                <a class=\"blue-text\" (click)=\"info(bill)\" data-toggle=\"modal\" data-target=\"#editModal\"><span class=\"badge badge-info\">View</span></a>\r\n                                <a *ngIf=\"!bill.isDealt\" class=\"teal-text\" (click)=\"deal(bill)\">\r\n                                      <span class=\"badge badge-warning\">Deal</span></a>\r\n                                <a *ngIf=\"!bill.isDealt\" class=\"teal-text\" (click)=\"edit(bill)\" data-toggle=\"modal\" data-target=\"#editModal\">\r\n                                      <span class=\"badge badge-warning\">Edit</span></a>\r\n                            </td>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<bill-details (updateData)=\"updateData($event)\" data-backdrop=\"static\" id=\"editModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\r\n    aria-hidden=\"true\" role=\"dialog\" *ngIf=\"bill\" [bill]=\"bill\" [(isView)]=\"isView\" [(isAdd)]=\"isAdd\"></bill-details>";
 
 /***/ }),
-/* 118 */
+/* 133 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container animated fadeIn admin-panel\">\r\n    <div class=\"jumbotron col \">\r\n        <a class=\"btn btn-default btn-sm\"  role=\"button\">Add bill</a>\r\n        <div class=\"card-block pt-0\">\r\n            <div class=\"table-responsive\">\r\n                <table class=\"table table-hover\">\r\n                    <thead>\r\n                        <tr class=\"primary-color\">\r\n                            <th>#</th>\r\n                            <th>First name</th>\r\n                            <th>Last name</th>\r\n                            <th>Email</th>\r\n                            <th>Position</th>\r\n                            <th>Status</th>\r\n                            <th class=\"text-center\">Action</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let user of users\">\r\n                            <th scope=\"row\">{{user.id}}</th>\r\n                            <td>{{user.firstname}}</td>\r\n                            <td>{{user.lastname}}</td>\r\n                            <td>{{user.email}}</td>\r\n                            <td>{{user.roleId}}</td>\r\n                            <td *ngIf=\"user.isBlocked\"><span class=\"badge badge-danger\">Is Blocked</span></td>\r\n                            <td *ngIf=\"!user.isBlocked\"><span class=\"badge badge-primary\">Is Activated</span></td>\r\n                            <td *ngIf=\"user.roleId!=4\" class=\"center-group\">\r\n                                <a class=\"blue-text\" (click)=\"info(user)\" data-toggle=\"modal\" data-target=\"#editModal\"><span class=\"badge badge-info\">View</span></a>\r\n                                <a class=\"teal-text\" (click)=\"edit(user)\" data-toggle=\"modal\" data-target=\"#editModal\">\r\n                        <span class=\"badge badge-warning\">Edit</span></a>\r\n                                <a>\r\n                        <span class=\"badge badge-danger\" *ngIf=\"!user.isBlocked\" (click)=\"showModalBlock(user,false)\" data-toggle=\"modal\" data-target=\"#centralModalWarning\" >Block</span>\r\n                        <span class=\"badge badge-primary\" (click)=\"active(user)\" *ngIf=\"user.isBlocked\">Active</span>\r\n                         </a>\r\n                                <a class=\"teal-text\" (click)=\"showModalBlock(user,true)\" data-toggle=\"modal\" data-target=\"#centralModalWarning\">\r\n                        <span class=\"badge badge-danger\">Remove</span></a>\r\n                            </td>\r\n                            <td *ngIf=\"user.roleId==4\">\r\n                                <a>\r\n                        <span class=\"badge badge-primary\">Admin</span>\r\n                    </a>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
+module.exports = "<div *ngIf=\"isView\" class=\"list-group-item justify-content-between\">\r\n    {{billDetailsView.product.name}}\r\n    <span class=\"badge badge-primary badge-pill\">{{billDetailsView.quantity}}</span>\r\n</div>\r\n<div *ngIf=\"!isView\" class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-8 \">\r\n            <select id=\"soflow\" class=\"form-control\" [(ngModel)]=\"billDetails.productId\" (ngModelChange)=\"updateBillDetails($event)\"\r\n                aria-placeholder=\"Select product\">\r\n            <option *ngFor=\"let product of products\" [value]=\"product.id\">{{ product.name }}</option>\r\n        </select>\r\n        </div>\r\n        <div class=\"col-4 \">\r\n            <input class=\"form-control \" type=\"number\" (ngModelChange)=\"updateBillDetails($event)\" [(ngModel)]=\"billDetails.quantity\">\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 119 */
+/* 134 */
 /***/ (function(module, exports) {
 
-module.exports = "<header>\r\n    <!-- Sidebar navigation -->\r\n    <ul id=\"slide-out\" class=\"side-nav fixed sn-bg-1 custom-scrollbar ps-container ps-theme-default\" data-ps-id=\"28fac0e2-e2bc-0bae-c36e-60f4282de13f\"\r\n        style=\"transform: translateX(0px);\">\r\n        <!-- Logo -->\r\n        <li>\r\n            <div class=\"logo-wrapper waves-light waves-effect waves-light\">\r\n                <a href=\"#\"><img src=\"http://vignette2.wikia.nocookie.net/logopedia/images/0/03/Logo_The_Sims_.png/revision/latest?cb=20140421154520\"\r\n                        class=\"img-fluid flex-center\" data-pin-nopin=\"true\"></a>\r\n            </div>\r\n        </li>\r\n        <!--/. Logo -->\r\n        <!--Social-->\r\n        <li>\r\n            <ul class=\"social\">\r\n                <li><a class=\"icons-sm fb-ic\" target=\"_blank\" href=\"https://fb.com/skordesign\"><i class=\"fa fa-facebook\"> </i></a></li>\r\n                <li><a class=\"icons-sm pin-ic\" target=\"_blank\" href=\"https://www.pinterest.com/skordesign/\"><i class=\"fa fa-pinterest\"> </i></a></li>\r\n                <li><a class=\"icons-sm gplus-ic\" target=\"_blank\" href=\"https://plus.google.com/104527062050234086433\"><i class=\"fa fa-google-plus\"> </i></a></li>\r\n                <li><a class=\"icons-sm tw-ic\" target=\"_blank\" href=\"https://twitter.com/?lang=vi\"><i class=\"fa fa-twitter\"> </i></a></li>\r\n            </ul>\r\n        </li>\r\n        <!--/Social-->\r\n        <!--Search Form-->\r\n        <li>\r\n            <form class=\"search-form\" role=\"search\">\r\n                <div class=\"form-group waves-light waves-effect waves-light\">\r\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\r\n                </div>\r\n            </form>\r\n        </li>\r\n        <!--/.Search Form-->\r\n        <!-- Side navigation links -->\r\n        <li>\r\n            <ul class=\"collapsible collapsible-accordion\">\r\n                <li *ngFor=\"let item of items\">\r\n                    <a *ngIf=\"item.child.length > 0\" class=\"collapsible-header waves-effect arrow-r\">\r\n                        <i class=\"fa fa-chevron-right\"></i> {{item.title}}<i class=\"fa fa-angle-down rotate-icon\"></i></a>\r\n                    <div *ngIf=\"item.child.length > 0\" class=\"collapsible-body\">\r\n                        <ul>\r\n                            <li *ngFor=\"let children of item.child\">\r\n                                <a routerLink=\"{{item.path}}/{{children.path}}\" class=\"waves-effect\">{{children.title}}</a>\r\n                            </li>\r\n                        </ul>\r\n                    </div>\r\n                    <a *ngIf=\"item.child.length <= 0\" class=\"collapsible-header waves-effect\" [routerLink]=\"[item.path]\">\r\n                        <i class=\"{{item.icon}}\"></i>{{ item.title }}</a>\r\n                </li>\r\n            </ul>\r\n        </li>\r\n        <!--/. Side navigation links -->\r\n        <div class=\"sidenav-bg mask-strong\"></div>\r\n        <div class=\"ps-scrollbar-x-rail\" style=\"left: 0px; bottom: 0px;\">\r\n            <div class=\"ps-scrollbar-x\" tabindex=\"0\" style=\"left: 0px; width: 0px;\"></div>\r\n        </div>\r\n        <div class=\"ps-scrollbar-y-rail\" style=\"top: 0px; right: 0px;\">\r\n            <div class=\"ps-scrollbar-y\" tabindex=\"0\" style=\"top: 0px; height: 0px;\"></div>\r\n        </div>\r\n    </ul>\r\n    <!--/. Sidebar navigation -->\r\n    <!-- Navbar -->\r\n    <nav class=\"navbar fixed-top navbar-toggleable-md navbar-dark scrolling-navbar double-nav\">\r\n        <!-- SideNav slide-out button -->\r\n        <div class=\"float-xs-left\">\r\n            <a href=\"#\" data-activates=\"slide-out\" class=\"button-collapse\"><i class=\"fa fa-bars\"></i></a>\r\n        </div>\r\n        <!-- Breadcrumb-->\r\n        <div class=\"breadcrumb-dn mr-auto\">\r\n            <p>SIMS</p>\r\n        </div>\r\n        <!--<div class=\"breadcrumb-dn mr-auto\">\r\n            <form class=\"search-form\" role=\"search\">\r\n                <div class=\"form-group waves-light waves-effect waves-light\">\r\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\r\n                </div>\r\n            </form>\r\n        </div>-->\r\n        <ul class=\"nav navbar-nav ml-auto flex-row\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link waves-effect waves-light\"><i class=\"fa fa-envelope\"></i> <span class=\"hidden-sm-down\">Contact</span></a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link waves-effect waves-light\"><i class=\"fa fa-comments-o\"></i> <span class=\"hidden-sm-down\">Support</span></a>\r\n            </li>\r\n            <li class=\"nav-item dropdown\">\r\n                <a class=\"nav-link dropdown-toggle waves-effect waves-light\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\"\r\n                    aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        Account\r\n                    </a>\r\n                <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                    <a class=\"dropdown-item waves-effect waves-light\" (click)=\"settings()\" data-toggle=\"modal\" data-target=\"#profileModal\">Settings</a>\r\n                    <a class=\"dropdown-item waves-effect waves-light\" (click)=\"logout()\">Log out</a>\r\n                </div>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <!-- /.Navbar -->\r\n</header>\r\n\r\n<profile *ngIf=\"user\" [user]=\"user\" id=\"profileModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\"\r\n    role=\"dialog\" data-backdrop=\"static\"></profile>";
+module.exports = "<div class=\"modal-dialog cascading-modal\" role=\"document\">\r\n    <!--Content-->\r\n    <div class=\"modal-content\">\r\n\r\n        <!--Header-->\r\n        <div class=\"modal-header light-blue darken-3 white-text\">\r\n            <button type=\"button\" class=\"close waves-effect waves-light\" id=\"buttonClose\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n            <h4 *ngIf=\"isView\" class=\"title\"><i class=\"fa fa-pencil\"></i> Informantion of bill</h4>\r\n            <h4 *ngIf=\"!isView && !isAdd\"><i class=\"fa fa-pencil\"></i> Edit informantion of bill</h4>\r\n            <h4 *ngIf=\"!isView && isAdd\"><i class=\"fa fa-pencil\"></i> Add new bill</h4>\r\n        </div>\r\n        <!--Body-->\r\n        <div class=\"modal-body mb-0\">\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>ID: {{ bill.id }}</label>\r\n            </div>\r\n\r\n\r\n            <div *ngIf=\"!isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formDesc\" [(ngModel)]=\"bill.description\" required maxlength=\"200\" class=\"form-control validate\">\r\n                <label for=\"formDesc\" [ngClass]=\"{'active':true}\">Description ( length < 200)</label>\r\n            </div>\r\n            <div *ngIf=\"isView\" class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>Description : {{bill.description}}</label>\r\n            </div>\r\n            <ul *ngIf=\"!isView\" class=\"list-group\">\r\n                <li (billDetailsUpdate)=\"billDetailsUpdate($event)\" bill-card class=\"\" *ngFor=\"let detail of bill.billDetailses, let i=index\"\r\n                    [index]=\"index\" [(isAdd)]=\"isAdd\" [(isView)]=\"isView\" [billDetails]=\"bill.billDetailses[i]\"></li>\r\n                <a *ngIf=\"!isView\" (click)=\"addItem()\" class=\"btn btn-outline-primary btn-sm btn-rounded waves-effect\">Add item</a>\r\n            </ul>\r\n            <ul *ngIf=\"isView\" class=\"list-group\">\r\n                <li bill-card *ngFor=\"let detail of bill.billDetailses\" [(isAdd)]=\"isAdd\" [(isView)]=\"isView\" [billDetailsView]=\"detail\"></li>\r\n            </ul>\r\n\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formTotal\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label for=\"formTotal\">Total :{{ bill.total }}</label>\r\n            </div>\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formAddDate\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label for=\"formAddDate\">Add time :{{ bill.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formModifiedDate\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label for=\"formModifiedDate\">Modified time :{{ bill.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n            </div>\r\n\r\n            <div class=\"text-center mt-1-half\">\r\n                <button *ngIf=\"isView\" class=\"btn btn-info mb-2\" data-dismiss=\"modal\">OK <i class=\"fa fa-send ml-1\"></i></button>\r\n                <button *ngIf=\"!isView\" class=\"btn btn-info mb-2\" (click)=\"saveChanges()\" data-dismiss=\"modal\">Submit <i class=\"fa fa-send ml-1\"></i></button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!--/.Content-->\r\n</div>";
 
 /***/ }),
-/* 120 */
+/* 135 */
+/***/ (function(module, exports) {
+
+module.exports = "<header>\r\n   \r\n    <ul id=\"slide-out\" class=\"side-nav fixed sn-bg-1 custom-scrollbar ps-container ps-theme-default\" data-ps-id=\"28fac0e2-e2bc-0bae-c36e-60f4282de13f\"\r\n        style=\"transform: translateX(0px);\">\r\n     \r\n        <li>\r\n            <div class=\"logo-wrapper waves-light waves-effect waves-light\">\r\n                <a href=\"#\"><img src=\"http://vignette2.wikia.nocookie.net/logopedia/images/0/03/Logo_The_Sims_.png/revision/latest?cb=20140421154520\"\r\n                        class=\"img-fluid flex-center\" data-pin-nopin=\"true\"></a>\r\n            </div>\r\n        </li>\r\n        <li>\r\n            <ul class=\"social\">\r\n                <li><a class=\"icons-sm fb-ic\" target=\"_blank\" href=\"https://fb.com/skordesign\"><i class=\"fa fa-facebook\"> </i></a></li>\r\n                <li><a class=\"icons-sm pin-ic\" target=\"_blank\" href=\"https://www.pinterest.com/skordesign/\"><i class=\"fa fa-pinterest\"> </i></a></li>\r\n                <li><a class=\"icons-sm gplus-ic\" target=\"_blank\" href=\"https://plus.google.com/104527062050234086433\"><i class=\"fa fa-google-plus\"> </i></a></li>\r\n                <li><a class=\"icons-sm tw-ic\" target=\"_blank\" href=\"https://twitter.com/?lang=vi\"><i class=\"fa fa-twitter\"> </i></a></li>\r\n            </ul>\r\n        </li>\r\n        <li>\r\n            <form class=\"search-form\" role=\"search\">\r\n                <div class=\"form-group waves-light waves-effect waves-light\">\r\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\r\n                </div>\r\n            </form>\r\n        </li>\r\n        <li>\r\n            <ul class=\"collapsible collapsible-accordion\">\r\n                <li *ngFor=\"let item of items\">\r\n                    <a *ngIf=\"item.child.length > 0\" class=\"collapsible-header waves-effect arrow-r\">\r\n                        <i class=\"fa fa-chevron-right\"></i> {{item.title}}<i class=\"fa fa-angle-down rotate-icon\"></i></a>\r\n                    <div *ngIf=\"item.child.length > 0\" class=\"collapsible-body\">\r\n                        <ul>\r\n                            <li *ngFor=\"let chi of item.child\">\r\n                                <a [routerLink]=\"[item.path,chi.path]\" (click)=\"linkC(item.title,chi.title)\" class=\"waves-effect\">{{chi.title}}</a>\r\n                            </li>\r\n                        </ul>\r\n                    </div>\r\n                    <a *ngIf=\"item.child.length <= 0\" (click)=\"linkP(item.title)\" class=\"collapsible-header waves-effect\" [routerLink]=\"[item.path]\">\r\n                        <i class=\"{{item.icon}}\"></i>{{ item.title }}</a>\r\n                </li>\r\n            </ul>\r\n        </li>\r\n        <div class=\"sidenav-bg mask-strong\"></div>\r\n        <div class=\"ps-scrollbar-x-rail\" style=\"left: 0px; bottom: 0px;\">\r\n            <div class=\"ps-scrollbar-x\" tabindex=\"0\" style=\"left: 0px; width: 0px;\"></div>\r\n        </div>\r\n        <div class=\"ps-scrollbar-y-rail\" style=\"top: 0px; right: 0px;\">\r\n            <div class=\"ps-scrollbar-y\" tabindex=\"0\" style=\"top: 0px; height: 0px;\"></div>\r\n        </div>\r\n    </ul>\r\n\r\n\r\n    <nav class=\"navbar fixed-top navbar-toggleable-md navbar-dark scrolling-navbar double-nav\">\r\n        <div class=\"float-xs-left\">\r\n            <a href=\"#\" data-activates=\"slide-out\" class=\"button-collapse\"><i class=\"fa fa-bars\"></i></a>\r\n        </div>\r\n        <div class=\"breadcrumb-dn mr-auto\">\r\n            <p>SIMS {{breadcrumb}}</p>\r\n        </div>\r\n        <ul class=\"nav navbar-nav ml-auto flex-row\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link waves-effect waves-light\"><i class=\"fa fa-envelope\"></i> <span class=\"hidden-sm-down\">Contact</span></a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link waves-effect waves-light\"><i class=\"fa fa-comments-o\"></i> <span class=\"hidden-sm-down\">Support</span></a>\r\n            </li>\r\n            <li class=\"nav-item dropdown\">\r\n                <a class=\"nav-link dropdown-toggle waves-effect waves-light\" href=\"#\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\"\r\n                    aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        Account\r\n                    </a>\r\n                <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                    <a class=\"dropdown-item waves-effect waves-light\" (click)=\"settings()\" data-toggle=\"modal\" data-target=\"#profileModal\">Settings</a>\r\n                    <a class=\"dropdown-item waves-effect waves-light\" (click)=\"logout()\">Log out</a>\r\n                </div>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <!-- /.Navbar -->\r\n</header>\r\n\r\n<profile *ngIf=\"user\" [user]=\"user\" id=\"profileModal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\"\r\n    role=\"dialog\" data-backdrop=\"static\"></profile>";
+
+/***/ }),
+/* 136 */
 /***/ (function(module, exports) {
 
 module.exports = "<!--Modal: Contact form-->\r\n\r\n<div *ngIf=\"!isView\" class=\"modal-dialog cascading-modal\" role=\"document\">\r\n    <!--Content-->\r\n    <div class=\"modal-content\">\r\n\r\n        <!--Header-->\r\n        <div class=\"modal-header light-blue darken-3 white-text\">\r\n            <button type=\"button\" class=\"close waves-effect waves-light\" id=\"buttonClose\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n            <h4 *ngIf=\"!isAdd\" class=\"title\"><i class=\"fa fa-pencil\"></i> Edit informantion of user</h4>\r\n            <h4 *ngIf=\"isAdd\" class=\"title\"><i class=\"fa fa-pencil\"></i> Edit informantion of user</h4>\r\n        </div>\r\n        <!--Body-->\r\n        <div class=\"modal-body mb-0\">\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>ID: {{ user.id }}</label>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col\">\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"text\" id=\"formFName\" [(ngModel)]=\"user.firstname\" required maxlength=\"10\" class=\"form-control\">\r\n                        <label for=\"formFName\" [ngClass]=\"{'active':!isAdd}\">First name</label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col\">\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"text\" id=\"formLName\" [(ngModel)]=\"user.lastname\" required maxlength=\"10\" class=\"form-control\">\r\n                        <label for=\"formLName\" [ngClass]=\"{'active':!isAdd}\">Last name</label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"email\" id=\"formEMail\" [(ngModel)]=\"user.email\" required class=\"form-control\">\r\n                <label for=\"formEMail\" [ngClass]=\"{'active':!isAdd}\">Email</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"password\" id=\"formPwd\" [(ngModel)]=\"user.passwordHashed\" [disabled]=\"!isAdd\" class=\"form-control\">\r\n                <label for=\"formPwd\" *ngIf=\"!isAdd\">Password : {{ user.passwordHashed }}</label>\r\n                <label for=\"formPwd\" *ngIf=\"isAdd\">Password</label>\r\n            </div>\r\n            <div class=\"md-form form-sm\">\r\n                <select id=\"roleSelector\" class=\"mdb-select dropdown-ins colorful-select\" required [(ngModel)]=\"user.roleId\">\r\n                    <option *ngFor=\"let item of optionsRole\" [disabled]=\"item.id==user.roleId\"\r\n                    [selected]=\"item.id==user.roleId\" [value]=\"item.id\">{{item.name}}</option>\r\n                </select>\r\n                <label>Role select</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formAddDate\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label for=\"formAddDate\">Add time :{{ user.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" id=\"formModifiedDate\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label for=\"formModifiedDate\">Modified time :{{ user.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n            </div>\r\n\r\n            <div class=\"text-center mt-1-half\">\r\n                <button class=\"btn btn-info mb-2\" data-dismiss=\"modal\" (click)=\"saveChanges()\">OK <i class=\"fa fa-send ml-1\"></i></button>\r\n            </div>\r\n\r\n        </div>\r\n    </div>\r\n    <!--/.Content-->\r\n</div>\r\n\r\n<div *ngIf=\"isView\" class=\"modal-dialog cascading-modal\" role=\"document\">\r\n    <!--Content-->\r\n    <div class=\"modal-content\">\r\n\r\n        <!--Header-->\r\n        <div class=\"modal-header light-blue darken-3 white-text\">\r\n            <button type=\"button\" class=\"close waves-effect waves-light\" id=\"buttonClose\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\">&times;</span>\r\n                </button>\r\n            <h4 class=\"title\"><i class=\"fa fa-quote-left\"></i> Informantion of user</h4>\r\n        </div>\r\n        <!--Body-->\r\n        <div class=\"modal-body mb-0\">\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>ID: {{ user.id }}</label>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col\">\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                        <label>First name: {{user.firstname}}</label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col\">\r\n                    <div class=\"md-form form-sm\">\r\n                        <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                        <label>Last name: {{user.lastname}}</label>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>{{user.email}}</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"password\" disabled=\"disabled\" class=\"form-control\">\r\n                <label>Password : {{ user.passwordHashed }}</label>\r\n            </div>\r\n            <div class=\"md-form form-sm\">\r\n                <select id=\"roleSelector\" disabled=\"disabled\" class=\"mdb-select dropdown-ins colorful-select\">\r\n                    <option *ngFor=\"let item of optionsRole\"\r\n                    [selected]=\"item.id==user.roleId\" [value]=\"item.id\">{{item.name}}</option>\r\n                </select>\r\n                <label>Role</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label>Add time :{{ user.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n            </div>\r\n\r\n            <div class=\"md-form form-sm\">\r\n                <input type=\"text\" disabled=\"disabled\" class=\"form-control\" />\r\n                <label>Modified time :{{ user.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>\r\n            </div>\r\n\r\n            <div class=\"text-center mt-1-half\">\r\n                <button class=\"btn btn-info mb-2\" data-dismiss=\"modal\">OK <i class=\"fa fa-send ml-1\"></i></button>\r\n            </div>\r\n\r\n        </div>\r\n    </div>\r\n    <!--/.Content-->\r\n</div>\r\n\r\n<!--Modal: Contact form-->";
 
 /***/ }),
-/* 121 */
+/* 137 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container animated fadeIn admin-panel\">\r\n    <div class=\"row\">\r\n    </div>\r\n    <div class=\"jumbotron col \">\r\n        <a class=\"btn btn-default btn-sm\" (click)=\"adduserDialog()\" data-toggle=\"modal\" data-target=\"#editModal\" role=\"button\">Add user</a>\r\n        <div class=\"card-block pt-0\">\r\n            <div class=\"table-responsive\">\r\n                <table class=\"table table-hover\">\r\n                    <thead>\r\n                        <tr class=\"primary-color\">\r\n                            <th>#</th>\r\n                            <th>First name</th>\r\n                            <th>Last name</th>\r\n                            <th>Email</th>\r\n                            <th>Position</th>\r\n                            <th>Status</th>\r\n                            <th class=\"text-center\">Action</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let user of users\">\r\n                            <th scope=\"row\">{{user.id}}</th>\r\n                            <td>{{user.firstname}}</td>\r\n                            <td>{{user.lastname}}</td>\r\n                            <td>{{user.email}}</td>\r\n                            <td>{{user.roleId}}</td>\r\n                            <td *ngIf=\"user.isBlocked\"><span class=\"badge badge-danger\">Is Blocked</span></td>\r\n                            <td *ngIf=\"!user.isBlocked\"><span class=\"badge badge-primary\">Is Activated</span></td>\r\n                            <td *ngIf=\"user.roleId!=4\" class=\"center-group\">\r\n                                <a class=\"blue-text\" (click)=\"info(user)\" data-toggle=\"modal\" data-target=\"#editModal\"><span class=\"badge badge-info\">View</span></a>\r\n                                <a class=\"teal-text\" (click)=\"edit(user)\" data-toggle=\"modal\" data-target=\"#editModal\">\r\n                        <span class=\"badge badge-warning\">Edit</span></a>\r\n                                <a>\r\n                        <span class=\"badge badge-danger\" *ngIf=\"!user.isBlocked\" (click)=\"showModalBlock(user,false)\" data-toggle=\"modal\" data-target=\"#centralModalWarning\" >Block</span>\r\n                        <span class=\"badge badge-primary\" (click)=\"active(user)\" *ngIf=\"user.isBlocked\">Active</span>\r\n                         </a>\r\n                                <a class=\"teal-text\" (click)=\"showModalBlock(user,true)\" data-toggle=\"modal\" data-target=\"#centralModalWarning\">\r\n                        <span class=\"badge badge-danger\">Remove</span></a>\r\n                            </td>\r\n                            <td *ngIf=\"user.roleId==4\">\r\n                                <a>\r\n                        <span class=\"badge badge-primary\">Admin</span>\r\n                    </a>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<user-detail (outputEvent)=\"updateDate()\" [isAdd]=\"isAdd\" data-backdrop=\"static\" id=\"editModal\" class=\"modal fade\" tabindex=\"-1\"\r\n    role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\" role=\"dialog\" *ngIf=\"userSelected\" [user]=\"userSelected\"\r\n    [isView]=\"isView\"></user-detail>\r\n\r\n<div *ngIf=\"userFocus\" class=\"modal fade\" id=\"centralModalWarning\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div [ngClass]=\"{'modal-dialog modal-notify':true, 'modal-warning' : !isRemove , ' modal-danger':isRemove}\" role=\"document\">\r\n        <!--Content-->\r\n        <div class=\"modal-content\">\r\n            <!--Header-->\r\n            <div class=\"modal-header\">\r\n                <p class=\"heading lead\">Warning</p>\r\n\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\" class=\"white-text\">&times;</span>\r\n                </button>\r\n            </div>\r\n\r\n            <!--Body-->\r\n            <div class=\"modal-body\">\r\n                <div class=\"text-center\">\r\n                    <h2 *ngIf=\"!isRemove\">Do you want block account has email address: {{userFocus.email}} ?</h2>\r\n                    <h2 *ngIf=\"isRemove\">Do you want remove account has email address: {{userFocus.email}} ?</h2>\r\n                </div>\r\n            </div>\r\n\r\n            <!--Footer-->\r\n            <div class=\"modal-footer flex-center\">\r\n                <a *ngIf=\"!isRemove\" type=\"button\" class=\"btn btn-primary-modal\" data-dismiss=\"modal\" (click)=\"block(userFocus)\">Yes</a>\r\n                <a *ngIf=\"isRemove\" type=\"button\" class=\"btn btn-primary-modal\" data-dismiss=\"modal\" (click)=\"remove(userFocus)\">Yes</a>\r\n                <a type=\"button\" class=\"btn btn-outline-secondary-modal waves-effect\" data-dismiss=\"modal\">No</a>\r\n            </div>\r\n        </div>\r\n        <!--/.Content-->\r\n    </div>\r\n</div>";
+module.exports = "<div class=\"container animated fadeIn admin-panel\">\r\n    <div class=\"row\">\r\n    </div>\r\n    <div class=\"jumbotron col \">\r\n        <a class=\"btn btn-default btn-sm\" (click)=\"adduserDialog()\" data-toggle=\"modal\" data-target=\"#editModal\" role=\"button\">Add user</a>\r\n        <div class=\"card-block pt-0\">\r\n            <div class=\"table-responsive\">\r\n                <table class=\"table table-hover\">\r\n                    <thead>\r\n                        <tr class=\"primary-color\">\r\n                            <th>#</th>\r\n                            <th>First name</th>\r\n                            <th>Last name</th>\r\n                            <th>Email</th>\r\n                            <th>Position</th>\r\n                            <th>Status</th>\r\n                            <th class=\"text-center\">Action</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let user of users\">\r\n                            <th scope=\"row\">{{user.id}}</th>\r\n                            <td>{{user.firstname}}</td>\r\n                            <td>{{user.lastname}}</td>\r\n                            <td>{{user.email}}</td>\r\n                            <td>{{user.role.name}}</td>\r\n                            <td *ngIf=\"user.isBlocked\"><span class=\"badge badge-danger\">Is Blocked</span></td>\r\n                            <td *ngIf=\"!user.isBlocked\"><span class=\"badge badge-primary\">Is Activated</span></td>\r\n                            <td *ngIf=\"user.roleId!=4\" class=\"center-group\">\r\n                                <a class=\"blue-text\" (click)=\"info(user)\" data-toggle=\"modal\" data-target=\"#editModal\"><span class=\"badge badge-info\">View</span></a>\r\n                                <a class=\"teal-text\" (click)=\"edit(user)\" data-toggle=\"modal\" data-target=\"#editModal\">\r\n                        <span class=\"badge badge-warning\">Edit</span></a>\r\n                                <a>\r\n                        <span class=\"badge badge-danger\" *ngIf=\"!user.isBlocked\" (click)=\"showModalBlock(user,false)\" data-toggle=\"modal\" data-target=\"#centralModalWarning\" >Block</span>\r\n                        <span class=\"badge badge-primary\" (click)=\"active(user)\" *ngIf=\"user.isBlocked\">Active</span>\r\n                         </a>\r\n                                <a class=\"teal-text\" (click)=\"showModalBlock(user,true)\" data-toggle=\"modal\" data-target=\"#centralModalWarning\">\r\n                        <span class=\"badge badge-danger\">Remove</span></a>\r\n                            </td>\r\n                            <td *ngIf=\"user.roleId==4\">\r\n                                <a>\r\n                        <span class=\"badge badge-primary\">Admin</span>\r\n                    </a>\r\n                            </td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<user-detail (outputEvent)=\"updateDate()\" [isAdd]=\"isAdd\" data-backdrop=\"static\" id=\"editModal\" class=\"modal fade\" tabindex=\"-1\"\r\n    role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\" role=\"dialog\" *ngIf=\"userSelected\" [user]=\"userSelected\"\r\n    [isView]=\"isView\"></user-detail>\r\n\r\n<div *ngIf=\"userFocus\" class=\"modal fade\" id=\"centralModalWarning\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\r\n    aria-hidden=\"true\">\r\n    <div [ngClass]=\"{'modal-dialog modal-notify':true, 'modal-warning' : !isRemove , ' modal-danger':isRemove}\" role=\"document\">\r\n        <!--Content-->\r\n        <div class=\"modal-content\">\r\n            <!--Header-->\r\n            <div class=\"modal-header\">\r\n                <p class=\"heading lead\">Warning</p>\r\n\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                    <span aria-hidden=\"true\" class=\"white-text\">&times;</span>\r\n                </button>\r\n            </div>\r\n\r\n            <!--Body-->\r\n            <div class=\"modal-body\">\r\n                <div class=\"text-center\">\r\n                    <h2 *ngIf=\"!isRemove\">Do you want block account has email address: {{userFocus.email}} ?</h2>\r\n                    <h2 *ngIf=\"isRemove\">Do you want remove account has email address: {{userFocus.email}} ?</h2>\r\n                </div>\r\n            </div>\r\n\r\n            <!--Footer-->\r\n            <div class=\"modal-footer flex-center\">\r\n                <a *ngIf=\"!isRemove\" type=\"button\" class=\"btn btn-primary-modal\" data-dismiss=\"modal\" (click)=\"block(userFocus)\">Yes</a>\r\n                <a *ngIf=\"isRemove\" type=\"button\" class=\"btn btn-primary-modal\" data-dismiss=\"modal\" (click)=\"remove(userFocus)\">Yes</a>\r\n                <a type=\"button\" class=\"btn btn-outline-secondary-modal waves-effect\" data-dismiss=\"modal\">No</a>\r\n            </div>\r\n        </div>\r\n        <!--/.Content-->\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 122 */
+/* 138 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <div class=\"row justify-content-md-center\">\r\n        <div class=\"col \">\r\n        </div>\r\n        <div class=\"col\">\r\n            <form (ngSubmit)=\"signIn(signInForm)\" action=\"token\" method=\"post\" #signInForm=\"ngForm\" autocomplete=\"off\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-block\">\r\n                        <!--Header-->\r\n                        <div class=\"text-center\">\r\n                            <h3><i class=\"fa fa-lock\"></i> Login:</h3>\r\n                            <hr class=\"mt-2 mb-2\">\r\n                        </div>\r\n\r\n                        <!--Body-->\r\n                        <div class=\"md-form\">\r\n                            <i class=\"fa fa-envelope prefix\"></i>\r\n                            <input type=\"text\" name=\"email\" required id=\"form2\" class=\"form-control\" ngModel>\r\n                            <label for=\"form2\">Your email</label>\r\n                        </div>\r\n\r\n                        <div class=\"md-form\">\r\n                            <i class=\"fa fa-lock prefix\"></i>\r\n                            <input type=\"password\" name=\"password\" required id=\"form4\" class=\"form-control\" ngModel>\r\n                            <label for=\"form4\">Your password</label>\r\n                        </div>\r\n\r\n                        <div class=\"text-center\">\r\n                            <button type=\"submit\" name=\"login\" class=\"btn btn-secondary btn-lg waves-effect waves-light\">Login</button>\r\n                        </div>\r\n\r\n                    </div>\r\n\r\n                    <!--Footer-->\r\n                    <div class=\"modal-footer\">\r\n                        <div class=\"options\">\r\n                            <p>Forgot <a routerLink=\"/forgetpwd\">Password?</a></p>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </div>\r\n        <div class=\"col\">\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n";
 
 /***/ }),
-/* 123 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12622,7 +13565,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 124 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12714,74 +13657,74 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 125 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(123);
-exports.encode = exports.stringify = __webpack_require__(124);
+exports.decode = exports.parse = __webpack_require__(139);
+exports.encode = exports.stringify = __webpack_require__(140);
 
 
 /***/ }),
-/* 126 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Observable_1 = __webpack_require__(2);
-var defer_1 = __webpack_require__(133);
+var Observable_1 = __webpack_require__(5);
+var defer_1 = __webpack_require__(149);
 Observable_1.Observable.defer = defer_1.defer;
 //# sourceMappingURL=defer.js.map
 
 /***/ }),
-/* 127 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Observable_1 = __webpack_require__(2);
-var fromPromise_1 = __webpack_require__(69);
+var Observable_1 = __webpack_require__(5);
+var fromPromise_1 = __webpack_require__(75);
 Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
 //# sourceMappingURL=fromPromise.js.map
 
 /***/ }),
-/* 128 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Observable_1 = __webpack_require__(2);
-var mergeMap_1 = __webpack_require__(164);
+var Observable_1 = __webpack_require__(5);
+var mergeMap_1 = __webpack_require__(181);
 Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
 Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 //# sourceMappingURL=mergeMap.js.map
 
 /***/ }),
-/* 129 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Observable_1 = __webpack_require__(2);
-var share_1 = __webpack_require__(135);
+var Observable_1 = __webpack_require__(5);
+var share_1 = __webpack_require__(151);
 Observable_1.Observable.prototype.share = share_1.share;
 //# sourceMappingURL=share.js.map
 
 /***/ }),
-/* 130 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Observable_1 = __webpack_require__(2);
-var toPromise_1 = __webpack_require__(68);
+var Observable_1 = __webpack_require__(5);
+var toPromise_1 = __webpack_require__(74);
 Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ }),
-/* 131 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12791,10 +13734,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(22);
-var Observable_1 = __webpack_require__(2);
-var Subscriber_1 = __webpack_require__(156);
-var Subscription_1 = __webpack_require__(154);
+var Subject_1 = __webpack_require__(25);
+var Observable_1 = __webpack_require__(5);
+var Subscriber_1 = __webpack_require__(173);
+var Subscription_1 = __webpack_require__(171);
 /**
  * @class ConnectableObservable<T>
  */
@@ -12951,7 +13894,7 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ }),
-/* 132 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12961,9 +13904,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = __webpack_require__(2);
-var subscribeToResult_1 = __webpack_require__(155);
-var OuterSubscriber_1 = __webpack_require__(153);
+var Observable_1 = __webpack_require__(5);
+var subscribeToResult_1 = __webpack_require__(172);
+var OuterSubscriber_1 = __webpack_require__(170);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -13056,22 +13999,22 @@ var DeferSubscriber = (function (_super) {
 //# sourceMappingURL=DeferObservable.js.map
 
 /***/ }),
-/* 133 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var DeferObservable_1 = __webpack_require__(132);
+var DeferObservable_1 = __webpack_require__(148);
 exports.defer = DeferObservable_1.DeferObservable.create;
 //# sourceMappingURL=defer.js.map
 
 /***/ }),
-/* 134 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ConnectableObservable_1 = __webpack_require__(131);
+var ConnectableObservable_1 = __webpack_require__(147);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -13129,13 +14072,13 @@ exports.MulticastOperator = MulticastOperator;
 //# sourceMappingURL=multicast.js.map
 
 /***/ }),
-/* 135 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var multicast_1 = __webpack_require__(134);
-var Subject_1 = __webpack_require__(22);
+var multicast_1 = __webpack_require__(150);
+var Subject_1 = __webpack_require__(25);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
 }
@@ -13159,12 +14102,12 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ }),
-/* 136 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ansiRegex = __webpack_require__(82)();
+var ansiRegex = __webpack_require__(88)();
 
 module.exports = function (str) {
 	return typeof str === 'string' ? str.replace(ansiRegex, '') : str;
@@ -13172,11 +14115,11 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 137 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(94);
+        var result = __webpack_require__(105);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13186,11 +14129,11 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 138 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(95);
+        var result = __webpack_require__(106);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13200,11 +14143,11 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 139 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(96);
+        var result = __webpack_require__(107);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13214,11 +14157,11 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 140 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(97);
+        var result = __webpack_require__(108);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13228,11 +14171,11 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 141 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(98);
+        var result = __webpack_require__(109);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13242,11 +14185,11 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 142 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(99);
+        var result = __webpack_require__(110);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13256,11 +14199,11 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 143 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(100);
+        var result = __webpack_require__(111);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13270,11 +14213,11 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 144 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(101);
+        var result = __webpack_require__(112);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13284,11 +14227,11 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 145 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(102);
+        var result = __webpack_require__(113);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13298,11 +14241,11 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 146 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(103);
+        var result = __webpack_require__(114);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13312,11 +14255,11 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 147 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-        var result = __webpack_require__(104);
+        var result = __webpack_require__(115);
 
         if (typeof result === "string") {
             module.exports = result;
@@ -13326,7 +14269,21 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 148 */
+/* 164 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(116);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*eslint-env browser*/
@@ -13355,7 +14312,7 @@ for (var key in styles) {
   clientOverlay.style[key] = styles[key];
 }
 
-var ansiHTML = __webpack_require__(81);
+var ansiHTML = __webpack_require__(87);
 var colors = {
   reset: ['transparent', 'transparent'],
   black: '181818',
@@ -13370,7 +14327,7 @@ var colors = {
 };
 ansiHTML.setColors(colors);
 
-var Entities = __webpack_require__(105).AllHtmlEntities;
+var Entities = __webpack_require__(117).AllHtmlEntities;
 var entities = new Entities();
 
 exports.showProblems =
@@ -13411,7 +14368,7 @@ function problemType (type) {
 
 
 /***/ }),
-/* 149 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -13549,102 +14506,102 @@ module.exports = function(hash, moduleMap, options) {
 
 
 /***/ }),
-/* 150 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(11)
 
 /***/ }),
-/* 151 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(121)
 
 /***/ }),
-/* 152 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(15)
 
 /***/ }),
-/* 153 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(185)
 
 /***/ }),
-/* 154 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(186)
 
 /***/ }),
-/* 155 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(192)
 
 /***/ }),
-/* 156 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(20)
 
 /***/ }),
-/* 157 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(29)
 
 /***/ }),
-/* 158 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(317)
 
 /***/ }),
-/* 159 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(333)
 
 /***/ }),
-/* 160 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(335)
 
 /***/ }),
-/* 161 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(47)
 
 /***/ }),
-/* 162 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(48)
 
 /***/ }),
-/* 163 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(574)
 
 /***/ }),
-/* 164 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(83)
 
 /***/ }),
-/* 165 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(73);
-__webpack_require__(72);
-module.exports = __webpack_require__(71);
+__webpack_require__(79);
+__webpack_require__(78);
+module.exports = __webpack_require__(77);
 
 
 /***/ })

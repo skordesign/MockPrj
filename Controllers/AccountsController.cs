@@ -30,13 +30,13 @@ namespace MockPrj.Controllers
             return true;
         }
         [HttpPut("{id}")]
-        [Authorize(ActiveAuthenticationSchemes = "Bearer", Roles = "User")]
-        public IActionResult Edit(int id,[FromBody]Account o)
+        [Authorize(ActiveAuthenticationSchemes = "Bearer")]
+        public IActionResult Edit(int id, [FromBody]Account o)
         {
             try
             {
                 _logger.LogInformation("BEGIN => Edit Account");
-                if (_account.Update(o))
+                if (_account.UpdateWithoutPassword(o))
                 {
                     _logger.LogInformation("END <= Edit Account");
                     return Ok();
@@ -47,6 +47,31 @@ namespace MockPrj.Controllers
             catch
             {
                 _logger.LogError("FAILED: Edit Account");
+                return BadRequest();
+            }
+        }
+        [HttpPut("{id}")]
+        [Authorize(ActiveAuthenticationSchemes = "Bearer")]
+        public IActionResult ChangePwd(int id, [FromBody]Account o)
+        {
+            try
+            {
+                if (o.PasswordHashed.Length < 10 || o.PasswordHashed.Length > 50)
+                {
+                    return BadRequest();
+                }
+                _logger.LogInformation("BEGIN => ChangePwd Account");
+                if (_account.Update(o))
+                {
+                    _logger.LogInformation("END <= ChangePwd Account");
+                    return Ok();
+                }
+                _logger.LogError("FAILED: ChangePwd Account");
+                return BadRequest();
+            }
+            catch
+            {
+                _logger.LogError("FAILED: ChangePwd Account");
                 return BadRequest();
             }
         }

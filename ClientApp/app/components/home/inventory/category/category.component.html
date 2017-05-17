@@ -1,10 +1,10 @@
 <div class="row">
     <div *ngFor="let category of categories; let i = index" class="col-md-4 mb-1 animated fadeIn">
-        <category-card [category]="category" (cateDetails)="categoryDetail($event)"></category-card>
+        <category-card [category]="category" (actionCate)="actionCate($event)" (cateDetails)="categoryDetail($event)"></category-card>
     </div>
 </div>
 
-<category-detail (updateEvent)="updateData()" *ngIf="cate" [cate]="cate"></category-detail>
+<category-detail (updateEvent)="updateData()" [cate]="cate"></category-detail>
 
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;" data-toggle="modal" data-target="#addCategoryModal">
     <a class="btn-floating btn-large red waves-effect waves-light" data-toggle="tooltip" data-placement="top" (click)="addCategoryModel()"
@@ -22,17 +22,18 @@
                 <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="title"><i class="fa fa-newspaper-o"></i> Add new Category</h4>
+                <h4 *ngIf="isRemove" class="title"><i class="fa fa-newspaper-o"></i> Add new Category</h4>
+                <h4 *ngIf="!isRemove"><i class="fa fa-newspaper-o"></i> Edit Category</h4>
             </div>
             <div class="modal-body mb-0">
                 <div class="md-form form-sm">
                     <input type="text" id="form27" [(ngModel)]="category.name" required minlength="2" maxlength="50" class="form-control validate">
-                    <label for="form27">Category name ( 2 < length < 50 )</label>
+                    <label for="form27" [ngClass]="{'active':!isRemove}">Category name ( 2 < length < 50 )</label>
                 </div>
 
                 <div class="md-form form-sm">
                     <input type="text" id="form28" [(ngModel)]="category.description" required minlength="20" maxlength="200" class="form-control validate">
-                    <label for="form28">Description ( 20 < length < 200)</label>
+                    <label for="form28" [ngClass]="{'active':!isRemove}">Description ( 20 < length < 200)</label>
                 </div>
 
                 <div class="text-center mt-1-half">
@@ -41,5 +42,36 @@
 
             </div>
         </div>
+    </div>
+</div>
+
+<div *ngIf="cateFocus" class="modal fade" id="centralModalWarning" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div [ngClass]="{'modal-dialog modal-notify':true, ' modal-danger':isRemove}" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <p class="heading lead">Warning</p>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">&times;</span>
+                </button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body">
+                <div class="text-center">
+                    <h2>Do you want remove category {{ cateFocus.name }} ?</h2>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer flex-center">
+                <a type="button" class="btn btn-primary-modal" data-dismiss="modal" (click)="removeCategory(cateFocus)">Yes</a>
+                <a type="button" class="btn btn-outline-secondary-modal waves-effect" data-dismiss="modal">No</a>
+            </div>
+        </div>
+        <!--/.Content-->
     </div>
 </div>

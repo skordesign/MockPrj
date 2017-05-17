@@ -4,7 +4,7 @@
 
         <!--Header-->
         <div class="modal-header light-blue darken-3 white-text">
-            <button type="button" class="close waves-effect waves-light" id="buttonClose" data-dismiss="modal" (click)="destroyTooltip()"
+            <button type="button" class="close waves-effect waves-light" id="buttonClose" data-dismiss="modal"
                 aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -18,8 +18,6 @@
                 <input type="text" disabled="disabled" class="form-control">
                 <label>ID: {{ product.id }}</label>
             </div>
-
-
             <div *ngIf="!isView" class="md-form form-sm">
                 <input type="text" id="formName" [(ngModel)]="product.name" required minlength="2" maxlength="50" class="form-control validate">
                 <label for="formName" [ngClass]="{'active':!isAdd}">Name ( 2 < length < 50)</label>
@@ -80,15 +78,31 @@
                 <label for="checkbox1">Is Available</label>
             </fieldset>
 
-            <div *ngIf="!isAdd" class="md-form form-sm">
+            <div *ngIf="!isAdd && product.categoryId!=null" class="md-form form-sm">
                 <select id="cateSelector" [disabled]="isView" class="mdb-select dropdown-ins colorful-select validate" required [(ngModel)]="product.categoryId">
                     <option *ngFor="let item of optionsCate" [disabled]="item.id==product.categoryId"
                    [selected]="item.id==product.categoryId"   [value]="item.id">{{item.name}}</option>
                 </select>
                 <label>Category select</label>
             </div>
-            <div *ngIf="isAdd" class="md-form">
-                <input type="search" id="cateAutocomplete" [value]="cateName" required class="form-control mdb-autocomplete validate">
+            <div *ngIf="!isAdd && product.categoryId==null" class="md-form form-sm">
+                <select id="cateSelector" [disabled]="isView" class="mdb-select dropdown-ins colorful-select validate" required [(ngModel)]="product.categoryId">
+                    <option *ngFor="let item of optionsCate" [value]="item.id">{{item.name}}</option>
+                </select>
+                <label>Category select</label>
+            </div>
+            <div *ngIf="isAdd && cate!=null" class="md-form">
+                <input type="search" id="cateAutocomplete" [value]="cate.name" required class="form-control mdb-autocomplete validate">
+                <button class="mdb-autocomplete-clear">
+                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                        <path d="M0 0h24v24H0z" fill="none" />
+                    </svg>
+                </button>
+                <label for="cateAutocomplete" class="active">Category (Not blank)</label>
+            </div>
+            <div *ngIf="isAdd && cate==null" class="md-form">
+                <input type="search" id="cateAutocomplete" value="" required class="form-control mdb-autocomplete validate">
                 <button class="mdb-autocomplete-clear">
                     <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
                         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />

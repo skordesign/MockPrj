@@ -22,16 +22,36 @@ export class ProfileComponent implements OnInit, AfterViewInit, OnChanges, OnDes
     }
     role: any
     @Input() user: any
-
+    pwdModel: any
+    isChange: boolean = false
     constructor(private _account: AccountService) { }
     getRole(id) {
         this._account.getRole(id).subscribe(result => this.role = result.name);
     }
     saveChanges() {
-        this._account.editInfo(this.user).subscribe(result => {
-            if(result){
-                
-            }
-        })
+        this._account.editInfo(this.user).subscribe(result => { });
+    }
+    cancel(){
+        this.isChange = false;
+        this.pwdModel = null;
+    }
+    changePwd() {
+        this.pwdModel = {
+            pwd: "",
+            pwdRt: ""
+        }
+        this.isChange = true;
+    }
+    saveChangePwd(pwdModel: any) {
+        if (pwdModel.pwd !== pwdModel.pwdRt) {
+            return;
+        } else {
+            this.user.passwordHashed = pwdModel.pwd;
+            this._account.changPwd(this.user).subscribe(result => {
+                if(result){
+                    this.isChange = false;
+                }
+            });
+        }
     }
 }

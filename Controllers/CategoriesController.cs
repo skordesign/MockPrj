@@ -15,11 +15,14 @@ namespace MockPrj.Controllers
     public class CategoriesController : Controller
     {
         private readonly ICategoryRepository _category;
+        private readonly IProductRepository _products;
         private readonly ILogger _logger;
-        public CategoriesController(ICategoryRepository category, ILogger<CategoriesController> logger)
+        public CategoriesController(ICategoryRepository category, ILogger<CategoriesController> logger,
+        IProductRepository products)
         {
             _category = category;
             _logger = logger;
+            _products = products;
         }
         // GET api/values
         [HttpGet]
@@ -93,6 +96,24 @@ namespace MockPrj.Controllers
             }
             _logger.LogInformation("FAILED <= Remove category");
             return BadRequest();
+        }
+         [HttpPost("add-cate-id")]
+        public IActionResult AddCategoryReturnId([FromBody]Category category)
+        {
+            _logger.LogInformation("BEGIN => Add Category return Id");
+            if (_category.Add(category))
+            {
+                _logger.LogInformation("END <= Add Category return Id");
+                return Ok(category.Id);
+            }
+            _logger.LogInformation("FAILED <= Add Category return Id");
+            return BadRequest();
+        }
+        [HttpGet("{id}/products")]
+        public IEnumerable<Product> GetByCategory(int id)
+        {
+            _logger.LogInformation(@"GET by Id => {id}", id);
+            return _category.Get(id).Products.ToList();
         }
     }
 }

@@ -23,7 +23,7 @@
                             <td>{{user.firstname}}</td>
                             <td>{{user.lastname}}</td>
                             <td>{{user.email}}</td>
-                            <td>{{user.roleId}}</td>
+                            <td>{{user.role.name}}</td>
                             <td *ngIf="user.isBlocked"><span class="badge badge-danger">Is Blocked</span></td>
                             <td *ngIf="!user.isBlocked"><span class="badge badge-primary">Is Activated</span></td>
                             <td *ngIf="user.roleId!=4" class="center-group">

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Pipe, PipeTransform, AfterViewInit, EventEmitter, Output, OnChanges, AfterViewChecked, ViewChild } from '@angular/core';
-import { UserMngtService } from '../../../../services/usermngt.service';
+import { UserMngtService } from '../../../../services/users.service';
 import { ToasterService } from 'angular2-toaster';
 @Component({
     selector: 'user-detail',

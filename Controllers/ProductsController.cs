@@ -31,7 +31,12 @@ namespace MockPrj.Controllers
             _logger.LogInformation("GET => All");
             return _product.All();
         }
-
+        [HttpGet("news")]
+        public IEnumerable<Product> News()
+        {
+            _logger.LogInformation("GET => News");
+            return _product.All().OrderByDescending(o=>o.ModifiedTime).Take(5).ToList();
+        }
         // GET api/values/5
         [HttpGet("{id}")]
         public Product Get(int id)
@@ -39,30 +44,11 @@ namespace MockPrj.Controllers
             _logger.LogInformation(@"GET => {id}", id);
             return _product.Get(id);
         }
-         [HttpGet("count/{id}")]
+        [HttpGet("count/{id}")]
         public IActionResult GetNumberProductOfCategory(int id)
         {
             _logger.LogInformation(@"GET => {id}", id);
             return Ok(_product.GetByCategory(id).ToList().Count);
-        }
-
-        [HttpGet("{cateId}/by-cate")]
-        public IEnumerable<Product> GetByCategory(int cateId)
-        {
-            _logger.LogInformation(@"GET by Id => {cateId}", cateId);
-            return _product.GetByCategory(cateId);
-        }
-        [HttpPost("add-cate-id")]
-        public IActionResult AddCategoryReturnId([FromBody]Category category)
-        {
-            _logger.LogInformation("BEGIN => Add Category return Id");
-            if (_cate.Add(category))
-            {
-                _logger.LogInformation("END <= Add Category return Id");
-                return Ok(category.Id);
-            }
-            _logger.LogInformation("FAILED <= Add Category return Id");
-            return BadRequest();
         }
 
         // POST api/values

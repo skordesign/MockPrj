@@ -44,7 +44,7 @@ export class ProductDetailsComponent implements OnInit, OnDestroy, AfterViewInit
     @Input() product: any;
     @Input() isView: boolean;
     @Input() isAdd: boolean;
-    @Input() cateName: string;
+    @Input() cate: any;
     @Output() public updateEvent = new EventEmitter<any>();
 
     optionsCate: any[]
@@ -80,7 +80,7 @@ export class ProductDetailsComponent implements OnInit, OnDestroy, AfterViewInit
                         }
                     });
                 } else {
-                    this._product.addCateGetId({ "name": nameCate, "description": "Not have description" })
+                    this._categories.addCateGetId({ "name": nameCate, "description": "Not have description" })
                         .subscribe(result => {
                             this.product.categoryId = +result;
                             this._product.addProduct(this.product).subscribe(result => {

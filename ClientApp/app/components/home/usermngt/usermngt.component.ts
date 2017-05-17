@@ -1,5 +1,5 @@
 import { Component, OnInit, Directive, ViewContainerRef, ComponentFactoryResolver, AfterViewInit } from '@angular/core';
-import { UserMngtService } from '../../../services/usermngt.service';
+import { UserMngtService } from '../../../services/users.service';
 import { ToasterService } from 'angular2-toaster';
 import { UserModel } from './usermngt.model';
 import { } from '@angular/compiler';

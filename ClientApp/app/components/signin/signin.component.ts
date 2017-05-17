@@ -21,13 +21,4 @@ export class SignInComponent {
         }
     }
 }
-// if (typeof window !== "undefined") {
-//     window.onload = () => {
-//         $(document).ready(() => {
-//             $(".login-help").click(() => {
-//                 alert('Test Jquery in TS');
-//             });
-//         });
-//     }
-// }
 

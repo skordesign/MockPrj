@@ -13,7 +13,7 @@ import { Logger } from 'log4ts';
 import { HttpModule } from '@angular/http';
 import { ProfileComponent } from './components/home/profile/profile.component';
 import { SidebarComponent } from './components/home/sidebar/sidebar.component';
-import { ReporttComponent } from './components/home/inventory/report/report.component';
+import { ReportComponent } from './components/home/report/report.component';
 import { ToasterModule, ToasterService } from 'angular2-toaster';
 import { routing } from './app.routes';
 import { UserMngtComponent } from './components/home/usermngt/usermngt.component';
@@ -21,22 +21,36 @@ import { AuthenticateGuard } from './guard/authenticate.guard';
 import { LoginGuard } from './guard/login.guard';
 import { AuthModule } from './auth.module';
 import { AdminGuard } from './guard/admin.guard';
-import { UserMngtService } from './services/usermngt.service';
+import { UserMngtService } from './services/users.service';
 import { UserDetailComponent } from './components/home/usermngt/userdetail/userdetail.component';
 import { ProductService } from "./services/products.service";
 import { CategoryDetailsComponent } from "./components/home/inventory/category/categorydetails/categorydetails.component";
 import { ProductDetailsComponent } from "./components/home/inventory/category/categorydetails/productdetails/productdetails.component";
 import { AccountService } from "./services/account.service";
 import { CategoryCardComponent } from "./components/home/inventory/category/categorycard/categorycard.component";
-import { SaleComponent } from "./components/home/sale/sale.component";
+
 import { CategoryService } from "./services/category.service";
+import { BillComponent } from "./components/home/sale/bill/bill.component";
+import { ReceiptComponent } from "./components/home/inventory/receipt/receipt.component";
+import { DeliveryComponent } from "./components/home/inventory/delivery/delivery.component";
+import { AuthService } from "./services/auth.service";
+import { SalePersonGuard } from "./guard/saleperson.guard";
+import { SaleMngrGuard } from "./guard/salemngr.guard";
+import { InventoryMngrGuard } from "./guard/inventorymngr.guard";
+import { BillDetailsComponent } from "./components/home/sale/bill/billdetails/billdetails.component";
+import { BillsService } from "./services/bills.service";
+import { BillCardComponent } from "./components/home/sale/bill/billcard/billcard.component";
+import { BillDetailsService } from "./services/billDetails.service";
 
 @NgModule({
     bootstrap: [AppComponent],
     declarations: [
         AppComponent,
         HomeComponent,
-        ReporttComponent,
+        BillComponent,
+        ReceiptComponent,
+        DeliveryComponent,
+        ReportComponent,
         CategoryComponent,
         UserMngtComponent,
         SignInComponent,
@@ -48,7 +62,8 @@ import { CategoryService } from "./services/category.service";
         CategoryDetailsComponent,
         ProductDetailsComponent,
         CategoryCardComponent,
-        SaleComponent
+        BillDetailsComponent,
+        BillCardComponent
     ],
     imports: [
         HttpModule,
@@ -63,10 +78,16 @@ import { CategoryService } from "./services/category.service";
         SignInService,
         ToasterService,
         AuthenticateGuard,
+        BillDetailsService,
+        SalePersonGuard,
+        SaleMngrGuard,
+        InventoryMngrGuard,
         LoginGuard,
+        AuthService,
         AccountService,
         AdminGuard,
         ProductService,
+        BillsService,
         CategoryService,
         UserMngtService],
 })

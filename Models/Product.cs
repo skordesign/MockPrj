@@ -5,7 +5,7 @@ namespace MockPrj.Models
 {
     public class Product : Base
     {
-        [MaxLength(30)]
+        [MaxLength(20)]
         [MinLength(2)]
         [Required]
         public string Name { get; set; }
@@ -14,6 +14,7 @@ namespace MockPrj.Models
         public bool Status { get; set; } = true;
         [Required]
         public double Quantity { get; set; }
+        [MaxLength(20)]
         public string CalculationUnit { get; set; }
         [Required]
         public double Price { get; set; }

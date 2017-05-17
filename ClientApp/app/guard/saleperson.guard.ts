@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 import { CanActivate, Router, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { JwtHelper } from 'angular2-jwt';
 import { ToasterService } from 'angular2-toaster';
-@Injectable()
-export class SaleMngrGuard implements CanActivate {
 
-    constructor(private router: Router, private toaster:ToasterService) { }
+@Injectable()
+export class SalePersonGuard implements CanActivate {
+
+    constructor(private router: Router, private toaster: ToasterService) { }
 
     public canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
         if (typeof window !== "undefined") {
@@ -19,10 +20,11 @@ export class SaleMngrGuard implements CanActivate {
                 var roleJson = jwt.decodeToken(token);
                 var role = roleJson.roleSIMS;
                 if (role === "SalePerson") {
-                      this.toaster.popAsync("success", "Information", "Access accepted.");
+                    this.toaster.popAsync("success", "Information", "Access accepted.");
                     return true;
                 }
                 this.toaster.popAsync("warning", "Warning!!", "Access denied!");
+                this.router.navigate([""]);
                 return false;
             }
             this.router.navigate(["/signin"]);

@@ -1,0 +1,61 @@
+<div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+        <!--Header-->
+        <div class="modal-header light-blue darken-3 white-text">
+            <button type="button" class="close waves-effect waves-light" id="buttonClose" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            <h4 *ngIf="isView" class="title"><i class="fa fa-pencil"></i> Informantion of bill</h4>
+            <h4 *ngIf="!isView && !isAdd"><i class="fa fa-pencil"></i> Edit informantion of bill</h4>
+            <h4 *ngIf="!isView && isAdd"><i class="fa fa-pencil"></i> Add new bill</h4>
+        </div>
+        <!--Body-->
+        <div class="modal-body mb-0">
+            <div class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control">
+                <label>ID: {{ bill.id }}</label>
+            </div>
+
+
+            <div *ngIf="!isView" class="md-form form-sm">
+                <input type="text" id="formDesc" [(ngModel)]="bill.description" required maxlength="200" class="form-control validate">
+                <label for="formDesc" [ngClass]="{'active':true}">Description ( length < 200)</label>
+            </div>
+            <div *ngIf="isView" class="md-form form-sm">
+                <input type="text" disabled="disabled" class="form-control">
+                <label>Description : {{bill.description}}</label>
+            </div>
+            <ul *ngIf="!isView" class="list-group">
+                <li (billDetailsUpdate)="billDetailsUpdate($event)" bill-card class="" *ngFor="let detail of bill.billDetailses, let i=index"
+                    [index]="index" [(isAdd)]="isAdd" [(isView)]="isView" [billDetails]="bill.billDetailses[i]"></li>
+                <a *ngIf="!isView" (click)="addItem()" class="btn btn-outline-primary btn-sm btn-rounded waves-effect">Add item</a>
+            </ul>
+            <ul *ngIf="isView" class="list-group">
+                <li bill-card *ngFor="let detail of bill.billDetailses" [(isAdd)]="isAdd" [(isView)]="isView" [billDetailsView]="detail"></li>
+            </ul>
+
+
+            <div class="md-form form-sm">
+                <input type="text" id="formTotal" disabled="disabled" class="form-control" />
+                <label for="formTotal">Total :{{ bill.total }}</label>
+            </div>
+            <div class="md-form form-sm">
+                <input type="text" id="formAddDate" disabled="disabled" class="form-control" />
+                <label for="formAddDate">Add time :{{ bill.addTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>
+            </div>
+
+            <div class="md-form form-sm">
+                <input type="text" id="formModifiedDate" disabled="disabled" class="form-control" />
+                <label for="formModifiedDate">Modified time :{{ bill.modifiedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</label>
+            </div>
+
+            <div class="text-center mt-1-half">
+                <button *ngIf="isView" class="btn btn-info mb-2" data-dismiss="modal">OK <i class="fa fa-send ml-1"></i></button>
+                <button *ngIf="!isView" class="btn btn-info mb-2" (click)="saveChanges()" data-dismiss="modal">Submit <i class="fa fa-send ml-1"></i></button>
+            </div>
+        </div>
+    </div>
+    <!--/.Content-->
+</div>

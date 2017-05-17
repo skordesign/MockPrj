@@ -3,6 +3,7 @@ using System.Linq;
 using MockPrj.Models;
 using MockPrj.Data;
 using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace MockPrj.Repositories
 {
@@ -31,12 +32,12 @@ namespace MockPrj.Repositories
 
         public IEnumerable<Category> All()
         {
-            return _context.Categories.ToList();
+            return _context.Categories.Include(o=>o.Products).ToList();
         }
 
         public Category Get(int Id)
         {
-            return _context.Categories.Find(Id);
+            return _context.Categories.Include(o=>o.Products).ToList().Find(k=>k.Id.Equals(Id));
         }
         public bool Remove(int Id)
         {

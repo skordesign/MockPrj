@@ -23,6 +23,7 @@ export class InventoryMngrGuard implements CanActivate {
                     return true;
                 }
                 this.toaster.popAsync("warning", "Warning!!", "Access denied!");
+                 this.router.navigate([""]);
                 return false;
             }
             this.router.navigate(["/signin"]);

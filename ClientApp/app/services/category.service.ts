@@ -10,19 +10,67 @@ import { AuthService } from "./auth.service";
 
 @Injectable()
 export class CategoryService {
-    baseUrl: string = "/api/categories"
-    constructor(private http: Http, private toaster: ToasterService) {
+    baseUrl: string = "/api/categories/"
+    constructor(private http: Http, private toaster: ToasterService,
+    private _auth:AuthService) {
     }
     getCategories(): Observable<any[]> {
-        return this.http.get(this.baseUrl, { headers: AuthService.credentialHeader() })
+        return this.http.get(this.baseUrl, { headers: this._auth.credentialHeader() })
             .map(this.extractData)
             .catch(err => this.toaster.popAsync("error", "Error", "System has problem."));
     }
     addCategory(category: any) {
-        return this.http.post(this.baseUrl, JSON.stringify(category), { headers: AuthService.credentialHeader() })
+        return this.http.post(this.baseUrl, JSON.stringify(category), { headers: this._auth.credentialHeader() })
             .map(response => {
                 if (response.ok) {
                     this.toaster.popAsync("success", "Successful", "Added.")
+                    return true;
+                } else {
+                    this.toaster.popAsync("error", "Error", "System has problem.")
+                    return false;
+                }
+            })
+            .catch(err =>
+                this.toaster.popAsync("error", "Error", "System has problem."));
+    }
+    addCateGetId(category: any) {
+        return this.http.post(this.baseUrl + "add-cate-id", JSON.stringify(category),
+         { headers: this._auth.credentialHeader() })
+            .map(response => {
+                if (response.ok) {
+                    this.toaster.popAsync("success", "Successful", "Added.")
+                    return response.json();
+                } else {
+                    this.toaster.popAsync("error", "Error", "System has problem.")
+                    return {};
+                }
+            })
+            .catch(err =>
+                this.toaster.popAsync("error", "Error", "System has problem."));
+    }
+    getProducts(cateId: number): Observable<any[]> {
+        return this.http.get(this.baseUrl + cateId + "/products", { headers: this._auth.credentialHeader() })
+            .map(this.extractData)
+            .catch(err => this.toaster.popAsync("error", "Error", "System has problem."));
+    }
+    removeCategory(cateId: number): Observable<boolean> {
+        return this.http.delete(this.baseUrl + cateId, { headers: this._auth.credentialHeader() })
+            .map(response => {
+                if (response.ok) {
+                    this.toaster.popAsync("success", "Successful", "Removed.")
+                    return true;
+                } else {
+                    this.toaster.popAsync("error", "Error", "System has problem.")
+                    return false;
+                }
+            })
+            .catch(err => this.toaster.popAsync("error", "Error", "System has problem."));
+    }
+    editCategory(category: any): Observable<boolean> {
+        return this.http.put(this.baseUrl + category.id, JSON.stringify(category), { headers: this._auth.credentialHeader() })
+            .map(response => {
+                if (response.ok) {
+                    this.toaster.popAsync("success", "Successful", "Updated.")
                     return true;
                 } else {
                     this.toaster.popAsync("error", "Error", "System has problem.")

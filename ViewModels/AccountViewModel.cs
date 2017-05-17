@@ -5,8 +5,9 @@ using MockPrj.Repositories;
 
 namespace MockPrj.ViewModels
 {
-    public class AccountViewModel : Account
+    public class ChangePasswordViewModel
     {
-        public string RoleName { get; set; }
+        public string Pwd { get; set; }
+        public string PwdRt { get; set; }
     }
 }

@@ -1,0 +1,17 @@
+<div *ngIf="isView" class="list-group-item justify-content-between">
+    {{billDetailsView.product.name}}
+    <span class="badge badge-primary badge-pill">{{billDetailsView.quantity}}</span>
+</div>
+<div *ngIf="!isView" class="container">
+    <div class="row">
+        <div class="col-8 ">
+            <select id="soflow" class="form-control" [(ngModel)]="billDetails.productId" (ngModelChange)="updateBillDetails($event)"
+                aria-placeholder="Select product">
+            <option *ngFor="let product of products" [value]="product.id">{{ product.name }}</option>
+        </select>
+        </div>
+        <div class="col-4 ">
+            <input class="form-control " type="number" (ngModelChange)="updateBillDetails($event)" [(ngModel)]="billDetails.quantity">
+        </div>
+    </div>
+</div>

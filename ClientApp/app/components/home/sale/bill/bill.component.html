@@ -1,0 +1,41 @@
+<div class="container animated fadeIn admin-panel">
+    <div class="row">
+    </div>
+    <div class="jumbotron col ">
+        <a class="btn btn-default btn-sm" (click)="addBillDialog()" data-toggle="modal" data-target="#editModal" role="button">Add bill</a>
+        <div class="card-block pt-0">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="primary-color">
+                            <th>#</th>
+                            <th>Description</th>
+                            <th>Added Date</th>
+                            <th>Saleperson</th>
+                            <th>Status</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let bill of bills, let i = index">
+                            <th scope="row">{{i+1}}</th>
+                            <td>{{bill.description}}</td>
+                            <td>{{bill.addTime | date: 'dd/MM/yyyy hh:mm'}}</td>
+                            <td>{{bill.sale.firstname}}</td>
+                            <td *ngIf="bill.isDealt"><span class="badge badge-danger">Dealt</span></td>
+                            <td *ngIf="!bill.isDealt"><span class="badge badge-primary">In Progress</span></td>
+                            <td class="center-group">
+                                <a class="blue-text" (click)="info(bill)" data-toggle="modal" data-target="#editModal"><span class="badge badge-info">View</span></a>
+                                <a *ngIf="!bill.isDealt" class="teal-text" (click)="deal(bill)">
+                                      <span class="badge badge-warning">Deal</span></a>
+                                <a *ngIf="!bill.isDealt" class="teal-text" (click)="edit(bill)" data-toggle="modal" data-target="#editModal">
+                                      <span class="badge badge-warning">Edit</span></a>
+                            </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<bill-details (updateData)="updateData($event)" data-backdrop="static" id="editModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true" role="dialog" *ngIf="bill" [bill]="bill" [(isView)]="isView" [(isAdd)]="isAdd"></bill-details>
